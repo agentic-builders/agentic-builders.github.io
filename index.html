@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Builders - We help agentic founders build AI-native companies from day one</title>
+    <meta name="description" content="Agentic Builders backs founders building AI-native companies from the earliest stage. We focus on autonomous agents that deliver 10-100x effectiveness improvements.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agenticbuilders.ai/">
+    <meta property="og:title" content="Agentic Builders - We help agentic founders build AI-native companies from day one">
+    <meta property="og:description" content="Backing founders building AI-native companies focused on autonomous agents.">
+    <meta property="og:image" content="https://agenticbuilders.ai/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://agenticbuilders.ai/">
+    <meta name="twitter:title" content="Agentic Builders - We help agentic founders build AI-native companies from day one">
+    <meta name="twitter:description" content="Backing founders building AI-native companies focused on autonomous agents.">
+    <meta name="twitter:image" content="https://agenticbuilders.ai/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://agenticbuilders.ai/">
+
+    <style>
+        :root {
+            --color-bg: #FAFAFA;
+            --color-text: #1A1A1A;
+            --color-text-muted: #666666;
+            --color-accent: #C75B39;
+            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 720px;
+            --spacing-section: clamp(4rem, 10vw, 8rem);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: var(--spacing-section) 0;
+        }
+
+        section + section {
+            border-top: 1px solid rgba(26, 26, 26, 0.1);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            line-height: 1.2;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 3.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 .line {
+            display: block;
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 1.25rem;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+
+        /* Hero */
+        .hero {
+            padding-top: clamp(4rem, 15vw, 10rem);
+            padding-bottom: var(--spacing-section);
+        }
+
+        .wordmark {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text);
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            color: var(--color-text);
+        }
+
+        .hero .lead {
+            max-width: 540px;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--color-text);
+            color: var(--color-bg);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            border-radius: 2px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--color-accent);
+        }
+
+        .btn:focus {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        /* Content sections */
+        .content-block {
+            margin-bottom: 2rem;
+        }
+
+        .content-block:last-child {
+            margin-bottom: 0;
+        }
+
+        /* List styling */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-text-muted);
+        }
+
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.7em;
+            width: 6px;
+            height: 6px;
+            background-color: var(--color-accent);
+            border-radius: 50%;
+        }
+
+        /* Contact section */
+        .contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-email {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .contact-email a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .contact-email a:hover {
+            opacity: 0.8;
+        }
+
+        .contact-email a:focus {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(26, 26, 26, 0.1);
+        }
+
+        footer p {
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Focus states for accessibility */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        /* Selection */
+        ::selection {
+            background-color: var(--color-accent);
+            color: white;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            html {
+                font-size: 16px;
+            }
+
+            main {
+                padding: 0 1.25rem;
+            }
+
+            .wordmark {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="wordmark">Agentic Builders</div>
+            <h1><span class="line">We help agentic founders</span><span class="line">build AI-native companies</span><span class="line">from day one</span></h1>
+            <p class="lead">Backing founders building autonomous AI agents that transform how businesses operate.</p>
+            <a href="#contact" class="btn">Build With Us</a>
+        </section>
+
+        <!-- Thesis -->
+        <section class="thesis">
+            <h2>The Opportunity</h2>
+            <p class="lead">AI is everywhere, but thousands of real tasks remain untouched.</p>
+            <p>Most businesses still run on manual processes that waste time and talent. We see opportunities for 10-100x effectiveness improvements hiding in plain sight. We find great founders who spot these opportunities and help them build.</p>
+        </section>
+
+        <!-- What We Back -->
+        <section class="what-we-back">
+            <h2>What We Back</h2>
+            <p class="lead">AI workers that take on full company roles, end-to-end.</p>
+            <p>Not copilots that wait for instructions. Autonomous agents that handle complete workflows independently. We back founders building agentic AI for business automation and productivity, systems that actually do the work.</p>
+        </section>
+
+        <!-- For Founders -->
+        <section class="for-founders">
+            <h2>For Founders</h2>
+            <div class="content-block">
+                <ul>
+                    <li><strong>Stage:</strong> Idea and prototype stage welcome. We partner with you from the earliest moments.</li>
+                    <li><strong>Speed:</strong> Ship fast, test with real users, cut weak ideas quickly. No attachment to plans that don't work.</li>
+                    <li><strong>Support:</strong> Capital, network, and deep AI expertise to accelerate what you're building.</li>
+                    <li><strong>Ownership:</strong> Founders retain majority at spin-out. We succeed when you succeed.</li>
+                    <li><strong>Fit:</strong> AI-native builders who use AI to move fast with small teams. Ideas matter less than execution.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2>Have an idea worth building?</h2>
+            <p class="contact-email"><a href="mailto:hey@agenticbuilders.ai">hey@agenticbuilders.ai</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agentic Builders Ventures</p>
+    </footer>
+</body>
+</html>
