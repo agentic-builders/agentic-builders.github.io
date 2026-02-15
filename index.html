@@ -221,6 +221,34 @@
         }
 
         /* Portfolio */
+        /* Pillars */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .pillar h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .pillar-label {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-accent-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 600px) {
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .portfolio-grid {
             display: flex;
             flex-direction: column;
@@ -374,6 +402,23 @@
             <h2>What We Back</h2>
             <p class="lead">AI workers that take on full company roles, end-to-end.</p>
             <p>Not copilots that wait for instructions. Autonomous agents that handle complete workflows independently. We back founders building agentic AI for business automation and productivity, systems that actually do the work.</p>
+        </section>
+
+        <!-- Pillars -->
+        <section class="pillars">
+            <h2>Our Pillars</h2>
+            <div class="pillars-grid">
+                <div class="pillar">
+                    <h3>Business Automation</h3>
+                    <p class="pillar-label">Where we invest</p>
+                    <p>We back products that automate real business workflows end-to-end. Not dashboards or copilots, but systems that replace entire processes, making operations faster and dramatically cheaper.</p>
+                </div>
+                <div class="pillar">
+                    <h3>Autonomous Companies</h3>
+                    <p class="pillar-label">Who we invest in</p>
+                    <p>Small, AI-native teams that punch far above their weight. Founders who use AI at every level to stay lean, move fast, and build what used to require 50 people with a team of five.</p>
+                </div>
+            </div>
         </section>
 
         <!-- For Founders -->
