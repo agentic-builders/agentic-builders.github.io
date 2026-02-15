@@ -12,16 +12,17 @@ OUTPUT="$SCRIPT_DIR/og-image.png"
 
 magick -size 2400x1260 xc:'#FFFFFF' \
   -fill '#FC4C03' -draw "rectangle 0,0 24,1260" \
-  \( "$ICON" -resize 560x560 -alpha set -channel A -evaluate multiply 0.07 +channel \) \
-  -gravity East -geometry +120+0 -composite \
-  \( "$ICON" -resize 100x100 \) \
-  -gravity NorthWest -geometry +180+410 -composite \
+  \( "$ICON" -resize 480x480 -alpha set -channel A -evaluate multiply 0.07 +channel \) \
+  -gravity East -geometry +40+0 -composite \
+  \( "$ICON" -resize 140x140 \) \
+  -gravity NorthWest -geometry +140+300 -composite \
   -font "$FONT_BOLD" \
-  -fill '#1F2937' -pointsize 120 -gravity NorthWest \
-  -annotate +180+550 'Agentic Builders' \
+  -fill '#1F2937' -pointsize 180 -gravity NorthWest \
+  -annotate +140+480 'Agentic Builders' \
   -font "$FONT_REGULAR" \
-  -fill '#6B7280' -pointsize 46 -gravity NorthWest \
-  -annotate +184+720 'We help agentic founders build AI-native companies from day one' \
+  -fill '#6B7280' -pointsize 56 -gravity NorthWest \
+  -annotate +148+720 'We help agentic founders build AI-native' \
+  -annotate +148+790 'companies from day one' \
   "$OUTPUT"
 
 echo "Generated: $OUTPUT"
