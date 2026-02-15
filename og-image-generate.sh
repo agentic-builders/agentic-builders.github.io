@@ -12,7 +12,7 @@ OUTPUT="$SCRIPT_DIR/og-image.png"
 
 magick -size 2400x1260 xc:'#FFFFFF' \
   -fill '#FC4C03' -draw "rectangle 0,0 24,1260" \
-  \( "$ICON" -resize 480x480 -alpha set -channel A -evaluate multiply 0.15 +channel \) \
+  \( "$ICON" -resize 480x480 \) \
   -gravity East -geometry +40+0 -composite \
   -font "$FONT_BOLD" \
   -fill '#1F2937' -pointsize 180 -gravity NorthWest \
