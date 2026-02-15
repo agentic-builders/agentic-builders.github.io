@@ -1,7 +1,7 @@
 #!/bin/bash
 # Generate the OG image (2400x1260, 2x retina of 1200x630)
 # Requires: ImageMagick 7+ (magick command)
-# Usage: ./generate-og-image.sh
+# Usage: ./og-image-generate.sh
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BRAND="$SCRIPT_DIR/brand-book"
@@ -12,16 +12,16 @@ OUTPUT="$SCRIPT_DIR/og-image.png"
 
 magick -size 2400x1260 xc:'#FFFFFF' \
   -fill '#FC4C03' -draw "rectangle 0,0 24,1260" \
-  \( "$ICON" -resize 700x700 -alpha set -channel A -evaluate multiply 0.06 +channel \) \
-  -gravity East -geometry +60+0 -composite \
-  \( "$ICON" -resize 88x88 \) \
-  -gravity NorthWest -geometry +160+430 -composite \
+  \( "$ICON" -resize 560x560 -alpha set -channel A -evaluate multiply 0.07 +channel \) \
+  -gravity East -geometry +120+0 -composite \
+  \( "$ICON" -resize 100x100 \) \
+  -gravity NorthWest -geometry +180+410 -composite \
   -font "$FONT_BOLD" \
-  -fill '#1F2937' -pointsize 96 -gravity NorthWest \
-  -annotate +160+560 'Agentic Builders' \
+  -fill '#1F2937' -pointsize 120 -gravity NorthWest \
+  -annotate +180+550 'Agentic Builders' \
   -font "$FONT_REGULAR" \
-  -fill '#6B7280' -pointsize 38 -gravity NorthWest \
-  -annotate +160+700 'We help agentic founders build AI-native companies from day one' \
+  -fill '#6B7280' -pointsize 46 -gravity NorthWest \
+  -annotate +184+720 'We help agentic founders build AI-native companies from day one' \
   "$OUTPUT"
 
 echo "Generated: $OUTPUT"
