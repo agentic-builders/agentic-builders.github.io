@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand — Agentic Builders</title>
+    <meta name="description" content="Agentic Builders brand guidelines: logo, colors, typography, and usage rules.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agenticbuilders.ai/brand">
+    <meta property="og:title" content="Brand — Agentic Builders">
+    <meta property="og:description" content="Agentic Builders brand guidelines: logo, colors, typography, and usage rules.">
+    <meta property="og:image" content="https://agenticbuilders.ai/og-image.png?v=2">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="canonical" href="https://agenticbuilders.ai/brand">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-bg: #FFFFFF;
+            --color-text: #1F2937;
+            --color-text-muted: #6B7280;
+            --color-accent: #FC4C03;
+            --color-accent-dark: #B03502;
+            --color-accent-darker: #7E2601;
+            --color-accent-500: #E34403;
+            --color-accent-300: #FD824F;
+            --color-accent-light: #FEA681;
+            --color-accent-lighter: #FEC9B3;
+            --font-heading: 'Urbanist', sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 820px;
+            --spacing-section: clamp(3.5rem, 8vw, 6rem);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { font-size: 18px; scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: var(--spacing-section) 0; }
+        section + section { border-top: 1px solid rgba(31, 41, 55, 0.1); }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--color-text);
+        }
+
+        h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: 800; margin-bottom: 1.25rem; }
+        h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.5rem; }
+        h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
+
+        p { color: var(--color-text-muted); margin-bottom: 1rem; }
+        p:last-child { margin-bottom: 0; }
+        .lead { font-size: 1.125rem; line-height: 1.5; }
+
+        .section-intro { margin-bottom: 2rem; }
+
+        /* Top nav */
+        .top {
+            padding-top: clamp(2rem, 5vw, 3rem);
+            padding-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top .logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .top .logo-icon { width: 24px; height: 24px; flex-shrink: 0; }
+        .top .logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--color-text);
+            letter-spacing: -0.02em;
+        }
+        .top a.back {
+            font-size: 0.9375rem;
+            color: var(--color-accent-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .top a.back:hover { color: var(--color-accent); }
+
+        /* Hero */
+        .hero { padding-top: clamp(2rem, 5vw, 3rem); padding-bottom: var(--spacing-section); }
+        .hero .eyebrow {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-accent-dark);
+            margin-bottom: 1rem;
+        }
+        .hero .lead { max-width: 540px; font-size: 1.25rem; }
+
+        /* Logo showcase */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 600px) { .logo-grid { grid-template-columns: 1fr; } }
+
+        .logo-tile {
+            border: 1px solid rgba(31, 41, 55, 0.1);
+            border-radius: 6px;
+            padding: 3rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+        }
+        .logo-tile.on-dark { background: var(--color-text); border-color: var(--color-text); }
+        .logo-tile.on-accent { background: var(--color-accent); border-color: var(--color-accent); }
+
+        .logo-tile img { max-width: 100%; height: auto; }
+
+        .tile-caption {
+            font-size: 0.8125rem;
+            color: var(--color-text-muted);
+            margin-top: 0.75rem;
+        }
+        .tile-caption a {
+            color: var(--color-accent-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .tile-caption a:hover { color: var(--color-accent); }
+
+        .logo-item .caption-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 0.75rem;
+            gap: 0.5rem;
+        }
+
+        /* Icon-only row */
+        .icon-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) { .icon-row { grid-template-columns: 1fr 1fr; } }
+
+        .icon-tile {
+            border: 1px solid rgba(31, 41, 55, 0.1);
+            border-radius: 6px;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 140px;
+        }
+        .icon-tile.on-dark { background: var(--color-text); border-color: var(--color-text); }
+        .icon-tile.on-accent { background: var(--color-accent); border-color: var(--color-accent); }
+        .icon-tile img { width: 56px; height: 56px; }
+
+        /* Colors */
+        .swatches {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 600px) { .swatches { grid-template-columns: 1fr; } }
+
+        .swatch {
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(31, 41, 55, 0.1);
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+        .swatch:hover { transform: translateY(-2px); }
+        .swatch:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+        .swatch-body {
+            height: 140px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .swatch-label {
+            font-family: var(--font-heading);
+            font-size: 0.9375rem;
+            font-weight: 700;
+        }
+        .swatch-hex {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            opacity: 0.85;
+        }
+        .swatch-role {
+            font-size: 0.8125rem;
+            color: var(--color-text-muted);
+            padding: 0.75rem 1rem;
+            background: #fff;
+            border-top: 1px solid rgba(31, 41, 55, 0.08);
+        }
+
+        .swatch.dark-text .swatch-label,
+        .swatch.dark-text .swatch-hex { color: var(--color-text); }
+        .swatch.light-text .swatch-label,
+        .swatch.light-text .swatch-hex { color: #fff; }
+
+        .shades {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 760px) { .shades { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 380px) { .shades { grid-template-columns: repeat(2, 1fr); } }
+
+        .shade {
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(31, 41, 55, 0.06);
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+        .shade:hover { transform: translateY(-2px); }
+        .shade-body {
+            height: 110px;
+            padding: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .shade-name {
+            font-family: var(--font-heading);
+            font-size: 0.8125rem;
+            font-weight: 700;
+        }
+        .shade-hex {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 0.75rem;
+        }
+        .shade.light-text .shade-name,
+        .shade.light-text .shade-hex { color: #fff; }
+        .shade.dark-text .shade-name,
+        .shade.dark-text .shade-hex { color: var(--color-text); }
+
+        .copied {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: var(--color-text);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            z-index: 100;
+        }
+        .copied.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* Typography */
+        .type-specimen {
+            border: 1px solid rgba(31, 41, 55, 0.1);
+            border-radius: 6px;
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+        .type-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .type-name {
+            font-family: var(--font-heading);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text);
+        }
+        .type-role { font-size: 0.8125rem; color: var(--color-text-muted); }
+        .type-sample-heading {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: clamp(2rem, 6vw, 3rem);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+        }
+        .type-sample-body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-text);
+            max-width: 540px;
+        }
+        .type-glyphs {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--color-text);
+            margin-top: 1rem;
+            word-spacing: 0.15em;
+        }
+
+        /* Buttons showcase */
+        .buttons-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            border-radius: 2px;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+        .btn-primary {
+            background-color: var(--color-accent-dark);
+            color: #fff;
+            border-color: var(--color-accent-dark);
+        }
+        .btn-primary:hover { background-color: var(--color-accent); border-color: var(--color-accent); }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent-dark);
+            border-color: var(--color-accent-dark);
+        }
+        .btn-secondary:hover { background-color: var(--color-accent-dark); color: #fff; }
+
+        .link-arrow {
+            color: var(--color-accent-dark);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .link-arrow:hover { color: var(--color-accent); }
+
+        /* Badges */
+        .badges-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8125rem;
+            font-weight: 600;
+        }
+        .badge-new { background: var(--color-text); color: #fff; }
+        .badge-popular { background: var(--color-accent-darker); color: #fff; }
+        .badge-hot { background: var(--color-accent-darker); color: var(--color-accent-lighter); }
+        .badge-sale { background: var(--color-accent-dark); color: #fff; }
+        .badge-beta { background: var(--color-accent-light); color: var(--color-text); }
+        .badge-trending { background: transparent; color: var(--color-accent-dark); border: 1px solid var(--color-accent-dark); }
+        .badge-special { background: transparent; color: var(--color-accent-darker); border: 1px solid var(--color-accent-darker); }
+
+        /* Dos & donts */
+        .rules {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 600px) { .rules { grid-template-columns: 1fr; } }
+
+        .rule {
+            border: 1px solid rgba(31, 41, 55, 0.1);
+            border-radius: 6px;
+            padding: 1.25rem;
+        }
+        .rule h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .rule.do h4 { color: #15803D; }
+        .rule.dont h4 { color: #B91C1C; }
+        .rule ul { list-style: none; padding: 0; }
+        .rule li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9375rem;
+            color: var(--color-text-muted);
+        }
+        .rule li:last-child { margin-bottom: 0; }
+        .rule li::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 700;
+        }
+        .rule.do li::before { content: "+"; color: #15803D; }
+        .rule.dont li::before { content: "×"; color: #B91C1C; }
+
+        /* Downloads */
+        .downloads {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 600px) { .downloads { grid-template-columns: 1fr; } }
+
+        .download-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.25rem;
+            border: 1px solid rgba(31, 41, 55, 0.1);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--color-text);
+            transition: border-color 0.2s ease;
+        }
+        .download-card:hover { border-color: var(--color-accent); }
+        .download-label {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.9375rem;
+        }
+        .download-meta {
+            font-size: 0.8125rem;
+            color: var(--color-text-muted);
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(31, 41, 55, 0.1);
+        }
+        footer p { font-size: 0.875rem; color: var(--color-text-muted); }
+        footer a { color: var(--color-text-muted); text-decoration: none; }
+        footer a:hover { color: var(--color-accent); }
+
+        ::selection { background-color: var(--color-accent); color: #fff; }
+
+        @media (max-width: 600px) {
+            html { font-size: 16px; }
+            main { padding: 0 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <main role="main">
+        <!-- Top bar -->
+        <section class="top">
+            <a class="logo" href="/" aria-label="Agentic Builders home">
+                <svg class="logo-icon" viewBox="0 0 207 197" fill="none" aria-hidden="true"><path d="M182.431 0H24.4773C11.0912 0 0 11.0912 0 24.4773V172.324C0 185.71 11.0912 196.801 24.4773 196.801H182.115C195.501 196.801 206.592 185.71 206.592 172.324V24.4773C206.911 11.0912 195.817 0 182.431 0ZM19.5819 143.6H16.3182V24.4773C16.3182 19.9135 19.9135 16.3182 24.4773 16.3182H168.078C156.974 88.4382 94.9655 143.6 19.5819 143.6Z" fill="#FC4C03"/></svg>
+                <span class="logo-text">Agentic Builders</span>
+            </a>
+            <a class="back" href="/">&larr; Home</a>
+        </section>
+
+        <!-- Hero -->
+        <section class="hero">
+            <p class="eyebrow">Brand Guidelines</p>
+            <h1>The Agentic Builders brand.</h1>
+            <p class="lead">How we look, sound, and show up — so we stay recognizable everywhere.</p>
+        </section>
+
+        <!-- Logo -->
+        <section>
+            <div class="section-intro">
+                <h2>Logo</h2>
+                <p>Use the full lockup whenever space allows. Pick the variant with the strongest contrast against its background.</p>
+            </div>
+
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <div class="logo-tile"><img src="/brand/logo-color.svg" alt="Agentic Builders logo, color on white"></div>
+                    <div class="caption-row">
+                        <span class="tile-caption">Color on white <em>— preferred</em></span>
+                        <span class="tile-caption"><a href="/brand/logo-color.svg" download>SVG</a></span>
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-tile on-dark"><img src="/brand/logo-white.svg" alt="Agentic Builders logo, white on dark"></div>
+                    <div class="caption-row">
+                        <span class="tile-caption">White on dark</span>
+                        <span class="tile-caption"><a href="/brand/logo-white.svg" download>SVG</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2.5rem;">Icon only</h3>
+            <p>Use for favicons, avatars, and tight spaces where the wordmark won't fit.</p>
+
+            <div class="icon-row">
+                <div>
+                    <div class="icon-tile"><img src="/brand/icon-color.svg" alt="Agentic Builders icon, color"></div>
+                    <div class="caption-row">
+                        <span class="tile-caption">Color</span>
+                        <span class="tile-caption"><a href="/brand/icon-color.svg" download>SVG</a></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-tile on-dark"><img src="/brand/icon-white.svg" alt="Agentic Builders icon, white on dark"></div>
+                    <div class="caption-row">
+                        <span class="tile-caption">White</span>
+                        <span class="tile-caption"><a href="/brand/icon-white.svg" download>SVG</a></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-tile"><img src="/brand/icon-dark.svg" alt="Agentic Builders icon, dark"></div>
+                    <div class="caption-row">
+                        <span class="tile-caption">Dark</span>
+                        <span class="tile-caption"><a href="/brand/icon-dark.svg" download>SVG</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colors -->
+        <section>
+            <div class="section-intro">
+                <h2>Colors</h2>
+                <p>Three primary colors cover ~80% of our design surface. Click any swatch to copy its hex.</p>
+            </div>
+
+            <div class="swatches">
+                <button class="swatch light-text" style="background: #FC4C03;" data-hex="#FC4C03">
+                    <div class="swatch-body">
+                        <div class="swatch-label">Base</div>
+                        <div class="swatch-hex">#FC4C03</div>
+                    </div>
+                    <div class="swatch-role">Primary elements, CTAs, brand moments</div>
+                </button>
+                <button class="swatch light-text" style="background: #1F2937;" data-hex="#1F2937">
+                    <div class="swatch-body">
+                        <div class="swatch-label">Dark</div>
+                        <div class="swatch-hex">#1F2937</div>
+                    </div>
+                    <div class="swatch-role">Text, borders, high-readability elements</div>
+                </button>
+                <button class="swatch dark-text" style="background: #FFFFFF; border-color: rgba(31,41,55,0.15);" data-hex="#FFFFFF">
+                    <div class="swatch-body">
+                        <div class="swatch-label">White</div>
+                        <div class="swatch-hex">#FFFFFF</div>
+                    </div>
+                    <div class="swatch-role">Backgrounds, negative space</div>
+                </button>
+                <button class="swatch light-text" style="background: #B03502;" data-hex="#B03502">
+                    <div class="swatch-body">
+                        <div class="swatch-label">Accent Dark</div>
+                        <div class="swatch-hex">#B03502</div>
+                    </div>
+                    <div class="swatch-role">Buttons, hover states, emphasis</div>
+                </button>
+            </div>
+
+            <h3 style="margin-top: 2.5rem;">Shades</h3>
+            <p>An extended palette for flexibility across states, badges, and backgrounds.</p>
+
+            <div class="shades">
+                <button class="shade light-text" style="background: #7E2601;" data-hex="#7E2601">
+                    <div class="shade-body">
+                        <div class="shade-name">color-700</div>
+                        <div class="shade-hex">#7E2601</div>
+                    </div>
+                </button>
+                <button class="shade light-text" style="background: #B03502;" data-hex="#B03502">
+                    <div class="shade-body">
+                        <div class="shade-name">color-600</div>
+                        <div class="shade-hex">#B03502</div>
+                    </div>
+                </button>
+                <button class="shade light-text" style="background: #E34403;" data-hex="#E34403">
+                    <div class="shade-body">
+                        <div class="shade-name">color-500</div>
+                        <div class="shade-hex">#E34403</div>
+                    </div>
+                </button>
+                <button class="shade light-text" style="background: #FD824F;" data-hex="#FD824F">
+                    <div class="shade-body">
+                        <div class="shade-name">color-300</div>
+                        <div class="shade-hex">#FD824F</div>
+                    </div>
+                </button>
+                <button class="shade dark-text" style="background: #FEA681;" data-hex="#FEA681">
+                    <div class="shade-body">
+                        <div class="shade-name">color-200</div>
+                        <div class="shade-hex">#FEA681</div>
+                    </div>
+                </button>
+                <button class="shade dark-text" style="background: #FEC9B3;" data-hex="#FEC9B3">
+                    <div class="shade-body">
+                        <div class="shade-name">color-100</div>
+                        <div class="shade-hex">#FEC9B3</div>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section>
+            <div class="section-intro">
+                <h2>Typography</h2>
+                <p>Urbanist for display. Inter for body. Keep the pairing — it's what makes us look like us.</p>
+            </div>
+
+            <div class="type-specimen">
+                <div class="type-meta">
+                    <span class="type-name">Urbanist</span>
+                    <span class="type-role">Headlines, hero text, wordmark · Weights 600 / 700 / 800</span>
+                </div>
+                <div class="type-sample-heading">We build AI-native companies.</div>
+                <div class="type-glyphs">AaBbCcDdEeFfGg 1234567890</div>
+            </div>
+
+            <div class="type-specimen">
+                <div class="type-meta">
+                    <span class="type-name">Inter</span>
+                    <span class="type-role">Body text, UI · Weights 400 / 500 / 600</span>
+                </div>
+                <p class="type-sample-body">Agentic Builders backs founders building AI-native companies from the earliest stage. We focus on autonomous agents that deliver 10-100x effectiveness improvements — not dashboards, not copilots, but systems that replace entire workflows.</p>
+            </div>
+        </section>
+
+        <!-- Buttons & UI -->
+        <section>
+            <div class="section-intro">
+                <h2>Buttons &amp; links</h2>
+                <p>White on color-600 for primary actions. Outlined color-600 for secondary. Underlined for inline links.</p>
+            </div>
+
+            <div class="buttons-row">
+                <a href="#" class="btn btn-primary" onclick="event.preventDefault()">Build With Us</a>
+                <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">Learn More</a>
+                <a href="#" class="link-arrow" onclick="event.preventDefault()">View details &rarr;</a>
+            </div>
+
+            <h3 style="margin-top: 2.5rem;">Status badges</h3>
+            <p>For labels, product states, and tagging.</p>
+
+            <div class="badges-row">
+                <span class="badge badge-new">New</span>
+                <span class="badge badge-popular">Popular</span>
+                <span class="badge badge-hot">Hot</span>
+                <span class="badge badge-sale">Sale</span>
+                <span class="badge badge-beta">Beta</span>
+                <span class="badge badge-trending">Trending</span>
+                <span class="badge badge-special">Special</span>
+            </div>
+        </section>
+
+        <!-- Rules -->
+        <section>
+            <div class="section-intro">
+                <h2>Usage rules</h2>
+                <p>Small choices compound. Follow these to keep the mark consistent.</p>
+            </div>
+
+            <div class="rules">
+                <div class="rule do">
+                    <h4>Do</h4>
+                    <ul>
+                        <li>Use the horizontal icon + wordmark lockup</li>
+                        <li>Maintain clear contrast against the background</li>
+                        <li>Keep generous clear space around the mark</li>
+                        <li>Use SVG files for any size above 32px</li>
+                    </ul>
+                </div>
+                <div class="rule dont">
+                    <h4>Don't</h4>
+                    <ul>
+                        <li>Use the text-only wordmark without the icon</li>
+                        <li>Stack vertically, rotate, or stretch the logo</li>
+                        <li>Add gradients, strokes, or shadows</li>
+                        <li>Place the logo on illegible backgrounds</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloads -->
+        <section>
+            <div class="section-intro">
+                <h2>Downloads</h2>
+                <p>Grab the assets you need. SVG scales to any size.</p>
+            </div>
+
+            <div class="downloads">
+                <a class="download-card" href="/brand/logo-color.svg" download>
+                    <span class="download-label">Logo — Color</span>
+                    <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/logo-white.svg" download>
+                    <span class="download-label">Logo — White</span>
+                    <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/logo-dark.svg" download>
+                    <span class="download-label">Logo — Dark</span>
+                    <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/icon-color.svg" download>
+                    <span class="download-label">Icon — Color</span>
+                    <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/icon-white.svg" download>
+                    <span class="download-label">Icon — White</span>
+                    <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/icon-dark.svg" download>
+                    <span class="download-label">Icon — Dark</span>
+                    <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/favicon.ico" download>
+                    <span class="download-label">Favicon</span>
+                    <span class="download-meta">ICO</span>
+                </a>
+                <a class="download-card" href="/apple-touch-icon.png" download>
+                    <span class="download-label">Apple Touch Icon</span>
+                    <span class="download-meta">PNG</span>
+                </a>
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 0.875rem;">Need something else? Email <a href="mailto:hey@agenticbuilders.ai" style="color: var(--color-accent-dark); text-decoration: none;">hey@agenticbuilders.ai</a>.</p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p><a href="/">Home</a> &middot; <a href="https://www.linkedin.com/company/agentic-builders-ai/" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p>&copy; 2026 Agentic Builders Ventures</p>
+    </footer>
+
+    <div class="copied" id="copied" role="status" aria-live="polite">Copied</div>
+
+    <script>
+        const copiedEl = document.getElementById('copied');
+        let copiedTimer;
+
+        document.querySelectorAll('[data-hex]').forEach(el => {
+            el.addEventListener('click', async () => {
+                const hex = el.getAttribute('data-hex');
+                try {
+                    await navigator.clipboard.writeText(hex);
+                    copiedEl.textContent = `Copied ${hex}`;
+                    copiedEl.classList.add('show');
+                    clearTimeout(copiedTimer);
+                    copiedTimer = setTimeout(() => copiedEl.classList.remove('show'), 1400);
+                } catch (e) {
+                    // clipboard blocked — silent fallback
+                }
+            });
+        });
+    </script>
+</body>
+</html>
