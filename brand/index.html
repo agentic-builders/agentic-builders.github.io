@@ -114,11 +114,10 @@
         /* Logo showcase */
         .logo-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1rem;
             margin-top: 1.5rem;
         }
-        @media (max-width: 600px) { .logo-grid { grid-template-columns: 1fr; } }
 
         .logo-tile {
             border: 1px solid rgba(31, 41, 55, 0.1);
@@ -522,14 +521,21 @@
                     <div class="logo-tile"><img src="/brand/logo-color.svg" alt="Agentic Builders logo, color on white"></div>
                     <div class="caption-row">
                         <span class="tile-caption">Color on white <em>— preferred</em></span>
-                        <span class="tile-caption"><a href="/brand/logo-color.svg" download>SVG</a></span>
+                        <span class="tile-caption"><a href="/brand/logo-color.svg" download>SVG</a> · <a href="/brand/logo-color.png" download>PNG</a></span>
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="logo-tile on-dark"><img src="/brand/logo-white.svg" alt="Agentic Builders logo, white on dark"></div>
                     <div class="caption-row">
                         <span class="tile-caption">White on dark</span>
-                        <span class="tile-caption"><a href="/brand/logo-white.svg" download>SVG</a></span>
+                        <span class="tile-caption"><a href="/brand/logo-white.svg" download>SVG</a> · <a href="/brand/logo-white.png" download>PNG</a></span>
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-tile"><img src="/brand/logo-dark.svg" alt="Agentic Builders logo, dark on white"></div>
+                    <div class="caption-row">
+                        <span class="tile-caption">Dark on white</span>
+                        <span class="tile-caption"><a href="/brand/logo-dark.svg" download>SVG</a> · <a href="/brand/logo-dark.png" download>PNG</a></span>
                     </div>
                 </div>
             </div>
@@ -542,21 +548,21 @@
                     <div class="icon-tile"><img src="/brand/icon-color.svg" alt="Agentic Builders icon, color"></div>
                     <div class="caption-row">
                         <span class="tile-caption">Color</span>
-                        <span class="tile-caption"><a href="/brand/icon-color.svg" download>SVG</a></span>
+                        <span class="tile-caption"><a href="/brand/icon-color.svg" download>SVG</a> · <a href="/brand/icon-color.png" download>PNG</a></span>
                     </div>
                 </div>
                 <div>
                     <div class="icon-tile on-dark"><img src="/brand/icon-white.svg" alt="Agentic Builders icon, white on dark"></div>
                     <div class="caption-row">
                         <span class="tile-caption">White</span>
-                        <span class="tile-caption"><a href="/brand/icon-white.svg" download>SVG</a></span>
+                        <span class="tile-caption"><a href="/brand/icon-white.svg" download>SVG</a> · <a href="/brand/icon-white.png" download>PNG</a></span>
                     </div>
                 </div>
                 <div>
                     <div class="icon-tile"><img src="/brand/icon-dark.svg" alt="Agentic Builders icon, dark"></div>
                     <div class="caption-row">
                         <span class="tile-caption">Dark</span>
-                        <span class="tile-caption"><a href="/brand/icon-dark.svg" download>SVG</a></span>
+                        <span class="tile-caption"><a href="/brand/icon-dark.svg" download>SVG</a> · <a href="/brand/icon-dark.png" download>PNG</a></span>
                     </div>
                 </div>
             </div>
@@ -728,7 +734,7 @@
         <section>
             <div class="section-intro">
                 <h2>Downloads</h2>
-                <p>Grab the assets you need. SVG scales to any size.</p>
+                <p>Grab the assets you need. SVG scales cleanly; PNG is ready for raster workflows.</p>
             </div>
 
             <div class="downloads">
@@ -736,25 +742,49 @@
                     <span class="download-label">Logo — Color</span>
                     <span class="download-meta">SVG</span>
                 </a>
+                <a class="download-card" href="/brand/logo-color.png" download>
+                    <span class="download-label">Logo — Color</span>
+                    <span class="download-meta">PNG</span>
+                </a>
                 <a class="download-card" href="/brand/logo-white.svg" download>
                     <span class="download-label">Logo — White</span>
                     <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/logo-white.png" download>
+                    <span class="download-label">Logo — White</span>
+                    <span class="download-meta">PNG</span>
                 </a>
                 <a class="download-card" href="/brand/logo-dark.svg" download>
                     <span class="download-label">Logo — Dark</span>
                     <span class="download-meta">SVG</span>
                 </a>
+                <a class="download-card" href="/brand/logo-dark.png" download>
+                    <span class="download-label">Logo — Dark</span>
+                    <span class="download-meta">PNG</span>
+                </a>
                 <a class="download-card" href="/brand/icon-color.svg" download>
                     <span class="download-label">Icon — Color</span>
                     <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/icon-color.png" download>
+                    <span class="download-label">Icon — Color</span>
+                    <span class="download-meta">PNG</span>
                 </a>
                 <a class="download-card" href="/brand/icon-white.svg" download>
                     <span class="download-label">Icon — White</span>
                     <span class="download-meta">SVG</span>
                 </a>
+                <a class="download-card" href="/brand/icon-white.png" download>
+                    <span class="download-label">Icon — White</span>
+                    <span class="download-meta">PNG</span>
+                </a>
                 <a class="download-card" href="/brand/icon-dark.svg" download>
                     <span class="download-label">Icon — Dark</span>
                     <span class="download-meta">SVG</span>
+                </a>
+                <a class="download-card" href="/brand/icon-dark.png" download>
+                    <span class="download-label">Icon — Dark</span>
+                    <span class="download-meta">PNG</span>
                 </a>
                 <a class="download-card" href="/favicon.ico" download>
                     <span class="download-label">Favicon</span>
