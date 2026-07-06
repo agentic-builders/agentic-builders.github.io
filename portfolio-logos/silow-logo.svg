@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Silow logo</title>
+  <rect width="128" height="128" rx="24" fill="#0F172A"/>
+  <path d="M83 36H53.5C43.8 36 36 43.8 36 53.5S43.8 71 53.5 71H74.5C80.3 71 85 75.7 85 81.5S80.3 92 74.5 92H42" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="92" cy="36" r="8" fill="#FC4C03"/>
+  <circle cx="36" cy="92" r="8" fill="#FC4C03"/>
+</svg>
