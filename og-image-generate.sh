@@ -14,7 +14,7 @@ magick -size 2400x1260 xc:'#FFFFFF' \
   -font 'Avenir-Book' \
   -fill '#6B7280' -pointsize 64 -gravity NorthWest \
   -annotate +148+760 'Products for agents, built by' \
-  -annotate +148+845 'AI-native teams that learn faster' \
+  -annotate +148+845 'AI-native teams that learn fast' \
   "$OUTPUT"
 
 echo "Generated: $OUTPUT"
