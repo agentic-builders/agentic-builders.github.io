@@ -19,8 +19,8 @@ magick -size 2400x1260 xc:'#FFFFFF' \
   -annotate +140+380 'Agentic Builders' \
   -font "$FONT_REGULAR" \
   -fill '#6B7280' -pointsize 56 -gravity NorthWest \
-  -annotate +148+720 'We help agentic founders build AI-native' \
-  -annotate +148+790 'companies from day one' \
+  -annotate +148+720 'Products for agents,' \
+  -annotate +148+790 'built by AI-native teams' \
   "$OUTPUT"
 
 echo "Generated: $OUTPUT"
