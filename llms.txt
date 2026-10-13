@@ -1,0 +1,37 @@
+# Agentic Builders
+
+> Early-stage venture fund investing from idea to pre-seed in agent-native applications: products AI agents use and tools for building agent products. First checks of $30k–$80k on a standard post-money SAFE, founder cohorts, and help reaching the next round. Based in Delaware, US. Founded 2025.
+
+## Key facts
+
+- Stage: idea to pre-seed
+- First check: $30,000–$80,000, standard post-money SAFE, no follow-on checks
+- Thesis: (a) products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks; (b) tools to build, test, secure, launch, track and sell agent products
+- Teams: AI-native founders who have built a startup before, sell into the US, have someone on the team who sells, can be in the US, and share numbers monthly
+- Format: cohorts with a shared start, weekly rhythm, shared go-to-market materials, guild sessions, tool credits, and a demo day with friendly funds
+- The founder builds the product; the fund funds the start and gets the team to the next investors
+- Apply: https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 (reviewed weekly)
+- Contact: hey@agenticbuilders.ai
+- LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/
+
+## Pages
+
+- [Home](https://agenticbuilders.ai/): thesis, who we back, how it works, portfolio, FAQ
+- [Brand](https://agenticbuilders.ai/brand/): logo files and brand colors
+- [Full text for LLMs](https://agenticbuilders.ai/llms-full.txt): complete site content in plain text
+
+## Portfolio (13 companies, updated 2026-10-13)
+
+- [Eqvesta](https://eqvesta.com/): autonomous family office for the first $200,000
+- [Silow](https://silow.ai): AI roadmap platform for companies
+- [Heron](https://heron.ing/): AI agent review and audit platform
+- [kone](https://kone.vc): monetization layer for AI agents via MCP
+- [Agentiqa](https://agentiqa.com): visual, agentic, self-healing test automation
+- [Theona](https://theona.ai): no-code AI agent platform
+- [HookRadar](https://hookradar.net): competitive ad intelligence
+- [VisibilityPro](https://visibilitypro.ai): generative engine optimization platform
+- [Aprena Academy](https://aprena.academy/): AI-powered career guidance
+- [FINA](https://fina.team/): financial automations
+- [Rolloo](https://www.rolloo.app/): AI role-play training for workplace conversations
+- [StoryFlow](https://storyflow.uk/): AI-powered LinkedIn storytelling companion
+- [Edvancium](https://edvancium.com/): exam preparation with AI tutoring

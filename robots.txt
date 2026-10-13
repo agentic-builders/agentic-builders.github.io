@@ -1,4 +1,32 @@
+# Agentic Builders — https://agenticbuilders.ai
+# Search engines and AI answer engines are welcome to index and cite this site.
+
 User-agent: *
+Allow: /
+
+# AI search / citation crawlers (explicitly allowed)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://agenticbuilders.ai/sitemap.xml

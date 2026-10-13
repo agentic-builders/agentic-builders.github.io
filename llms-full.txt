@@ -1,0 +1,89 @@
+# Agentic Builders — full site text
+
+Source: https://agenticbuilders.ai/
+Last updated: 2026-10-13
+Language: English
+
+## Summary
+
+Agentic Builders is an early-stage venture fund for agent-native applications. It invests from idea to pre-seed in products agents use and tools for building agent products. First checks are $30,000–$80,000 on a standard post-money SAFE. Teams join in cohorts of founders selling into the US and get a clear path to the next round. Legal entity: Agentic Builders Inc. (Delaware, US). Founded 2025.
+
+## The opportunity
+
+As agents do more of the work, they need software built for them. These products help agents find tools, use services and finish work for people and businesses. Agentic Builders backs the founders building that layer.
+
+## What we invest in
+
+Products agents use: products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks.
+
+Tools for agent products: tools to build, test, secure, launch, track and sell agent products.
+
+AI-native teams: founders who use AI across product development and company operations. They build lean teams around AI from day one.
+
+## Who we back
+
+Five things we look for in every team:
+
+1. Built a startup before. Not necessarily a successful one.
+2. Sell into the US. Target market is the US, or global with first customers in the US.
+3. Someone on the team sells. At least one customer or pilot closed personally, in any project.
+4. Can be in the US. A passport or visa, weeks on the ground, and a move when the round comes.
+5. Share numbers monthly. Seven fields, once a month, without reminders, and show up to the cohort rhythm.
+
+What strengthens an application: experience in your industry, a first pilot or revenue, two founders instead of one, and a team that has worked together before.
+
+## How it works
+
+1. Apply. One form, reviewed weekly. Describe what you are building, who the agent user is, and what you have sold so far.
+2. First check. $30k–$80k on a standard post-money SAFE, with help to set up a Delaware company and clean documents from day one.
+3. Cohort. A shared start, a weekly rhythm, shared go-to-market materials, guild sessions on AI engineering, product and GTM, plus tool credits and discounts.
+4. Next round. Monthly tracking toward raise-readiness, a curated investor database and a demo day where the cohort meets friendly funds.
+
+What founders get: capital (idea-to-pre-seed money); AI and product guidance (hands-on guidance in AI, product and technical architecture); legal and operations (incorporation, SAFEs, IP, hiring and finance); network (AI-native founders, technical advisors, early customers and the investors who do the next round).
+
+The founder builds the product. The fund does not build it.
+
+## Portfolio (13 companies)
+
+- Eqvesta (https://eqvesta.com/): Autonomous family office for the first $200,000. AI agents track what you own, watch costly deadlines and surface decisions without touching your money.
+- Silow (https://silow.ai): AI roadmap platform. Turns how your company works into a ranked plan for where AI will pay back, while your data stays yours.
+- Heron (https://heron.ing/): AI agent review and audit platform. Interrogates agents, verifies scope against MCP, OAuth and environment access, and produces approval-ready evidence.
+- kone (https://kone.vc): The monetization layer for AI agents. Lets agents and open-source tools earn revenue through contextual, task-aware recommendations via MCP.
+- Agentiqa (https://agentiqa.com): Visual, agentic, self-healing test automation. AI explores your app, finds bugs and builds reusable QA plans.
+- Theona (https://theona.ai): No-code AI agent platform. Launch autonomous assistants that handle business tasks across integrated tools.
+- HookRadar (https://hookradar.net): Competitive ad intelligence. Analyze competitor ads and viral trends, see what is scaling and get ready-to-use assets.
+- VisibilityPro (https://visibilitypro.ai): Generative Engine Optimization platform. Track and improve how your brand appears in AI answers across ChatGPT, Claude, Perplexity and Gemini.
+- Aprena Academy (https://aprena.academy/): AI-powered career guidance for professionals.
+- FINA (https://fina.team/): Financial automations that cut manual work.
+- Rolloo (https://www.rolloo.app/): AI role-play training for difficult workplace conversations.
+- StoryFlow (https://storyflow.uk/): AI-powered LinkedIn storytelling companion.
+- Edvancium (https://edvancium.com/): Exam preparation with interactive lessons, active-recall flashcards and AI tutoring.
+
+## FAQ
+
+Q: What does Agentic Builders invest in?
+A: Agent-native applications: products that AI agents find and use to research, work with data, communicate, buy, sell, create content and run business tasks, and tools to build, test, secure, launch, track and sell agent products.
+
+Q: What stage and check size does Agentic Builders invest at?
+A: Idea to pre-seed. A first check is $30,000 to $80,000 on a standard post-money SAFE. The fund does not do follow-on checks; its job is to get the team to the next round from other investors.
+
+Q: What is an agent-native application?
+A: Software designed for AI agents as its primary users, not people. Agents discover it, call it and pay for it to complete work on behalf of people and businesses. Examples: data services, payment and monetization layers, testing and audit tools, agent platforms.
+
+Q: Who does Agentic Builders back?
+A: AI-native teams that use AI across product development and company operations; founders who have built a startup before, sell into the US, have someone on the team who sells, can physically be in the US, and share numbers monthly.
+
+Q: Does the fund build the product for the team?
+A: No. The founder builds the product. Agentic Builders provides the first check, a cohort of peer founders, guidance on AI and product architecture, help with legal, incorporation and operations, and introductions to the next investors.
+
+Q: How does the cohort work?
+A: Shared start date, shared weekly rhythm, shared go-to-market materials, monthly updates and a demo day where the cohort is shown to friendly funds. Founders also get guild sessions on AI engineering, product and go-to-market, plus tool credits and discounts.
+
+Q: How do I apply?
+A: Fill in the application form (https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9) or email hey@agenticbuilders.ai. Applications are reviewed weekly.
+
+## Contact
+
+- Email: hey@agenticbuilders.ai
+- LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/
+- Brand assets: https://agenticbuilders.ai/brand/

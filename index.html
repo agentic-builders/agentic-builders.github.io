@@ -3,614 +3,539 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agentic Builders - Early-stage fund for agent-native applications</title>
-    <meta name="description" content="Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products.">
-    <meta name="keywords" content="AI venture fund, agent-native applications, products for AI agents, agent tools, AI-native teams, pre-seed investment, agentic AI, AI startup fund">
+    <title>Agentic Builders — Early-stage fund for agent-native applications</title>
+    <meta name="description" content="Agentic Builders invests from idea to pre-seed in products AI agents use and tools for building agent products. First checks of $30k–$80k, founder cohorts, a path to the next round.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="canonical" href="https://agenticbuilders.ai/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://agenticbuilders.ai/">
-    <meta property="og:title" content="Agentic Builders - Early-stage fund for agent-native applications">
-    <meta property="og:description" content="We back products for agents and the AI-native teams building them.">
-    <meta property="og:image" content="https://agenticbuilders.ai/og-image.png?v=3">
+    <meta property="og:title" content="Agentic Builders — Early-stage fund for agent-native applications">
+    <meta property="og:description" content="We back products for agents and the AI-native teams building them. Idea to pre-seed, first checks of $30k–$80k.">
+    <meta property="og:image" content="https://agenticbuilders.ai/og-image.png?v=4">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Agentic Builders">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://agenticbuilders.ai/">
-    <meta name="twitter:title" content="Agentic Builders - Early-stage fund for agent-native applications">
-    <meta name="twitter:description" content="We back products for agents and the AI-native teams building them.">
-    <meta name="twitter:image" content="https://agenticbuilders.ai/og-image.png?v=3">
+    <meta name="twitter:title" content="Agentic Builders — Early-stage fund for agent-native applications">
+    <meta name="twitter:description" content="We back products for agents and the AI-native teams building them. Idea to pre-seed, first checks of $30k–$80k.">
+    <meta name="twitter:image" content="https://agenticbuilders.ai/og-image.png?v=4">
 
-    <!-- Favicon -->
+    <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://agenticbuilders.ai/">
 
     <!-- Fonts: Urbanist for headlines, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@600;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --color-bg: #FFFFFF;
-            --color-text: #1F2937;
-            --color-text-muted: #6B7280;
-            --color-accent: #FC4C03;
-            --color-accent-dark: #B03502;
-            --color-accent-darker: #7E2601;
-            --color-accent-light: #FEA681;
-            --color-accent-lighter: #FEC9B3;
-            --font-heading: 'Urbanist', sans-serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            --max-width: 720px;
-            --spacing-section: clamp(4rem, 10vw, 8rem);
-        }
+    <link rel="stylesheet" href="/assets/style.css?v=2026-10-13">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
 
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            font-size: 18px;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-body);
-            background-color: var(--color-bg);
-            color: var(--color-text);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        main {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        section {
-            padding: var(--spacing-section) 0;
-        }
-
-        section + section {
-            border-top: 1px solid rgba(31, 41, 55, 0.1);
-        }
-
-        /* Typography */
-        h1, h2, h3 {
-            font-family: var(--font-heading);
-            line-height: 1.2;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: var(--color-text);
-        }
-
-        h1 {
-            font-size: clamp(2.5rem, 6vw, 3.5rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-        }
-
-        h1 .line {
-            display: block;
-            white-space: nowrap;
-        }
-
-        h2 {
-            font-size: clamp(1.5rem, 4vw, 2rem);
-            margin-bottom: 1.25rem;
-        }
-
-        h3 {
-            font-size: 1.125rem;
-            margin-bottom: 0.75rem;
-        }
-
-        p {
-            color: var(--color-text-muted);
-            margin-bottom: 1rem;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        .lead {
-            font-size: 1.25rem;
-            line-height: 1.5;
-        }
-
-        /* Hero */
-        .hero {
-            padding-top: clamp(4rem, 15vw, 10rem);
-            padding-bottom: var(--spacing-section);
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 3rem;
-            text-decoration: none;
-        }
-
-        .logo-icon {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-        }
-
-        .logo-text {
-            font-family: var(--font-heading);
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--color-text);
-            letter-spacing: -0.02em;
-        }
-
-        .hero h1 {
-            color: var(--color-text);
-        }
-
-        .hero .lead {
-            max-width: 540px;
-            margin-bottom: 2.5rem;
-        }
-
-        /* Button - Brand guidelines: White on color-600 */
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background-color: var(--color-accent-dark);
-            color: #FFFFFF;
-            text-decoration: none;
-            font-family: var(--font-body);
-            font-weight: 600;
-            font-size: 1rem;
-            border-radius: 2px;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--color-accent);
-        }
-
-        .btn:focus {
-            outline: 2px solid var(--color-accent);
-            outline-offset: 2px;
-        }
-
-        /* Content sections */
-        .content-block {
-            margin-bottom: 2rem;
-        }
-
-        .content-block:last-child {
-            margin-bottom: 0;
-        }
-
-        /* List styling */
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: var(--color-text-muted);
-        }
-
-        ul li::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0.7em;
-            width: 6px;
-            height: 6px;
-            background-color: var(--color-accent);
-            border-radius: 50%;
-        }
-
-        /* Portfolio */
-        /* Pillars */
-        .pillars-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .what-we-provide .pillar h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .pillar-label {
-            font-size: 0.8125rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--color-accent-dark);
-            margin-bottom: 0.75rem;
-        }
-
-        @media (max-width: 600px) {
-            .pillars-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .portfolio-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .portfolio-card {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.25rem;
-            text-decoration: none;
-            color: inherit;
-            padding: 1.5rem;
-            border: 1px solid rgba(31, 41, 55, 0.1);
-            border-radius: 4px;
-            transition: border-color 0.2s ease;
-        }
-
-        .portfolio-card:hover {
-            border-color: var(--color-accent);
-        }
-
-        .portfolio-card-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 8px;
-            flex-shrink: 0;
-            object-fit: contain;
-        }
-
-        .portfolio-card-icon--wide {
-            border-radius: 0;
-        }
-
-        .portfolio-card-content {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .portfolio-card-name {
-            font-family: var(--font-heading);
-            font-weight: 700;
-            font-size: 1.125rem;
-            color: var(--color-text);
-            margin-bottom: 0.25rem;
-        }
-
-        .portfolio-card-desc {
-            font-size: 0.9375rem;
-            color: var(--color-text-muted);
-            margin-bottom: 0;
-            line-height: 1.5;
-        }
-
-        .portfolio-updated {
-            margin-top: 2rem;
-            font-size: 0.8125rem;
-            color: var(--color-text-muted);
-            opacity: 0.7;
-        }
-
-        /* Contact section */
-        .contact h2 {
-            margin-bottom: 1rem;
-        }
-
-        .contact-email {
-            font-size: 1.25rem;
-            font-weight: 500;
-        }
-
-        .contact-email a {
-            color: var(--color-accent-dark);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .contact-email a:hover {
-            color: var(--color-accent);
-        }
-
-        .contact-email a:focus {
-            outline: 2px solid var(--color-accent);
-            outline-offset: 2px;
-        }
-
-        /* Footer */
-        footer {
-            padding: 3rem 0;
-            text-align: center;
-            border-top: 1px solid rgba(31, 41, 55, 0.1);
-        }
-
-        footer p {
-            font-size: 0.875rem;
-            color: var(--color-text-muted);
-        }
-
-        .footer-link {
-            color: var(--color-text-muted);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .footer-link:hover {
-            color: var(--color-accent);
-        }
-
-        /* Focus states for accessibility */
-        a:focus-visible,
-        button:focus-visible {
-            outline: 2px solid var(--color-accent);
-            outline-offset: 2px;
-        }
-
-        /* Selection */
-        ::selection {
-            background-color: var(--color-accent);
-            color: white;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            html {
-                font-size: 16px;
-            }
-
-            main {
-                padding: 0 1.25rem;
-            }
-
-            .logo {
-                margin-bottom: 2rem;
-            }
-
-            h1 .line {
-                white-space: normal;
-            }
-        }
-    </style>
-
-    <!-- Structured Data -->
+    <!-- Structured data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Agentic Builders",
-        "legalName": "Agentic Builders Ventures",
-        "url": "https://agenticbuilders.ai",
-        "logo": "https://agenticbuilders.ai/favicon.svg",
-        "description": "Early-stage fund investing from idea to pre-seed in products agents use and tools for building agent products.",
-        "email": "hey@agenticbuilders.ai",
-        "sameAs": [
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://agenticbuilders.ai/#organization",
+          "name": "Agentic Builders",
+          "legalName": "Agentic Builders Inc.",
+          "url": "https://agenticbuilders.ai/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://agenticbuilders.ai/brand/logo-color.png",
+            "width": 1060,
+            "height": 160
+          },
+          "image": "https://agenticbuilders.ai/og-image.png?v=4",
+          "description": "Early-stage venture fund investing from idea to pre-seed in products AI agents use and tools for building agent products. First checks of $30k–$80k, founder cohorts, and help reaching the next round.",
+          "email": "hey@agenticbuilders.ai",
+          "foundingDate": "2025",
+          "foundingLocation": {
+            "@type": "Place",
+            "address": { "@type": "PostalAddress", "addressRegion": "Delaware", "addressCountry": "US" }
+          },
+          "areaServed": "US",
+          "sameAs": [
             "https://www.linkedin.com/company/agentic-builders-ai/"
-        ],
-        "knowsAbout": [
-            "Artificial Intelligence",
-            "Agent-native Applications",
-            "Products for AI Agents",
-            "Agent Product Tools",
-            "AI-native Companies",
-            "Pre-seed Investment",
-            "Venture Capital"
-        ],
-        "foundingDate": "2025"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Agentic Builders - Early-stage fund for agent-native applications",
-        "url": "https://agenticbuilders.ai",
-        "description": "Agentic Builders backs products for agents and the AI-native teams building them.",
-        "speakable": {
+          ],
+          "knowsAbout": [
+            "Agent-native applications",
+            "AI agents",
+            "Products for AI agents",
+            "Tools for building agent products",
+            "Pre-seed investment",
+            "Venture capital",
+            "AI-native startups"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Founder applications",
+            "email": "hey@agenticbuilders.ai",
+            "availableLanguage": ["en"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://agenticbuilders.ai/#website",
+          "url": "https://agenticbuilders.ai/",
+          "name": "Agentic Builders",
+          "publisher": { "@id": "https://agenticbuilders.ai/#organization" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://agenticbuilders.ai/#webpage",
+          "url": "https://agenticbuilders.ai/",
+          "name": "Agentic Builders — Early-stage fund for agent-native applications",
+          "description": "Agentic Builders invests from idea to pre-seed in products AI agents use and tools for building agent products.",
+          "isPartOf": { "@id": "https://agenticbuilders.ai/#website" },
+          "about": { "@id": "https://agenticbuilders.ai/#organization" },
+          "datePublished": "2025-09-01",
+          "dateModified": "2026-10-13",
+          "inLanguage": "en",
+          "speakable": {
             "@type": "SpeakableSpecification",
-            "cssSelector": [".hero h1", ".hero .lead", ".thesis .lead", ".thesis p"]
+            "cssSelector": [".hero h1", ".hero .lead", "#thesis p", "#faq .faq-answer"]
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://agenticbuilders.ai/#portfolio",
+          "name": "Agentic Builders portfolio",
+          "numberOfItems": 13,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "item": { "@type": "Organization", "name": "Eqvesta", "url": "https://eqvesta.com/", "description": "Autonomous family office for the first $200,000." } },
+            { "@type": "ListItem", "position": 2, "item": { "@type": "Organization", "name": "Silow", "url": "https://silow.ai", "description": "AI roadmap platform that turns how a company works into a ranked plan for where AI pays back." } },
+            { "@type": "ListItem", "position": 3, "item": { "@type": "Organization", "name": "Heron", "url": "https://heron.ing/", "description": "AI agent review and audit platform." } },
+            { "@type": "ListItem", "position": 4, "item": { "@type": "Organization", "name": "kone", "url": "https://kone.vc", "description": "Monetization layer for AI agents via MCP." } },
+            { "@type": "ListItem", "position": 5, "item": { "@type": "Organization", "name": "Agentiqa", "url": "https://agentiqa.com", "description": "Visual, agentic, self-healing test automation." } },
+            { "@type": "ListItem", "position": 6, "item": { "@type": "Organization", "name": "Theona", "url": "https://theona.ai", "description": "No-code AI agent platform." } },
+            { "@type": "ListItem", "position": 7, "item": { "@type": "Organization", "name": "HookRadar", "url": "https://hookradar.net", "description": "Competitive ad intelligence." } },
+            { "@type": "ListItem", "position": 8, "item": { "@type": "Organization", "name": "VisibilityPro", "url": "https://visibilitypro.ai", "description": "Generative Engine Optimization platform." } },
+            { "@type": "ListItem", "position": 9, "item": { "@type": "Organization", "name": "Aprena Academy", "url": "https://aprena.academy/", "description": "AI-powered career guidance." } },
+            { "@type": "ListItem", "position": 10, "item": { "@type": "Organization", "name": "FINA", "url": "https://fina.team/", "description": "Financial automations." } },
+            { "@type": "ListItem", "position": 11, "item": { "@type": "Organization", "name": "Rolloo", "url": "https://www.rolloo.app/", "description": "AI role-play training for workplace conversations." } },
+            { "@type": "ListItem", "position": 12, "item": { "@type": "Organization", "name": "StoryFlow", "url": "https://storyflow.uk/", "description": "AI-powered LinkedIn storytelling companion." } },
+            { "@type": "ListItem", "position": 13, "item": { "@type": "Organization", "name": "Edvancium", "url": "https://edvancium.com/", "description": "Exam preparation with interactive lessons and AI tutoring." } }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://agenticbuilders.ai/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Agentic Builders invest in?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Agentic Builders invests in agent-native applications: products that AI agents find and use to research, work with data, communicate, buy, sell, create content and run business tasks, and tools to build, test, secure, launch, track and sell agent products." }
+            },
+            {
+              "@type": "Question",
+              "name": "What stage and check size does Agentic Builders invest at?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Agentic Builders invests from idea to pre-seed. A first check is $30,000 to $80,000 on a standard post-money SAFE. The fund does not do follow-on checks; its job is to get the team to the next round from other investors." }
+            },
+            {
+              "@type": "Question",
+              "name": "What is an agent-native application?",
+              "acceptedAnswer": { "@type": "Answer", "text": "An agent-native application is software designed for AI agents as its primary users, not people. Agents discover it, call it and pay for it to complete work on behalf of people and businesses. Examples include data services, payment and monetization layers, testing and audit tools, and agent platforms." }
+            },
+            {
+              "@type": "Question",
+              "name": "Who does Agentic Builders back?",
+              "acceptedAnswer": { "@type": "Answer", "text": "AI-native teams that use AI across product development and company operations. We look for founders who have built a startup before, sell into the US market, have someone on the team who sells, can physically be in the US, and share numbers monthly." }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the fund build the product for the team?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No. The founder builds the product. Agentic Builders provides the first check, a cohort of peer founders, guidance on AI and product architecture, help with legal, incorporation and operations, and introductions to the next investors when the company is ready to raise." }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the cohort work?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Teams join in cohorts with a shared start date, a shared weekly rhythm, shared go-to-market materials, monthly updates and a demo day where the cohort is shown to friendly funds. Founders also get guild sessions on AI engineering, product and go-to-market, plus tool credits and discounts." }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I apply to Agentic Builders?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Fill in the application form linked from agenticbuilders.ai or email hey@agenticbuilders.ai. Applications are reviewed weekly. Include what you are building, who the agent user is, your team and any early customers or pilots." }
+            }
+          ]
         }
+      ]
     }
     </script>
 </head>
 <body>
-    <main role="main">
-        <!-- Hero -->
-        <section class="hero">
-            <header class="logo" role="banner" aria-label="Agentic Builders">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="top">
+        <nav class="nav-pill" aria-label="Primary">
+            <a href="/" class="logo" aria-label="Agentic Builders home">
                 <svg class="logo-icon" viewBox="0 0 207 197" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M182.431 0H24.4773C11.0912 0 0 11.0912 0 24.4773V172.324C0 185.71 11.0912 196.801 24.4773 196.801H182.115C195.501 196.801 206.592 185.71 206.592 172.324V24.4773C206.911 11.0912 195.817 0 182.431 0ZM19.5819 143.6H16.3182V24.4773C16.3182 19.9135 19.9135 16.3182 24.4773 16.3182H168.078C156.974 88.4382 94.9655 143.6 19.5819 143.6Z" fill="#FC4C03"/></svg>
-                <span class="logo-text">Agentic Builders</span>
-            </header>
-            <h1><span class="line">Early-stage fund</span><span class="line">for agent-native</span><span class="line">applications</span></h1>
-            <p class="lead">We invest from idea to pre-seed in products agents use and tools for building agent products.</p>
-            <a href="https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9" target="_blank" rel="noopener" class="btn">Apply for Funding</a>
-        </section>
+                <span class="logo-text" translate="no">Agentic Builders</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#thesis">Thesis</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9" target="_blank" rel="noopener" class="btn btn-sm">Apply</a>
+        </nav>
+    </header>
 
-        <!-- Thesis -->
-        <section class="thesis">
-            <h2>The Opportunity</h2>
-            <p class="lead">As agents do more work, they need software built for them.</p>
-            <p>These products help agents find tools, use services, and complete work for people and businesses.</p>
-        </section>
-
-        <!-- Pillars -->
-        <section class="pillars">
-            <h2>What We Invest In</h2>
-            <div class="pillars-grid">
-                <div class="pillar">
-                    <h3>Products Agents Use</h3>
-                    <p>Products agents can find and use to research, work with data, communicate, buy, sell, create content, and run business tasks.</p>
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1 id="hero-title">
+                        <span class="w">Early-stage</span> <span class="w">fund</span> <span class="w">for</span>
+                        <span class="w accent">agent-native</span> <span class="w">applications</span>
+                    </h1>
+                    <p class="lead">We invest from idea to pre-seed in products agents use and tools for building agent products. First checks of $30k–$80k, cohorts of founders selling into the US, and a clear path to the next round.</p>
+                    <div class="hero-actions">
+                        <a href="https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9" target="_blank" rel="noopener" class="btn">Apply for Funding</a>
+                        <a href="#portfolio" class="link-arrow">See the portfolio<span aria-hidden="true">→</span></a>
+                    </div>
                 </div>
-                <div class="pillar">
-                    <h3>Tools for Agent Products</h3>
-                    <p>Tools to build, test, secure, launch, track, and sell agent products.</p>
+                <div class="hero-art" aria-hidden="true">
+                    <svg class="net" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#FC4C03" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#FC4C03" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                        <circle class="hub-glow" cx="200" cy="200" r="120" fill="url(#hubGlow)"/>
+                        <circle class="ring" cx="200" cy="200" r="86" fill="none" stroke="#FC4C03" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3 7"/>
+
+                        <g class="edges" fill="none" stroke="#1F2937" stroke-opacity="0.22" stroke-width="1.25" stroke-linecap="round">
+                            <path d="M200 200 L128 150 L62 92"/>
+                            <path d="M200 200 L274 148 L340 86"/>
+                            <path d="M200 200 L126 254 L64 312"/>
+                            <path d="M200 200 L276 252 L338 318"/>
+                            <path d="M200 200 L200 46"/>
+                            <path d="M200 200 L200 356"/>
+                            <path d="M200 200 L42 200"/>
+                            <path d="M200 200 L358 200"/>
+                        </g>
+
+                        <g class="pulses" fill="#FC4C03">
+                            <circle r="3" style="offset-path: path('M200 200 L128 150 L62 92'); animation-delay: 0s"/>
+                            <circle r="3" style="offset-path: path('M200 200 L274 148 L340 86'); animation-delay: 1.1s"/>
+                            <circle r="3" style="offset-path: path('M200 200 L126 254 L64 312'); animation-delay: 2.3s"/>
+                            <circle r="3" style="offset-path: path('M200 200 L276 252 L338 318'); animation-delay: 0.6s"/>
+                            <circle r="3" style="offset-path: path('M200 200 L200 46'); animation-delay: 1.7s"/>
+                            <circle r="3" style="offset-path: path('M200 200 L200 356'); animation-delay: 2.9s"/>
+                            <circle r="3" style="offset-path: path('M200 200 L42 200'); animation-delay: 0.3s"/>
+                            <circle r="3" style="offset-path: path('M200 200 L358 200'); animation-delay: 2.0s"/>
+                        </g>
+
+                        <g class="nodes">
+                            <g class="node mid" style="--i:1"><circle cx="128" cy="150" r="4" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.45"/></g>
+                            <g class="node mid" style="--i:2"><circle cx="274" cy="148" r="4" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.45"/></g>
+                            <g class="node mid" style="--i:3"><circle cx="126" cy="254" r="4" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.45"/></g>
+                            <g class="node mid" style="--i:4"><circle cx="276" cy="252" r="4" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.45"/></g>
+
+                            <g class="node outer" style="--i:5"><circle cx="62" cy="92" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="62" y="96">search</text></g>
+                            <g class="node outer" style="--i:6"><circle cx="340" cy="86" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="340" y="90">data</text></g>
+                            <g class="node outer" style="--i:7"><circle cx="64" cy="312" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="64" y="316">buy</text></g>
+                            <g class="node outer" style="--i:8"><circle cx="338" cy="318" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="338" y="322">sell</text></g>
+                            <g class="node outer" style="--i:9"><circle cx="200" cy="46" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="200" y="50">build</text></g>
+                            <g class="node outer" style="--i:10"><circle cx="200" cy="356" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="200" y="360">test</text></g>
+                            <g class="node outer" style="--i:11"><circle cx="42" cy="200" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="42" y="204">pay</text></g>
+                            <g class="node outer" style="--i:12"><circle cx="358" cy="200" r="18" fill="#FFFFFF" stroke="#1F2937" stroke-opacity="0.18"/><text x="358" y="204">track</text></g>
+
+                            <g class="node hub" style="--i:0">
+                                <circle cx="200" cy="200" r="34" fill="#FC4C03"/>
+                                <text x="200" y="205" class="hub-label">agent</text>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
             </div>
         </section>
 
-        <!-- Teams -->
-        <section class="thesis">
-            <h2>Who We Back</h2>
-            <h3>AI-native teams</h3>
-            <p>We back founders who use AI across product development and company operations. They build lean teams around AI from day one.</p>
+        <!-- Portfolio marquee -->
+        <section class="band" aria-label="Portfolio companies">
+            <div class="container band-head">
+                <p class="eyebrow-text">13 companies backed since 2025</p>
+            </div>
+            <div class="marquee" data-marquee>
+                <div class="marquee-track">
+                    <a href="https://eqvesta.com/" target="_blank" rel="noopener"><img src="/portfolio-logos/eqvesta-logo.png" alt="Eqvesta" width="555" height="128" loading="lazy"></a>
+                    <a href="https://silow.ai" target="_blank" rel="noopener"><img src="/portfolio-logos/silow-logo.png" alt="Silow" width="232" height="240" loading="lazy"></a>
+                    <a href="https://heron.ing/" target="_blank" rel="noopener"><img src="/portfolio-logos/heron-logo.svg" alt="Heron" width="1024" height="1024" loading="lazy"></a>
+                    <a href="https://kone.vc" target="_blank" rel="noopener"><img src="/portfolio-logos/kone-logo.svg" alt="kone" width="367" height="119" loading="lazy"></a>
+                    <a href="https://agentiqa.com" target="_blank" rel="noopener"><img src="/portfolio-logos/agentiqa-icon.png" alt="Agentiqa" width="32" height="32" loading="lazy"></a>
+                    <a href="https://theona.ai" target="_blank" rel="noopener"><img src="/portfolio-logos/theona-logo.svg" alt="Theona" width="80" height="80" loading="lazy"></a>
+                    <a href="https://hookradar.net" target="_blank" rel="noopener"><img src="/portfolio-logos/hookradar-logo.png" alt="HookRadar" width="600" height="110" loading="lazy"></a>
+                    <a href="https://visibilitypro.ai" target="_blank" rel="noopener"><img src="/portfolio-logos/visibilitypro-logo.svg" alt="VisibilityPro" width="160" height="48" loading="lazy"></a>
+                    <a href="https://aprena.academy/" target="_blank" rel="noopener"><img src="/portfolio-logos/aprena-academy-icon.png" alt="Aprena Academy" width="460" height="472" loading="lazy"></a>
+                    <a href="https://fina.team/" target="_blank" rel="noopener"><img src="/portfolio-logos/fina-logo.png" alt="FINA" width="256" height="256" loading="lazy"></a>
+                    <a href="https://www.rolloo.app/" target="_blank" rel="noopener"><img src="/portfolio-logos/rolloo-favicon.ico" alt="Rolloo" width="48" height="48" loading="lazy"></a>
+                    <a href="https://storyflow.uk/" target="_blank" rel="noopener"><img src="/portfolio-logos/storyflow-logo.jpg" alt="StoryFlow" width="1024" height="233" loading="lazy"></a>
+                    <a href="https://edvancium.com/" target="_blank" rel="noopener"><img src="/portfolio-logos/edvancium-logo.svg" alt="Edvancium" width="32" height="32" loading="lazy"></a>
+                </div>
+            </div>
         </section>
 
-        <!-- What We Provide -->
-        <section class="what-we-provide">
-            <h2>Funding + Hands-On Support</h2>
-            <p class="lead">Capital plus accelerator-level help that keeps early teams moving fast.</p>
-            <div class="pillars-grid">
-                <div class="pillar">
-                    <h3>Funding</h3>
-                    <p>Idea-to-pre-seed capital to build, test, and grow.</p>
+        <!-- Thesis -->
+        <section class="thesis" id="thesis" aria-labelledby="thesis-title">
+            <div class="container narrow">
+                <h2 id="thesis-title" class="reveal">The Opportunity</h2>
+                <p class="scrub" data-scrub>As agents do more of the work, they need software built for them. These products help agents find tools, use services and finish work for people and businesses. We back the founders building that layer.</p>
+            </div>
+        </section>
+
+        <!-- What we invest in -->
+        <section class="invest" id="invest" aria-labelledby="invest-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="invest-title">What We Invest In</h2>
+                    <p class="lead">Two kinds of products, one kind of team.</p>
                 </div>
-                <div class="pillar">
-                    <h3>AI & Engineering Expertise</h3>
-                    <p>Hands-on guidance in AI, product, and technical architecture.</p>
+                <div class="bento">
+                    <article class="card reveal">
+                        <h3>Products Agents Use</h3>
+                        <p>Products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks.</p>
+                        <ul class="chips" aria-label="Examples">
+                            <li>research</li><li>data</li><li>communication</li><li>payments</li><li>commerce</li><li>content</li><li>business tasks</li>
+                        </ul>
+                    </article>
+                    <article class="card reveal" style="--d:1">
+                        <h3>Tools for Agent Products</h3>
+                        <p>Tools to build, test, secure, launch, track and sell agent products.</p>
+                        <ul class="chips" aria-label="Examples">
+                            <li>build</li><li>test</li><li>secure</li><li>launch</li><li>track</li><li>monetize</li>
+                        </ul>
+                    </article>
+                    <article class="card card-wide reveal" style="--d:2">
+                        <div>
+                            <h3>AI-Native Teams</h3>
+                            <p>We back founders who use AI across product development and company operations. They build lean teams around AI from day one and move faster than the market expects.</p>
+                        </div>
+                        <p class="stat"><span class="stat-num">$30k–$80k</span><span class="stat-label">first check, idea to pre-seed</span></p>
+                    </article>
                 </div>
-                <div class="pillar">
-                    <h3>Operational Backbone</h3>
-                    <p>Help with legal, hiring, finance, and day-to-day operations.</p>
+            </div>
+        </section>
+
+        <!-- Who we back -->
+        <section class="criteria" id="who" aria-labelledby="who-title">
+            <div class="container split">
+                <div class="split-aside reveal">
+                    <h2 id="who-title">Who We Back</h2>
+                    <p class="lead">Five things we look for in every team. Missing one usually means it is not a fit yet.</p>
+                    <p class="muted">What strengthens an application: experience in your industry, a first pilot or revenue, two founders instead of one, and a team that has worked together before.</p>
                 </div>
-                <div class="pillar">
-                    <h3>Network & Community</h3>
-                    <p>Access to AI-native founders, technical advisors, and early customers in your space.</p>
+                <ol class="criteria-list">
+                    <li class="reveal"><strong>Built a startup before.</strong> Not necessarily a successful one. You know what the path looks like.</li>
+                    <li class="reveal" style="--d:1"><strong>Sell into the US.</strong> Your target market is the US, or global with first customers in the US.</li>
+                    <li class="reveal" style="--d:2"><strong>Someone on the team sells.</strong> At least one customer or pilot closed personally, in any project.</li>
+                    <li class="reveal" style="--d:3"><strong>Can be in the US.</strong> A passport or visa, weeks on the ground, and a move when the round comes.</li>
+                    <li class="reveal" style="--d:4"><strong>Share numbers monthly.</strong> Seven fields, once a month, without reminders, and show up to the cohort rhythm.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="how" id="how" aria-labelledby="how-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="how-title">How It Works</h2>
+                    <p class="lead">You build the product. We fund the start, run the cohort and get you in front of the next investors.</p>
                 </div>
+                <ol class="steps">
+                    <li class="step reveal">
+                        <span class="step-num" aria-hidden="true">1</span>
+                        <h3>Apply</h3>
+                        <p>One form. Applications are reviewed weekly. Tell us what you are building, who the agent user is, and what you have sold so far.</p>
+                    </li>
+                    <li class="step reveal" style="--d:1">
+                        <span class="step-num" aria-hidden="true">2</span>
+                        <h3>First Check</h3>
+                        <p>$30k–$80k on a standard post-money SAFE, with help to set up a Delaware company and clean documents from day one.</p>
+                    </li>
+                    <li class="step reveal" style="--d:2">
+                        <span class="step-num" aria-hidden="true">3</span>
+                        <h3>Cohort</h3>
+                        <p>A shared start, a weekly rhythm, shared go-to-market materials, guild sessions on AI engineering, product and GTM, plus tool credits and discounts.</p>
+                    </li>
+                    <li class="step reveal" style="--d:3">
+                        <span class="step-num" aria-hidden="true">4</span>
+                        <h3>Next Round</h3>
+                        <p>Monthly tracking toward raise-readiness, a curated investor database and a demo day where the cohort meets friendly funds.</p>
+                    </li>
+                </ol>
+                <ul class="provide">
+                    <li class="reveal"><h3>Capital</h3><p>Idea-to-pre-seed money to build, test and get the first customers.</p></li>
+                    <li class="reveal" style="--d:1"><h3>AI &amp; Product Guidance</h3><p>Hands-on guidance in AI, product and technical architecture from people who ship agent products.</p></li>
+                    <li class="reveal" style="--d:2"><h3>Legal &amp; Operations</h3><p>Incorporation, SAFEs, IP, hiring and finance handled with you, not left for later.</p></li>
+                    <li class="reveal" style="--d:3"><h3>Network</h3><p>AI-native founders, technical advisors, early customers and the investors who do the next round.</p></li>
+                </ul>
             </div>
         </section>
 
         <!-- Portfolio -->
-        <section class="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <a href="https://eqvesta.com/" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon portfolio-card-icon--wide" src="/portfolio-logos/eqvesta-logo.png" alt="Eqvesta logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Eqvesta</div>
-                        <p class="portfolio-card-desc">Autonomous family office for the first $200,000. AI agents keep track of what you own, watch costly deadlines, and surface decisions without touching your money.</p>
-                    </div>
-                </a>
-                <a href="https://silow.ai" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/silow-logo.png?v=20260706-favicon" alt="Silow logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Silow</div>
-                        <p class="portfolio-card-desc">AI roadmap platform. Turns how your company works into a ranked plan for where AI will pay back while keeping your data yours.</p>
-                    </div>
-                </a>
-                <a href="https://heron.ing/" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/heron-logo.svg" alt="Heron logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Heron</div>
-                        <p class="portfolio-card-desc">AI agent review and audit platform. Interrogates agents, verifies scope against MCP, OAuth, and environment access, and produces approval-ready evidence reports.</p>
-                    </div>
-                </a>
-                <a href="https://kone.vc" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon portfolio-card-icon--wide" src="/portfolio-logos/kone-logo.svg" alt="kone logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">kone</div>
-                        <p class="portfolio-card-desc">The monetization layer for AI agents. Enables AI agents and open-source tools to generate revenue through contextual, task-aware recommendations via MCP integration.</p>
-                    </div>
-                </a>
-                <a href="https://agentiqa.com" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/agentiqa-icon.png" alt="Agentiqa logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Agentiqa</div>
-                        <p class="portfolio-card-desc">Visual, agentic, self-healing test automation. AI explores your app, finds bugs, and builds reusable QA plans through a visual interface.</p>
-                    </div>
-                </a>
-                <a href="https://theona.ai" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/theona-logo.svg" alt="Theona logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Theona</div>
-                        <p class="portfolio-card-desc">No-code AI agent platform. Launch autonomous AI assistants that handle business tasks across integrated tools, no tech team required.</p>
-                    </div>
-                </a>
-                <a href="https://hookradar.net" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/hookradar-logo.png" alt="HookRadar logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">HookRadar</div>
-                        <p class="portfolio-card-desc">Competitive ad intelligence. Analyze competitor ads and viral trends, see what's scaling, and get ready-to-use assets for your team or AI.</p>
-                    </div>
-                </a>
-                <a href="https://visibilitypro.ai" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/visibilitypro-logo.svg" alt="VisibilityPro logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">VisibilityPro</div>
-                        <p class="portfolio-card-desc">Generative Engine Optimization platform. Track and optimize how your brand appears in AI answers across ChatGPT, Claude, Perplexity, and Gemini.</p>
-                    </div>
-                </a>
-                <a href="https://aprena.academy/" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/aprena-academy-icon.png" alt="Aprena Academy logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Aprena Academy</div>
-                        <p class="portfolio-card-desc">Your Career Copilot. AI-powered career guidance platform that helps professionals navigate their career paths and make informed decisions.</p>
-                    </div>
-                </a>
-                <a href="https://fina.team/" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/fina-logo.png" alt="FINA logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">FINA</div>
-                        <p class="portfolio-card-desc">Your Financial Automations. Streamline and automate financial management tasks to save time and reduce manual work.</p>
-                    </div>
-                </a>
-                <a href="https://www.rolloo.app/" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/rolloo-favicon.ico" alt="Rolloo logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Rolloo</div>
-                        <p class="portfolio-card-desc">AI-powered role-play training platform. Practice challenging workplace conversations in a judgment-free environment with detailed feedback.</p>
-                    </div>
-                </a>
-                <a href="https://storyflow.uk/" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/storyflow-logo.jpg" alt="StoryFlow logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">StoryFlow</div>
-                        <p class="portfolio-card-desc">AI-Powered LinkedIn Storytelling Companion. Craft and share compelling narratives on LinkedIn with AI assistance.</p>
-                    </div>
-                </a>
-                <a href="https://edvancium.com/" target="_blank" rel="noopener" class="portfolio-card">
-                    <img class="portfolio-card-icon" src="/portfolio-logos/edvancium-logo.svg" alt="Edvancium logo">
-                    <div class="portfolio-card-content">
-                        <div class="portfolio-card-name">Edvancium</div>
-                        <p class="portfolio-card-desc">Prepare for exams 3x faster without rote memorization. Interactive lessons, active recall flashcards, and personalized AI tutoring.</p>
-                    </div>
-                </a>
+        <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="portfolio-title">Portfolio</h2>
+                    <p class="lead">Thirteen companies building for agents and with agents.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <a href="https://eqvesta.com/" target="_blank" rel="noopener" class="pcard reveal">
+                        <img class="pcard-logo pcard-logo--wide" src="/portfolio-logos/eqvesta-logo.png" alt="" width="555" height="128" loading="lazy">
+                        <span class="pcard-name">Eqvesta</span>
+                        <span class="pcard-desc">Autonomous family office for the first $200,000. AI agents track what you own, watch costly deadlines and surface decisions without touching your money.</span>
+                    </a>
+                    <a href="https://silow.ai" target="_blank" rel="noopener" class="pcard reveal" style="--d:1">
+                        <img class="pcard-logo" src="/portfolio-logos/silow-logo.png" alt="" width="232" height="240" loading="lazy">
+                        <span class="pcard-name">Silow</span>
+                        <span class="pcard-desc">AI roadmap platform. Turns how your company works into a ranked plan for where AI will pay back, while your data stays yours.</span>
+                    </a>
+                    <a href="https://heron.ing/" target="_blank" rel="noopener" class="pcard reveal" style="--d:2">
+                        <img class="pcard-logo" src="/portfolio-logos/heron-logo.svg" alt="" width="1024" height="1024" loading="lazy">
+                        <span class="pcard-name">Heron</span>
+                        <span class="pcard-desc">AI agent review and audit platform. Interrogates agents, verifies scope against MCP, OAuth and environment access, and produces approval-ready evidence.</span>
+                    </a>
+                    <a href="https://kone.vc" target="_blank" rel="noopener" class="pcard reveal">
+                        <img class="pcard-logo pcard-logo--wide" src="/portfolio-logos/kone-logo.svg" alt="" width="367" height="119" loading="lazy">
+                        <span class="pcard-name">kone</span>
+                        <span class="pcard-desc">The monetization layer for AI agents. Lets agents and open-source tools earn revenue through contextual, task-aware recommendations via MCP.</span>
+                    </a>
+                    <a href="https://agentiqa.com" target="_blank" rel="noopener" class="pcard reveal" style="--d:1">
+                        <img class="pcard-logo" src="/portfolio-logos/agentiqa-icon.png" alt="" width="32" height="32" loading="lazy">
+                        <span class="pcard-name">Agentiqa</span>
+                        <span class="pcard-desc">Visual, agentic, self-healing test automation. AI explores your app, finds bugs and builds reusable QA plans through a visual interface.</span>
+                    </a>
+                    <a href="https://theona.ai" target="_blank" rel="noopener" class="pcard reveal" style="--d:2">
+                        <img class="pcard-logo" src="/portfolio-logos/theona-logo.svg" alt="" width="80" height="80" loading="lazy">
+                        <span class="pcard-name">Theona</span>
+                        <span class="pcard-desc">No-code AI agent platform. Launch autonomous assistants that handle business tasks across integrated tools, no tech team required.</span>
+                    </a>
+                    <a href="https://hookradar.net" target="_blank" rel="noopener" class="pcard reveal">
+                        <img class="pcard-logo pcard-logo--wide" src="/portfolio-logos/hookradar-logo.png" alt="" width="600" height="110" loading="lazy">
+                        <span class="pcard-name">HookRadar</span>
+                        <span class="pcard-desc">Competitive ad intelligence. Analyze competitor ads and viral trends, see what is scaling and get ready-to-use assets for your team or your AI.</span>
+                    </a>
+                    <a href="https://visibilitypro.ai" target="_blank" rel="noopener" class="pcard reveal" style="--d:1">
+                        <img class="pcard-logo pcard-logo--wide" src="/portfolio-logos/visibilitypro-logo.svg" alt="" width="160" height="48" loading="lazy">
+                        <span class="pcard-name">VisibilityPro</span>
+                        <span class="pcard-desc">Generative Engine Optimization platform. Track and improve how your brand appears in AI answers across ChatGPT, Claude, Perplexity and Gemini.</span>
+                    </a>
+                    <a href="https://aprena.academy/" target="_blank" rel="noopener" class="pcard reveal" style="--d:2">
+                        <img class="pcard-logo" src="/portfolio-logos/aprena-academy-icon.png" alt="" width="460" height="472" loading="lazy">
+                        <span class="pcard-name">Aprena Academy</span>
+                        <span class="pcard-desc">Your career copilot. AI-powered career guidance that helps professionals navigate their paths and make informed decisions.</span>
+                    </a>
+                    <a href="https://fina.team/" target="_blank" rel="noopener" class="pcard reveal">
+                        <img class="pcard-logo" src="/portfolio-logos/fina-logo.png" alt="" width="256" height="256" loading="lazy">
+                        <span class="pcard-name">FINA</span>
+                        <span class="pcard-desc">Your financial automations. Streamline and automate financial management tasks to save time and cut manual work.</span>
+                    </a>
+                    <a href="https://www.rolloo.app/" target="_blank" rel="noopener" class="pcard reveal" style="--d:1">
+                        <img class="pcard-logo" src="/portfolio-logos/rolloo-favicon.ico" alt="" width="48" height="48" loading="lazy">
+                        <span class="pcard-name">Rolloo</span>
+                        <span class="pcard-desc">AI role-play training. Practice difficult workplace conversations in a judgment-free environment with detailed feedback.</span>
+                    </a>
+                    <a href="https://storyflow.uk/" target="_blank" rel="noopener" class="pcard reveal" style="--d:2">
+                        <img class="pcard-logo pcard-logo--wide" src="/portfolio-logos/storyflow-logo.jpg" alt="" width="1024" height="233" loading="lazy">
+                        <span class="pcard-name">StoryFlow</span>
+                        <span class="pcard-desc">AI-powered LinkedIn storytelling companion. Craft and share compelling narratives on LinkedIn with AI assistance.</span>
+                    </a>
+                    <a href="https://edvancium.com/" target="_blank" rel="noopener" class="pcard reveal">
+                        <img class="pcard-logo" src="/portfolio-logos/edvancium-logo.svg" alt="" width="32" height="32" loading="lazy">
+                        <span class="pcard-name">Edvancium</span>
+                        <span class="pcard-desc">Prepare for exams 3x faster without rote memorization. Interactive lessons, active-recall flashcards and personalized AI tutoring.</span>
+                    </a>
+                </div>
+                <p class="portfolio-updated">Portfolio last updated: <time datetime="2026-10-13">13 October 2026</time></p>
             </div>
-            <p class="portfolio-updated">Last updated: September 4, 2026</p>
         </section>
 
-        <!-- Contact -->
-        <section class="contact" id="contact">
-            <h2>Apply to Agentic Builders</h2>
-            <p><a href="https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9" target="_blank" rel="noopener" class="btn">Apply for Funding</a></p>
-            <p class="contact-email"><a href="mailto:hey@agenticbuilders.ai">hey@agenticbuilders.ai</a></p>
+        <!-- FAQ -->
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="container narrow">
+                <div class="section-head reveal">
+                    <h2 id="faq-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item reveal">
+                        <summary><h3>What does Agentic Builders invest in?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+                        <p class="faq-answer">Agentic Builders invests in agent-native applications: products that AI agents find and use to research, work with data, communicate, buy, sell, create content and run business tasks, and tools to build, test, secure, launch, track and sell agent products.</p>
+                    </details>
+                    <details class="faq-item reveal">
+                        <summary><h3>What stage and check size does Agentic Builders invest at?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+                        <p class="faq-answer">Agentic Builders invests from idea to pre-seed. A first check is $30,000 to $80,000 on a standard post-money SAFE. The fund does not do follow-on checks; its job is to get the team to the next round from other investors.</p>
+                    </details>
+                    <details class="faq-item reveal">
+                        <summary><h3>What is an agent-native application?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+                        <p class="faq-answer">An agent-native application is software designed for AI agents as its primary users, not people. Agents discover it, call it and pay for it to complete work on behalf of people and businesses. Examples include data services, payment and monetization layers, testing and audit tools, and agent platforms.</p>
+                    </details>
+                    <details class="faq-item reveal">
+                        <summary><h3>Who does Agentic Builders back?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+                        <p class="faq-answer">AI-native teams that use AI across product development and company operations. We look for founders who have built a startup before, sell into the US market, have someone on the team who sells, can physically be in the US, and share numbers monthly.</p>
+                    </details>
+                    <details class="faq-item reveal">
+                        <summary><h3>Does the fund build the product for the team?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+                        <p class="faq-answer">No. The founder builds the product. Agentic Builders provides the first check, a cohort of peer founders, guidance on AI and product architecture, help with legal, incorporation and operations, and introductions to the next investors when the company is ready to raise.</p>
+                    </details>
+                    <details class="faq-item reveal">
+                        <summary><h3>How does the cohort work?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+                        <p class="faq-answer">Teams join in cohorts with a shared start date, a shared weekly rhythm, shared go-to-market materials, monthly updates and a demo day where the cohort is shown to friendly funds. Founders also get guild sessions on AI engineering, product and go-to-market, plus tool credits and discounts.</p>
+                    </details>
+                    <details class="faq-item reveal">
+                        <summary><h3>How do I apply to Agentic Builders?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+                        <p class="faq-answer">Fill in the <a href="https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9" target="_blank" rel="noopener">application form</a> or email <a href="mailto:hey@agenticbuilders.ai">hey@agenticbuilders.ai</a>. Applications are reviewed weekly. Include what you are building, who the agent user is, your team and any early customers or pilots.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta" id="apply" aria-labelledby="cta-title">
+            <div class="container cta-inner">
+                <h2 id="cta-title" class="reveal">Building for agents?<br>Let’s talk.</h2>
+                <p class="lead reveal" style="--d:1">One form, reviewed weekly. Or write to us directly.</p>
+                <div class="hero-actions reveal" style="--d:2">
+                    <a href="https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9" target="_blank" rel="noopener" class="btn btn-light">Apply for Funding</a>
+                    <a href="mailto:hey@agenticbuilders.ai" class="link-arrow link-arrow--light">hey@agenticbuilders.ai<span aria-hidden="true">→</span></a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer role="contentinfo">
-        <p><a href="/" class="footer-link">Home</a> &middot; <a href="/brand" class="footer-link">Brand</a> &middot; <a href="https://www.linkedin.com/company/agentic-builders-ai/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a></p>
-        <p>&copy; 2026 Agentic Builders</p>
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-inner">
+            <a href="/" class="logo" aria-label="Agentic Builders home">
+                <svg class="logo-icon" viewBox="0 0 207 197" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M182.431 0H24.4773C11.0912 0 0 11.0912 0 24.4773V172.324C0 185.71 11.0912 196.801 24.4773 196.801H182.115C195.501 196.801 206.592 185.71 206.592 172.324V24.4773C206.911 11.0912 195.817 0 182.431 0ZM19.5819 143.6H16.3182V24.4773C16.3182 19.9135 19.9135 16.3182 24.4773 16.3182H168.078C156.974 88.4382 94.9655 143.6 19.5819 143.6Z" fill="#FC4C03"/></svg>
+                <span class="logo-text" translate="no">Agentic Builders</span>
+            </a>
+            <nav class="footer-links" aria-label="Footer">
+                <a href="#thesis">Thesis</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#faq">FAQ</a>
+                <a href="/brand/">Brand</a>
+                <a href="https://www.linkedin.com/company/agentic-builders-ai/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:hey@agenticbuilders.ai">Email</a>
+            </nav>
+            <p class="footer-meta">&copy; 2026 Agentic Builders Inc. &middot; Delaware, US &middot; Last updated <time datetime="2026-10-13">13 October 2026</time></p>
+        </div>
     </footer>
+
+    <script src="/assets/main.js?v=2026-10-13" defer></script>
 </body>
 </html>
