@@ -1,4 +1,4 @@
-{% set current = site.modes | selectattr("key", "equalto", mode) | first %}
+{% set current = site.modes[0] %}{% for m in site.modes %}{% if m.key == mode %}{% set current = m %}{% endif %}{% endfor %}
 <header class="site-header container">
     <a href="/" class="logo" aria-label="{{ fund.fund.name }} home">
         <img src="/brand/icon-color.svg" alt="" width="22" height="22">
