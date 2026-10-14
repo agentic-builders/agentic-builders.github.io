@@ -1,0 +1,25 @@
+---
+layout: hero/_shell.njk
+permalink: /hero/b/
+variant: b
+navpill: pill-dark
+title: "Hero B — Flowjam"
+---
+<section class="hero">
+  <aside class="glass">
+    <h2>Early-stage fund for agent-native applications</h2>
+    <p>Products agents use and tools for building agent products. From idea to pre-seed, for founders who build with people and agents.</p>
+    <ul class="facts">
+      <li><span>First check</span><b>$30–80k</b></li>
+      <li><span>Decision</span><b>4 weeks</b></li>
+      <li><span>Portfolio</span><b>13 companies</b></li>
+    </ul>
+    <div class="btns"><a class="pill pill-orange" href="{{ fund.fund.apply_url }}">Apply</a><a class="pill pill-ghost" href="#how">How it works</a></div>
+  </aside>
+  <div>
+    <span class="badge">Reviewed within 3 business days</span>
+    <h1>Apply once. Four Mondays. <em>A decision either way.</em></h1>
+    <p class="lead">Our AI partner reads your application and deck within 24 hours. <b>Then four weekly check-ins, one key number, the partner toolkit, and a first check of $30–80k if we invest.</b> We do not build your product. We get you to the next round.</p>
+    <div class="logos">{% for c in fund.portfolio.companies %}<span>{{ c.name }}</span>{% endfor %}</div>
+  </div>
+</section>
