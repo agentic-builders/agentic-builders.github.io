@@ -134,3 +134,53 @@ html[data-mode="agents"] .mode-link.is-active { background: var(--accent-dark); 
     table { display: block; overflow-x: auto; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ===== Founders page: typographic draft (Urbanist display, Inter body, JetBrains Mono for the agent voice) ===== */
+html[data-mode="founders"] section { border-top: 0; padding: clamp(4rem, 10vw, 8rem) 0; }
+.kicker { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-dark); margin-bottom: 1.25rem; }
+.manifesto { padding-top: clamp(3rem, 8vw, 6rem) !important; }
+.manifesto-text { font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.4rem, 7.2vw, 6.4rem); line-height: 1.02; letter-spacing: -0.035em; color: var(--ink); text-wrap: balance; }
+.manifesto-text .line { display: block; }
+.manifesto-text .line:nth-child(2) { font-weight: 600; color: var(--ink-2); }
+.manifesto-text .line:nth-child(3) { font-family: var(--font-body); font-weight: 400; font-size: 0.62em; letter-spacing: -0.02em; margin-top: 0.3em; color: var(--ink-2); }
+.manifesto-text a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 0.06em; text-underline-offset: 0.12em; transition: color 150ms; }
+.manifesto-text a:hover, .manifesto-text a:focus-visible { color: var(--accent); }
+.btn-lg { padding: 1rem 1.8rem; font-size: 1.05rem; }
+.logo-strip { display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem; margin-top: clamp(2.5rem, 6vw, 4rem); padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.logo-strip a { font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem; color: var(--ink-3); text-decoration: none; }
+.logo-strip a:hover { color: var(--ink); }
+.display { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.7rem, 3.8vw, 3rem); line-height: 1.15; letter-spacing: -0.025em; color: var(--ink); text-wrap: pretty; }
+.display-sm { font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.3rem, 2.6vw, 2rem); line-height: 1.25; letter-spacing: -0.02em; color: var(--ink); max-width: 30ch; }
+.display-xl { font-family: var(--font-heading); font-weight: 800; font-size: clamp(4rem, 14vw, 11rem); line-height: 0.95; letter-spacing: -0.05em; color: var(--accent); font-variant-numeric: tabular-nums; margin: 0 0 1.5rem; }
+.scrub .sw { opacity: 0.2; transition: opacity 120ms linear; }
+.scrub .sw.on { opacity: 1; }
+.two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: 2.5rem; }
+.h-serifless { font-size: 1.3rem; margin-bottom: 0.4rem; }
+.who { margin-top: clamp(3rem, 7vw, 5rem); padding-top: 2.5rem; border-top: 1px solid var(--line); }
+.five { margin-top: 2rem; }
+.five li { display: grid; grid-template-columns: 3rem 1fr; gap: 0.5rem 1rem; padding: 0.9rem 0; border-top: 1px solid var(--line); font-size: 1.05rem; }
+.five li > span:last-child { grid-column: 2; }
+.five .num { font-family: var(--font-mono); color: var(--accent); font-size: 0.85rem; padding-top: 0.25rem; grid-row: span 2; }
+.five strong { color: var(--ink); font-family: var(--font-heading); font-size: 1.15rem; }
+.mondays .lead { margin-top: 1rem; max-width: 56ch; }
+.monday-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.monday-list li { border-top: 2px solid var(--ink); padding-top: 1rem; }
+.monday-num { display: block; font-family: var(--font-heading); font-weight: 800; font-size: clamp(3rem, 7vw, 5.5rem); line-height: 1; letter-spacing: -0.04em; color: var(--ink); margin-bottom: 0.5rem; }
+.monday-list h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent-dark); font-family: var(--font-body); font-weight: 600; }
+.monday-list p { font-size: 0.95rem; }
+.terms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.terms dt { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); margin-bottom: 0.4rem; }
+.terms dd { color: var(--ink); font-size: 1.05rem; }
+.mono-block { font-family: var(--font-mono); font-size: 0.9rem; line-height: 1.7; color: var(--ink); background: var(--ink); color: #fff; padding: 1.5rem; border-radius: 6px; margin-bottom: 1.5rem; overflow-x: auto; }
+.mono-block p { color: rgba(255,255,255,0.85); margin: 0; }
+.mono-block p:first-child, .mono-block p:last-child { color: var(--accent); }
+.plist li { border-top: 1px solid var(--line); }
+.plist li:last-child { border-bottom: 1px solid var(--line); }
+.plist a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 1rem; align-items: baseline; padding: 1rem 0; text-decoration: none; color: inherit; }
+.pname { font-family: var(--font-heading); font-weight: 800; font-size: clamp(1.5rem, 3.4vw, 2.6rem); letter-spacing: -0.03em; color: var(--ink); line-height: 1.05; }
+.plist a:hover .pname { color: var(--accent); }
+.pline { font-size: 0.95rem; color: var(--ink-2); }
+.apply { border-top: 1px solid var(--line) !important; }
+.apply .manifesto-text .line:nth-child(3) { font-family: var(--font-heading); font-weight: 800; font-size: 1em; color: var(--ink); margin-top: 0; }
+@media (max-width: 900px) { .monday-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .terms { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .two-col, .monday-list { grid-template-columns: 1fr; } .plist a { grid-template-columns: 1fr; gap: 0.2rem; } .five li { grid-template-columns: 2.4rem 1fr; } }

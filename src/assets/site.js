@@ -30,3 +30,28 @@
         });
     }
 })();
+
+/* Thesis: words light up as the reader scrolls (founders page). */
+(function () {
+    var el = document.querySelector('[data-scrub]');
+    if (!el) return;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var words = el.textContent.trim().split(/\s+/);
+    el.textContent = '';
+    var spans = words.map(function (w, i) {
+        var s = document.createElement('span'); s.className = 'sw'; s.textContent = w; el.appendChild(s);
+        if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
+        return s;
+    });
+    if (reduce) { spans.forEach(function (s) { s.classList.add('on'); }); return; }
+    var tick = false;
+    function update() {
+        tick = false;
+        var r = el.getBoundingClientRect(), vh = window.innerHeight;
+        var p = Math.max(0, Math.min(1, (vh * 0.85 - r.top) / (vh * 0.5 + r.height * 0.6)));
+        var lit = Math.round(p * spans.length);
+        spans.forEach(function (s, i) { s.classList.toggle('on', i < lit); });
+    }
+    window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
+})();
