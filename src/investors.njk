@@ -1,0 +1,43 @@
+---
+layout: base.njk
+mode: investors
+permalink: /investors/
+title: "Agentic Builders for investors — thesis, program, team"
+description: "Early-stage fund for agent-native applications. Thesis, stage, four-week program, selection, team, portfolio. Meet the cohort or meet us."
+---
+<section>
+    <h1>{{ fund.fund.name }}</h1>
+    <p class="lead{% if fund.investors.hero | isTodo %} todo{% endif %}">{{ fund.investors.hero }}</p>
+    <div class="actions"><a class="btn" href="{% if fund.fund.meet_url | isTodo %}mailto:{{ fund.fund.email }}{% else %}{{ fund.fund.meet_url }}{% endif %}">Meet us</a></div>
+</section>
+<section aria-label="Numbers">
+    <ul class="numbers" role="list">
+        {% for n in fund.investors.numbers %}<li><span class="value">{{ n.value }}</span><span class="label">{{ n.label }}{% if n.note %} <span class="todo">({{ n.note }})</span>{% endif %}</span></li>{% endfor %}
+    </ul>
+</section>
+<section>
+    <h2>Our approach</h2>
+    <div class="grid" style="--cols: 2">
+        {% for a in fund.investors.approach %}<article class="card"><h3>{{ a.name }}</h3><p>{{ a.text }}</p></article>{% endfor %}
+    </div>
+</section>
+<section>
+    <h2>Team</h2>
+    <ul class="team" role="list">
+        {% for t in fund.team %}<li><div class="photo">{{ "photo" if t.photo | isTodo else "" }}</div><span class="name{% if t.name | isTodo %} todo{% endif %}">{{ t.name }}</span><span class="role{% if t.role | isTodo %} todo{% endif %}">{{ t.role }}</span><p>{{ t.line }}</p><p class="note{% if t.linkedin | isTodo %} todo{% endif %}">LinkedIn: {{ t.linkedin }}</p></li>{% endfor %}
+    </ul>
+</section>
+<section>
+    <h2>Selected portfolio</h2>
+    <div class="grid" style="--cols: 3">
+        {% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<a class="pcard" href="{{ c.url }}" target="_blank" rel="noopener"><span class="pcard-name">{{ c.name }}</span><span class="pcard-desc">{{ c.for_humans }}</span></a>{% endfor %}
+    </div>
+    <p class="note"><a href="/#portfolio">All {{ fund.portfolio.companies | length }} companies →</a></p>
+</section>
+<section>
+    <h2>Two ways to start</h2>
+    <div class="grid" style="--cols: 2">
+        <article class="card"><h3>Meet the companies</h3><p>Come to a pitch session and see the cohort.</p><p class="todo">{{ fund.fund.pitch_session_url }}</p></article>
+        <article class="card"><h3>Meet us</h3><p>A 30-minute call about the thesis, the program and co-investing.</p><p class="todo">{{ fund.fund.meet_url }}</p></article>
+    </div>
+</section>

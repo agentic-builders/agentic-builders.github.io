@@ -1,0 +1,39 @@
+{% set org = {
+  "@type": "Organization",
+  "@id": fund.fund.url + "/#organization",
+  "name": fund.fund.name,
+  "url": fund.fund.url + "/",
+  "logo": fund.fund.url + "/brand/logo-color.png",
+  "description": fund.fund.one_liner,
+  "email": fund.fund.email,
+  "foundingDate": fund.fund.founded,
+  "sameAs": [fund.fund.linkedin],
+  "knowsAbout": ["Agent-native applications", "AI agents", "Pre-seed investment", "Venture capital"]
+} %}
+{% set webpage = {
+  "@type": "WebPage",
+  "@id": fund.fund.url + page.url + "#webpage",
+  "url": fund.fund.url + page.url,
+  "name": title,
+  "description": description,
+  "dateModified": fund.updated,
+  "inLanguage": "en",
+  "isPartOf": { "@id": fund.fund.url + "/#website" },
+  "about": { "@id": fund.fund.url + "/#organization" }
+} %}
+{% set website = {
+  "@type": "WebSite",
+  "@id": fund.fund.url + "/#website",
+  "url": fund.fund.url + "/",
+  "name": fund.fund.name,
+  "publisher": { "@id": fund.fund.url + "/#organization" }
+} %}
+{% set graph = [org, website, webpage] %}
+{% if include_faq %}
+{% set faqEntities = [] %}
+{% for f in fund.faq %}
+  {% set faqEntities = (faqEntities.push({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }), faqEntities) %}
+{% endfor %}
+{% set graph = (graph.push({ "@type": "FAQPage", "@id": fund.fund.url + "/#faq", "mainEntity": faqEntities }), graph) %}
+{% endif %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@graph": graph } | json | safe }}</script>

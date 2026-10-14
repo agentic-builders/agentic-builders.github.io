@@ -1,0 +1,23 @@
+{
+  "name": "agentic-builders-site",
+  "version": "0.2.0",
+  "description": "agenticbuilders.ai: static site with three modes (founders, agents, investors), built with Eleventy from one content file",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --port 8765",
+    "clean": "rm -rf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agentic-builders/agentic-builders.github.io.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/agentic-builders/agentic-builders.github.io/issues"
+  },
+  "homepage": "https://github.com/agentic-builders/agentic-builders.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "private": true
+}

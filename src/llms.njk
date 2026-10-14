@@ -1,0 +1,23 @@
+---
+permalink: /llms.txt
+---
+# {{ fund.fund.name }}
+
+> {{ fund.fund.one_liner }}
+
+## Key facts
+- Stage: {{ fund.fund.stage }}. First check: {{ fund.program.terms.first_check_usd }} on a {{ fund.program.terms.instrument | lower }}.
+- Program: {{ fund.program.summary }}
+- Apply: {{ fund.fund.apply_url }}
+- Contact: {{ fund.fund.email }}. LinkedIn: {{ fund.fund.linkedin }}
+
+## Pages
+- [For founders]({{ fund.fund.url }}/): program, thesis, criteria, portfolio, FAQ
+- [For agents]({{ fund.fund.url }}/agents/): instructions and application schema for AI agents
+- [For investors]({{ fund.fund.url }}/investors/): approach, team, selected portfolio
+- [agents.md]({{ fund.fund.url }}/agents.md): everything in one Markdown file
+- [Full text]({{ fund.fund.url }}/llms-full.txt)
+
+## Portfolio
+{% for c in fund.portfolio.companies %}- [{{ c.name }}]({{ c.url }}): {{ c.for_agents }}
+{% endfor %}

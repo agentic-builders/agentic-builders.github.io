@@ -1,0 +1,10 @@
+---
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+{% for b in ["GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot","anthropic-ai","PerplexityBot","Google-Extended","Bingbot"] %}
+User-agent: {{ b }}
+Allow: /
+{% endfor %}
+Sitemap: {{ fund.fund.url }}/sitemap.xml

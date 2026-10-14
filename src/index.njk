@@ -1,0 +1,126 @@
+---
+layout: base.njk
+mode: founders
+permalink: /
+title: "Agentic Builders — Early-stage fund for agent-native applications"
+description: "Apply once, go through a four-week track with weekly check-ins, get a decision with an explanation. Early-stage fund for products agents use and tools for building agent products."
+include_faq: true
+---
+{% set hero = site.hero_variants[site.hero_variant - 1] %}
+
+<section class="hero" aria-labelledby="hero-title">
+    <p class="note">Hero variant {{ site.hero_variant }} of {{ site.hero_variants | length }} (set <code>hero_variant</code> in <code>content/site.json</code>)</p>
+    <h1 id="hero-title">{{ hero }}</h1>
+    <p class="lead{% if site.hero_subtitle | isTodo %} todo{% endif %}">{{ site.hero_subtitle }}</p>
+    <div class="actions">
+        <a class="btn" href="{{ fund.fund.apply_url }}" target="_blank" rel="noopener">Apply</a>
+        <a class="link-arrow" href="#how">How it works →</a>
+    </div>
+    <div class="visual" aria-hidden="true">VISUAL: the fund's AI partner reads a deck</div>
+</section>
+
+<section id="how" aria-labelledby="how-title">
+    <div class="section-head">
+        <h2 id="how-title">How the program works</h2>
+        <p class="lead">{{ fund.program.summary }}</p>
+    </div>
+    <ol class="steps" role="list">
+        {% for s in fund.program.steps %}
+        <li>
+            <h3>{{ s.name }}</h3>
+            <span class="duration">{{ s.duration }}</span>
+            <p>{{ s.description }}</p>
+        </li>
+        {% endfor %}
+    </ol>
+    <p class="note">Terms: first check {{ fund.program.terms.first_check_usd }} <span class="todo">(confirm)</span> on a {{ fund.program.terms.instrument | lower }}. {{ fund.program.terms.follow_on }} <span class="todo">(confirm)</span>. The track is {{ fund.program.terms.track_cost | lower }}</p>
+    <div class="visual" aria-hidden="true">VISUAL: timeline of 4 cells</div>
+</section>
+
+<section id="get" aria-labelledby="get-title">
+    <div class="section-head">
+        <h2 id="get-title">What a founder gets</h2>
+    </div>
+    <div class="grid" style="--cols: 3">
+        {% for g in fund.what_you_get %}
+        <article class="card">
+            <h3>{{ g.name }}</h3>
+            <p>{{ g.description }}</p>
+            {% if g.note %}<p class="todo">{{ g.note }}</p>{% endif %}
+        </article>
+        {% endfor %}
+    </div>
+    <p class="note">Toolkit during the track: {{ fund.program.toolkit.items | join(", ") }}.</p>
+</section>
+
+<section id="invest" aria-labelledby="invest-title">
+    <div class="section-head">
+        <h2 id="invest-title">What we invest in</h2>
+        <p class="lead">{{ fund.thesis.lead }} {{ fund.thesis.body }}</p>
+    </div>
+    <div class="grid" style="--cols: 2">
+        {% for c in fund.thesis.categories %}
+        <article class="card">
+            <h3>{{ c.name }}</h3>
+            <p>{{ c.description }}</p>
+            <ul class="chips" role="list" aria-label="Examples">{% for e in c.examples %}<li>{{ e }}</li>{% endfor %}</ul>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="who" aria-labelledby="who-title">
+    <div class="section-head">
+        <h2 id="who-title">{{ fund.who_we_look_for.headline }}</h2>
+        <p class="lead{% if fund.who_we_look_for.lead | isTodo %} todo{% endif %}">{{ fund.who_we_look_for.lead }}</p>
+        <p class="note">{{ fund.thesis.teams }}</p>
+    </div>
+    <ol class="criteria">
+        {% for c in fund.who_we_look_for.criteria %}
+        <li><strong>{{ c.name }}.</strong> {{ c.detail }}</li>
+        {% endfor %}
+    </ol>
+    <p class="note">What strengthens an application: {{ fund.who_we_look_for.strengtheners | join(", ") }}. <span class="todo">{{ fund.who_we_look_for.criteria_note }}</span></p>
+</section>
+
+<section id="portfolio" aria-labelledby="portfolio-title">
+    <div class="section-head">
+        <h2 id="portfolio-title">Portfolio</h2>
+        <p class="lead">{{ fund.portfolio.companies | length }} companies building for agents and with agents.</p>
+    </div>
+    <div class="grid" style="--cols: 3">
+        {% for c in fund.portfolio.companies %}
+        <a class="pcard" href="{{ c.url }}" target="_blank" rel="noopener">
+            <img src="{{ c.logo }}" alt="" class="{% if c.logo_wide %}wide{% endif %}" loading="lazy" width="36" height="36">
+            <span class="pcard-name">{{ c.name }}</span>
+            <span class="pcard-desc">{{ c.for_humans }}</span>
+        </a>
+        {% endfor %}
+    </div>
+    <p class="note">Portfolio last updated <time datetime="{{ fund.portfolio.updated }}">{{ fund.portfolio.updated }}</time>.</p>
+</section>
+
+<section id="faq" class="faq" aria-labelledby="faq-title">
+    <div class="section-head">
+        <h2 id="faq-title">FAQ</h2>
+    </div>
+    {% for f in fund.faq %}
+    <details>
+        <summary>{{ f.q }}</summary>
+        <p{% if f.a | isTodo %} class="todo"{% endif %}>{{ f.a }}</p>
+    </details>
+    {% endfor %}
+</section>
+
+<section id="apply" aria-labelledby="apply-title">
+    <div class="section-head">
+        <h2 id="apply-title">Apply</h2>
+        <p class="lead">One form, about 15 minutes, no call required to start. Reviewed within three business days.</p>
+    </div>
+    <div class="actions">
+        <a class="btn" href="{{ fund.fund.apply_url }}" target="_blank" rel="noopener">Apply</a>
+        <a class="link-arrow" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a>
+    </div>
+    <p class="note todo">{{ fund.fund.apply_url_note }}</p>
+    <div class="visual" aria-hidden="true">VISUAL / FUTURE: upload a deck → the application fills itself → finish the remaining fields (not implemented in this iteration; the form stays in Notion)</div>
+</section>
