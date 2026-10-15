@@ -9,7 +9,7 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
 <main class="inv" id="main">
   <section class="inv-hero" id="top">
     <h1 class="rv">{{ fund.investors.hero }}</h1>
-    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Meet us</a><a class="quiet" href="#sessions">Pitch sessions</a></div>
+    <div class="cta rv"><a class="pill pill-dark" href="#sessions">Pitch sessions</a><a class="quiet" href="#contact">Contact us</a></div>
     <ul class="nums rv" role="list">{% for n in fund.investors.numbers %}<li><b>{{ n.value }}</b><span>{{ n.label }}</span></li>{% endfor %}</ul>
   </section>
 
@@ -20,7 +20,7 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
 
   <section id="team">
     <h2 class="t rv">Team.</h2>
-    <ul class="team" role="list">{% for t in fund.team %}<li class="rv"><span class="ph" aria-hidden="true">{{ t.name | first }}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p></li>{% endfor %}</ul>
+    <ul class="team" role="list">{% for t in fund.team %}<li class="rv"><span class="ph" aria-hidden="true">{{ t.name | first }}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}</ul>
     <p class="fine rv">The fund operates on its own AI agents: intake and deck analysis, weekly check-ins, memos, portfolio tracking. Partners decide; agents prepare.</p>
   </section>
 
@@ -43,9 +43,10 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
     <div class="cta rv"><a class="pill pill-ghost" href="mailto:{{ fund.fund.email }}?subject=Subscribe">{{ fund.investors.newsletter.cta }}</a></div>
   </section>
 
-  <section id="start" class="last">
-    <h2 class="t rv">{{ fund.investors.meet.title }}.</h2>
-    <p class="lead2 rv">{{ fund.investors.meet.text }}</p>
-    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">{{ fund.investors.meet.cta }}</a><a class="quiet" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></div>
+  <section id="contact" class="last">
+    <h2 class="t rv">{{ fund.investors.contact.title }}.</h2>
+    <p class="lead2 rv">{{ fund.investors.contact.text }}</p>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a><a class="quiet" href="{{ fund.fund.linkedin }}" target="_blank" rel="noopener">Agentic Builders on LinkedIn</a></div>
+    <ul class="people rv" role="list">{% for t in fund.team %}<li>{{ t.name }}, {{ t.role | lower }}{% if t.linkedin %} · <a href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}</li>{% endfor %}</ul>
   </section>
 </main>
