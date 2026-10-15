@@ -9,7 +9,7 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
 <main class="inv">
   <section class="inv-hero" id="top">
     <h1 class="rv">{{ fund.investors.hero }}</h1>
-    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Meet us</a><a class="quiet" href="#companies">Meet the companies</a></div>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Meet us</a><a class="quiet" href="#sessions">Pitch sessions</a></div>
     <ul class="nums rv" role="list">
       {% for n in fund.investors.numbers %}<li><b>{{ n.value }}</b><span>{{ n.label }}</span></li>{% endfor %}
     </ul>
@@ -25,7 +25,7 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
   <section id="team">
     <p class="t rv">Team.</p>
     <ul class="team" role="list">
-      {% for t in fund.team %}<li class="rv{% if t.name | isTodo %} todo{% endif %}"><span class="ph" aria-hidden="true">{{ t.name | first }}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p></li>{% endfor %}
+      {% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="/brand/icon-white.svg" alt="">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="mailto:{{ fund.fund.email }}?subject=Subscribe">Want to know what it can do? Subscribe</a>{% endif %}</li>{% endfor %}
     </ul>
     <p class="fine rv">Photos and LinkedIn links: TODO.</p>
   </section>
@@ -41,11 +41,21 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
     <p class="fine rv"><a href="/#portfolio">All {{ fund.portfolio.companies | length }} companies →</a></p>
   </section>
 
+  <section id="sessions">
+    <p class="t rv">{{ fund.investors.pitch_sessions.title }}.</p>
+    <p class="lead2 rv">{{ fund.investors.pitch_sessions.text }}</p>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Pitch%20session">{{ fund.investors.pitch_sessions.cta }}</a><span class="fine todo">{{ fund.investors.pitch_sessions.note }}</span></div>
+  </section>
+
+  <section id="newsletter">
+    <p class="t rv">{{ fund.investors.newsletter.title }}.</p>
+    <p class="lead2 rv">{{ fund.investors.newsletter.text }}</p>
+    <div class="cta rv"><a class="pill pill-ghost" href="mailto:{{ fund.fund.email }}?subject=Subscribe">{{ fund.investors.newsletter.cta }}</a><span class="fine todo">TODO: sign-up link</span></div>
+  </section>
+
   <section id="start" class="last">
-    <p class="t rv">Two ways to start.</p>
-    <div class="ways rv">
-      <div class="note" style="--r:-1.5deg"><h3>Meet the companies</h3><p>Come to a pitch session and see the cohort before anyone else.</p><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Pitch%20session">Ask for an invite</a></div>
-      <div class="note" style="--r:1.5deg"><h3>Meet us</h3><p>A 30-minute call about the thesis, the program and co-investing.</p><a class="pill pill-ghost" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Book a call</a></div>
-    </div>
+    <p class="t rv">Meet us.</p>
+    <p class="lead2 rv">A 30-minute call about the thesis, the program and co-investing.</p>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Book a call</a><a class="quiet" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></div>
   </section>
 </main>

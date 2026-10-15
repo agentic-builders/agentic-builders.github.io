@@ -25,3 +25,12 @@
 .ways p{font:400 14px/1.55 'Inter';color:#4B5563;margin-bottom:16px}
 @media (max-width:760px){.nums,.team,.ways{grid-template-columns:1fr 1fr}.approach div{grid-template-columns:1fr;gap:6px}}
 @media (max-width:520px){.nums,.team,.ways{grid-template-columns:1fr}}
+
+.lead2{font:400 17px/1.55 'Inter';color:#4B5563;max-width:56ch;margin-top:12px}
+.team li.agent{background:#1F2937;border-color:#1F2937}
+.team li.agent b,.team li.agent p{color:#fff}.team li.agent p{color:rgba(255,255,255,.8)}
+.team li.agent .role{color:#FEA681}
+.team li.agent .ph{background:#FC4C03}.team li.agent .ph img{width:22px;height:22px}
+.pill.sm{padding:9px 14px;font-size:12.5px;margin-top:14px}
+.team li.agent .pill-ghost{border-color:rgba(255,255,255,.3);color:#fff;background:transparent}
+.todo{color:#B03502;font-family:'JetBrains Mono';font-size:12px}

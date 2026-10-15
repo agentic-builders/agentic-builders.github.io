@@ -15,7 +15,8 @@
     "apply_url": "https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9",
     "apply_url_note": "TODO: confirm the public application form link (current Notion form).",
     "meet_url": "TODO: link to book a meeting with the fund (Calendly or similar)",
-    "pitch_session_url": "TODO: link or form for investors who want to see the cohort (pitch session / demo day)"
+    "pitch_session_url": "TODO: link or form for investors who want to see the cohort (pitch session / demo day)",
+    "newsletter_url": "TODO: newsletter sign-up link (placeholder: email with subject Subscribe)"
   },
   "thesis": {
     "headline": "The Opportunity",
@@ -61,7 +62,7 @@
       },
       {
         "name": "Market",
-        "detail": "The US is in your plans, as the first market or the next one."
+        "detail": "The US and Europe are your markets, now or next."
       },
       {
         "name": "Sales",
@@ -276,7 +277,7 @@
     },
     {
       "q": "Who can apply?",
-      "a": "Teams building products agents use or tools for building agent products, at idea to pre-seed stage. We pay attention to experience, the US market in your plans, someone on the team who sells, and how fast the team iterates."
+      "a": "Teams building products agents use or tools for building agent products, at idea to pre-seed stage. We pay attention to experience, the US and Europe in your plans, someone on the team who sells, and how fast the team iterates."
     },
     {
       "q": "What do I need to apply?",
@@ -306,35 +307,20 @@
     {
       "name": "Leo Ivanov",
       "role": "Partner, Operations",
-      "line": "Runs the fund's operating system: pipeline, legal, investor database.",
+      "line": "Runs the fund's operating system: pipeline, legal, investor relations.",
       "linkedin": "TODO",
       "photo": "TODO",
       "note": "TODO: confirm title"
     },
     {
-      "name": "Elizaveta Chernysheva",
-      "role": "Operations and founder support",
-      "line": "Onboarding, tools, credits, mentors, contractors.",
-      "linkedin": "TODO",
-      "photo": "TODO"
-    },
-    {
-      "name": "Munira Islamova",
-      "role": "Finance",
-      "line": "Payments, financial reporting, P&L support for portfolio companies.",
-      "linkedin": "TODO",
-      "photo": "TODO"
-    },
-    {
-      "name": "TODO: Sonya (surname)",
-      "role": "TODO",
-      "line": "Meets founders in the selection process.",
-      "linkedin": "TODO",
-      "photo": "TODO"
+      "name": "The fund's AI agent",
+      "role": "Employee",
+      "line": "Reads every application and deck, runs the weekly check-ins, writes the memos, tracks the portfolio.",
+      "agent": true
     }
   ],
   "investors": {
-    "hero": "We find agent-native founders at the idea stage, run them through a four-week track, and bring the ones that move to the funds that do the next round.",
+    "hero": "We find agent-native founders at the idea stage, run them through a four-week track, and invest in the ones who move toward their next funds.",
     "numbers": [
       {
         "value": "13",
@@ -362,19 +348,23 @@
       },
       {
         "name": "Stage",
-        "text": "Idea to pre-seed. The earliest stage; some will die, that is the price of the stage."
+        "text": "Idea to pre-seed, the earliest stage."
+      },
+      {
+        "name": "Markets",
+        "text": "Teams that sell into the US and Europe."
       },
       {
         "name": "Program",
-        "text": "Cohorts. A four-week track with weekly check-ins, one key number per company, partner toolkit, then a decision. After investment: weekly fund meeting, 1:1s, guilds, perks."
+        "text": "A four-week track with weekly check-ins and one key number per company, then a decision. After investment: weekly fund meeting, 1:1s with the general partner, guilds, perks, introductions to the next investors."
       },
       {
         "name": "Selection",
-        "text": "Four things we pay attention to: experience, the US market in the plans, someone on the team who sells, and iteration speed. Team and the ability to sell weigh half the decision; market and US access a quarter; product a quarter."
+        "text": "Four things we pay attention to: experience, the US and Europe in the plans, someone on the team who sells, and iteration speed."
       },
       {
         "name": "How we run",
-        "text": "The fund operates on its own AI agents: intake and deck analysis, weekly check-ins, investment memos, portfolio tracking and a Monday digest. Partners decide; agents prepare."
+        "text": "The fund operates on its own AI agents: intake and deck analysis, weekly check-ins, investment memos, portfolio tracking. Partners decide; agents prepare."
       }
     ],
     "featured": [
@@ -384,7 +374,18 @@
       "Heron",
       "kone",
       "VisibilityPro"
-    ]
+    ],
+    "pitch_sessions": {
+      "title": "Pitch sessions",
+      "text": "We run regular pitch sessions where the teams in the track present to investors. You can join, see the companies early and give the teams your feedback.",
+      "cta": "Ask for an invite",
+      "note": "TODO: cadence and format"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "text": "New applications, what moved in the track, who is raising. A short letter from the fund.",
+      "cta": "Subscribe"
+    }
   },
   "agents": {
     "intro": "This page is for AI agents acting for a person: a founder, an investor, a journalist. Everything here is also in /agents.md, /llms.txt and /llms-full.txt.",
