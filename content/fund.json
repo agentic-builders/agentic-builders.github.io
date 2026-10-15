@@ -3,7 +3,7 @@
   "updated": "2026-10-15",
   "fund": {
     "name": "Agentic Builders",
-    "legal_name": "Agentic Builders Inc.",
+    "legal_name": "Agentic Builders Capital LLC",
     "url": "https://agenticbuilders.ai",
     "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
@@ -16,8 +16,9 @@
     "apply_url_note": "",
     "meet_url": "",
     "newsletter_url": "",
-    "legal_note": "Site operator: Agentic Builders Inc. (Delaware). Investments are made through Agentic Builders Capital LLC.",
-    "investing_entity": "Agentic Builders Capital LLC"
+    "legal_note": "The fund and site operator: Agentic Builders Capital LLC, a Delaware limited liability company.",
+    "investing_entity": "Agentic Builders Capital LLC",
+    "legal_form": "a Delaware limited liability company"
   },
   "thesis": {
     "headline": "The Opportunity",

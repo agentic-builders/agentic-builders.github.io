@@ -10,7 +10,7 @@ https://agenticbuilders.ai. Static site, three modes for three audiences, built 
 | `/agents/` | AI agents acting for a person | Download agents.md |
 | `/investors/` | Investors | Meet us |
 
-Other pages: `/apply/` (redirects to the application form), `/privacy/`, `/legal/` (drafts for legal review), `404.html`.
+Other pages: `/apply/` (redirects to the application form), `/privacy/`, `/legal/`, `404.html`.
 Generated files: `/agents.md`, `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders.vcf`, `/sitemap.xml`, JSON-LD in every page head.
 
 ## Run locally
