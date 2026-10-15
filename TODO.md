@@ -1,6 +1,6 @@
 # TODO list for the site draft
 
-Generated from `content/fund.json` and `content/site.json` on build (2026-10-14). Fill the values in the JSON files; this file is regenerated on every build.
+Generated from `content/fund.json` and `content/site.json` on build (2026-10-15). Fill the values in the JSON files; this file is regenerated on every build.
 
 | # | Kind | Where | Text |
 |---|---|---|---|
