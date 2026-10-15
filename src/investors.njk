@@ -40,7 +40,13 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
   <section id="newsletter">
     <h2 class="t rv">{{ fund.investors.newsletter.title }}.</h2>
     <p class="lead2 rv">{{ fund.investors.newsletter.text }}</p>
-    <div class="cta rv"><a class="pill pill-ghost" href="mailto:{{ fund.fund.email }}?subject=Subscribe">{{ fund.investors.newsletter.cta }}</a></div>
+    <form class="subscribe rv" data-subscribe action="{{ site.api_base_url }}/subscribe" method="post">
+      <label class="sr-only" for="sub-email">Email</label>
+      <input id="sub-email" name="email" type="email" required autocomplete="email" placeholder="you@fund.com">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+      <button type="submit" class="pill pill-dark">{{ fund.investors.newsletter.cta }}</button>
+      <p class="sub-status" aria-live="polite"></p>
+    </form>
   </section>
 
   <section id="contact" class="last">

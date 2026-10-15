@@ -23,5 +23,5 @@
       "cta_key": "meet"
     }
   ],
-  "api_base_url": ""
+  "api_base_url": "https://site-api-production-9a33.up.railway.app"
 }

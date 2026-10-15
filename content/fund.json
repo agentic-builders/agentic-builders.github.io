@@ -361,7 +361,7 @@
     },
     "newsletter": {
       "title": "Newsletter",
-      "text": "What moved in the track and which teams are getting ready to raise. A short letter from the fund.",
+      "text": "What moved in the track and which teams are getting ready to raise. A short letter from the fund, a few times a year.",
       "cta": "Subscribe"
     },
     "contact": {
@@ -370,9 +370,9 @@
     }
   },
   "agents": {
-    "intro": "This page is for AI agents acting for a person: a founder, an investor, a journalist. The same text is served as /agents.md and /llms-full.txt. There is no submission API yet; applications go through the form linked below.",
+    "intro": "This page is for AI agents acting for a person: a founder, an investor, a journalist. The same text is served as /agents.md and /llms-full.txt. Applications can be submitted through the form or through the API below.",
     "apply_instructions": {
-      "where": "Submit through the application form at https://agenticbuilders.ai/apply/ (it opens the fund's form). There is no API yet; the form is the only intake. If the form cannot be used, email hey@agenticbuilders.ai with the same fields.",
+      "where": "Two ways. (1) API: POST https://site-api-production-9a33.up.railway.app/apply with JSON (schema: GET https://site-api-production-9a33.up.railway.app/schema). (2) The form at https://agenticbuilders.ai/apply/, for agents that drive a browser. If neither works, email hey@agenticbuilders.ai with the same fields.",
       "required": [
         "email",
         "full_name",
@@ -524,11 +524,11 @@
       {
         "name": "Help a founder apply",
         "steps": [
-          "Read /agents.md and the application field schema.",
+          "Read /agents.md and GET https://site-api-production-9a33.up.railway.app/schema.",
           "Collect every required field from the person; ask, do not guess.",
           "Go through the three things the fund pays attention to with the person, honestly.",
-          "Open the application form and fill it in; put the deck as a link that opens without login, or leave it out.",
-          "Tell the person what happens next: a decision within four weeks; during the track, one short check-in a week."
+          "POST the application to https://site-api-production-9a33.up.railway.app/apply (or fill the form at /apply/ in a browser); put the deck as a link that opens without login, or leave it out.",
+          "Give the person the application_id and tell them what happens next: a decision within four weeks; during the track, one short check-in a week."
         ]
       },
       {
@@ -554,8 +554,24 @@
           "Pick the portfolio companies that match the investor's focus from the portfolio list in /agents.md.",
           "Request a meeting by email to hey@agenticbuilders.ai with the investor's focus, stage and check size."
         ]
+      },
+      {
+        "name": "Subscribe a person to the newsletter",
+        "steps": [
+          "Ask the person for consent and the email address to use.",
+          "POST {email, name, role} to https://site-api-production-9a33.up.railway.app/subscribe.",
+          "Tell the person they can unsubscribe by replying to any letter."
+        ]
       }
-    ]
+    ],
+    "api": {
+      "base_url": "https://site-api-production-9a33.up.railway.app",
+      "schema_url": "https://site-api-production-9a33.up.railway.app/schema",
+      "docs_url": "https://site-api-production-9a33.up.railway.app/docs",
+      "apply": "POST https://site-api-production-9a33.up.railway.app/apply with a JSON body using the field names below. Required: email, full_name, link, location, background, founder_experience (array), ai_experience. Response: {ok, application_id, next}. Keep application_id for the person. Limits: 5 requests per hour per address; one application per company.",
+      "subscribe": "POST https://site-api-production-9a33.up.railway.app/subscribe with {email, name?, role? (founder | investor | other), source?}. Adds the address to the fund's newsletter list.",
+      "errors": "422 = validation error with the field named in the response; 429 = too many requests; 503 = service not configured, fall back to the form."
+    }
   },
   "home": {
     "panel_title": "Early-stage fund for agent-native products",

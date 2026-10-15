@@ -34,6 +34,12 @@
 {% for d in fund.agents.apply_instructions.do_not %}- {{ d }}
 {% endfor %}- After submitting: {{ fund.agents.apply_instructions.after }}
 
+### API
+- Base URL: {{ fund.agents.api.base_url }} · schema: {{ fund.agents.api.schema_url }} · OpenAPI: {{ fund.agents.api.docs_url }}
+- {{ fund.agents.api.apply }}
+- {{ fund.agents.api.subscribe }}
+- {{ fund.agents.api.errors }}
+
 ### Application field schema ({{ fund.agents.application_fields_note }})
 | field | type | required | label | example |
 |---|---|---|---|---|
