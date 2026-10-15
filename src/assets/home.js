@@ -8,6 +8,9 @@
             es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
         }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
         els.forEach(function (el) { io.observe(el); });
+        /* Safety net: if the observer never fires (hidden tab, odd embeds), reveal what is on screen. */
+        setTimeout(function () { els.forEach(function (el) { var r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) el.classList.add('in'); }); }, 1200);
+        addEventListener('scroll', function () { els.forEach(function (el) { if (!el.classList.contains('in')) { var r = el.getBoundingClientRect(); if (r.top < innerHeight * 0.95) el.classList.add('in'); } }); }, { passive: true });
     } else { els.forEach(function (el) { el.classList.add('in'); }); }
 
     var el = document.querySelector('[data-scrub]');
