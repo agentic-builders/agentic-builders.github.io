@@ -146,3 +146,8 @@ body.c{background:#fff;color:#1F2937}
 @media (max-width:600px){.team{grid-template-columns:1fr}}
 
 .nl-intro{margin-top:28px}.nl-intro+.subscribe,.nl-intro+.cta{margin-top:12px}
+
+/* Standalone text pages (privacy, legal, apply, 404) */
+.inv.doc-page,.mode-founders .inv{max-width:900px;margin:0 auto;padding:118px 32px 40px}
+.doc-page h1{font:600 clamp(30px,4.2vw,48px)/1.12 'Urbanist',system-ui,sans-serif;letter-spacing:-.03em;color:#111827;margin-bottom:8px}
+.doc-page section{padding:0 0 8vh}
