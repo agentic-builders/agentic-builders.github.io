@@ -7,7 +7,7 @@
     "url": "https://agenticbuilders.ai",
     "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
-    "description": "Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. The fund reads every application and replies within four weeks; teams that fit get a four-week track with weekly check-ins and tool credits, and if there is progress the fund invests a first check and takes the team to its next round.",
+    "description": "Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. The fund reads every application and replies to each one; teams that fit get a four-week track with weekly check-ins and tool credits, and at the end of it a decision on a first check. If there is progress, the fund invests and takes the team to its next round.",
     "founded": "2025",
     "stage": "Idea to pre-seed",
     "email": "hey@agenticbuilders.ai",
@@ -80,12 +80,12 @@
   "program": {
     "name": "Four-week track",
     "hook": "Four weeks of your work. If there is progress, we invest and take you to the next round.",
-    "summary": "We read every application. Teams that fit get four weeks of their own work with our support along the way. If there is progress, we invest and take you to the next round.",
+    "summary": "We read every application. Teams that fit get a four-week track: their own work with our support along the way. If there is progress, we invest and take you to the next round.",
     "steps": [
       {
         "name": "Apply",
         "duration": "Day 0",
-        "description": "One form, about 15 minutes, no call needed to start. Abi, our AI agent, reads the application and the deck; the partners review it and reply within four weeks."
+        "description": "One form, about 15 minutes, no call needed to start. Abi, our AI agent, reads the application and the deck; the partners review it and reply to every applicant."
       },
       {
         "name": "Four weeks of your work",
@@ -94,7 +94,7 @@
       },
       {
         "name": "Decision",
-        "duration": "End of the track",
+        "duration": "End of week four",
         "description": "If there is progress, we invest: a first check of $30–100k on a standard post-money SAFE. If not now, we tell you why and when to come back."
       },
       {
@@ -122,12 +122,12 @@
         "Issue tracking (Linear)"
       ]
     },
-    "timeline": "We reply to every application within four weeks. In the track, the only thing we ask for is a weekly check-in.",
+    "timeline": "Every application gets a reply. In the track, the only thing we ask for is a weekly check-in.",
     "stages": [
       {
         "name": "Four weeks of your work",
         "kicker": "Step 1",
-        "text": "We read every application. If your team fits, we invite you to a four-week track. You build, sell and ship; we watch how you work. Once a week, a short check-in: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday.",
+        "text": "We read every application and reply to each one. If your team fits, we invite you to a four-week track. You build, sell and ship; we watch how you work. Once a week, a short check-in: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday.",
         "gets": [
           "Tool credits: cloud, AI coding and app building, LLM tracing, web data, prospecting, docs",
           "Abi, our AI agent, reads your deck and gives you back the questions investors will ask",
@@ -137,7 +137,7 @@
       {
         "name": "If there is progress, we invest",
         "kicker": "Step 2",
-        "text": "At the end of week four the partners decide and tell you why, either way. If not now, we say when it makes sense to come back.",
+        "text": "At the end of the four weeks the partners decide on a first check and tell you why, either way. If not now, we say when it makes sense to come back.",
         "gets": [
           "First check of $30–100k on a standard post-money SAFE",
           "Valuation agreed with you, not a fixed share",
@@ -274,7 +274,7 @@
   "faq": [
     {
       "q": "How long does it take from application to a decision?",
-      "a": "We reply to every application within four weeks. If we invite you to the track, it runs four weeks with one short check-in a week, and at the end the partners decide on a first check and tell you why, either way."
+      "a": "The track is four weeks, and the decision on a first check comes at its end. Before that, we read your application and tell you whether we invite you to the track."
     },
     {
       "q": "How much do you invest?",
@@ -359,7 +359,7 @@
       },
       {
         "name": "Program",
-        "text": "We read every application. Teams that fit get a four-week track with weekly check-ins and tool credits, then a decision. If there is progress we invest a first check and work on the next round with the team: investor introductions and the founder platform."
+        "text": "We read every application. Teams that fit get a four-week track with weekly check-ins and tool credits, and a decision on a first check at its end. If there is progress we invest and work on the next round with the team: investor introductions and the founder platform."
       },
       {
         "name": "Selection",
@@ -409,7 +409,7 @@
         "Do not submit more than one application per company.",
         "Do not paste confidential data the person did not approve for sharing."
       ],
-      "after": "The fund reads every application and replies within four weeks: an invitation to the four-week track or a pass with the reason. In the track the person answers one short check-in a week; at the end the partners decide on a first check."
+      "after": "The fund reads every application and replies to each one: an invitation to the four-week track or a pass with the reason. In the track the person answers one short check-in a week; at the end of week four the partners decide on a first check."
     },
     "application_fields": [
       {
@@ -548,7 +548,7 @@
           "Collect every required field from the person; ask, do not guess.",
           "Go through the three things the fund pays attention to with the person, honestly.",
           "Submit through the form at /apply/ in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.",
-          "Tell the person what happens next: a reply within four weeks; if invited, a four-week track with one short check-in a week."
+          "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short check-in a week, and a decision on a first check at its end."
         ]
       },
       {
@@ -601,7 +601,7 @@
     ],
     "status_lines": [
       "Abi is reading new applications…",
-      "every application gets a reply within four weeks"
+      "every application gets a reply"
     ],
     "h1_before": "We fund",
     "h1_link1": "agent-native products",
@@ -610,7 +610,7 @@
     "h1_after": ".",
     "sub_before": "First checks of",
     "sub_strong": "$30–100k",
-    "sub_after": "on a SAFE. One form, a reply within four weeks, and for teams that fit, four weeks with our support and a decision with the reasons either way.",
+    "sub_after": "on a SAFE. One form. For teams that fit, four weeks with our support and a decision on a first check at the end.",
     "cta": "Apply for funding",
     "cta_quiet": "How it works",
     "thesis_products": "We back two kinds of products.",
