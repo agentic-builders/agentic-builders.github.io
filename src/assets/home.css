@@ -10,7 +10,7 @@ body.c{background:#fff;color:#1F2937}
 .skip-link{position:absolute;left:1rem;top:-4rem;background:#1F2937;color:#fff;padding:.5rem .9rem;border-radius:6px;z-index:100;text-decoration:none}.skip-link:focus-visible{top:1rem}
 :focus-visible{outline:2px solid #FC4C03;outline-offset:3px}
 .disclaimer{display:block;width:100%;font-size:12px;color:#6B7280;max-width:80ch}
-.panel{position:sticky;top:96px;padding:26px;border-radius:20px;background:rgba(255,255,255,.6);border:1px solid rgba(31,41,55,.08);box-shadow:0 30px 60px -45px rgba(31,41,55,.3),inset 0 1px 0 #fff;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);overflow:hidden}
+.panel{position:sticky;top:96px;padding:26px;border-radius:20px;clip-path:inset(0 round 20px);isolation:isolate;background:rgba(255,255,255,.6);border:1px solid rgba(31,41,55,.08);box-shadow:0 30px 60px -45px rgba(31,41,55,.3),inset 0 1px 0 #fff;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);overflow:hidden}
 .panel::before{content:"";position:absolute;right:-120px;bottom:-140px;width:320px;height:320px;border-radius:50%;background:radial-gradient(closest-side,rgba(252,76,3,.18),transparent 70%);filter:blur(24px);pointer-events:none}
 .panel-title{font:700 22px/1.15 'Urbanist',system-ui,sans-serif;letter-spacing:-.02em;color:#1F2937!important}
 .panel p{font:400 13.5px/1.55 'Inter',system-ui,sans-serif;color:#6B7280;margin-top:10px}
