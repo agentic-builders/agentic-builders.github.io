@@ -13,13 +13,12 @@
 .approach div{display:grid;grid-template-columns:160px 1fr;gap:20px;padding:20px 0;border-top:1px solid rgba(31,41,55,.1)}
 .approach dt{font:700 16px/1.4 'Urbanist';color:#111827}
 .approach dd{font:400 16px/1.55 'Inter';color:#4B5563;max-width:60ch}
-.team{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.team{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px;max-width:640px}
 .team li{padding:20px;border:1px solid rgba(31,41,55,.1);border-radius:16px}
 .team .ph{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#FFF1EA;color:#B03502;font:800 18px/1 'Urbanist';margin-bottom:14px}
 .team b{display:block;font:700 17px/1.2 'Urbanist';color:#111827}
 .team .role{display:block;font:500 12.5px/1.4 'Inter';color:#B03502;margin:4px 0 8px}
 .team p{font:400 14px/1.5 'Inter';color:#4B5563}
-.team li.todo{border-style:dashed;opacity:.7}
 .inv .stickers{margin-top:28px}
 .inv .plist{margin-top:28px}
 .ways{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}

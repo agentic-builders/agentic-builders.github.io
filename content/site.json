@@ -1,23 +1,27 @@
 {
-  "_readme": "Site-level settings. hero_variant picks one of hero_variants (1-based) for the founders page.",
-  "hero_variant": 1,
-  "hero_variants": [
-    "Apply today. Get funded in 4 weeks.",
-    "Our AI partner reads your deck. Money follows in 4 weeks.",
-    "From application to first check in 4 weeks."
-  ],
-  "hero_subtitle": "TODO: subtitle. Draft: An early-stage fund for agent-native products. One form, a four-week track with weekly check-ins, then a decision with an explanation, either way.",
+  "_readme": "Site-level settings.",
   "modes": [
-    {"key": "founders", "label": "For founders", "url": "/", "cta_label": "Apply", "cta_key": "apply"},
-    {"key": "agents", "label": "For agents", "url": "/agents/", "cta_label": "Download agents.md", "cta_key": "agents_md"},
-    {"key": "investors", "label": "For investors", "url": "/investors/", "cta_label": "Meet us", "cta_key": "meet"}
+    {
+      "key": "founders",
+      "label": "For founders",
+      "url": "/",
+      "cta_label": "Apply",
+      "cta_key": "apply"
+    },
+    {
+      "key": "agents",
+      "label": "For agents",
+      "url": "/agents/",
+      "cta_label": "Download agents.md",
+      "cta_key": "agents_md"
+    },
+    {
+      "key": "investors",
+      "label": "For investors",
+      "url": "/investors/",
+      "cta_label": "Meet us",
+      "cta_key": "meet"
+    }
   ],
-  "ask_ai": {
-    "query": "What is Agentic Builders (agenticbuilders.ai), what does it invest in, and how does a founder apply?",
-    "engines": [
-      {"name": "ChatGPT", "url": "https://chatgpt.com/?q="},
-      {"name": "Claude", "url": "https://claude.ai/new?q="},
-      {"name": "Perplexity", "url": "https://www.perplexity.ai/search?q="}
-    ]
-  }
+  "api_base_url": ""
 }

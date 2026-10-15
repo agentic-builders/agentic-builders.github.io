@@ -1,18 +1,20 @@
-/* Draft pages A/B: reveal on scroll, scroll-lit thesis, FAQ single-open. Page works without JS. */
+/* Progressive enhancements. The page is complete without this file: the html.js class gates every animation. */
 (function () {
+    'use strict';
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var fine = window.matchMedia('(pointer: fine)').matches;
 
+    /* Reveal on scroll, with a safety net if the observer never fires. */
     var els = document.querySelectorAll('.rv');
+    var revealVisible = function () { els.forEach(function (el) { if (!el.classList.contains('in')) { var r = el.getBoundingClientRect(); if (r.top < innerHeight * 0.95 && r.bottom > 0) el.classList.add('in'); } }); };
     if ('IntersectionObserver' in window && !reduce) {
-        var io = new IntersectionObserver(function (es) {
-            es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
         els.forEach(function (el) { io.observe(el); });
-        /* Safety net: if the observer never fires (hidden tab, odd embeds), reveal what is on screen. */
-        setTimeout(function () { els.forEach(function (el) { var r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) el.classList.add('in'); }); }, 1200);
-        addEventListener('scroll', function () { els.forEach(function (el) { if (!el.classList.contains('in')) { var r = el.getBoundingClientRect(); if (r.top < innerHeight * 0.95) el.classList.add('in'); } }); }, { passive: true });
+        setTimeout(revealVisible, 1200);
+        addEventListener('scroll', revealVisible, { passive: true });
     } else { els.forEach(function (el) { el.classList.add('in'); }); }
 
+    /* Thesis: words light up as the reader scrolls. */
     var el = document.querySelector('[data-scrub]');
     if (el) {
         var words = el.textContent.trim().split(/\s+/); el.textContent = '';
@@ -25,18 +27,17 @@
         }
     }
 
+    /* FAQ: one open at a time. */
     var items = document.querySelectorAll('details.q');
     items.forEach(function (d) { d.addEventListener('toggle', function () { if (d.open) items.forEach(function (o) { if (o !== d) o.open = false; }); }); });
 
+    /* Nav shadow. */
     var nav = document.querySelector('.nav');
-    addEventListener('scroll', function () { nav.classList.toggle('scrolled', scrollY > 10); }, { passive: true });
-})();
+    if (nav) addEventListener('scroll', function () { nav.classList.toggle('scrolled', scrollY > 10); }, { passive: true });
 
-/* Draft C extras: eye follows cursor + blinks, typing status, count-up. */
-(function () {
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    /* Eye in the headline follows the cursor and blinks (fine pointers only). */
     var eye = document.querySelector('[data-eye]');
-    if (eye && !reduce && window.matchMedia('(pointer: fine)').matches) {
+    if (eye && !reduce && fine) {
         addEventListener('pointermove', function (e) {
             var r = eye.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
             var dx = e.clientX - cx, dy = e.clientY - cy, d = Math.hypot(dx, dy) || 1, m = Math.min(r.width * 0.18, d);
@@ -44,47 +45,41 @@
         }, { passive: true });
         (function blink() { setTimeout(function () { eye.classList.add('blink'); setTimeout(function () { eye.classList.remove('blink'); blink(); }, 140); }, 2600 + Math.random() * 3000); })();
     }
+
+    /* Typing status in the side panel (decorative, hidden from assistive tech, paused when the tab is hidden). */
     var ty = document.querySelector('[data-type]');
     if (ty && !reduce) {
-        var lines = JSON.parse(ty.getAttribute('data-type')), i = 0;
-        (function next() {
+        var lines = JSON.parse(ty.getAttribute('data-type')), i = 0, timer = null;
+        var next = function () {
+            if (document.hidden) { timer = setTimeout(next, 1500); return; }
             i = (i + 1) % lines.length; var s = lines[i], k = 0; ty.textContent = '';
-            var iv = setInterval(function () { ty.textContent = s.slice(0, ++k); if (k >= s.length) { clearInterval(iv); setTimeout(next, 2800); } }, 38);
-        })();
+            var iv = setInterval(function () { ty.textContent = s.slice(0, ++k); if (k >= s.length) { clearInterval(iv); timer = setTimeout(next, 2800); } }, 38);
+        };
+        timer = setTimeout(next, 2800);
     }
+
+    /* Count-up for the check: the markup already holds the final numbers. */
     var counters = document.querySelectorAll('[data-count]');
     if (counters.length && 'IntersectionObserver' in window && !reduce) {
-        var io = new IntersectionObserver(function (es) {
+        var cio = new IntersectionObserver(function (es) {
             es.forEach(function (e) {
-                if (!e.isIntersecting) return; io.unobserve(e.target);
-                var el = e.target, to = +el.getAttribute('data-count'), t0 = performance.now();
-                (function step(t) { var p = Math.min(1, (t - t0) / 900); p = 1 - Math.pow(1 - p, 3); el.textContent = Math.round(to * p); if (p < 1) requestAnimationFrame(step); })(t0);
+                if (!e.isIntersecting) return; cio.unobserve(e.target);
+                var c = e.target, to = +c.getAttribute('data-count'), t0 = performance.now();
+                (function step(t) { var p = Math.min(1, (t - t0) / 900); p = 1 - Math.pow(1 - p, 3); c.textContent = Math.round(to * p); if (p < 1) requestAnimationFrame(step); else c.textContent = to; })(t0);
             });
         }, { threshold: 0.1 });
-        setTimeout(function () { counters.forEach(function (c) { if (c.textContent === "0") c.textContent = c.getAttribute("data-count"); }); }, 4000);
-        counters.forEach(function (c) { io.observe(c); });
-    } else { counters.forEach(function (c) { c.textContent = c.getAttribute('data-count'); }); }
-})();
+        counters.forEach(function (c) { cio.observe(c); });
+    }
 
-/* Agents page: light syntax colouring for the JSON block. */
-(function () {
-    var el = document.querySelector('[data-json]'); if (!el) return;
-    var esc = function (t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
-    el.innerHTML = esc(el.textContent).replace(/("(?:[^"\\]|\\.)*")(\s*:)?|\b(true|false|null|\d+)\b/g, function (m, str, colon, lit) {
-        if (str) return colon ? '<span class="k">' + str + '</span>' + colon : '<span class="s">' + str + '</span>';
-        return '<span class="l">' + lit + '</span>';
-    });
-})();
-
-/* Agents page: copy the raw text. */
-(function () {
-    var btn = document.querySelector('[data-copy-agents]'); if (!btn) return;
-    var status = document.querySelector('[data-copy-status]');
-    btn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        var pre = document.getElementById('agents-md');
-        var text = pre.textContent.split('\n').slice(2).join('\n');
-        navigator.clipboard.writeText(text).then(function () { if (status) status.textContent = '— copied'; },
-            function () { if (status) status.textContent = '— could not copy, open /agents.md'; });
-    });
+    /* Agents page: copy the raw text. */
+    var btn = document.querySelector('[data-copy-agents]');
+    if (btn) {
+        var status = document.querySelector('[data-copy-status]');
+        btn.addEventListener('click', function () {
+            var pre = document.getElementById('agents-md');
+            var text = pre.textContent.split('\n').slice(2).join('\n');
+            if (!navigator.clipboard) { if (status) status.textContent = '— open /agents.md to copy'; return; }
+            navigator.clipboard.writeText(text).then(function () { if (status) status.textContent = '— copied'; }, function () { if (status) status.textContent = '— could not copy, open /agents.md'; });
+        });
+    }
 })();

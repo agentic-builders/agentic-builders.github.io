@@ -3,21 +3,21 @@ permalink: /llms.txt
 ---
 # {{ fund.fund.name }}
 
-> {{ fund.fund.one_liner }}
-
-## Key facts
-- Stage: {{ fund.fund.stage }}. First check: {{ fund.program.terms.first_check_usd }} on a {{ fund.program.terms.instrument | lower }}.
-- Program: {{ fund.program.summary }}
-- Apply: {{ fund.fund.apply_url }}
-- Contact: {{ fund.fund.email }}. LinkedIn: {{ fund.fund.linkedin }}
+> {{ fund.fund.one_liner }} First checks of {{ fund.program.terms.first_check_usd }} on a standard post-money SAFE. One form, a four-week track, a decision within four weeks. Apply: {{ fund.fund.url }}/apply/ · Contact: {{ fund.fund.email }} · Updated {{ fund.updated }}.
 
 ## Pages
-- [For founders]({{ fund.fund.url }}/): program, thesis, criteria, portfolio, FAQ
+
+- [For founders]({{ fund.fund.url }}/): program, thesis, selection, team, portfolio, FAQ
 - [For agents]({{ fund.fund.url }}/agents/): instructions and application schema for AI agents
-- [For investors]({{ fund.fund.url }}/investors/): approach, team, selected portfolio
+- [For investors]({{ fund.fund.url }}/investors/): approach, team, selected portfolio, pitch sessions
 - [agents.md]({{ fund.fund.url }}/agents.md): everything in one Markdown file
-- [Full text]({{ fund.fund.url }}/llms-full.txt)
+- [Privacy policy]({{ fund.fund.url }}/privacy/) and [legal notice]({{ fund.fund.url }}/legal/)
 
 ## Portfolio
-{% for c in fund.portfolio.companies %}- [{{ c.name }}]({{ c.url }}): {{ c.for_agents }}
+
+{% for c in fund.portfolio.companies %}- [{{ c.name }}]({{ c.url }}): {{ c.for_humans }}
 {% endfor %}
+## Optional
+
+- [Full text]({{ fund.fund.url }}/llms-full.txt)
+- [Brand assets]({{ fund.fund.url }}/brand/)

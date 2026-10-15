@@ -16,13 +16,13 @@
 {{ fund.program.summary }}
 {% for s in fund.program.steps %}{{ loop.index }}. **{{ s.name }}** ({{ s.duration }}): {{ s.description }}
 {% endfor %}
-- First check: {{ fund.program.terms.first_check_usd }} (confirm). Instrument: {{ fund.program.terms.instrument }}.
-- Follow-on: {{ fund.program.terms.follow_on }} (confirm).
+- First check: {{ fund.program.terms.first_check_usd }}. Instrument: {{ fund.program.terms.instrument }}.
+- Follow-on: {{ fund.program.terms.follow_on }}.
 - Track cost: {{ fund.program.terms.track_cost }}
 - Toolkit during the track: {{ fund.program.toolkit.items | join("; ") }}.
 
-## Selection criteria
-{{ fund.who_we_look_for.lead }}
+## What the fund pays attention to
+{{ fund.who_we_look_for.lead }} {{ fund.who_we_look_for.criteria_note }}
 {% for c in fund.who_we_look_for.criteria %}{{ loop.index }}. **{{ c.name }}.** {{ c.detail }}
 {% endfor %}Strengtheners: {{ fund.who_we_look_for.strengtheners | join(", ") }}.
 
@@ -45,7 +45,6 @@
 
 ## Contacts
 - Email: {{ fund.fund.email }}
-- Book a meeting: {{ fund.fund.meet_url }}
 - vCard: {{ fund.fund.url }}/agenticbuilders.vcf
 
 ## Portfolio ({{ fund.portfolio.companies | length }})

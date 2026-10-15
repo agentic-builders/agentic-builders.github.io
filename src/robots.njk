@@ -1,9 +1,10 @@
 ---
 permalink: /robots.txt
 ---
+# Search engines and AI answer engines are welcome to index and cite this site.
 User-agent: *
 Allow: /
-{% for b in ["GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot","anthropic-ai","PerplexityBot","Google-Extended","Bingbot"] %}
+{% for b in ["GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot","Claude-User","Claude-SearchBot","PerplexityBot","Perplexity-User","Google-Extended","Applebot-Extended","Bingbot","meta-externalagent"] %}
 User-agent: {{ b }}
 Allow: /
 {% endfor %}
