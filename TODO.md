@@ -22,11 +22,9 @@ Generated from `content/fund.json` and `content/site.json` on build (2026-10-15)
 | 16 | TODO | `fund.json.team[1].linkedin` | TODO |
 | 17 | TODO | `fund.json.team[1].photo` | TODO |
 | 18 | TODO | `fund.json.team[1].note` | TODO: confirm title |
-| 19 | CONFIRM | `fund.json.investors.numbers[0].note` | confirm: website list |
-| 20 | CONFIRM | `fund.json.investors.numbers[2].note` | confirm |
-| 21 | TODO | `fund.json.investors.pitch_sessions.note` | TODO: cadence and format |
-| 22 | TODO | `fund.json.agents.application_fields_note` | Field list taken from the fund's Notion form on 2026-10-14. TODO: confirm with the team before publishing; keep in sync with the live form. |
-| 23 | TODO | `site.json.hero_subtitle` | TODO: subtitle. Draft: An early-stage fund for agent-native products. One form, a four-week track with weekly check-ins, then a decision with an explanation, either way. |
+| 19 | TODO | `fund.json.investors.pitch_sessions.note` | TODO: cadence and format |
+| 20 | TODO | `fund.json.agents.application_fields_note` | Field list taken from the fund's Notion form on 2026-10-14. TODO: confirm with the team before publishing; keep in sync with the live form. |
+| 21 | TODO | `site.json.hero_subtitle` | TODO: subtitle. Draft: An early-stage fund for agent-native products. One form, a four-week track with weekly check-ins, then a decision with an explanation, either way. |
 
 ## Not in the content file
 

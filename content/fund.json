@@ -324,21 +324,15 @@
     "numbers": [
       {
         "value": "13",
-        "label": "portfolio companies",
-        "note": "confirm: website list"
+        "label": "companies in the portfolio"
       },
       {
         "value": "2025",
-        "label": "founded"
+        "label": "fund founded"
       },
       {
-        "value": "$30k–$80k",
-        "label": "first check",
-        "note": "confirm"
-      },
-      {
-        "value": "4 weeks",
-        "label": "from application to decision"
+        "value": "$30–80k",
+        "label": "first check on a SAFE"
       }
     ],
     "approach": [
