@@ -75,3 +75,16 @@
         return '<span class="l">' + lit + '</span>';
     });
 })();
+
+/* Agents page: copy the raw text. */
+(function () {
+    var btn = document.querySelector('[data-copy-agents]'); if (!btn) return;
+    var status = document.querySelector('[data-copy-status]');
+    btn.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var pre = document.getElementById('agents-md');
+        var text = pre.textContent.split('\n').slice(2).join('\n');
+        navigator.clipboard.writeText(text).then(function () { if (status) status.textContent = '— copied'; },
+            function () { if (status) status.textContent = '— could not copy, open /agents.md'; });
+    });
+})();
