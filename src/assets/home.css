@@ -1,9 +1,9 @@
-/* Draft C — A's white typography + B's sticky panel + stickers and motion. */
+/* Home page: white typography, sticky side panel, sticker notes and motion. Fonts: Urbanist, Inter, JetBrains Mono. */
 body.c{background:#fff;color:#1F2937}
 .c .nav .logo{color:#1F2937}
 .nav.scrolled{background:rgba(255,255,255,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
 .navlinks{display:flex;gap:22px;font:500 14px/1 'Inter';color:#6B7280}
-.navlinks a{text-decoration:none}.navlinks a:hover{color:#1F2937}
+.navlinks a{text-decoration:none}.navlinks a:hover{color:#1F2937}.navlinks .sep{width:1px;height:14px;background:rgba(31,41,55,.15)}
 .layout{display:grid;grid-template-columns:320px 1fr;gap:80px;max-width:1240px;margin:0 auto;padding:118px 32px 60px;align-items:start}
 .panel{position:sticky;top:96px;padding:26px;border-radius:20px;background:rgba(255,255,255,.6);border:1px solid rgba(31,41,55,.08);box-shadow:0 30px 60px -45px rgba(31,41,55,.3),inset 0 1px 0 #fff;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);overflow:hidden}
 .panel::before{content:"";position:absolute;right:-120px;bottom:-140px;width:320px;height:320px;border-radius:50%;background:radial-gradient(closest-side,rgba(252,76,3,.18),transparent 70%);filter:blur(24px);pointer-events:none}

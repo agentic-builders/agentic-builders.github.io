@@ -1,9 +1,0 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{{ title }}</title><meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/hero.css"></head>
-<body class="{{ variant }}">
-<nav class="nav"><a class="logo" href="/"><img src="/brand/icon-color.svg" alt="">Agentic Builders</a><a class="pill {{ navpill }}" href="{{ fund.fund.apply_url }}">Apply</a></nav>
-{{ content | safe }}
-<div class="switch" aria-label="Hero variants"><a href="/hero/a/" class="{{ 'on' if variant == 'a' }}">A · Reboot</a><a href="/hero/b/" class="{{ 'on' if variant == 'b' }}">B · Flowjam</a><a href="/hero/c/" class="{{ 'on' if variant == 'c' }}">C · Rows</a></div>
-</body></html>
