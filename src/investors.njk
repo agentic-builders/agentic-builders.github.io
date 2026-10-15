@@ -9,7 +9,7 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
 <main class="inv" id="main">
   <section class="inv-hero" id="top">
     <h1 class="rv">{{ fund.investors.hero }}</h1>
-    <div class="cta rv"><a class="pill pill-dark" href="#newsletter">Newsletter</a><a class="quiet" href="#contact">Contact us</a></div>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact us</a><a class="quiet" href="#newsletter">Newsletter</a></div>
     <ul class="nums rv" role="list">{% for n in fund.investors.numbers %}<li><b>{{ n.value }}</b><span>{{ n.label }}</span></li>{% endfor %}</ul>
   </section>
 
@@ -20,8 +20,7 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
 
   <section id="team">
     <h2 class="t rv">Team.</h2>
-    <ul class="team" role="list">{% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="/brand/icon-white.svg" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="#newsletter">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}</ul>
-    <p class="fine rv">The fund operates on its own AI agents: intake and deck analysis, weekly check-ins, memos, portfolio tracking. Partners decide; agents prepare.</p>
+    <ul class="team" role="list">{% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="/brand/icon-white.svg" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="/apply/">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}</ul>
   </section>
 
   <section id="companies">
@@ -34,13 +33,13 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
   <section id="newsletter">
     <h2 class="t rv">{{ fund.investors.newsletter.title }}.</h2>
     <p class="lead2 rv">{{ fund.investors.newsletter.text }}</p>
-    <form class="subscribe rv" data-subscribe action="{{ site.api_base_url }}/subscribe" method="post">
-      <label class="sr-only" for="sub-email">Email</label>
-      <input id="sub-email" name="email" type="email" required autocomplete="email" placeholder="you@fund.com">
-      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
-      <button type="submit" class="pill pill-dark">{{ fund.investors.newsletter.cta }}</button>
-      <p class="sub-status" aria-live="polite"></p>
-    </form>
+    {% if site.api_enabled %}<form class="subscribe rv" data-subscribe action="{{ site.api_base_url }}/subscribe" method="post">
+        <label class="sr-only" for="sub-email-inv">Email</label>
+        <input id="sub-email-inv" name="email" type="email" required autocomplete="email" placeholder="you@fund.com">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+        <button type="submit" class="pill pill-dark">Subscribe</button>
+        <p class="sub-status" aria-live="polite"></p>
+      </form>{% else %}<div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Subscribe%20to%20the%20newsletter">Subscribe by email</a></div>{% endif %}
   </section>
 
   <section id="contact" class="last">

@@ -27,7 +27,7 @@
 {% endfor %}Strengtheners: {{ fund.who_we_look_for.strengtheners | join(", ") }}.
 
 ## How to submit an application
-- Where: {{ fund.agents.apply_instructions.where }} Form: {{ fund.fund.apply_url }}
+- Where: {{ fund.agents.apply_instructions.where }}
 - Required fields: {{ fund.agents.apply_instructions.required | join(", ") }}
 - Files: {{ fund.agents.apply_instructions.files }}
 - If data is missing: {{ fund.agents.apply_instructions.if_missing }}
@@ -35,10 +35,10 @@
 {% endfor %}- After submitting: {{ fund.agents.apply_instructions.after }}
 
 ### API
-- Base URL: {{ fund.agents.api.base_url }} · schema: {{ fund.agents.api.schema_url }} · OpenAPI: {{ fund.agents.api.docs_url }}
+{% if site.api_enabled %}- Base URL: {{ fund.agents.api.base_url }} · schema: {{ fund.agents.api.schema_url }} · OpenAPI: {{ fund.agents.api.docs_url }}
 - {{ fund.agents.api.apply }}
 - {{ fund.agents.api.subscribe }}
-- {{ fund.agents.api.errors }}
+- {{ fund.agents.api.errors }}{% else %}- {{ fund.agents.api.closed_note }}{% endif %}
 
 ### Application field schema ({{ fund.agents.application_fields_note }})
 | field | type | required | label | example |
