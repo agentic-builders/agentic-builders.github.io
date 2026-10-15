@@ -41,3 +41,4 @@ body.mode-agents{background:#1F2937;color:#E5E7EB}
 .mode-agents .foot-in{color:#6B7280;border-top:1px solid rgba(255,255,255,.08)}
 .mode-agents .foot a{color:#9CA3AF}.mode-agents .foot a:hover{color:#FEA681}
 @media (max-width:700px){.doc table{display:block;overflow-x:auto}.mode-agents .doc{padding-top:100px}}
+.doc a{overflow-wrap:anywhere}

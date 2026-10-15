@@ -32,8 +32,7 @@ Generated from `content/fund.json` and `content/site.json` on build (2026-10-15)
 | 26 | CONFIRM | `fund.json.investors.numbers[0].note` | confirm: website list |
 | 27 | CONFIRM | `fund.json.investors.numbers[2].note` | confirm |
 | 28 | TODO | `fund.json.agents.application_fields_note` | Field list taken from the fund's Notion form on 2026-10-14. TODO: confirm with the team before publishing; keep in sync with the live form. |
-| 29 | TODO | `fund.json.agents.tasks[3].steps[2]` | Request a meeting through fund.meet_url (TODO) or hey@agenticbuilders.ai with the investor's focus, stage and check size. |
-| 30 | TODO | `site.json.hero_subtitle` | TODO: subtitle. Draft: An early-stage fund for agent-native products. One form, a four-week track with weekly check-ins, then a decision with an explanation, either way. |
+| 29 | TODO | `site.json.hero_subtitle` | TODO: subtitle. Draft: An early-stage fund for agent-native products. One form, a four-week track with weekly check-ins, then a decision with an explanation, either way. |
 
 ## Not in the content file
 

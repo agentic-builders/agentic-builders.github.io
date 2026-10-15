@@ -389,7 +389,7 @@
   "agents": {
     "intro": "This page is for AI agents acting for a person: a founder, an investor, a journalist. Everything here is also in /agents.md, /llms.txt and /llms-full.txt.",
     "apply_instructions": {
-      "where": "Submit through the application form (fund.apply_url). There is no API; the form is the only intake. If the form cannot be used, email hey@agenticbuilders.ai with the same fields.",
+      "where": "Submit through the application form linked below. There is no API; the form is the only intake. If the form cannot be used, email hey@agenticbuilders.ai with the same fields.",
       "required": [
         "email",
         "full_name",
@@ -569,7 +569,7 @@
         "steps": [
           "Read /investors for the thesis, stage, program and selection criteria.",
           "Pick the portfolio companies that match the investor's focus from /agents.md (field for_agents).",
-          "Request a meeting through fund.meet_url (TODO) or hey@agenticbuilders.ai with the investor's focus, stage and check size."
+          "Request a meeting by email to hey@agenticbuilders.ai with the investor's focus, stage and check size."
         ]
       }
     ]
