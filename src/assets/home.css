@@ -96,3 +96,4 @@ body.c{background:#fff;color:#1F2937}
 .toc a[href="#partner"]{display:none}
 .slim{padding-bottom:6vh!important}
 @media (max-width:600px){.modes a{padding:7px 9px;font-size:12px}}
+@media (max-width:820px){.nav .logo span{display:none}.modes a{padding:7px 10px;font-size:12px}}
