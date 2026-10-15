@@ -65,3 +65,13 @@
         counters.forEach(function (c) { io.observe(c); });
     } else { counters.forEach(function (c) { c.textContent = c.getAttribute('data-count'); }); }
 })();
+
+/* Agents page: light syntax colouring for the JSON block. */
+(function () {
+    var el = document.querySelector('[data-json]'); if (!el) return;
+    var esc = function (t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
+    el.innerHTML = esc(el.textContent).replace(/("(?:[^"\\]|\\.)*")(\s*:)?|\b(true|false|null|\d+)\b/g, function (m, str, colon, lit) {
+        if (str) return colon ? '<span class="k">' + str + '</span>' + colon : '<span class="s">' + str + '</span>';
+        return '<span class="l">' + lit + '</span>';
+    });
+})();
