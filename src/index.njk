@@ -4,27 +4,26 @@ permalink: /
 mode: founders
 navpill: pill-dark
 include_faq: true
-title: "Agentic Builders — Early-stage fund for agent-native applications"
-description: "We fund agent-native applications at the idea stage. First checks of $30–80k on a SAFE, one form, four Mondays, a decision with an explanation either way."
+title: "Agentic Builders — Early-stage fund for agent-native products"
+description: "We fund agent-native products at the idea stage. First checks of $30–80k on a SAFE, one form, four Mondays, a decision with an explanation either way."
 ---
 <main class="layout">
   <aside class="panel">
-    <h2>Early-stage fund for agent-native applications</h2>
+    <h2>Early-stage fund for agent-native products</h2>
     <p>Products agents use and tools for building agent products. From idea to pre-seed, for founders who build with people and agents.</p>
     <ul class="facts">
       <li><span>First check</span><b>$30–80k</b></li>
       <li><span>Decision</span><b>4 weeks</b></li>
-      <li><span>Portfolio</span><b>{{ fund.portfolio.companies | length }} companies</b></li>
     </ul>
-    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#mondays">Four Mondays</a><a href="#check">The check</a><a href="#partner">The partner</a><a href="#portfolio">Portfolio</a><a href="#faq">Questions</a></nav>
-    <p class="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span data-type='["reading new applications…","checking five criteria…","summarising a deck…","next review: Monday"]'>reading new applications…</span></p>
+    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#mondays">Four Mondays</a><a href="#check">The check</a><a href="#portfolio">Portfolio</a><a href="#faq">Questions</a></nav>
+    <p class="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span data-type='["reading new applications…","next review: Monday"]'>reading new applications…</span></p>
     <div class="btns"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a><a class="pill pill-ghost" href="#mondays">How it works</a></div>
   </aside>
 
   <div class="col">
     <section class="hero" id="top">
       <h1 class="rv">We fund <a href="#thesis"><span class="nw">agent-native</span> applications</a><span class="ico" data-eye aria-hidden="true"><i></i></span> at the idea stage, and get founders to their <a href="#mondays">next round in four weeks</a>.</h1>
-      <p class="sub rv">First checks of <b>$30–80k</b> on a SAFE. One form, four Mondays, a decision with an explanation either way.</p>
+      <p class="sub rv">First checks of <b>$30–80k</b> on a SAFE. One form, a short track, a decision with an explanation either way.</p>
       <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply for funding</a><a class="quiet" href="#mondays">How it works</a></div>
       <ul class="stickers rv" aria-label="Portfolio">
         {% for c in fund.portfolio.companies %}<li style="--r:{{ (loop.index0 % 5) - 2 }}deg"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo }}" alt="" loading="lazy"><span>{{ c.name }}</span></a></li>{% endfor %}
@@ -34,8 +33,9 @@ description: "We fund agent-native applications at the idea stage. First checks 
     <section id="thesis">
       <p class="t scrub" data-scrub>{{ fund.thesis.lead }} {{ fund.thesis.body }}</p>
       <p class="t muted rv">We back two kinds of products. <b>Products agents use</b><span class="tag">research</span><span class="tag">data</span><span class="tag">buy</span><span class="tag">sell</span>, and <b>tools for agent products</b><span class="tag">build</span><span class="tag">test</span><span class="tag">secure</span><span class="tag">launch</span>.</p>
-      <p class="t muted rv" id="who">We look for founders moving from vibe coding to building a company of <b>people and agents</b>, who can run both. Five things we check by facts:</p>
+      <p class="t muted rv" id="who">We look for founders moving from vibe coding to building a company of <b>people and agents</b>, who can run both. Five things we pay attention to:</p>
       <ol class="five rv">{% for c in fund.who_we_look_for.criteria %}<li><span class="n">{{ loop.index }}</span><span><b>{{ c.name }}.</b> {{ c.detail }}</span></li>{% endfor %}</ol>
+      <p class="fine rv">{{ fund.who_we_look_for.criteria_note }}</p>
     </section>
 
     <section id="mondays">
@@ -50,18 +50,12 @@ description: "We fund agent-native applications at the idea stage. First checks 
     </section>
 
     <section id="check">
-      <p class="t rv">If we invest: a first check of <b class="orange">$<span data-count="30">0</span>–<span data-count="80">0</span>k</b> on a standard post-money SAFE, help setting up a Delaware company and clean documents, and the founder platform: <b>weekly fund meeting, 1:1s with the general partner, guilds, 400+ partner perks</b>, and introductions to the next investors when you are ready to raise.</p>
+      <p class="t rv">If we invest: a first check of <b class="orange">$<span data-count="30">0</span>–<span data-count="80">0</span>k</b> on a standard post-money SAFE, and the founder platform: <b>weekly fund meeting, 1:1s with the general partner, guilds, partner perks</b>, and introductions to the next investors when you are ready to raise.</p>
       <p class="t muted rv">No follow-on checks from the fund. Our job is to get you to the next round from other investors.</p>
     </section>
 
-    <section id="partner">
-      <p class="t rv">The fund runs on its own agents. <span class="w mono">intake</span>. <span class="w ul">deck analysis</span>. <span class="w orange">check-ins</span>. <span class="w box">memos</span>. <span class="w mono">tracking</span>. Agents prepare, partners decide.</p>
-      <div class="term rv"><pre>$ agent --read application.json deck.pdf
-&gt; what you do, for whom. agents for people or agents for agents
-&gt; five criteria with a quote from your materials: yes / no / unknown
-&gt; three questions to ask before the track
-$ handoff --to partners</pre></div>
-      <p class="t muted rv">Your agent can read us too: <a href="/agents/">a version for agents</a>, <a href="/agents.md">agents.md</a>, <a href="/llms.txt">llms.txt</a>. Soon: upload a deck, and the application fills itself.</p>
+    <section id="partner" class="slim">
+      <p class="fine rv">The fund runs on its own agents; partners decide. Your agent can read us too: <a href="/agents/">the page for agents</a>.</p>
     </section>
 
     <section id="portfolio">

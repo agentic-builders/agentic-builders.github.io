@@ -1,12 +1,11 @@
 {
   "_readme": "Single source of truth for every fact on the site. All three modes (/, /agents, /investors) and every machine-readable file (agents.md, llms.txt, llms-full.txt, robots.txt, .vcf, JSON-LD) are built from this file. Values marked TODO are placeholders for the team. Values with a `confirm` note came from the fund's internal systems (FundOS playbooks, Notion) and still need sign-off before publishing.",
   "updated": "2026-10-14",
-
   "fund": {
     "name": "Agentic Builders",
     "legal_name": "TODO: legal entity for the website (FundOS: studio = Agentic Builders Inc., investment vehicle = Agentic Builders Capital LLC; Notion About page: fund = Agentic Builders LLC)",
     "url": "https://agenticbuilders.ai",
-    "tagline": "Early-stage fund for agent-native applications",
+    "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is a US early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
     "description": "Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. Founders go through a four-week track with weekly check-ins, then the fund decides on a first check. The founder builds the product; the fund helps the team reach its next round.",
     "founded": "2025",
@@ -18,7 +17,6 @@
     "meet_url": "TODO: link to book a meeting with the fund (Calendly or similar)",
     "pitch_session_url": "TODO: link or form for investors who want to see the cohort (pitch session / demo day)"
   },
-
   "thesis": {
     "headline": "The Opportunity",
     "lead": "As agents do more of the work, they need software built for them.",
@@ -27,31 +25,64 @@
       {
         "name": "Products agents use",
         "description": "Products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks.",
-        "examples": ["research", "data", "communication", "buying", "selling", "content", "business tasks"]
+        "examples": [
+          "research",
+          "data",
+          "communication",
+          "buying",
+          "selling",
+          "content",
+          "business tasks"
+        ]
       },
       {
         "name": "Tools for agent products",
         "description": "Tools to build, test, secure, launch, track and sell agent products.",
-        "examples": ["build", "test", "secure", "launch", "track", "sell"]
+        "examples": [
+          "build",
+          "test",
+          "secure",
+          "launch",
+          "track",
+          "sell"
+        ]
       }
     ],
     "teams": "We back AI-native teams: founders who use AI across product development and company operations and build lean teams around AI from day one."
   },
-
   "who_we_look_for": {
     "headline": "Who we look for",
-    "lead": "TODO: final wording. Draft: founders who are moving from vibe coding to building a company that combines people and agents: human work, creativity and judgment beyond the data an AI can reach. They build teams of people and technology and can run both.",
-    "criteria_note": "Five criteria from the fund's assessment playbook (confirm before publishing).",
+    "lead": "TODO: final wording. Draft: founders who are moving from vibe coding to building a company of people and agents, and can run both.",
+    "criteria_note": "Five things we pay attention to. None of them is a formal requirement; together they tell us how far a team can go.",
     "criteria": [
-      {"name": "Built a startup before", "detail": "Not necessarily a successful one. You know what the path looks like."},
-      {"name": "Sell into the US", "detail": "Your target market is the US, or global with first customers in the US."},
-      {"name": "Someone on the team sells", "detail": "At least one customer or pilot closed personally, in any project."},
-      {"name": "Can be in the US", "detail": "A passport or visa, weeks on the ground, and a move when the round comes."},
-      {"name": "Share numbers on schedule", "detail": "A short set of numbers every week during the track and every month after, without reminders."}
+      {
+        "name": "Experience",
+        "detail": "You have built something before: a startup, a product, a team. You know what the path looks like."
+      },
+      {
+        "name": "Market",
+        "detail": "The US is in your plans, as the first market or the next one."
+      },
+      {
+        "name": "Sales",
+        "detail": "Someone on the team talks to customers and can close a pilot or a deal."
+      },
+      {
+        "name": "Presence",
+        "detail": "You are able to spend time in the US when it matters for the company."
+      },
+      {
+        "name": "Rhythm",
+        "detail": "You are comfortable sharing a few numbers regularly, during the track and after."
+      }
     ],
-    "strengtheners": ["experience in your industry", "a first pilot or revenue", "two founders instead of one", "a team that has worked together before"]
+    "strengtheners": [
+      "experience in your industry",
+      "a first pilot or revenue",
+      "two founders instead of one",
+      "a team that has worked together before"
+    ]
   },
-
   "program": {
     "name": "Four-week track",
     "hook": "From application to a decision in four weeks.",
@@ -78,7 +109,7 @@
       {
         "name": "First check and beyond",
         "duration": "If we invest",
-        "description": "A first check on a standard post-money SAFE, help setting up a Delaware company and clean documents, and the full founder platform: weekly fund meeting, 1:1s with the general partner, guilds, 400+ partner perks, and introductions to the next investors when you are ready to raise.",
+        "description": "A first check on a standard post-money SAFE and the founder platform: weekly fund meeting, 1:1s with the general partner, guilds, partner perks, and introductions to the next investors when you are ready to raise.",
         "source": "FundOS data/portfolio, Notion Founder Playbook"
       }
     ],
@@ -104,107 +135,447 @@
       ]
     }
   },
-
   "what_you_get": [
-    {"name": "First check", "description": "$30k–$80k on a standard post-money SAFE to build, test and get the first customers.", "note": "confirm amounts"},
-    {"name": "A partner who reads everything", "description": "The fund runs on its own AI agents: every application, deck and weekly update is read and summarised, so the partners spend their time on decisions and doors."},
-    {"name": "Investor access", "description": "A curated investor database, warm introductions when you are raise-ready, and pitch sessions where the cohort meets friendly funds.", "note": "TODO: confirm pitch session format and cadence"},
-    {"name": "Perks and credits", "description": "Partner toolkit during the track; 400+ startup discounts, credits and partner offers after investment."},
-    {"name": "Founder platform", "description": "Slack community, weekly fund meeting on Tuesdays, weekly 1:1 with the general partner, guilds on AI engineering, product and go-to-market, mentors and contractors directories."},
-    {"name": "Legal and operations", "description": "Incorporation, SAFE, IP transfer, finance and hiring handled with you, not left for later."}
+    {
+      "name": "First check",
+      "description": "$30k–$80k on a standard post-money SAFE to build, test and get the first customers.",
+      "note": "confirm amounts"
+    },
+    {
+      "name": "A partner who reads everything",
+      "description": "The fund runs on its own AI agents: every application, deck and weekly update is read and summarised, so the partners spend their time on decisions and doors."
+    },
+    {
+      "name": "Investor access",
+      "description": "A curated investor database, warm introductions when you are raise-ready, and pitch sessions where the cohort meets friendly funds.",
+      "note": "TODO: confirm pitch session format and cadence"
+    },
+    {
+      "name": "Perks and credits",
+      "description": "Partner toolkit during the track; 400+ startup discounts, credits and partner offers after investment."
+    },
+    {
+      "name": "Founder platform",
+      "description": "Slack community, weekly fund meeting on Tuesdays, weekly 1:1 with the general partner, guilds on AI engineering, product and go-to-market, mentors and contractors directories."
+    },
+    {
+      "name": "Legal and operations",
+      "description": "Incorporation, SAFE, IP transfer, finance and hiring handled with you, not left for later."
+    }
   ],
-
   "portfolio": {
     "updated": "2026-09-04",
     "count_note": "13 companies listed on the current site; FundOS tracks 8 in the fund pipeline (program and alumni). The public list is the website's.",
     "companies": [
-      {"name": "Eqvesta", "url": "https://eqvesta.com/", "logo": "/portfolio-logos/eqvesta-logo.png", "logo_wide": true, "for_humans": "Autonomous family office for the first $200,000.", "for_agents": "Personal finance agent: tracks assets, deadlines and decisions for households; read-only on money."},
-      {"name": "Silow", "url": "https://silow.ai", "logo": "/portfolio-logos/silow-logo.png", "for_humans": "AI roadmap platform: a ranked plan for where AI will pay back in your company.", "for_agents": "Enterprise AI-adoption planning; maps company processes to AI opportunities; data stays with the customer."},
-      {"name": "Heron", "url": "https://heron.ing/", "logo": "/portfolio-logos/heron-logo.svg", "for_humans": "AI agent review and audit platform.", "for_agents": "Audits other agents: verifies scope against MCP, OAuth and environment access; produces evidence reports."},
-      {"name": "kone", "url": "https://kone.vc", "logo": "/portfolio-logos/kone-logo.svg", "logo_wide": true, "for_humans": "The monetization layer for AI agents.", "for_agents": "Lets agents and open-source tools earn revenue through task-aware recommendations via MCP."},
-      {"name": "Agentiqa", "url": "https://agentiqa.com", "logo": "/portfolio-logos/agentiqa-icon.png", "for_humans": "Visual, agentic, self-healing test automation.", "for_agents": "QA agent: explores an app, finds bugs, builds reusable test plans."},
-      {"name": "Theona", "url": "https://theona.ai", "logo": "/portfolio-logos/theona-logo.svg", "for_humans": "No-code AI agent platform for business tasks.", "for_agents": "Platform to build and deploy autonomous assistants across integrated business tools."},
-      {"name": "HookRadar", "url": "https://hookradar.net", "logo": "/portfolio-logos/hookradar-logo.png", "logo_wide": true, "for_humans": "Competitive ad intelligence.", "for_agents": "Ad intelligence data: competitor ads, viral trends and ready-to-use creative assets, consumable by teams or agents."},
-      {"name": "VisibilityPro", "url": "https://visibilitypro.ai", "logo": "/portfolio-logos/visibilitypro-logo.svg", "logo_wide": true, "for_humans": "Generative Engine Optimization platform.", "for_agents": "Tracks and improves how a brand appears in AI answers (ChatGPT, Claude, Perplexity, Gemini)."},
-      {"name": "Aprena Academy", "url": "https://aprena.academy/", "logo": "/portfolio-logos/aprena-academy-icon.png", "for_humans": "AI-powered career guidance.", "for_agents": "Career and workforce intelligence; B2B pivot to HR skills data (ESCO taxonomy)."},
-      {"name": "FINA", "url": "https://fina.team/", "logo": "/portfolio-logos/fina-logo.png", "for_humans": "Financial automations.", "for_agents": "Automates financial management tasks for small teams."},
-      {"name": "Rolloo", "url": "https://www.rolloo.app/", "logo": "/portfolio-logos/rolloo-favicon.ico", "for_humans": "AI role-play training for workplace conversations.", "for_agents": "Conversation simulation and feedback engine for training."},
-      {"name": "StoryFlow", "url": "https://storyflow.uk/", "logo": "/portfolio-logos/storyflow-logo.jpg", "logo_wide": true, "for_humans": "AI-powered LinkedIn storytelling companion.", "for_agents": "Generates and schedules LinkedIn narratives."},
-      {"name": "Edvancium", "url": "https://edvancium.com/", "logo": "/portfolio-logos/edvancium-logo.svg", "for_humans": "Exam preparation with interactive lessons and AI tutoring.", "for_agents": "Adaptive learning: active-recall flashcards and personalised tutoring."}
+      {
+        "name": "Eqvesta",
+        "url": "https://eqvesta.com/",
+        "logo": "/portfolio-logos/eqvesta-logo.png",
+        "logo_wide": true,
+        "for_humans": "Autonomous family office for the first $200,000.",
+        "for_agents": "Personal finance agent: tracks assets, deadlines and decisions for households; read-only on money."
+      },
+      {
+        "name": "Silow",
+        "url": "https://silow.ai",
+        "logo": "/portfolio-logos/silow-logo.png",
+        "for_humans": "AI roadmap platform: a ranked plan for where AI will pay back in your company.",
+        "for_agents": "Enterprise AI-adoption planning; maps company processes to AI opportunities; data stays with the customer."
+      },
+      {
+        "name": "Heron",
+        "url": "https://heron.ing/",
+        "logo": "/portfolio-logos/heron-logo.svg",
+        "for_humans": "AI agent review and audit platform.",
+        "for_agents": "Audits other agents: verifies scope against MCP, OAuth and environment access; produces evidence reports."
+      },
+      {
+        "name": "kone",
+        "url": "https://kone.vc",
+        "logo": "/portfolio-logos/kone-logo.svg",
+        "logo_wide": true,
+        "for_humans": "The monetization layer for AI agents.",
+        "for_agents": "Lets agents and open-source tools earn revenue through task-aware recommendations via MCP."
+      },
+      {
+        "name": "Agentiqa",
+        "url": "https://agentiqa.com",
+        "logo": "/portfolio-logos/agentiqa-icon.png",
+        "for_humans": "Visual, agentic, self-healing test automation.",
+        "for_agents": "QA agent: explores an app, finds bugs, builds reusable test plans."
+      },
+      {
+        "name": "Theona",
+        "url": "https://theona.ai",
+        "logo": "/portfolio-logos/theona-logo.svg",
+        "for_humans": "No-code AI agent platform for business tasks.",
+        "for_agents": "Platform to build and deploy autonomous assistants across integrated business tools."
+      },
+      {
+        "name": "HookRadar",
+        "url": "https://hookradar.net",
+        "logo": "/portfolio-logos/hookradar-logo.png",
+        "logo_wide": true,
+        "for_humans": "Competitive ad intelligence.",
+        "for_agents": "Ad intelligence data: competitor ads, viral trends and ready-to-use creative assets, consumable by teams or agents."
+      },
+      {
+        "name": "VisibilityPro",
+        "url": "https://visibilitypro.ai",
+        "logo": "/portfolio-logos/visibilitypro-logo.svg",
+        "logo_wide": true,
+        "for_humans": "Generative Engine Optimization platform.",
+        "for_agents": "Tracks and improves how a brand appears in AI answers (ChatGPT, Claude, Perplexity, Gemini)."
+      },
+      {
+        "name": "Aprena Academy",
+        "url": "https://aprena.academy/",
+        "logo": "/portfolio-logos/aprena-academy-icon.png",
+        "for_humans": "AI-powered career guidance.",
+        "for_agents": "Career and workforce intelligence; B2B pivot to HR skills data (ESCO taxonomy)."
+      },
+      {
+        "name": "FINA",
+        "url": "https://fina.team/",
+        "logo": "/portfolio-logos/fina-logo.png",
+        "for_humans": "Financial automations.",
+        "for_agents": "Automates financial management tasks for small teams."
+      },
+      {
+        "name": "Rolloo",
+        "url": "https://www.rolloo.app/",
+        "logo": "/portfolio-logos/rolloo-favicon.ico",
+        "for_humans": "AI role-play training for workplace conversations.",
+        "for_agents": "Conversation simulation and feedback engine for training."
+      },
+      {
+        "name": "StoryFlow",
+        "url": "https://storyflow.uk/",
+        "logo": "/portfolio-logos/storyflow-logo.jpg",
+        "logo_wide": true,
+        "for_humans": "AI-powered LinkedIn storytelling companion.",
+        "for_agents": "Generates and schedules LinkedIn narratives."
+      },
+      {
+        "name": "Edvancium",
+        "url": "https://edvancium.com/",
+        "logo": "/portfolio-logos/edvancium-logo.svg",
+        "for_humans": "Exam preparation with interactive lessons and AI tutoring.",
+        "for_agents": "Adaptive learning: active-recall flashcards and personalised tutoring."
+      }
     ]
   },
-
   "faq": [
-    {"q": "How long does it take from application to a decision?", "a": "Your application is read within 24 hours and reviewed by a person within three business days. If we invite you to the track, it runs four weeks with one check-in a week, and the decision comes right after. TODO: confirm the public promise on timing."},
-    {"q": "How much do you invest?", "a": "First checks are $30k–$80k on a standard post-money SAFE. TODO: confirm amounts for publication."},
-    {"q": "What equity do you take?", "a": "TODO: the fund decides whether to publish the range. Internally: a standard post-money SAFE where the valuation cap equals the check divided by the share."},
-    {"q": "Who can apply?", "a": "Teams building products agents use or tools for building agent products, at idea to pre-seed stage. We look for founders who have built a startup before, sell into the US, have someone on the team who sells, can be in the US, and share numbers on schedule."},
-    {"q": "What do I need to apply?", "a": "The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a deck or website if you have one. No call is required to start."},
-    {"q": "What happens during the four weeks?", "a": "Every Monday you get a short set of questions: a few numbers and a few lines on what happened. Reply by Friday; about 15 minutes. We follow one key number for your company and you get the partner toolkit. We do not teach and we do not build your product."},
-    {"q": "What happens after the four weeks?", "a": "The partners decide whether to invest and tell you why either way. If we invest: the first check, help with incorporation and documents, and the founder platform. If not now, we say when it makes sense to come back."},
-    {"q": "Does the track oblige me to anything?", "a": "No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents; we do not share them outside the fund."}
+    {
+      "q": "How long does it take from application to a decision?",
+      "a": "Your application is read within 24 hours and reviewed by a person within three business days. If we invite you to the track, it runs four weeks with one check-in a week, and the decision comes right after. TODO: confirm the public promise on timing."
+    },
+    {
+      "q": "How much do you invest?",
+      "a": "First checks are $30k–$80k on a standard post-money SAFE. TODO: confirm amounts for publication."
+    },
+    {
+      "q": "What equity do you take?",
+      "a": "TODO: the fund decides whether to publish the range. Internally: a standard post-money SAFE where the valuation cap equals the check divided by the share."
+    },
+    {
+      "q": "Who can apply?",
+      "a": "Teams building products agents use or tools for building agent products, at idea to pre-seed stage. We pay attention to experience, the US market in your plans, someone on the team who sells, the ability to be in the US when it matters, and a regular rhythm of sharing numbers."
+    },
+    {
+      "q": "What do I need to apply?",
+      "a": "The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a deck or website if you have one. No call is required to start."
+    },
+    {
+      "q": "What happens during the four weeks?",
+      "a": "Every Monday you get a short set of questions: a few numbers and a few lines on what happened. Reply by Friday; about 15 minutes. We follow one key number for your company and you get the partner toolkit. We do not teach and we do not build your product."
+    },
+    {
+      "q": "What happens after the four weeks?",
+      "a": "The partners decide whether to invest and tell you why either way. If we invest: the first check, help with incorporation and documents, and the founder platform. If not now, we say when it makes sense to come back."
+    },
+    {
+      "q": "Does the track oblige me to anything?",
+      "a": "No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents; we do not share them outside the fund."
+    }
   ],
-
   "team": [
-    {"name": "Nikolay Vyahhi", "role": "General Partner", "line": "Decides, signs, opens doors.", "linkedin": "TODO", "photo": "TODO"},
-    {"name": "Leo Ivanov", "role": "Partner, Operations", "line": "Runs the fund's operating system: pipeline, legal, investor database.", "linkedin": "TODO", "photo": "TODO", "note": "TODO: confirm title"},
-    {"name": "Elizaveta Chernysheva", "role": "Operations and founder support", "line": "Onboarding, tools, credits, mentors, contractors.", "linkedin": "TODO", "photo": "TODO"},
-    {"name": "Munira Islamova", "role": "Finance", "line": "Payments, financial reporting, P&L support for portfolio companies.", "linkedin": "TODO", "photo": "TODO"},
-    {"name": "TODO: Sonya (surname)", "role": "TODO", "line": "Meets founders in the selection process.", "linkedin": "TODO", "photo": "TODO"}
+    {
+      "name": "Nikolay Vyahhi",
+      "role": "General Partner",
+      "line": "Decides, signs, opens doors.",
+      "linkedin": "TODO",
+      "photo": "TODO"
+    },
+    {
+      "name": "Leo Ivanov",
+      "role": "Partner, Operations",
+      "line": "Runs the fund's operating system: pipeline, legal, investor database.",
+      "linkedin": "TODO",
+      "photo": "TODO",
+      "note": "TODO: confirm title"
+    },
+    {
+      "name": "Elizaveta Chernysheva",
+      "role": "Operations and founder support",
+      "line": "Onboarding, tools, credits, mentors, contractors.",
+      "linkedin": "TODO",
+      "photo": "TODO"
+    },
+    {
+      "name": "Munira Islamova",
+      "role": "Finance",
+      "line": "Payments, financial reporting, P&L support for portfolio companies.",
+      "linkedin": "TODO",
+      "photo": "TODO"
+    },
+    {
+      "name": "TODO: Sonya (surname)",
+      "role": "TODO",
+      "line": "Meets founders in the selection process.",
+      "linkedin": "TODO",
+      "photo": "TODO"
+    }
   ],
-
   "investors": {
     "hero": "TODO: one sentence about the fund for investors. Draft: We find and fund agent-native founders at the idea stage, run them through a four-week track, and bring the ones that move to the funds that do the next round.",
     "numbers": [
-      {"value": "13", "label": "portfolio companies", "note": "confirm: website list"},
-      {"value": "2025", "label": "founded"},
-      {"value": "$30k–$80k", "label": "first check", "note": "confirm"},
-      {"value": "4 weeks", "label": "from application to decision"}
+      {
+        "value": "13",
+        "label": "portfolio companies",
+        "note": "confirm: website list"
+      },
+      {
+        "value": "2025",
+        "label": "founded"
+      },
+      {
+        "value": "$30k–$80k",
+        "label": "first check",
+        "note": "confirm"
+      },
+      {
+        "value": "4 weeks",
+        "label": "from application to decision"
+      }
     ],
     "approach": [
-      {"name": "Thesis", "text": "Agent-native applications: products agents use and tools for building agent products."},
-      {"name": "Stage", "text": "Idea to pre-seed. The earliest stage; some will die, that is the price of the stage."},
-      {"name": "Program", "text": "Cohorts. A four-week track with weekly check-ins, one key number per company, partner toolkit, then a decision. After investment: weekly fund meeting, 1:1s, guilds, perks."},
-      {"name": "Selection", "text": "Five criteria checked by facts: built a startup before, sells into the US, someone on the team sells, can be in the US, shares numbers on schedule. Team and ability to sell weigh half the decision; market and US access a quarter; product a quarter."},
-      {"name": "How we run", "text": "The fund operates on its own AI agents: intake and deck analysis, weekly check-ins, investment memos, portfolio tracking and a Monday digest. Partners decide; agents prepare."}
+      {
+        "name": "Thesis",
+        "text": "Agent-native products: products agents use and tools for building agent products."
+      },
+      {
+        "name": "Stage",
+        "text": "Idea to pre-seed. The earliest stage; some will die, that is the price of the stage."
+      },
+      {
+        "name": "Program",
+        "text": "Cohorts. A four-week track with weekly check-ins, one key number per company, partner toolkit, then a decision. After investment: weekly fund meeting, 1:1s, guilds, perks."
+      },
+      {
+        "name": "Selection",
+        "text": "Five criteria checked by facts: built a startup before, sells into the US, someone on the team sells, can be in the US, shares numbers on schedule. Team and ability to sell weigh half the decision; market and US access a quarter; product a quarter."
+      },
+      {
+        "name": "How we run",
+        "text": "The fund operates on its own AI agents: intake and deck analysis, weekly check-ins, investment memos, portfolio tracking and a Monday digest. Partners decide; agents prepare."
+      }
     ],
-    "featured": ["Silow", "Eqvesta", "Agentiqa", "Heron", "kone", "VisibilityPro"]
+    "featured": [
+      "Silow",
+      "Eqvesta",
+      "Agentiqa",
+      "Heron",
+      "kone",
+      "VisibilityPro"
+    ]
   },
-
   "agents": {
     "intro": "This page is for AI agents acting for a person: a founder, an investor, a journalist. Everything here is also in /agents.md, /llms.txt and /llms-full.txt.",
     "apply_instructions": {
       "where": "Submit through the application form (fund.apply_url). There is no API; the form is the only intake. If the form cannot be used, email hey@agenticbuilders.ai with the same fields.",
-      "required": ["email", "full_name", "link", "location", "background", "founder_experience", "ai_experience"],
+      "required": [
+        "email",
+        "full_name",
+        "link",
+        "location",
+        "background",
+        "founder_experience",
+        "ai_experience"
+      ],
       "files": "The form accepts links, not uploads. Put the deck or website as a URL (PDF, Google Slides, Notion or a website). Make sure the link opens without login.",
       "if_missing": "If a required field is unknown, stop and ask the person. Do not guess locations, names or links.",
-      "do_not": ["Do not invent metrics, customers, revenue or traction.", "Do not submit more than one application per company.", "Do not paste confidential data the person did not approve for sharing."],
+      "do_not": [
+        "Do not invent metrics, customers, revenue or traction.",
+        "Do not submit more than one application per company.",
+        "Do not paste confidential data the person did not approve for sharing."
+      ],
       "after": "The application is read by the fund's intake agent within 24 hours and by a person within three business days. Expect an email from the fund; a first call is usually within a week."
     },
     "application_fields": [
-      {"field": "email", "type": "email", "required": true, "example": "jane@example.com", "label": "Email"},
-      {"field": "full_name", "type": "string", "required": true, "example": "Jane Doe", "label": "Full name"},
-      {"field": "link", "type": "url", "required": true, "example": "https://linkedin.com/in/janedoe", "label": "LinkedIn, GitHub or portfolio link"},
-      {"field": "location", "type": "string", "required": true, "example": "City, Region, Country", "label": "Where are you based?"},
-      {"field": "contact", "type": "string", "required": false, "example": "Telegram @janedoe", "label": "Preferred contact method and details (WhatsApp, Telegram or email)"},
-      {"field": "background", "type": "text", "required": true, "example": "ML engineer, 8 years; built the pricing engine at …", "label": "Describe your background: technical background or domain expertise and one project you are proud of (2–4 sentences)"},
-      {"field": "idea", "type": "text", "required": false, "example": "An agent that … for …", "label": "What problem is your agentic AI startup or product solving, and who is it solving it for?"},
-      {"field": "users_learned", "type": "text", "required": false, "example": "12 interviews with …; they struggle with …", "label": "Who are your target users, and what have you learned from talking to them?"},
-      {"field": "next_8_weeks", "type": "text", "required": false, "example": "Ship v1 to 5 pilots; key metric: weekly active agents", "label": "What does your next 6 to 8 weeks look like? What is your #1 priority right now?"},
-      {"field": "last_shipped", "type": "text", "required": false, "example": "Landing page + waitlist: 140 signups in 2 weeks", "label": "What is the most recent thing you shipped or tested, and what happened?"},
-      {"field": "deck_url", "type": "url", "required": false, "example": "https://docs.google.com/presentation/…", "label": "Pitch deck or website link"},
-      {"field": "founder_experience", "type": "enum[]", "required": true, "example": "[\"Founder\"]", "label": "Have you ever been a founder, co-founder, or launched your own project before?", "options": ["Founder", "Co-founder", "Pet project", "Other", "No"]},
-      {"field": "ai_experience", "type": "text", "required": true, "example": "We run support on agents; built an internal …", "label": "Examples of how you have used AI or automation in your work or projects"},
-      {"field": "fundraising", "type": "enum", "required": false, "example": "No -- but planning to raise", "label": "Raised investment?", "options": ["Yes -- VC", "Yes -- non-VC / angel / friends & family", "No -- but planning to raise", "No -- not planning to raise", "Prefer not to say"]},
-      {"field": "support_wanted", "type": "text", "required": false, "example": "Investor intros, technical feedback", "label": "What kind of support would be most useful to you right now?"},
-      {"field": "heard_about", "type": "string", "required": false, "example": "LinkedIn post by …", "label": "How did you hear about us?"}
+      {
+        "field": "email",
+        "type": "email",
+        "required": true,
+        "example": "jane@example.com",
+        "label": "Email"
+      },
+      {
+        "field": "full_name",
+        "type": "string",
+        "required": true,
+        "example": "Jane Doe",
+        "label": "Full name"
+      },
+      {
+        "field": "link",
+        "type": "url",
+        "required": true,
+        "example": "https://linkedin.com/in/janedoe",
+        "label": "LinkedIn, GitHub or portfolio link"
+      },
+      {
+        "field": "location",
+        "type": "string",
+        "required": true,
+        "example": "City, Region, Country",
+        "label": "Where are you based?"
+      },
+      {
+        "field": "contact",
+        "type": "string",
+        "required": false,
+        "example": "Telegram @janedoe",
+        "label": "Preferred contact method and details (WhatsApp, Telegram or email)"
+      },
+      {
+        "field": "background",
+        "type": "text",
+        "required": true,
+        "example": "ML engineer, 8 years; built the pricing engine at …",
+        "label": "Describe your background: technical background or domain expertise and one project you are proud of (2–4 sentences)"
+      },
+      {
+        "field": "idea",
+        "type": "text",
+        "required": false,
+        "example": "An agent that … for …",
+        "label": "What problem is your agentic AI startup or product solving, and who is it solving it for?"
+      },
+      {
+        "field": "users_learned",
+        "type": "text",
+        "required": false,
+        "example": "12 interviews with …; they struggle with …",
+        "label": "Who are your target users, and what have you learned from talking to them?"
+      },
+      {
+        "field": "next_8_weeks",
+        "type": "text",
+        "required": false,
+        "example": "Ship v1 to 5 pilots; key metric: weekly active agents",
+        "label": "What does your next 6 to 8 weeks look like? What is your #1 priority right now?"
+      },
+      {
+        "field": "last_shipped",
+        "type": "text",
+        "required": false,
+        "example": "Landing page + waitlist: 140 signups in 2 weeks",
+        "label": "What is the most recent thing you shipped or tested, and what happened?"
+      },
+      {
+        "field": "deck_url",
+        "type": "url",
+        "required": false,
+        "example": "https://docs.google.com/presentation/…",
+        "label": "Pitch deck or website link"
+      },
+      {
+        "field": "founder_experience",
+        "type": "enum[]",
+        "required": true,
+        "example": "[\"Founder\"]",
+        "label": "Have you ever been a founder, co-founder, or launched your own project before?",
+        "options": [
+          "Founder",
+          "Co-founder",
+          "Pet project",
+          "Other",
+          "No"
+        ]
+      },
+      {
+        "field": "ai_experience",
+        "type": "text",
+        "required": true,
+        "example": "We run support on agents; built an internal …",
+        "label": "Examples of how you have used AI or automation in your work or projects"
+      },
+      {
+        "field": "fundraising",
+        "type": "enum",
+        "required": false,
+        "example": "No -- but planning to raise",
+        "label": "Raised investment?",
+        "options": [
+          "Yes -- VC",
+          "Yes -- non-VC / angel / friends & family",
+          "No -- but planning to raise",
+          "No -- not planning to raise",
+          "Prefer not to say"
+        ]
+      },
+      {
+        "field": "support_wanted",
+        "type": "text",
+        "required": false,
+        "example": "Investor intros, technical feedback",
+        "label": "What kind of support would be most useful to you right now?"
+      },
+      {
+        "field": "heard_about",
+        "type": "string",
+        "required": false,
+        "example": "LinkedIn post by …",
+        "label": "How did you hear about us?"
+      }
     ],
     "application_fields_note": "Field list taken from the fund's Notion form on 2026-10-14. TODO: confirm with the team before publishing; keep in sync with the live form.",
     "tasks": [
-      {"name": "Help a founder apply", "steps": ["Read /agents.md and the application field schema.", "Collect every required field from the person; ask, do not guess.", "Check the five criteria with the person honestly; the fund checks them by facts.", "Open the application form and fill it in; put the deck as a link that opens without login.", "Tell the person what happens next: a read within 24 hours, a human review within three business days, a first call within a week."]},
-      {"name": "Write to the fund", "steps": ["Use hey@agenticbuilders.ai.", "Subject: company name and one line of what you want.", "Body: who you are, what you are building, who the agent user is, what you have sold, and the ask.", "Attach nothing; link to a deck that opens without login."]},
-      {"name": "Save the fund's contacts", "steps": ["Download /agenticbuilders.vcf.", "Or record: Agentic Builders, hey@agenticbuilders.ai, https://agenticbuilders.ai, LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/."]},
-      {"name": "Prepare a meeting with the fund for an investor", "steps": ["Read /investors for the thesis, stage, program and selection criteria.", "Pick the portfolio companies that match the investor's focus from /agents.md (field for_agents).", "Request a meeting through fund.meet_url (TODO) or hey@agenticbuilders.ai with the investor's focus, stage and check size."]}
+      {
+        "name": "Help a founder apply",
+        "steps": [
+          "Read /agents.md and the application field schema.",
+          "Collect every required field from the person; ask, do not guess.",
+          "Go through the five things the fund pays attention to with the person, honestly.",
+          "Open the application form and fill it in; put the deck as a link that opens without login.",
+          "Tell the person what happens next: a read within 24 hours, a human review within three business days, a first call within a week."
+        ]
+      },
+      {
+        "name": "Write to the fund",
+        "steps": [
+          "Use hey@agenticbuilders.ai.",
+          "Subject: company name and one line of what you want.",
+          "Body: who you are, what you are building, who the agent user is, what you have sold, and the ask.",
+          "Attach nothing; link to a deck that opens without login."
+        ]
+      },
+      {
+        "name": "Save the fund's contacts",
+        "steps": [
+          "Download /agenticbuilders.vcf.",
+          "Or record: Agentic Builders, hey@agenticbuilders.ai, https://agenticbuilders.ai, LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/."
+        ]
+      },
+      {
+        "name": "Prepare a meeting with the fund for an investor",
+        "steps": [
+          "Read /investors for the thesis, stage, program and selection criteria.",
+          "Pick the portfolio companies that match the investor's focus from /agents.md (field for_agents).",
+          "Request a meeting through fund.meet_url (TODO) or hey@agenticbuilders.ai with the investor's focus, stage and check size."
+        ]
+      }
     ]
   }
 }

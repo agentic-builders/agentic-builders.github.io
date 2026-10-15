@@ -6,7 +6,7 @@
     "Our AI partner reads your deck. Money follows in 4 weeks.",
     "From application to first check in 4 weeks."
   ],
-  "hero_subtitle": "TODO: subtitle. Draft: An early-stage fund for agent-native applications. One form, a four-week track with weekly check-ins, then a decision with an explanation, either way.",
+  "hero_subtitle": "TODO: subtitle. Draft: An early-stage fund for agent-native products. One form, a four-week track with weekly check-ins, then a decision with an explanation, either way.",
   "modes": [
     {"key": "founders", "label": "For founders", "url": "/", "cta_label": "Apply", "cta_key": "apply"},
     {"key": "agents", "label": "For agents", "url": "/agents/", "cta_label": "Download agents.md", "cta_key": "agents_md"},
