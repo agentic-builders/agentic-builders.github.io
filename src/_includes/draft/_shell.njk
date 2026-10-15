@@ -21,6 +21,6 @@
     <span>Ask about us: {% for e in site.ask_ai.engines %}<a href="{{ e.url }}{{ site.ask_ai.query | urlencode }}">{{ e.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</span>
   </div>
 </footer>
-<div class="switch" aria-label="Drafts"><a href="/a/" class="{{ 'on' if variant == 'a' }}">Draft A</a><a href="/b/" class="{{ 'on' if variant == 'b' }}">Draft B</a></div>
+<div class="switch" aria-label="Drafts"><a href="/a/" class="{{ "on" if variant == "a" }}">Draft A</a><a href="/b/" class="{{ "on" if variant == "b" }}">Draft B</a><a href="/c/" class="{{ "on" if variant == "c" }}">Draft C</a></div>
 <script src="/assets/draft.js" defer></script>
 </body></html>

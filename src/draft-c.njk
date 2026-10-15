@@ -1,0 +1,81 @@
+---
+layout: draft/_shell.njk
+permalink: /c/
+variant: c
+navpill: pill-dark
+title: "Agentic Builders — Draft C"
+description: "Early-stage fund for agent-native applications. Draft C: white, sticky panel, stickers."
+---
+<main class="layout">
+  <aside class="panel">
+    <h2>Early-stage fund for agent-native applications</h2>
+    <p>Products agents use and tools for building agent products. From idea to pre-seed, for founders who build with people and agents.</p>
+    <ul class="facts">
+      <li><span>First check</span><b>$30–80k</b></li>
+      <li><span>Decision</span><b>4 weeks</b></li>
+      <li><span>Portfolio</span><b>{{ fund.portfolio.companies | length }} companies</b></li>
+    </ul>
+    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#mondays">Four Mondays</a><a href="#check">The check</a><a href="#partner">The partner</a><a href="#portfolio">Portfolio</a><a href="#faq">Questions</a></nav>
+    <p class="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span data-type='["reading new applications…","checking five criteria…","summarising a deck…","next review: Monday"]'>reading new applications…</span></p>
+    <div class="btns"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a><a class="pill pill-ghost" href="#mondays">How it works</a></div>
+  </aside>
+
+  <div class="col">
+    <section class="hero" id="top">
+      <h1 class="rv">We fund <a href="#thesis"><span class="nw">agent-native</span> applications</a><span class="ico" data-eye aria-hidden="true"><i></i></span> at the idea stage, and get founders to their <a href="#mondays">next round in four weeks</a>.</h1>
+      <p class="sub rv">First checks of <b>$30–80k</b> on a SAFE. One form, four Mondays, a decision with an explanation either way.</p>
+      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply for funding</a><a class="quiet" href="#mondays">How it works</a></div>
+      <ul class="stickers rv" aria-label="Portfolio">
+        {% for c in fund.portfolio.companies %}<li style="--r:{{ (loop.index0 % 5) - 2 }}deg"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo }}" alt="" loading="lazy"><span>{{ c.name }}</span></a></li>{% endfor %}
+      </ul>
+    </section>
+
+    <section id="thesis">
+      <p class="t scrub" data-scrub>{{ fund.thesis.lead }} {{ fund.thesis.body }}</p>
+      <p class="t muted rv">We back two kinds of products. <b>Products agents use</b><span class="tag">research</span><span class="tag">data</span><span class="tag">buy</span><span class="tag">sell</span>, and <b>tools for agent products</b><span class="tag">build</span><span class="tag">test</span><span class="tag">secure</span><span class="tag">launch</span>.</p>
+      <p class="t muted rv" id="who">We look for founders moving from vibe coding to building a company of <b>people and agents</b>, who can run both. Five things we check by facts:</p>
+      <ol class="five rv">{% for c in fund.who_we_look_for.criteria %}<li><span class="n">{{ loop.index }}</span><b>{{ c.name }}.</b> {{ c.detail }}</li>{% endfor %}</ol>
+    </section>
+
+    <section id="mondays">
+      <p class="t rv">The program is <b>four Mondays</b>. We do not teach and we do not build your product. We watch how you work, then decide, and tell you why either way.</p>
+      <ol class="notes">
+        <li class="note rv" style="--r:-2deg"><span class="mn">1</span><h3>Baseline</h3><p>The key number we will follow, cash and runway, who sells. The partner toolkit opens: cloud credits, coding and app-building tools, prospecting, docs.</p></li>
+        <li class="note rv" style="--r:1.5deg"><span class="mn">2</span><h3>Numbers</h3><p>Users, paying customers, revenue, US conversations, deals, investor talks, cash. Did you reach last week's goal? What did you ship?</p></li>
+        <li class="note rv" style="--r:-1deg"><span class="mn">3</span><h3>Your questions</h3><p>The same set plus up to three about your company. About 15 minutes; text, voice, a screenshot or a file. Reply by Friday; we do not remind.</p></li>
+        <li class="note rv" style="--r:2deg"><span class="mn">4</span><h3>Decision</h3><p>Our agent summarises the four weeks: what moved, what you did yourselves, whether you answered on time. The partners decide and tell you why.</p></li>
+      </ol>
+      <p class="fine rv">Before the Mondays: one form, read by our partner within 24 hours and by a person within three business days. No equity, no exclusivity, no fees for the track.</p>
+    </section>
+
+    <section id="check">
+      <p class="t rv">If we invest: a first check of <b class="orange">$<span data-count="30">0</span>–<span data-count="80">0</span>k</b> on a standard post-money SAFE, help setting up a Delaware company and clean documents, and the founder platform: <b>weekly fund meeting, 1:1s with the general partner, guilds, 400+ partner perks</b>, and introductions to the next investors when you are ready to raise.</p>
+      <p class="t muted rv">No follow-on checks from the fund. Our job is to get you to the next round from other investors.</p>
+    </section>
+
+    <section id="partner">
+      <p class="t rv">The fund runs on its own agents. <span class="w mono">intake</span>. <span class="w ul">deck analysis</span>. <span class="w orange">check-ins</span>. <span class="w box">memos</span>. <span class="w mono">tracking</span>. Agents prepare, partners decide.</p>
+      <div class="term rv"><pre>$ agent --read application.json deck.pdf
+&gt; what you do, for whom. agents for people or agents for agents
+&gt; five criteria with a quote from your materials: yes / no / unknown
+&gt; three questions to ask before the track
+$ handoff --to partners</pre></div>
+      <p class="t muted rv">Your agent can read us too: <a href="/agents/">a version for agents</a>, <a href="/agents.md">agents.md</a>, <a href="/llms.txt">llms.txt</a>. Soon: upload a deck, and the application fills itself.</p>
+    </section>
+
+    <section id="portfolio">
+      <p class="t rv"><b>{{ fund.portfolio.companies | length }} companies</b> building for agents and with agents.</p>
+      <ul class="plist">{% for c in fund.portfolio.companies %}<li class="rv"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo }}" alt="" loading="lazy"><b>{{ c.name }}</b><span>{{ c.for_humans }}</span></a></li>{% endfor %}</ul>
+    </section>
+
+    <section id="faq">
+      <p class="t rv">Questions founders ask.</p>
+      <div class="qs rv">{% for f in fund.faq %}<details class="q"><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+    </section>
+
+    <section id="apply" class="last">
+      <p class="t rv">One form. Four Mondays. A decision either way.</p>
+      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply for funding</a><a class="quiet" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></div>
+    </section>
+  </div>
+</main>
