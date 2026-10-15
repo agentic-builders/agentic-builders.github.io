@@ -53,7 +53,7 @@
   "who_we_look_for": {
     "headline": "Who we look for",
     "lead": "TODO: final wording. Draft: founders who are moving from vibe coding to building a company of people and agents, and can run both.",
-    "criteria_note": "Five things we pay attention to. None of them is a formal requirement; together they tell us how far a team can go.",
+    "criteria_note": "Four things we pay attention to. None of them is a formal requirement; together they tell us how far a team can go.",
     "criteria": [
       {
         "name": "Experience",
@@ -68,12 +68,8 @@
         "detail": "Someone on the team talks to customers and can close a pilot or a deal."
       },
       {
-        "name": "Presence",
-        "detail": "You are able to spend time in the US when it matters for the company."
-      },
-      {
-        "name": "Rhythm",
-        "detail": "You are comfortable sharing a few numbers regularly, during the track and after."
+        "name": "Iteration speed",
+        "detail": "You can run many iterations in a short time: ship, test, learn, ship again."
       }
     ],
     "strengtheners": [
@@ -276,11 +272,11 @@
     },
     {
       "q": "What equity do you take?",
-      "a": "TODO: the fund decides whether to publish the range. Internally: a standard post-money SAFE where the valuation cap equals the check divided by the share."
+      "a": "We invest on a standard post-money SAFE, and the valuation is agreed with each founder individually. We look at how the company can grow through its next stages and set the cap so that the round makes sense for both sides, rather than taking a fixed share."
     },
     {
       "q": "Who can apply?",
-      "a": "Teams building products agents use or tools for building agent products, at idea to pre-seed stage. We pay attention to experience, the US market in your plans, someone on the team who sells, the ability to be in the US when it matters, and a regular rhythm of sharing numbers."
+      "a": "Teams building products agents use or tools for building agent products, at idea to pre-seed stage. We pay attention to experience, the US market in your plans, someone on the team who sells, and how fast the team iterates."
     },
     {
       "q": "What do I need to apply?",
@@ -338,7 +334,7 @@
     }
   ],
   "investors": {
-    "hero": "TODO: one sentence about the fund for investors. Draft: We find and fund agent-native founders at the idea stage, run them through a four-week track, and bring the ones that move to the funds that do the next round.",
+    "hero": "We find agent-native founders at the idea stage, run them through a four-week track, and bring the ones that move to the funds that do the next round.",
     "numbers": [
       {
         "value": "13",
@@ -374,7 +370,7 @@
       },
       {
         "name": "Selection",
-        "text": "Five criteria checked by facts: built a startup before, sells into the US, someone on the team sells, can be in the US, shares numbers on schedule. Team and ability to sell weigh half the decision; market and US access a quarter; product a quarter."
+        "text": "Four things we pay attention to: experience, the US market in the plans, someone on the team who sells, and iteration speed. Team and the ability to sell weigh half the decision; market and US access a quarter; product a quarter."
       },
       {
         "name": "How we run",
@@ -547,7 +543,7 @@
         "steps": [
           "Read /agents.md and the application field schema.",
           "Collect every required field from the person; ask, do not guess.",
-          "Go through the five things the fund pays attention to with the person, honestly.",
+          "Go through the four things the fund pays attention to with the person, honestly.",
           "Open the application form and fill it in; put the deck as a link that opens without login.",
           "Tell the person what happens next: a read within 24 hours, a human review within three business days, a first call within a week."
         ]

@@ -5,8 +5,8 @@
 <title>{{ title }}</title><meta name="description" content="{{ description }}">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="theme-color" content="#FFFFFF">
-<link rel="canonical" href="{{ fund.fund.url }}/">
-<meta property="og:type" content="website"><meta property="og:url" content="{{ fund.fund.url }}/"><meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:image" content="{{ fund.fund.url }}/og-image.png"><meta property="og:site_name" content="{{ fund.fund.name }}">
+<link rel="canonical" href="{{ fund.fund.url }}{{ page.url }}">
+<meta property="og:type" content="website"><meta property="og:url" content="{{ fund.fund.url }}{{ page.url }}"><meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:image" content="{{ fund.fund.url }}/og-image.png"><meta property="og:site_name" content="{{ fund.fund.name }}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title }}"><meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="{{ fund.fund.url }}/og-image.png">
 <link rel="alternate" type="text/markdown" href="/agents.md" title="agents.md"><link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -14,12 +14,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/hero.css">
 <link rel="stylesheet" href="/assets/home.css">
+{% if pagecss %}<link rel="stylesheet" href="/assets/{{ pagecss }}.css">{% endif %}
 {% include "jsonld.njk" %}
 </head>
-<body class="c page">
+<body class="c page mode-{{ mode }}">
 <nav class="nav"><a class="logo" href="/"><img src="/brand/icon-color.svg" alt="">Agentic Builders</a>
-<nav class="modes" aria-label="Site mode"><a href="/" class="on" aria-current="page">For founders</a><a href="/agents/">For agents</a><a href="/investors/">For investors</a></nav>
-<a class="pill {{ navpill }}" href="{{ fund.fund.apply_url }}">Apply</a></nav>
+<nav class="modes" aria-label="Site mode">{% for m in site.modes %}<a href="{{ m.url }}"{% if m.key == mode %} class="on" aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}</nav>
+{% if mode == "agents" %}<a class="pill pill-dark" href="/agents.md" download="agents.md">agents.md</a>{% elif mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Meet us</a>{% else %}<a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a>{% endif %}</nav>
 {{ content | safe }}
 <footer class="foot">
   <div class="foot-in">

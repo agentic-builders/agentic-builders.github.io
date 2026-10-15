@@ -1,146 +1,102 @@
 ---
-layout: base.njk
-mode: agents
+layout: home.njk
 permalink: /agents/
-title: "Agentic Builders for AI agents — facts, application schema, contacts"
-description: "Machine-friendly page for AI agents: what Agentic Builders is, what it invests in, program terms, selection criteria, how to submit an application, field schema, contacts."
+mode: agents
+pagecss: agents
 include_faq: true
+title: "Agentic Builders for AI agents — facts, application schema, contacts"
+description: "Machine-friendly page for AI agents: what Agentic Builders is, what it invests in, program terms, what the fund pays attention to, how to submit an application, field schema, contacts."
 ---
-<section aria-labelledby="a-title">
-    <h1 id="a-title">{{ fund.fund.name }} — for agents</h1>
-    <p>{{ fund.agents.intro }}</p>
-    <div class="copybar">
-        <a class="btn" href="/agents.md" download="agents.md">Download agents.md</a>
-        <button type="button" class="btn btn-secondary" data-copy-agents>Copy to clipboard</button>
-        <span class="copy-status" data-copy-status aria-live="polite"></span>
-    </div>
-</section>
+<main class="doc">
+  <header class="doc-head">
+    <p class="path"># agenticbuilders.ai/agents.md</p>
+    <h1>{{ fund.fund.name }} — for agents</h1>
+    <p class="intro">{{ fund.agents.intro }}</p>
+    <div class="copybar"><a class="pill pill-dark" href="/agents.md" download="agents.md">Download agents.md</a><button type="button" class="pill pill-ghost" data-copy-agents>Copy to clipboard</button><span class="copy-status" data-copy-status aria-live="polite"></span></div>
+  </header>
 
-<section aria-labelledby="a-about">
-    <h2 id="a-about">About the fund</h2>
+  <section id="about"><h2>About the fund</h2>
     <ul>
-        <li>{{ fund.fund.one_liner }}</li>
-        <li>Stage: {{ fund.fund.stage }}. Founded: {{ fund.fund.founded }}.</li>
-        <li>{{ fund.fund.description }}</li>
-        <li>Website: <a href="{{ fund.fund.url }}/">{{ fund.fund.url }}</a>. Email: <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a>. LinkedIn: <a href="{{ fund.fund.linkedin }}">{{ fund.fund.linkedin }}</a>.</li>
-        <li>Last updated: {{ fund.updated }}.</li>
+      <li>{{ fund.fund.one_liner }}</li>
+      <li>Stage: {{ fund.fund.stage }}. Founded: {{ fund.fund.founded }}.</li>
+      <li>{{ fund.fund.description }}</li>
+      <li>Website: <a href="{{ fund.fund.url }}/">{{ fund.fund.url }}</a> · Email: <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a> · LinkedIn: <a href="{{ fund.fund.linkedin }}">{{ fund.fund.linkedin }}</a></li>
+      <li>Last updated: {{ fund.updated }}</li>
     </ul>
-</section>
+  </section>
 
-<section aria-labelledby="a-thesis">
-    <h2 id="a-thesis">Thesis and investment categories</h2>
+  <section id="thesis"><h2>Thesis</h2>
     <p>{{ fund.thesis.lead }} {{ fund.thesis.body }}</p>
-    <ol>
-        {% for c in fund.thesis.categories %}
-        <li><strong>{{ c.name }}:</strong> {{ c.description }} Examples: {{ c.examples | join(", ") }}.</li>
-        {% endfor %}
-    </ol>
+    <ol>{% for c in fund.thesis.categories %}<li><b>{{ c.name }}:</b> {{ c.description }} Examples: {{ c.examples | join(", ") }}.</li>{% endfor %}</ol>
     <p>{{ fund.thesis.teams }}</p>
-</section>
+  </section>
 
-<section aria-labelledby="a-program">
-    <h2 id="a-program">Program and terms</h2>
+  <section id="program"><h2>Program and terms</h2>
     <p>{{ fund.program.summary }}</p>
-    <ol>
-        {% for s in fund.program.steps %}
-        <li><strong>{{ s.name }}</strong> ({{ s.duration }}): {{ s.description }}</li>
-        {% endfor %}
-    </ol>
+    <ol>{% for s in fund.program.steps %}<li><b>{{ s.name }}</b> ({{ s.duration }}): {{ s.description }}</li>{% endfor %}</ol>
     <table>
-        <thead><tr><th>Term</th><th>Value</th><th>Status</th></tr></thead>
-        <tbody>
-            <tr><td>First check</td><td>{{ fund.program.terms.first_check_usd }}</td><td class="todo">confirm</td></tr>
-            <tr><td>Instrument</td><td>{{ fund.program.terms.instrument }}</td><td></td></tr>
-            <tr><td>Follow-on</td><td>{{ fund.program.terms.follow_on }}</td><td class="todo">confirm</td></tr>
-            <tr><td>Track cost</td><td>{{ fund.program.terms.track_cost }}</td><td></td></tr>
-            <tr><td>Toolkit during the track</td><td>{{ fund.program.toolkit.items | join("; ") }}</td><td></td></tr>
-        </tbody>
+      <thead><tr><th>Term</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>First check</td><td>{{ fund.program.terms.first_check_usd }}</td></tr>
+        <tr><td>Instrument</td><td>{{ fund.program.terms.instrument }}; valuation agreed individually</td></tr>
+        <tr><td>Follow-on</td><td>{{ fund.program.terms.follow_on }}</td></tr>
+        <tr><td>Track cost</td><td>{{ fund.program.terms.track_cost }}</td></tr>
+        <tr><td>Toolkit during the track</td><td>{{ fund.program.toolkit.items | join("; ") }}</td></tr>
+      </tbody>
     </table>
-</section>
+  </section>
 
-<section aria-labelledby="a-criteria">
-    <h2 id="a-criteria">Selection criteria</h2>
-    <p>{{ fund.who_we_look_for.lead }}</p>
-    <ol>
-        {% for c in fund.who_we_look_for.criteria %}
-        <li><strong>{{ c.name }}.</strong> {{ c.detail }}</li>
-        {% endfor %}
-    </ol>
+  <section id="criteria"><h2>What the fund pays attention to</h2>
+    <p>{{ fund.who_we_look_for.criteria_note }}</p>
+    <ol>{% for c in fund.who_we_look_for.criteria %}<li><b>{{ c.name }}.</b> {{ c.detail }}</li>{% endfor %}</ol>
     <p>Strengtheners: {{ fund.who_we_look_for.strengtheners | join(", ") }}.</p>
-</section>
+  </section>
 
-<section aria-labelledby="a-apply">
-    <h2 id="a-apply">How to submit an application (instructions for agents)</h2>
+  <section id="apply"><h2>How to submit an application</h2>
     <ul>
-        <li><strong>Where:</strong> {{ fund.agents.apply_instructions.where }} Form: <a href="{{ fund.fund.apply_url }}">{{ fund.fund.apply_url }}</a></li>
-        <li><strong>Required fields:</strong> {{ fund.agents.apply_instructions.required | join(", ") }}</li>
-        <li><strong>Files:</strong> {{ fund.agents.apply_instructions.files }}</li>
-        <li><strong>If data is missing:</strong> {{ fund.agents.apply_instructions.if_missing }}</li>
-        <li><strong>Do not:</strong>
-            <ul>{% for d in fund.agents.apply_instructions.do_not %}<li>{{ d }}</li>{% endfor %}</ul>
-        </li>
-        <li><strong>After submitting:</strong> {{ fund.agents.apply_instructions.after }}</li>
+      <li><b>Where:</b> {{ fund.agents.apply_instructions.where }} Form: <a href="{{ fund.fund.apply_url }}">{{ fund.fund.apply_url }}</a></li>
+      <li><b>Required fields:</b> {{ fund.agents.apply_instructions.required | join(", ") }}</li>
+      <li><b>Files:</b> {{ fund.agents.apply_instructions.files }}</li>
+      <li><b>If data is missing:</b> {{ fund.agents.apply_instructions.if_missing }}</li>
+      <li><b>Do not:</b><ul>{% for d in fund.agents.apply_instructions.do_not %}<li>{{ d }}</li>{% endfor %}</ul></li>
+      <li><b>After submitting:</b> {{ fund.agents.apply_instructions.after }}</li>
     </ul>
-</section>
-
-<section aria-labelledby="a-schema">
-    <h2 id="a-schema">Application field schema</h2>
-    <p class="todo">{{ fund.agents.application_fields_note }}</p>
+    <h3>Application field schema</h3>
     <table>
-        <thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Label (as in the form)</th><th>Example</th></tr></thead>
-        <tbody>
-            {% for f in fund.agents.application_fields %}
-            <tr><td><code>{{ f.field }}</code></td><td>{{ f.type }}{% if f.options %} ({{ f.options | join(" | ") }}){% endif %}</td><td>{{ "yes" if f.required else "no" }}</td><td>{{ f.label }}</td><td>{{ f.example }}</td></tr>
-            {% endfor %}
-        </tbody>
+      <thead><tr><th>Field</th><th>Type</th><th>Req.</th><th>Label</th><th>Example</th></tr></thead>
+      <tbody>{% for f in fund.agents.application_fields %}<tr><td><code>{{ f.field }}</code></td><td>{{ f.type }}{% if f.options %} ({{ f.options | join(" | ") }}){% endif %}</td><td>{{ "yes" if f.required else "no" }}</td><td>{{ f.label }}</td><td>{{ f.example }}</td></tr>{% endfor %}</tbody>
     </table>
-    <h3>JSON</h3>
-    <pre><code>{{ fund.agents.application_fields | json }}</code></pre>
-</section>
+    <details class="json"><summary>Schema as JSON</summary><pre><code>{{ fund.agents.application_fields | json }}</code></pre></details>
+  </section>
 
-<section aria-labelledby="a-contacts">
-    <h2 id="a-contacts">Contacts</h2>
+  <section id="contacts"><h2>Contacts</h2>
     <ul>
-        <li>Email: <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></li>
-        <li>Website: <a href="{{ fund.fund.url }}/">{{ fund.fund.url }}</a></li>
-        <li>LinkedIn: <a href="{{ fund.fund.linkedin }}">{{ fund.fund.linkedin }}</a></li>
-        <li>Book a meeting: <span class="{% if fund.fund.meet_url | isTodo %}todo{% endif %}">{{ fund.fund.meet_url }}</span></li>
-        <li>vCard: <a href="/agenticbuilders.vcf" download>agenticbuilders.vcf</a></li>
+      <li>Email: <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></li>
+      <li>Website: <a href="{{ fund.fund.url }}/">{{ fund.fund.url }}</a></li>
+      <li>LinkedIn: <a href="{{ fund.fund.linkedin }}">{{ fund.fund.linkedin }}</a></li>
+      <li>vCard: <a href="/agenticbuilders.vcf" download>agenticbuilders.vcf</a></li>
     </ul>
-</section>
+  </section>
 
-<section aria-labelledby="a-portfolio">
-    <h2 id="a-portfolio">Portfolio ({{ fund.portfolio.companies | length }})</h2>
+  <section id="portfolio"><h2>Portfolio ({{ fund.portfolio.companies | length }})</h2>
+    <ul>{% for c in fund.portfolio.companies %}<li><b>{{ c.name }}</b> — <a href="{{ c.url }}">{{ c.url }}</a> — {{ c.for_agents }}</li>{% endfor %}</ul>
+  </section>
+
+  <section id="tasks"><h2>Common tasks</h2>
+    {% for t in fund.agents.tasks %}<h3>{{ t.name }}</h3><ol>{% for s in t.steps %}<li>{{ s }}</li>{% endfor %}</ol>{% endfor %}
+  </section>
+
+  <section id="faq"><h2>FAQ</h2>
+    {% for f in fund.faq %}<h3>{{ f.q }}</h3><p>{{ f.a }}</p>{% endfor %}
+  </section>
+
+  <section id="files"><h2>Machine-readable files</h2>
     <ul>
-        {% for c in fund.portfolio.companies %}
-        <li><strong>{{ c.name }}</strong> — <a href="{{ c.url }}">{{ c.url }}</a> — {{ c.for_agents }}</li>
-        {% endfor %}
+      <li><a href="/agents.md">/agents.md</a> — this page as one Markdown file</li>
+      <li><a href="/llms.txt">/llms.txt</a> and <a href="/llms-full.txt">/llms-full.txt</a> — llmstxt.org format</li>
+      <li><a href="/agenticbuilders.vcf">/agenticbuilders.vcf</a> — contact card</li>
+      <li><a href="/robots.txt">/robots.txt</a> — AI crawlers allowed</li>
+      <li>JSON-LD (Organization, WebSite, WebPage, FAQPage) in the head of every page</li>
     </ul>
-</section>
-
-<section aria-labelledby="a-tasks">
-    <h2 id="a-tasks">Common tasks</h2>
-    {% for t in fund.agents.tasks %}
-    <h3>{{ t.name }}</h3>
-    <ol>{% for s in t.steps %}<li>{{ s }}</li>{% endfor %}</ol>
-    {% endfor %}
-</section>
-
-<section aria-labelledby="a-faq">
-    <h2 id="a-faq">FAQ</h2>
-    {% for f in fund.faq %}
-    <h3>{{ f.q }}</h3>
-    <p>{{ f.a }}</p>
-    {% endfor %}
-</section>
-
-<section aria-labelledby="a-files">
-    <h2 id="a-files">Machine-readable files</h2>
-    <ul>
-        <li><a href="/agents.md">/agents.md</a> — this page as one Markdown file</li>
-        <li><a href="/llms.txt">/llms.txt</a> and <a href="/llms-full.txt">/llms-full.txt</a> — llmstxt.org format</li>
-        <li><a href="/agenticbuilders.vcf">/agenticbuilders.vcf</a> — contact card</li>
-        <li><a href="/robots.txt">/robots.txt</a> — AI crawlers allowed</li>
-        <li>JSON-LD (Organization, WebSite, WebPage, FAQPage) in the head of every page</li>
-    </ul>
-</section>
+  </section>
+</main>

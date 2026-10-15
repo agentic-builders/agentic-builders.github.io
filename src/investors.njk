@@ -1,43 +1,51 @@
 ---
-layout: base.njk
-mode: investors
+layout: home.njk
 permalink: /investors/
+mode: investors
+pagecss: investors
 title: "Agentic Builders for investors — thesis, program, team"
-description: "Early-stage fund for agent-native products. Thesis, stage, four-week program, selection, team, portfolio. Meet the cohort or meet us."
+description: "Early-stage fund for agent-native products. Thesis, stage, four-week program, what we pay attention to, team, selected portfolio. Meet the cohort or meet us."
 ---
-<section>
-    <h1>{{ fund.fund.name }}</h1>
-    <p class="lead{% if fund.investors.hero | isTodo %} todo{% endif %}">{{ fund.investors.hero }}</p>
-    <div class="actions"><a class="btn" href="{% if fund.fund.meet_url | isTodo %}mailto:{{ fund.fund.email }}{% else %}{{ fund.fund.meet_url }}{% endif %}">Meet us</a></div>
-</section>
-<section aria-label="Numbers">
-    <ul class="numbers" role="list">
-        {% for n in fund.investors.numbers %}<li><span class="value">{{ n.value }}</span><span class="label">{{ n.label }}{% if n.note %} <span class="todo">({{ n.note }})</span>{% endif %}</span></li>{% endfor %}
+<main class="inv">
+  <section class="inv-hero" id="top">
+    <h1 class="rv">{{ fund.investors.hero }}</h1>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Meet us</a><a class="quiet" href="#companies">Meet the companies</a></div>
+    <ul class="nums rv" role="list">
+      {% for n in fund.investors.numbers %}<li><b>{{ n.value }}</b><span>{{ n.label }}</span></li>{% endfor %}
     </ul>
-</section>
-<section>
-    <h2>Our approach</h2>
-    <div class="grid" style="--cols: 2">
-        {% for a in fund.investors.approach %}<article class="card"><h3>{{ a.name }}</h3><p>{{ a.text }}</p></article>{% endfor %}
-    </div>
-</section>
-<section>
-    <h2>Team</h2>
+  </section>
+
+  <section id="approach">
+    <p class="t rv">How we work.</p>
+    <dl class="approach">
+      {% for a in fund.investors.approach %}<div class="rv"><dt>{{ a.name }}</dt><dd>{{ a.text }}</dd></div>{% endfor %}
+    </dl>
+  </section>
+
+  <section id="team">
+    <p class="t rv">Team.</p>
     <ul class="team" role="list">
-        {% for t in fund.team %}<li><div class="photo">{{ "photo" if t.photo | isTodo else "" }}</div><span class="name{% if t.name | isTodo %} todo{% endif %}">{{ t.name }}</span><span class="role{% if t.role | isTodo %} todo{% endif %}">{{ t.role }}</span><p>{{ t.line }}</p><p class="note{% if t.linkedin | isTodo %} todo{% endif %}">LinkedIn: {{ t.linkedin }}</p></li>{% endfor %}
+      {% for t in fund.team %}<li class="rv{% if t.name | isTodo %} todo{% endif %}"><span class="ph" aria-hidden="true">{{ t.name | first }}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p></li>{% endfor %}
     </ul>
-</section>
-<section>
-    <h2>Selected portfolio</h2>
-    <div class="grid" style="--cols: 3">
-        {% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<a class="pcard" href="{{ c.url }}" target="_blank" rel="noopener"><span class="pcard-name">{{ c.name }}</span><span class="pcard-desc">{{ c.for_humans }}</span></a>{% endfor %}
+    <p class="fine rv">Photos and LinkedIn links: TODO.</p>
+  </section>
+
+  <section id="companies">
+    <p class="t rv">Selected companies.</p>
+    <ul class="stickers rv" aria-label="Selected portfolio">
+      {% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<li style="--r:{{ (loop.index0 % 5) - 2 }}deg"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo }}" alt="" loading="lazy"><span>{{ c.name }}</span></a></li>{% endfor %}
+    </ul>
+    <ul class="plist">
+      {% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<li class="rv"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo }}" alt="" loading="lazy"><b>{{ c.name }}</b><span>{{ c.for_humans }}</span></a></li>{% endfor %}
+    </ul>
+    <p class="fine rv"><a href="/#portfolio">All {{ fund.portfolio.companies | length }} companies →</a></p>
+  </section>
+
+  <section id="start" class="last">
+    <p class="t rv">Two ways to start.</p>
+    <div class="ways rv">
+      <div class="note" style="--r:-1.5deg"><h3>Meet the companies</h3><p>Come to a pitch session and see the cohort before anyone else.</p><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Pitch%20session">Ask for an invite</a></div>
+      <div class="note" style="--r:1.5deg"><h3>Meet us</h3><p>A 30-minute call about the thesis, the program and co-investing.</p><a class="pill pill-ghost" href="mailto:{{ fund.fund.email }}?subject=Meeting%20with%20Agentic%20Builders">Book a call</a></div>
     </div>
-    <p class="note"><a href="/#portfolio">All {{ fund.portfolio.companies | length }} companies →</a></p>
-</section>
-<section>
-    <h2>Two ways to start</h2>
-    <div class="grid" style="--cols: 2">
-        <article class="card"><h3>Meet the companies</h3><p>Come to a pitch session and see the cohort.</p><p class="todo">{{ fund.fund.pitch_session_url }}</p></article>
-        <article class="card"><h3>Meet us</h3><p>A 30-minute call about the thesis, the program and co-investing.</p><p class="todo">{{ fund.fund.meet_url }}</p></article>
-    </div>
-</section>
+  </section>
+</main>
