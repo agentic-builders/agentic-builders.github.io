@@ -129,3 +129,18 @@ body.c{background:#fff;color:#1F2937}
 .team .quiet{display:inline-block;margin-top:10px;font:500 13px/1 'Inter',system-ui,sans-serif;color:#B03502;text-decoration:none}
 @media (max-width:900px){.stages{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.team{grid-template-columns:1fr}}
+
+.team li.agent{background:#1F2937;border-color:#1F2937}
+.team li.agent b,.team li.agent p{color:#fff}.team li.agent p{color:rgba(255,255,255,.8)}
+.team li.agent .role{color:#FEA681}
+.team li.agent .ph{background:#FC4C03}
+.pill.sm{padding:9px 14px;font-size:12.5px;margin-top:14px}
+.team li.agent .pill-ghost{border-color:rgba(255,255,255,.3);color:#fff;background:transparent}
+.team{grid-template-columns:repeat(4,1fr)}
+.subscribe{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:28px}
+.subscribe input[type=email]{flex:1 1 240px;max-width:340px;padding:12px 16px;border:1px solid rgba(31,41,55,.2);border-radius:999px;font:400 15px/1 'Inter',system-ui,sans-serif;color:#1F2937;background:#fff}
+.subscribe .hp{position:absolute;left:-9999px;width:1px;height:1px}
+.sub-status{flex-basis:100%;font:400 13px/1.5 'Inter',system-ui,sans-serif;color:#4B5563;min-height:1.2em;margin:0}
+#newsletter{scroll-margin-top:100px}
+@media (max-width:900px){.team{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.team{grid-template-columns:1fr}}
