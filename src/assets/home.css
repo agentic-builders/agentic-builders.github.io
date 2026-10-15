@@ -117,3 +117,15 @@ body.c{background:#fff;color:#1F2937}
 .doc-page p,.doc-page li{font:400 15px/1.6 'Inter',system-ui,sans-serif;color:#4B5563;max-width:70ch}
 .doc-page ul{padding-left:20px}.doc-page li{margin:4px 0}.doc-page li b{color:#1F2937}
 @media (max-width:600px){.team{grid-template-columns:1fr}}
+
+/* Three stages */
+.stages{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:44px 0 28px}
+.stage{display:flex;flex-direction:column}
+.stage .mn{font-size:44px}
+.gets{list-style:none;margin-top:14px;padding-top:12px;border-top:1px solid rgba(252,76,3,.18);display:grid;gap:6px}
+.gets li{font:400 13.5px/1.5 'Inter',system-ui,sans-serif;color:#4B5563;padding-left:14px;position:relative}
+.gets li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:#FC4C03}
+.team{grid-template-columns:repeat(3,1fr);max-width:none}
+.team .quiet{display:inline-block;margin-top:10px;font:500 13px/1 'Inter',system-ui,sans-serif;color:#B03502;text-decoration:none}
+@media (max-width:900px){.stages{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.team{grid-template-columns:1fr}}

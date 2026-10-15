@@ -27,25 +27,20 @@ description: "We fund agent-native products at the idea stage and decide on a fi
     </section>
 
     <section id="track">
-      <h2 class="t rv">{{ h.track_lead }} {{ fund.program.summary }}</h2>
-      <ol class="notes">
-        {% set tilts = [-2, 1.5, -1] %}
-        {% for s in fund.program.steps %}{% if loop.index0 > 0 and loop.index0 < 4 %}
-        <li class="note rv" style="--r:{{ tilts[loop.index0 - 1] }}deg"><span class="mn">{{ loop.index0 }}</span><h3>{{ s.name }}</h3><p>{{ s.description }}</p></li>
-        {% endif %}{% endfor %}
+      <h2 class="t rv">{{ h.how_lead }} {{ fund.program.summary }}</h2>
+      <ol class="stages">
+        {% set tilts = [-1.5, 1, -1] %}
+        {% for s in fund.program.stages %}
+        <li class="note stage rv" style="--r:{{ tilts[loop.index0] }}deg"><span class="mn">{{ loop.index }}</span><h3>{{ s.name }}</h3><p>{{ s.text }}</p><ul class="gets">{% for g in s.gets %}<li>{{ g }}</li>{% endfor %}</ul></li>
+        {% endfor %}
       </ol>
       <p class="fine rv">{{ fund.program.timeline }} {{ fund.program.terms.track_cost }}</p>
-    </section>
-
-    <section id="check">
-      <h2 class="t rv">{{ h.check_lead }} <b class="orange">$<span data-count="30">30</span>–<span data-count="100">100</span>k</b> {{ h.check_after }} <b>{{ h.check_platform }}</b>, {{ h.check_end }}</h2>
-      <p class="t muted rv">{{ fund.program.terms.follow_on }}.</p>
     </section>
 
     <section id="team">
       <h2 class="t rv">{{ h.team_lead }}</h2>
       <ul class="team" role="list">
-        {% for t in fund.team %}<li class="rv"><span class="ph" aria-hidden="true">{{ t.name | first }}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p></li>{% endfor %}
+        {% for t in fund.team %}<li class="rv"><span class="ph" aria-hidden="true">{{ t.name | first }}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}
       </ul>
       <p class="fine rv">{{ h.agents_line }} <a href="/agents/">{{ h.agents_link }}</a>.</p>
     </section>
@@ -70,7 +65,7 @@ description: "We fund agent-native products at the idea stage and decide on a fi
     <p class="panel-title">{{ h.panel_title }}</p>
     <p>{{ h.panel_text }}</p>
     <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><b>{{ f.value }}</b></li>{% endfor %}</ul>
-    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week track</a><a href="#check">The check</a><a href="#team">Team</a><a href="#portfolio">Portfolio</a><a href="#faq">Questions</a></nav>
+    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week track</a><a href="#team">Team</a><a href="#portfolio">Portfolio</a><a href="#faq">Questions</a></nav>
     <p class="status"><span class="dot" aria-hidden="true"></span><span class="sr-only">Status:</span><span aria-hidden="true" data-type='{{ h.status_lines | jsonInline }}'>{{ h.status_lines[0] }}</span></p>
     <div class="btns"><a class="pill pill-dark" href="/apply/">Apply</a><a class="pill pill-ghost" href="#track">How it works</a></div>
   </aside>

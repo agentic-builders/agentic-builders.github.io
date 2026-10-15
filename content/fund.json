@@ -7,7 +7,7 @@
     "url": "https://agenticbuilders.ai",
     "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
-    "description": "Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. Founders apply with one form, go through a four-week track with weekly check-ins, and get a decision on a first check within four weeks. The founder builds the product; the fund helps the team reach its next round.",
+    "description": "Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. Founders apply with one form, work for four weeks with weekly check-ins and tool credits, and if there is progress the fund invests a first check and takes the team to its next round.",
     "founded": "2025",
     "stage": "Idea to pre-seed",
     "email": "hey@agenticbuilders.ai",
@@ -80,8 +80,8 @@
   },
   "program": {
     "name": "Four-week track",
-    "hook": "A decision on a first check within four weeks of applying.",
-    "summary": "A four-week track with one short check-in a week. We do not teach and we do not build your product. We watch how you work, then decide and tell you why, either way.",
+    "hook": "Four weeks of your work. If there is progress, we invest and take you to the next round.",
+    "summary": "Four weeks of your work with our support along the way. If there is progress, we invest and take you to the next round.",
     "steps": [
       {
         "name": "Apply",
@@ -89,24 +89,19 @@
         "description": "One form, about 15 minutes, no call needed to start. Our AI agent reads the application and the deck; the partners review it."
       },
       {
-        "name": "Week 1",
-        "duration": "Baseline",
-        "description": "The key number we will follow (for example, paying customers or weekly active users), cash and runway, who sells. Tool credits open."
+        "name": "Four weeks of your work",
+        "duration": "Weeks 1 to 4",
+        "description": "You build, sell and ship; once a week a short check-in. Along the way: tool credits, our agent's read of your deck, one key number we follow together."
       },
       {
-        "name": "Weeks 2 and 3",
-        "duration": "Check-ins",
-        "description": "Every week a short set of questions: users, paying customers, revenue, customer conversations, deals, investor talks, cash. Did you reach last week's goal? What did you ship? Plus up to three questions about your company. About 15 minutes; text, voice, a screenshot or a file. Reply by Friday."
+        "name": "Decision",
+        "duration": "End of week 4",
+        "description": "If there is progress, we invest: a first check of $30–100k on a standard post-money SAFE. If not now, we tell you why and when to come back."
       },
       {
-        "name": "Week 4",
-        "duration": "Decision",
-        "description": "Our agent summarizes the four weeks: what moved, what you did yourselves. The partners decide and tell you why, either way."
-      },
-      {
-        "name": "If we invest",
-        "duration": "After the decision",
-        "description": "A first check on a standard post-money SAFE and the founder platform: weekly fund meeting, 1:1s with the general partner, founder groups on AI engineering, product and sales, tool credits, and introductions to the next investors when you are ready to raise."
+        "name": "To the next round",
+        "duration": "After the check",
+        "description": "Investor database and introductions, pitch sessions, founder platform: community, weekly fund meeting, 1:1s with the general partner, founder groups, credits and perks."
       }
     ],
     "terms": {
@@ -128,32 +123,52 @@
         "Issue tracking (Linear)"
       ]
     },
-    "timeline": "We come back with a decision within four weeks of your application. Until then, the only thing we ask for is a weekly check-in."
+    "timeline": "You hear from us within four weeks of applying. Until then, the only thing we ask for is a weekly check-in.",
+    "stages": [
+      {
+        "name": "Four weeks of your work",
+        "kicker": "Step 1",
+        "text": "You build, sell and ship. We watch how you work. Once a week, a short check-in: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday.",
+        "gets": [
+          "Tool credits: cloud, AI coding and app building, LLM tracing, web data, prospecting, docs",
+          "Our agent reads your deck and application and gives you back the questions investors will ask",
+          "One key number we follow together"
+        ]
+      },
+      {
+        "name": "If there is progress, we invest",
+        "kicker": "Step 2",
+        "text": "At the end of week four the partners decide and tell you why, either way. If not now, we say when it makes sense to come back.",
+        "gets": [
+          "First check of $30–100k on a standard post-money SAFE",
+          "Valuation agreed with you, not a fixed share",
+          "No fees, no exclusivity for the four weeks"
+        ]
+      },
+      {
+        "name": "Then we get you to the round",
+        "kicker": "Step 3",
+        "text": "We do not do follow-on checks. Our job is that the next money comes from other investors, and we work on that with you.",
+        "gets": [
+          "Curated investor database and warm introductions when you are ready",
+          "Pitch sessions where teams in the track meet investors",
+          "Founder platform: community, weekly fund meeting, 1:1s with the general partner, founder groups on AI engineering, product and sales, a wider set of credits and perks"
+        ]
+      }
+    ]
   },
   "what_you_get": [
     {
-      "name": "First check",
-      "description": "$30–100k on a standard post-money SAFE to build, test and get the first customers."
+      "name": "During the four weeks",
+      "description": "Tool credits, our agent's read of your deck, one key number we follow together."
     },
     {
-      "name": "An agent that reads everything",
-      "description": "The fund runs on its own AI agents: every application, deck and weekly update is read and summarized, so the partners spend their time on decisions and doors."
+      "name": "If there is progress",
+      "description": "A first check of $30–100k on a standard post-money SAFE, valuation agreed with you."
     },
     {
-      "name": "Investor access",
-      "description": "A curated investor database, warm introductions when you are ready to raise, and pitch sessions where the teams in the track meet investors."
-    },
-    {
-      "name": "Tool credits",
-      "description": "Credits and discounts during the track; a wider set of startup programs after investment."
-    },
-    {
-      "name": "Founder platform",
-      "description": "Slack community, weekly fund meeting, weekly 1:1 with the general partner, founder groups on AI engineering, product and sales, mentors and contractors directories."
-    },
-    {
-      "name": "Legal and operations",
-      "description": "Incorporation, SAFE, IP, finance and hiring handled with you."
+      "name": "After the check",
+      "description": "Investor introductions, pitch sessions and the founder platform: community, 1:1s with the general partner, founder groups, credits and perks."
     }
   ],
   "portfolio": {
@@ -261,7 +276,7 @@
   "faq": [
     {
       "q": "How long does it take from application to a decision?",
-      "a": "Four weeks. You apply with one form; during the four-week track we ask for one short check-in a week; at the end of week four we tell you our decision and the reasons, either way."
+      "a": "Four weeks. You apply with one form; for four weeks you work and send one short check-in a week; at the end of week four the partners decide and tell you why, either way."
     },
     {
       "q": "How much do you invest?",
@@ -281,11 +296,11 @@
     },
     {
       "q": "What happens during the four weeks?",
-      "a": "Every week you get a short set of questions: a few numbers and a few lines on what happened. Reply by Friday; about 15 minutes. We follow one key number for your company and you get tool credits. We do not teach and we do not build your product."
+      "a": "You work; we watch how you work. Every week you get a short set of questions: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday. Along the way you get tool credits, our agent's read of your deck and one key number we follow together. We do not teach and we do not build your product."
     },
     {
       "q": "What happens after the four weeks?",
-      "a": "The partners decide whether to invest and tell you why, either way. If we invest: the first check and the founder platform. If not now, we say when it makes sense to come back."
+      "a": "If there is progress, we invest a first check and start working on your next round: investor introductions, pitch sessions and the founder platform. If not now, we tell you why and when it makes sense to come back."
     },
     {
       "q": "Does the track commit me to anything?",
@@ -297,15 +312,19 @@
       "name": "Nikolay Vyahhi",
       "role": "General Partner",
       "line": "Decides, signs, opens doors.",
-      "linkedin": "",
-      "photo": ""
+      "linkedin": ""
     },
     {
       "name": "Leo Ivanov",
       "role": "Partner, Operations",
       "line": "Runs the fund's operating system: pipeline, legal, investor relations.",
-      "linkedin": "",
-      "photo": ""
+      "linkedin": ""
+    },
+    {
+      "name": "Elizaveta Chernysheva",
+      "role": "Operations and founder support",
+      "line": "Onboarding, tools and credits, mentors, contractors.",
+      "linkedin": ""
     }
   ],
   "investors": {
@@ -335,7 +354,7 @@
       },
       {
         "name": "Program",
-        "text": "A four-week track with weekly check-ins and one key number per company, then a decision within four weeks. After investment: weekly fund meeting, 1:1s with the general partner, founder groups, tool credits, introductions to the next investors."
+        "text": "Four weeks of the founders' work with weekly check-ins and tool credits, then a decision. If there is progress we invest a first check and work on the next round with the team: investor introductions, pitch sessions, founder platform."
       },
       {
         "name": "Selection",
@@ -588,16 +607,16 @@
     ],
     "status_lines": [
       "reading new applications…",
-      "decisions go out within four weeks"
+      "answers go out within four weeks"
     ],
     "h1_before": "We fund",
     "h1_link1": "agent-native products",
-    "h1_middle": "at the idea stage and decide on a",
-    "h1_link2": "first check in four weeks",
+    "h1_middle": "at the idea stage. Four weeks of your work, then a",
+    "h1_link2": "first check",
     "h1_after": ".",
     "sub_before": "First checks of",
     "sub_strong": "$30–100k",
-    "sub_after": "on a SAFE. One form, a four-week track, a decision with the reasons either way.",
+    "sub_after": "on a SAFE. One form, four weeks with our support along the way, a decision with the reasons either way.",
     "cta": "Apply for funding",
     "cta_quiet": "How it works",
     "thesis_products": "We back two kinds of products.",
@@ -614,16 +633,12 @@
       "launch"
     ],
     "who_intro": "Three things we pay attention to:",
-    "track_lead": "The program:",
-    "check_lead": "If we invest: a first check of",
-    "check_after": "on a standard post-money SAFE, and the founder platform:",
-    "check_platform": "weekly fund meeting, 1:1s with the general partner, founder groups, tool credits",
-    "check_end": "and introductions to the next investors when you are ready to raise.",
     "team_lead": "Who decides.",
     "agents_line": "The fund runs on its own AI agents; the partners decide. Your agent can read us too:",
     "agents_link": "the page for agents",
     "portfolio_lead": "companies building for agents and with agents.",
     "faq_lead": "Questions founders ask.",
-    "apply_lead": "One form. Four weeks. A decision either way."
+    "apply_lead": "One form. Four weeks. A decision either way.",
+    "how_lead": "How it works."
   }
 }
