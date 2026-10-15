@@ -4,9 +4,9 @@
 .inv-hero h1{font:600 clamp(30px,4.2vw,52px)/1.12 'Urbanist';letter-spacing:-.03em;color:#111827;max-width:22ch;text-wrap:pretty}
 .inv .cta{margin-top:32px}
 .nums{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid rgba(31,41,55,.1)}
-.nums li{padding:28px 28px 28px 0;border-right:1px solid rgba(31,41,55,.1)}
+.nums li{padding:28px 28px 28px 0}
 .nums li+li{padding-left:28px}
-.nums li:last-child{border-right:0}
+
 .nums b{display:block;font:800 clamp(28px,3.6vw,44px)/1 'Urbanist';letter-spacing:-.03em;color:#1F2937;margin-bottom:8px;font-variant-numeric:tabular-nums}
 .nums span{font:400 13px/1.4 'Inter';color:#6B7280}
 .approach{display:grid;gap:0;margin-top:28px}
