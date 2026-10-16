@@ -11,9 +11,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData("site", () => JSON.parse(fs.readFileSync("content/site.json", "utf8")));
   eleventyConfig.addWatchTarget("content/");
 
-  eleventyConfig.ignores.add("src/README.md");
-  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
-  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "static": "/" });
+  eleventyConfig.addPassthroughCopy({ "assets": "assets" });
 
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v, null, 2));
   eleventyConfig.addFilter("jsonInline", (v) => JSON.stringify(v));
@@ -35,7 +34,7 @@ export default function (eleventyConfig) {
   });
   // Cache busting: append a short content hash to asset URLs.
   eleventyConfig.addFilter("hashed", (url) => {
-    const file = path.join("src", url);
+    const file = url.replace(/^\//, "");
     if (!fs.existsSync(file)) return url;
     const h = crypto.createHash("sha1").update(fs.readFileSync(file)).digest("hex").slice(0, 8);
     return `${url}?v=${h}`;
@@ -51,7 +50,7 @@ export default function (eleventyConfig) {
   });
 
   return {
-    dir: { input: "src", includes: "_includes", output: "_site" },
+    dir: { input: "pages", includes: "_includes", output: "_site" },
     templateFormats: ["njk", "md"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
