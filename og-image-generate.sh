@@ -8,7 +8,7 @@ BRAND="$SCRIPT_DIR/brand-book"
 ICON="$BRAND/agentic_builders_logo_package/agentic_builders_icon_color.png"
 FONT_BOLD="$BRAND/Urbanist/static/Urbanist-Bold.ttf"
 FONT_REGULAR="$BRAND/Urbanist/static/Urbanist-Regular.ttf"
-OUTPUT="$SCRIPT_DIR/og-image.png"
+OUTPUT="$SCRIPT_DIR/src/static/og-image.png"
 
 magick -size 2400x1260 xc:'#FFFFFF' \
   -fill '#FC4C03' -draw "rectangle 0,0 24,1260" \
