@@ -20,14 +20,14 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
 
   <section id="team">
     <h2 class="t rv">Team.</h2>
-    <ul class="team" role="list">{% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="/brand/icon-white.svg" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="/apply/">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}</ul>
+    <ul class="team" role="list">{% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="{{ '/brand/icon-white.svg' | relativeUrl(page.url) }}" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="{{ '/apply/' | relativeUrl(page.url) }}">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}</ul>
   </section>
 
   <section id="companies">
     <h2 class="t rv">Selected companies.</h2>
-    <ul class="stickers rv" aria-label="Selected portfolio">{% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<li style="--r:{{ (loop.index0 % 5) - 2 }}deg"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo }}" alt="" width="18" height="18"><span>{{ c.name }}</span></a></li>{% endfor %}</ul>
-    <ul class="plist">{% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<li class="rv"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo }}" alt="" width="28" height="28" loading="lazy"><b>{{ c.name }}</b><span>{{ c.for_humans }}</span></a></li>{% endfor %}</ul>
-    <p class="fine rv"><a href="/#portfolio">All {{ fund.portfolio.companies | length }} companies →</a></p>
+    <ul class="stickers rv" aria-label="Selected portfolio">{% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<li style="--r:{{ (loop.index0 % 5) - 2 }}deg"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo | relativeUrl(page.url) }}" alt="" width="18" height="18"><span>{{ c.name }}</span></a></li>{% endfor %}</ul>
+    <ul class="plist">{% for c in fund.portfolio.companies | byName(fund.investors.featured) %}<li class="rv"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo | relativeUrl(page.url) }}" alt="" width="28" height="28" loading="lazy"><b>{{ c.name }}</b><span>{{ c.for_humans }}</span></a></li>{% endfor %}</ul>
+    <p class="fine rv"><a href="{{ '/#portfolio' | relativeUrl(page.url) }}">All {{ fund.portfolio.companies | length }} companies →</a></p>
   </section>
 
   <section id="newsletter">

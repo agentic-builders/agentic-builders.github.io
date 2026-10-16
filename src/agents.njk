@@ -9,7 +9,7 @@ description: "What Agentic Builders invests in, program terms, selection, how an
 {% set body %}{% include "agents-body.njk" %}{% endset %}
 <main class="raw" id="main">
 <h1 class="sr-only">Agentic Builders for AI agents</h1>
-<pre id="agents-md">// agenticbuilders.ai/agents.md  ·  <a href="/agents.md" download="agents.md">download</a>  ·  <button type="button" class="linkbtn" data-copy-agents>copy</button> <span data-copy-status aria-live="polite"></span>
+<pre id="agents-md">// agenticbuilders.ai/agents.md  ·  <a href="{{ '/agents.md' | relativeUrl(page.url) }}" download="agents.md">download</a>  ·  <button type="button" class="linkbtn" data-copy-agents>copy</button> <span data-copy-status aria-live="polite"></span>
 
 {{ body | trim | escape }}</pre>
 </main>

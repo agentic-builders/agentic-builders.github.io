@@ -22,6 +22,17 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("byName", (companies, names) => names.map((n) => companies.find((c) => c.name === n)).filter(Boolean));
   eleventyConfig.addFilter("escape", (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"));
   eleventyConfig.addFilter("crlf", (v) => String(v).replace(/\r?\n/g, "\r\n"));
+  // Explicit index.html links also work when opening the generated site from disk.
+  eleventyConfig.addFilter("relativeUrl", (url, pageUrl) => {
+    // A hosted 404 may be served at any URL depth, so it needs root-relative URLs.
+    if (!url.startsWith("/") || url.startsWith("//") || pageUrl === "/404.html") return url;
+    const [, pathname, suffix] = url.match(/^([^?#]*)(.*)$/);
+    let target = pathname;
+    if (target.endsWith("/")) target += "index.html";
+    else if (!path.posix.extname(target)) target += "/index.html";
+    const current = pageUrl.endsWith("/") ? pageUrl + "index.html" : pageUrl;
+    return path.posix.relative(path.posix.dirname(current), target) + suffix;
+  });
   // Cache busting: append a short content hash to asset URLs.
   eleventyConfig.addFilter("hashed", (url) => {
     const file = path.join("src", url);

@@ -26,6 +26,8 @@ Opens http://localhost:8765 and previews `_site/`. The development server does n
 
 `npm run build` rebuilds `_site/` and replaces `docs/` with the finished site. The build fails if any generated page or machine-readable file contains the word `TODO`, before replacing the committed output. This README is excluded from the published site.
 
+You can also open `docs/index.html` directly in a browser. Page links and assets use paths relative to each page, with explicit `index.html` filenames for navigation. Canonical URLs and machine-readable URLs stay absolute. The hosted `404.html` retains root-relative paths because Pages can serve it at an unknown URL depth; preview that error page over HTTP.
+
 ## Where to edit
 
 - **Every fact and sentence**: `content/fund.json`. The home page copy is under `home`, the investors page under `investors`, the agent instructions and application schema under `agents`, shared facts (check, program, criteria, portfolio, FAQ, team) at the top level. All pages and machine files render from this file; nothing is hardcoded in templates except layout.

@@ -11,7 +11,7 @@ description: "Application form for founders: about 15 minutes, no call needed to
     <h1 class="rv">Apply to Agentic Builders.</h1>
     <p class="lead2 rv">One form, about 15 minutes, no call needed to start. We reply to every application.</p>
     <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}" rel="noopener">Open the application form</a><a class="quiet" href="mailto:{{ fund.fund.email }}">or email {{ fund.fund.email }}</a></div>
-    <p class="fine rv">If the form does not open automatically, use the button above. By applying you agree to our <a href="/privacy/">privacy policy</a>: your application is read by the fund team and its AI agents.</p>
+    <p class="fine rv">If the form does not open automatically, use the button above. By applying you agree to our <a href="{{ '/privacy/' | relativeUrl(page.url) }}">privacy policy</a>: your application is read by the fund team and its AI agents.</p>
   </section>
 </main>
 <script>setTimeout(function(){ location.href = "{{ fund.fund.apply_url }}"; }, 1500);</script>

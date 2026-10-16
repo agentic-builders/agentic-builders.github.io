@@ -10,28 +10,28 @@
 {% for m in site.modes %}<link rel="alternate" href="{{ fund.fund.url }}{{ m.url }}" title="{{ m.label }}">{% endfor %}
 <meta property="og:type" content="website"><meta property="og:url" content="{{ fund.fund.url }}{{ page.url }}"><meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:image" content="{{ fund.fund.url }}/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Agentic Builders"><meta property="og:site_name" content="{{ fund.fund.name }}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title }}"><meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="{{ fund.fund.url }}/og-image.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="alternate" type="text/markdown" href="/agents.md" title="agents.md"><link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relativeUrl(page.url) }}"><link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relativeUrl(page.url) }}"><link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relativeUrl(page.url) }}">
+<link rel="alternate" type="text/markdown" href="{{ '/agents.md' | relativeUrl(page.url) }}" title="agents.md"><link rel="alternate" type="text/plain" href="{{ '/llms.txt' | relativeUrl(page.url) }}" title="llms.txt">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/hero.css' | hashed }}">
-<link rel="stylesheet" href="{{ '/assets/home.css' | hashed }}">
-{% if pagecss %}<link rel="stylesheet" href="{{ ('/assets/' + pagecss + '.css') | hashed }}">{% endif %}
+<link rel="stylesheet" href="{{ '/assets/hero.css' | hashed | relativeUrl(page.url) }}">
+<link rel="stylesheet" href="{{ '/assets/home.css' | hashed | relativeUrl(page.url) }}">
+{% if pagecss %}<link rel="stylesheet" href="{{ ('/assets/' + pagecss + '.css') | hashed | relativeUrl(page.url) }}">{% endif %}
 <script>document.documentElement.classList.add('js')</script>
 {% include "jsonld.njk" %}
 </head>
 <body class="c page mode-{{ mode }}">
 <a class="skip-link" href="#main">Skip to content</a>
-<nav class="nav" aria-label="Site"><a class="logo" href="/"><img src="/brand/icon-color.svg" alt="" width="20" height="20"><span>Agentic Builders</span></a>
-<nav class="modes" aria-label="Site mode">{% for m in site.modes %}<a href="{{ m.url }}"{% if m.key == mode %} class="on" aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}</nav>
-{% if mode == "agents" %}<a class="pill pill-dark" href="/agents.md" download="agents.md">agents.md</a>{% elif mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact</a>{% else %}<a class="pill pill-dark" href="/apply/">Apply</a>{% endif %}</nav>
+<nav class="nav" aria-label="Site"><a class="logo" href="{{ '/' | relativeUrl(page.url) }}"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="20" height="20"><span>Agentic Builders</span></a>
+<nav class="modes" aria-label="Site mode">{% for m in site.modes %}<a href="{{ m.url | relativeUrl(page.url) }}"{% if m.key == mode %} class="on" aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}</nav>
+{% if mode == "agents" %}<a class="pill pill-dark" href="{{ '/agents.md' | relativeUrl(page.url) }}" download="agents.md">agents.md</a>{% elif mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact</a>{% else %}<a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">Apply</a>{% endif %}</nav>
 {{ content | safe }}
 <footer class="foot">
   <div class="foot-in">
     <span>&copy; 2026 {{ fund.fund.legal_name }}, {{ fund.fund.legal_form }} &middot; Last updated <time datetime="{{ fund.updated }}">{{ fund.updated }}</time></span>
-    <span>{% for m in site.modes %}<a href="{{ m.url }}">{{ m.label }}</a> · {% endfor %}<a href="/brand/">Brand</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal</a> · <a href="{{ fund.fund.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></span>
+    <span>{% for m in site.modes %}<a href="{{ m.url | relativeUrl(page.url) }}">{{ m.label }}</a> · {% endfor %}<a href="{{ '/brand/' | relativeUrl(page.url) }}">Brand</a> · <a href="{{ '/privacy/' | relativeUrl(page.url) }}">Privacy</a> · <a href="{{ '/legal/' | relativeUrl(page.url) }}">Legal</a> · <a href="{{ fund.fund.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></span>
     <span class="disclaimer">Nothing on this site is an offer to sell, or a solicitation of an offer to buy, any security. Information about the fund's program is provided for founders considering an application and does not constitute investment advice.</span>
   </div>
 </footer>
-<script src="{{ '/assets/home.js' | hashed }}" defer></script>
+<script src="{{ '/assets/home.js' | hashed | relativeUrl(page.url) }}" defer></script>
 </body></html>
