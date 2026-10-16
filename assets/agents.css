@@ -1,0 +1,14 @@
+/* For agents: raw text file. Nothing else. */
+body.mode-agents{background:#1F2937;color:#E5E7EB}
+.mode-agents .nav .logo{color:#F9FAFB}
+.mode-agents .nav .logo img{filter:brightness(0) invert(1)}
+.mode-agents .nav.scrolled{background:rgba(31,41,55,.85)}
+.mode-agents .modes{border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.06)}
+.mode-agents .modes a{color:#9CA3AF}.mode-agents .modes a:hover{color:#fff}.mode-agents .modes a.on{background:#FC4C03;color:#fff}
+.mode-agents .nav .pill-dark{background:#FC4C03}.mode-agents .nav .pill-dark:hover{background:#FD824F}
+.mode-agents .raw{max-width:960px;margin:0 auto;padding:110px 32px 60px}
+.mode-agents pre{font:400 13px/1.7 'JetBrains Mono',ui-monospace,monospace;color:#E5E7EB;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+.mode-agents pre a{color:#FEA681;text-decoration:none}.mode-agents pre a:hover{text-decoration:underline}
+.mode-agents .foot{border-top:0}.mode-agents .foot-in{color:#9CA3AF;border-top:1px solid rgba(255,255,255,.08)}
+.mode-agents .foot a{color:#D1D5DB}.mode-agents .disclaimer{color:#9CA3AF}
+@media (max-width:700px){.mode-agents .raw{padding:96px 18px 40px}.mode-agents pre{font-size:12px}}

@@ -11,7 +11,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData("site", () => JSON.parse(fs.readFileSync("content/site.json", "utf8")));
   eleventyConfig.addWatchTarget("content/");
 
-  for (const p of ["brand", "portfolio-logos", "favicon.svg", "favicon.ico", "apple-touch-icon.png", "og-image.png", "CNAME"]) {
+  for (const p of ["brand", "portfolio-logos", "favicon.svg", "favicon.ico", "apple-touch-icon.png", "og-image.png", "CNAME", ".nojekyll"]) {
     eleventyConfig.addPassthroughCopy(p);
   }
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });

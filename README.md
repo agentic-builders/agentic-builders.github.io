@@ -8,7 +8,7 @@ https://agenticbuilders.ai. Static site, three modes for three audiences, built 
 |---|---|---|
 | `/` | Founders | Apply (→ `/apply/`) |
 | `/agents/` | AI agents acting for a person | Download agents.md |
-| `/investors/` | Investors | Meet us |
+| `/investors/` | Investors | Contact |
 
 Other pages: `/apply/` (redirects to the application form), `/privacy/`, `/legal/`, `404.html`.
 Generated files: `/agents.md`, `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders.vcf`, `/sitemap.xml`, JSON-LD in every page head.
@@ -20,7 +20,9 @@ npm ci
 npm run dev
 ```
 
-Opens http://localhost:8765. `npm run build` writes `_site/`. The build fails if any output contains the word `TODO`, so placeholders never reach the site.
+Opens http://localhost:8765 and previews `_site/`. The development server does not update the committed site at the repository root.
+
+`npm run build` rebuilds `_site/` and copies the finished site to the repository root. The build fails if any generated page or machine-readable file contains the word `TODO`, before copying the output.
 
 ## Where to edit
 
@@ -33,4 +35,17 @@ Opens http://localhost:8765. `npm run build` writes `_site/`. The build fails if
 
 ## Deploy
 
-GitHub Pages must be set to **GitHub Actions** (Settings → Pages → Source) and the workflow moved to `.github/workflows/pages.yml` (it is kept as `deploy-pages.yml` in the repo root because the push token lacked the `workflow` scope). Do both before merging this branch: the legacy branch build would break on the Nunjucks templates. Asset URLs carry a content hash (`?v=`) for cache busting.
+Keep the existing GitHub Pages settings: **Deploy from a branch**, branch **main**, folder **/(root)**. No custom workflow or Pages settings change is needed. The committed `.nojekyll` file makes Pages serve the finished files directly; Eleventy runs locally.
+
+Before every commit that changes site content, templates, or assets:
+
+```bash
+npm run build
+git diff
+git add <changed source files and generated files>
+git commit
+```
+
+Commit both the editable source and the generated files (`index.html`, page directories, `assets/`, and machine-readable files). Edit `content/` and `src/`, then rebuild; do not edit generated files directly. `_site/` and `node_modules/` stay ignored. If you remove or rename a page or asset, also remove its old generated file from the repository root.
+
+Merging to `main` publishes the committed site through the existing Pages deployment. The custom domain stays configured as `agenticbuilders.ai`, with `CNAME` retained. Asset URLs carry a content hash (`?v=`) for cache busting.

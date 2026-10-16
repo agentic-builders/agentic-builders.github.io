@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "agenticbuilders.ai: static site with three modes (founders, agents, investors), built with Eleventy from one content file",
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run clean && eleventy && node scripts/publish-static.mjs",
     "dev": "eleventy --serve --port 8765",
     "clean": "rm -rf _site"
   },

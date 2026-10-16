@@ -1,0 +1,32 @@
+# Agentic Builders
+
+> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. First checks of $30–100k on a standard post-money SAFE. One form; for teams that fit, a four-week track and a decision on a first check at its end. Apply: https://agenticbuilders.ai/apply/ · Contact: hey@agenticbuilders.ai · Updated 2026-10-15.
+
+## Pages
+
+- [For founders](https://agenticbuilders.ai/): program, thesis, selection, team, portfolio, FAQ
+- [For agents](https://agenticbuilders.ai/agents/): instructions and application schema for AI agents
+- [For investors](https://agenticbuilders.ai/investors/): approach, team, selected portfolio, newsletter
+- [agents.md](https://agenticbuilders.ai/agents.md): everything in one Markdown file
+- [Privacy policy](https://agenticbuilders.ai/privacy/) and [legal notice](https://agenticbuilders.ai/legal/)
+
+## Portfolio
+
+- [Eqvesta](https://eqvesta.com/): Autonomous family office for the first $200,000.
+- [Silow](https://silow.ai): AI roadmap platform: a ranked plan for where AI will pay back in your company.
+- [Heron](https://heron.ing/): AI agent review and audit platform.
+- [kone](https://kone.vc): The monetization layer for AI agents.
+- [Agentiqa](https://agentiqa.com): Visual, agentic, self-healing test automation.
+- [Theona](https://theona.ai): No-code AI agent platform for business tasks.
+- [HookRadar](https://hookradar.net): Competitive ad intelligence.
+- [VisibilityPro](https://visibilitypro.ai): Generative Engine Optimization platform.
+- [Aprena Academy](https://aprena.academy/): AI-powered career guidance.
+- [FINA](https://fina.team/): Financial automations.
+- [Rolloo](https://www.rolloo.app/): AI role-play training for workplace conversations.
+- [StoryFlow](https://storyflow.uk/): AI-powered LinkedIn storytelling companion.
+- [Edvancium](https://edvancium.com/): Exam preparation with interactive lessons and AI tutoring.
+
+## Optional
+
+- [Full text](https://agenticbuilders.ai/llms-full.txt)
+- [Brand assets](https://agenticbuilders.ai/brand/)
