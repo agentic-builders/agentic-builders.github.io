@@ -9,7 +9,6 @@ body.c{background:#fff;color:#1F2937}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip-link{position:absolute;left:1rem;top:-4rem;background:#1F2937;color:#fff;padding:.5rem .9rem;border-radius:6px;z-index:100;text-decoration:none}.skip-link:focus-visible{top:1rem}
 :focus-visible{outline:2px solid #FC4C03;outline-offset:3px}
-.disclaimer{display:block;width:100%;font-size:12px;color:#6B7280;max-width:80ch}
 .panel{position:sticky;top:96px;padding:26px;border-radius:20px;clip-path:inset(0 round 20px);isolation:isolate;background:rgba(255,255,255,.6);border:1px solid rgba(31,41,55,.08);box-shadow:0 30px 60px -45px rgba(31,41,55,.3),inset 0 1px 0 #fff;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);overflow:hidden}
 .panel::before{content:"";position:absolute;right:-120px;bottom:-140px;width:320px;height:320px;border-radius:50%;background:radial-gradient(closest-side,rgba(252,76,3,.18),transparent 70%);filter:blur(24px);pointer-events:none}
 .panel-title{font:700 22px/1.15 'Urbanist',system-ui,sans-serif;letter-spacing:-.02em;color:#1F2937!important}
@@ -87,9 +86,6 @@ body.c{background:#fff;color:#1F2937}
 .q[open] summary::after{transform:rotate(45deg);color:#FC4C03}
 .q p{font:400 15px/1.6 'Inter';color:#4B5563;max-width:60ch;margin-top:10px}
 .last{padding-bottom:6vh!important}
-.foot{padding:40px 32px 90px}
-.foot-in{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 32px;font:400 13px/1.6 'Inter',system-ui,sans-serif;color:#6B7280;border-top:1px solid rgba(31,41,55,.1);padding-top:28px}
-.foot a{color:#4B5563;text-decoration:none}.foot a:hover{color:#FC4C03}
 .js .rv:not(.note){opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
 .rv.in:not(.note){opacity:1;transform:none}
 @media (max-width:980px){.layout{grid-template-columns:1fr;gap:36px;padding-top:96px}.layout .panel,.layout .col{grid-column:1}.layout .col{grid-row:1}.layout .panel{grid-row:2;position:static}.panel .toc,.panel .status{display:none}}

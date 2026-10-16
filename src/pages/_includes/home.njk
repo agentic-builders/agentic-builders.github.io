@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/hero.css' | hashed | relativeUrl(page.url) }}">
 <link rel="stylesheet" href="{{ '/assets/home.css' | hashed | relativeUrl(page.url) }}">
+<link rel="stylesheet" href="{{ '/assets/footer.css' | hashed | relativeUrl(page.url) }}">
 {% if pagecss %}<link rel="stylesheet" href="{{ ('/assets/' + pagecss + '.css') | hashed | relativeUrl(page.url) }}">{% endif %}
 <script>document.documentElement.classList.add('js')</script>
 {% include "jsonld.njk" %}
@@ -26,12 +27,6 @@
 <nav class="modes" aria-label="Site mode">{% for m in site.modes %}<a href="{{ m.url | relativeUrl(page.url) }}"{% if m.key == mode %} class="on" aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}</nav>
 {% if mode == "agents" %}<a class="pill pill-dark" href="{{ '/agents.md' | relativeUrl(page.url) }}" download="agents.md">agents.md</a>{% elif mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact</a>{% else %}<a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">Apply</a>{% endif %}</nav>
 {{ content | safe }}
-<footer class="foot">
-  <div class="foot-in">
-    <span>&copy; 2026 {{ fund.fund.legal_name }}, {{ fund.fund.legal_form }} &middot; Last updated <time datetime="{{ fund.updated }}">{{ fund.updated }}</time></span>
-    <span>{% for m in site.modes %}<a href="{{ m.url | relativeUrl(page.url) }}">{{ m.label }}</a> · {% endfor %}<a href="{{ '/brand/' | relativeUrl(page.url) }}">Brand</a> · <a href="{{ '/privacy/' | relativeUrl(page.url) }}">Privacy</a> · <a href="{{ '/legal/' | relativeUrl(page.url) }}">Legal</a> · <a href="{{ fund.fund.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></span>
-    <span class="disclaimer">Nothing on this site is an offer to sell, or a solicitation of an offer to buy, any security. Information about the fund's program is provided for founders considering an application and does not constitute investment advice.</span>
-  </div>
-</footer>
+{% include "footer.njk" %}
 <script src="{{ '/assets/home.js' | hashed | relativeUrl(page.url) }}" defer></script>
 </body></html>

@@ -1,3 +1,6 @@
+---
+permalink: /brand/
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ '/assets/footer.css' | hashed | relativeUrl(page.url) }}">
 
     <style>
         :root {
@@ -473,16 +478,6 @@
             font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
         }
 
-        /* Footer */
-        footer {
-            padding: 3rem 0;
-            text-align: center;
-            border-top: 1px solid rgba(31, 41, 55, 0.1);
-        }
-        footer p { font-size: 0.875rem; color: var(--color-text-muted); }
-        footer a { color: var(--color-text-muted); text-decoration: none; }
-        footer a:hover { color: var(--color-accent); }
-
         ::selection { background-color: var(--color-accent); color: #fff; }
 
         @media (max-width: 600px) {
@@ -800,10 +795,7 @@
         </section>
     </main>
 
-    <footer role="contentinfo">
-        <p><a href="../index.html">Home</a> &middot; <a href="index.html">Brand</a> &middot; <a href="https://www.linkedin.com/company/agentic-builders-ai/" target="_blank" rel="noopener">LinkedIn</a></p>
-        <p>&copy; 2026 Agentic Builders</p>
-    </footer>
+    {% include "footer.njk" %}
 
     <div class="copied" id="copied" role="status" aria-live="polite">Copied</div>
 
