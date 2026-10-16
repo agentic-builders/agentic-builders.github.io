@@ -1,0 +1,14 @@
+/* Hero explorations A/B/C. Fonts: Urbanist (display), Inter (body). Brand: #FC4C03 / #1F2937 / #FFFFFF */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',system-ui,sans-serif;color:#1F2937;min-height:100vh}
+a{color:inherit}
+.nav{position:fixed;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:22px 32px;z-index:5}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;font-family:'Urbanist';font-weight:700;font-size:17px;letter-spacing:-.01em}
+.logo img{width:20px;height:20px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;line-height:1;transition:transform .18s cubic-bezier(.16,1,.3,1),background-color .18s}
+.pill:hover{transform:translateY(-1px)}
+.pill-dark{background:#1F2937;color:#fff}.pill-dark:hover{background:#000}
+.pill-ghost{border:1px solid rgba(31,41,55,.18);color:#1F2937;background:rgba(255,255,255,.5)}
+.pill-orange{background:#FC4C03;color:#fff}.pill-orange:hover{background:#E34403}
+

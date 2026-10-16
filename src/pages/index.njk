@@ -1,0 +1,79 @@
+---
+layout: home.njk
+permalink: /
+mode: founders
+include_faq: true
+title: "Agentic Builders — Early-stage fund for agent-native products"
+description: "We fund agent-native products at the idea stage. First checks of $30–100k on a SAFE. One form; for teams that fit, a four-week track and a decision on a first check at its end."
+---
+{% set h = fund.home %}
+<main class="layout" id="main">
+  <div class="col">
+    <section class="hero" id="top">
+      <h1 class="rv">{{ h.h1_before }} <a href="#thesis">{{ h.h1_link1 }}</a><span class="ico" data-eye aria-hidden="true"><i></i></span> {{ h.h1_middle }} <a href="#track">{{ h.h1_link2 }}</a>{{ h.h1_after }}</h1>
+      <p class="sub rv">{{ h.sub_before }} <b>{{ h.sub_strong }}</b> {{ h.sub_after }}</p>
+      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">{{ h.cta }}</a><a class="quiet" href="#track">{{ h.cta_quiet }}</a></div>
+      <ul class="stickers rv" aria-label="Portfolio">
+        {% for c in fund.portfolio.companies %}<li style="--r:{{ (loop.index0 % 5) - 2 }}deg"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo | relativeUrl(page.url) }}" alt="" width="18" height="18"><span>{{ c.name }}</span></a></li>{% endfor %}
+      </ul>
+    </section>
+
+    <section id="thesis">
+      <h2 class="t scrub" data-scrub>{{ fund.thesis.lead }} {{ fund.thesis.body }}</h2>
+      <p class="t muted rv">{{ h.thesis_products }} <b>{{ fund.thesis.categories[0].name }}</b>{% for t in h.thesis_cat1_tags %}<span class="tag">{{ t }}</span>{% endfor %}, and <b>{{ fund.thesis.categories[1].name | lower }}</b>{% for t in h.thesis_cat2_tags %}<span class="tag">{{ t }}</span>{% endfor %}.</p>
+      <p class="t muted rv" id="who">{{ fund.who_we_look_for.lead }} {{ h.who_intro }}</p>
+      <ol class="five rv">{% for c in fund.who_we_look_for.criteria %}<li><span class="n">{{ loop.index }}</span><span><b>{{ c.name }}.</b> {{ c.detail }}</span></li>{% endfor %}</ol>
+      <p class="fine rv">{{ fund.who_we_look_for.criteria_note }}</p>
+    </section>
+
+    <section id="track">
+      <h2 class="t rv">{{ h.how_lead }} {{ fund.program.summary }}</h2>
+      <ol class="stages">
+        {% set tilts = [-1.5, 1, -1] %}
+        {% for s in fund.program.stages %}
+        <li class="note stage rv" style="--r:{{ tilts[loop.index0] }}deg"><span class="mn">{{ loop.index }}</span><h3>{{ s.name }}</h3><p>{{ s.text }}</p><ul class="gets">{% for g in s.gets %}<li>{{ g }}</li>{% endfor %}</ul></li>
+        {% endfor %}
+      </ol>
+      <p class="fine rv">{{ fund.program.timeline }} {{ fund.program.terms.track_cost }}</p>
+    </section>
+
+    <section id="team">
+      <h2 class="t rv">{{ h.team_lead }}</h2>
+      <ul class="team" role="list">
+        {% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="{{ '/brand/icon-white.svg' | relativeUrl(page.url) }}" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="{{ fund.fund.apply_url }}">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}
+      </ul>
+      <p class="fine rv">{{ h.agents_line }} <a href="{{ '/llms-full.txt' | relativeUrl(page.url) }}">{{ h.agents_link }}</a>.</p>
+      <p class="fine rv nl-intro">{{ h.newsletter_intro }}</p>
+      {% if site.api_enabled %}<form class="subscribe rv" id="newsletter" data-subscribe action="{{ site.api_base_url }}/subscribe" method="post">
+        <label class="sr-only" for="sub-email">Email</label>
+        <input id="sub-email" name="email" type="email" required autocomplete="email" placeholder="you@startup.com">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+        <button type="submit" class="pill pill-dark">Subscribe</button>
+        <p class="sub-status" aria-live="polite"></p>
+      </form>{% else %}<div class="cta rv" id="newsletter"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Subscribe%20to%20the%20newsletter">Subscribe by email</a></div>{% endif %}
+    </section>
+
+    <section id="portfolio">
+      <h2 class="t rv"><b>{{ fund.portfolio.companies | length }}</b> {{ h.portfolio_lead }}</h2>
+      <ul class="plist">{% for c in fund.portfolio.companies %}<li class="rv"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo | relativeUrl(page.url) }}" alt="" width="28" height="28" loading="lazy"><b>{{ c.name }}</b><span>{{ c.for_humans }}</span></a></li>{% endfor %}</ul>
+    </section>
+
+    <section id="faq">
+      <h2 class="t rv">{{ h.faq_lead }}</h2>
+      <div class="qs rv">{% for f in fund.faq %}<details class="q"><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+    </section>
+
+    <section id="apply" class="last">
+      <h2 class="t rv">{{ h.apply_lead }}</h2>
+      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">{{ h.cta }}</a><a class="quiet" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></div>
+    </section>
+  </div>
+
+  <aside class="panel">
+    <p class="panel-title">{{ h.panel_title }}</p>
+    <p>{{ h.panel_text }}</p>
+    <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><b>{{ f.value }}</b></li>{% endfor %}</ul>
+    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week track</a><a href="#team">Team</a><a href="#portfolio">Portfolio</a><a href="#faq">Questions</a></nav>
+    <div class="btns"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a><a class="pill pill-ghost" href="#track">How it works</a></div>
+  </aside>
+</main>
