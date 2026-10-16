@@ -46,18 +46,6 @@
         (function blink() { setTimeout(function () { eye.classList.add('blink'); setTimeout(function () { eye.classList.remove('blink'); blink(); }, 140); }, 2600 + Math.random() * 3000); })();
     }
 
-    /* Typing status in the side panel (decorative, hidden from assistive tech, paused when the tab is hidden). */
-    var ty = document.querySelector('[data-type]');
-    if (ty && !reduce) {
-        var lines = JSON.parse(ty.getAttribute('data-type')), i = 0, timer = null;
-        var next = function () {
-            if (document.hidden) { timer = setTimeout(next, 1500); return; }
-            i = (i + 1) % lines.length; var s = lines[i], k = 0; ty.textContent = '';
-            var iv = setInterval(function () { ty.textContent = s.slice(0, ++k); if (k >= s.length) { clearInterval(iv); timer = setTimeout(next, 2800); } }, 38);
-        };
-        timer = setTimeout(next, 2800);
-    }
-
     /* Count-up for the check: the markup already holds the final numbers. */
     var counters = document.querySelectorAll('[data-count]');
     if (counters.length && 'IntersectionObserver' in window && !reduce) {

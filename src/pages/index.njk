@@ -12,7 +12,7 @@ description: "We fund agent-native products at the idea stage. First checks of $
     <section class="hero" id="top">
       <h1 class="rv">{{ h.h1_before }} <a href="#thesis">{{ h.h1_link1 }}</a><span class="ico" data-eye aria-hidden="true"><i></i></span> {{ h.h1_middle }} <a href="#track">{{ h.h1_link2 }}</a>{{ h.h1_after }}</h1>
       <p class="sub rv">{{ h.sub_before }} <b>{{ h.sub_strong }}</b> {{ h.sub_after }}</p>
-      <div class="cta rv"><a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">{{ h.cta }}</a><a class="quiet" href="#track">{{ h.cta_quiet }}</a></div>
+      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">{{ h.cta }}</a><a class="quiet" href="#track">{{ h.cta_quiet }}</a></div>
       <ul class="stickers rv" aria-label="Portfolio">
         {% for c in fund.portfolio.companies %}<li style="--r:{{ (loop.index0 % 5) - 2 }}deg"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo | relativeUrl(page.url) }}" alt="" width="18" height="18"><span>{{ c.name }}</span></a></li>{% endfor %}
       </ul>
@@ -40,7 +40,7 @@ description: "We fund agent-native products at the idea stage. First checks of $
     <section id="team">
       <h2 class="t rv">{{ h.team_lead }}</h2>
       <ul class="team" role="list">
-        {% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="{{ '/brand/icon-white.svg' | relativeUrl(page.url) }}" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="{{ '/apply/' | relativeUrl(page.url) }}">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}
+        {% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="{{ '/brand/icon-white.svg' | relativeUrl(page.url) }}" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="{{ fund.fund.apply_url }}">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}
       </ul>
       <p class="fine rv">{{ h.agents_line }} <a href="{{ '/llms-full.txt' | relativeUrl(page.url) }}">{{ h.agents_link }}</a>.</p>
       <p class="fine rv nl-intro">{{ h.newsletter_intro }}</p>
@@ -65,7 +65,7 @@ description: "We fund agent-native products at the idea stage. First checks of $
 
     <section id="apply" class="last">
       <h2 class="t rv">{{ h.apply_lead }}</h2>
-      <div class="cta rv"><a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">{{ h.cta }}</a><a class="quiet" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></div>
+      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">{{ h.cta }}</a><a class="quiet" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></div>
     </section>
   </div>
 
@@ -74,7 +74,6 @@ description: "We fund agent-native products at the idea stage. First checks of $
     <p>{{ h.panel_text }}</p>
     <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><b>{{ f.value }}</b></li>{% endfor %}</ul>
     <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week track</a><a href="#team">Team</a><a href="#portfolio">Portfolio</a><a href="#faq">Questions</a></nav>
-    <p class="status"><span class="dot" aria-hidden="true"></span><span class="sr-only">Status:</span><span aria-hidden="true" data-type='{{ h.status_lines | jsonInline }}'>{{ h.status_lines[0] }}</span></p>
-    <div class="btns"><a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">Apply</a><a class="pill pill-ghost" href="#track">How it works</a></div>
+    <div class="btns"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a><a class="pill pill-ghost" href="#track">How it works</a></div>
   </aside>
 </main>

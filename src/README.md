@@ -6,11 +6,11 @@ https://agenticbuilders.ai. Static site, founder and investor pages plus a plain
 
 | URL | Audience | Header action |
 |---|---|---|
-| `/` | Founders | Apply (→ `/apply/`) |
+| `/` | Founders | Apply (direct Notion form link) |
 | `/llms-full.txt` | AI agents acting for a person | Plain-text reference |
 | `/investors/` | Investors | Contact |
 
-Other pages: `/apply/` (redirects to the application form), `/privacy/`, `/legal/`, `404.html`.
+Other pages: `/privacy/`, `/legal/`, `404.html`.
 Generated files: `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders.vcf`, `/sitemap.xml`, JSON-LD in every page head.
 
 AI discovery uses a concise `llms.txt` index linked to the full plain-text reference in `llms-full.txt`. There is no separate agents HTML page or duplicate Markdown download. HTML pages advertise the index with `rel="describedby"`, following the [llms.txt proposal](https://llmstxt.org/). These files help agents consume the content; [Google's AI Search guidance](https://developers.google.com/search/docs/appearance/ai-features) does not require special AI text files. Both text files include a UTF-8 byte-order mark so browsers render punctuation correctly even without a charset response header.

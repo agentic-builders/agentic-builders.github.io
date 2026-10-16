@@ -24,8 +24,8 @@
 <body class="c page mode-{{ mode }}">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Site"><a class="logo" href="{{ '/' | relativeUrl(page.url) }}"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="20" height="20"><span>Agentic Builders</span></a>
-<nav class="modes" aria-label="Site mode">{% for m in site.modes %}<a href="{{ m.url | relativeUrl(page.url) }}"{% if m.key == mode %} class="on" aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}</nav>
-{% if mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact</a>{% else %}<a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">Apply</a>{% endif %}</nav>
+<nav class="modes" aria-label="Site mode">{% for m in site.modes %}<a href="{{ m.url | relativeUrl(page.url) }}"{% if m.url == page.url %} class="on" aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}</nav>
+{% if mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact</a>{% else %}<a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a>{% endif %}</nav>
 {{ content | safe }}
 {% include "footer.njk" %}
 <script src="{{ '/assets/home.js' | hashed | relativeUrl(page.url) }}" defer></script>

@@ -20,7 +20,7 @@ description: "Early-stage fund for agent-native products. Thesis, stage, four-we
 
   <section id="team">
     <h2 class="t rv">Team.</h2>
-    <ul class="team" role="list">{% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="{{ '/brand/icon-white.svg' | relativeUrl(page.url) }}" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="{{ '/apply/' | relativeUrl(page.url) }}">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}</ul>
+    <ul class="team" role="list">{% for t in fund.team %}<li class="rv{% if t.agent %} agent{% endif %}"><span class="ph" aria-hidden="true">{% if t.agent %}<img src="{{ '/brand/icon-white.svg' | relativeUrl(page.url) }}" alt="" width="22" height="22">{% else %}{{ t.name | first }}{% endif %}</span><b>{{ t.name }}</b><span class="role">{{ t.role }}</span><p>{{ t.line }}</p>{% if t.agent %}<a class="pill pill-ghost sm" href="{{ fund.fund.apply_url }}">{{ t.cta }}</a>{% elif t.linkedin %}<a class="quiet" href="{{ t.linkedin }}" target="_blank" rel="noopener">LinkedIn →</a>{% endif %}</li>{% endfor %}</ul>
   </section>
 
   <section id="companies">

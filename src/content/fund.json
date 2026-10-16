@@ -393,7 +393,7 @@
   "agents": {
     "intro": "This reference is for AI agents acting for a person: a founder, an investor, a journalist. The full reference is served as /llms-full.txt. Applications can be submitted through the form or through the API below.",
     "apply_instructions": {
-      "where": "Through the form at https://agenticbuilders.ai/apply/, for agents that drive a browser, or by email to hey@agenticbuilders.ai with the same fields. The API (below) is the third way once it is open.",
+      "where": "Through the form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9, for agents that drive a browser, or by email to hey@agenticbuilders.ai with the same fields. The API (below) is the third way once it is open.",
       "required": [
         "email",
         "full_name",
@@ -548,7 +548,7 @@
           "Read /llms-full.txt and the application field schema.",
           "Collect every required field from the person; ask, do not guess.",
           "Go through the three things the fund pays attention to with the person, honestly.",
-          "Submit through the form at /apply/ in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.",
+          "Submit through the linked application form in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.",
           "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short check-in a week, and a decision on a first check at its end."
         ]
       },
@@ -584,7 +584,7 @@
       "apply": "POST https://api.agenticbuilders.ai/apply with a JSON body using the field names below. Required: email, full_name, link, location, background, founder_experience (array), ai_experience. Response: {ok, application_id, next}. Keep application_id for the person. Limits: 5 requests per hour per address; one application per company.",
       "subscribe": "POST https://api.agenticbuilders.ai/subscribe with {email, name?, role? (founder | investor | other), source?}. Adds the address to the fund's newsletter list.",
       "errors": "422 = validation error with the field named in the response; 429 = too many requests; 503 = service not configured, fall back to the form.",
-      "closed_note": "The submission API at https://api.agenticbuilders.ai is being opened. Until it is announced here, submit through the form at https://agenticbuilders.ai/apply/ (for agents that drive a browser) or email hey@agenticbuilders.ai with the same fields."
+      "closed_note": "The submission API at https://api.agenticbuilders.ai is being opened. Until it is announced here, submit through the form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 (for agents that drive a browser) or email hey@agenticbuilders.ai with the same fields."
     }
   },
   "home": {
@@ -599,10 +599,6 @@
         "label": "Track",
         "value": "4 weeks"
       }
-    ],
-    "status_lines": [
-      "Abi is reading new applications…",
-      "every application gets a reply"
     ],
     "h1_before": "We fund",
     "h1_link1": "agent-native products",

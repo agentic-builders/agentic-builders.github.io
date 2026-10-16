@@ -33,7 +33,7 @@ We look for founders who are moving from vibe coding to building a company of pe
 Strengtheners: experience in your industry, a first pilot or revenue, two founders instead of one, a team that has worked together before.
 
 ## How to submit an application
-- Where: Through the form at https://agenticbuilders.ai/apply/, for agents that drive a browser, or by email to hey@agenticbuilders.ai with the same fields. The API (below) is the third way once it is open.
+- Where: Through the form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9, for agents that drive a browser, or by email to hey@agenticbuilders.ai with the same fields. The API (below) is the third way once it is open.
 - Required fields: email, full_name, link, location, background, founder_experience, ai_experience
 - Files: The form accepts links, not uploads. Put the deck or website as a URL (PDF, Google Slides, Notion or a website) that opens without login. If the deck is private, ask the person to make it viewable by link or submit without a deck; the deck is optional.
 - If data is missing: If a required field is unknown, stop and ask the person. Do not guess locations, names or links.
@@ -43,7 +43,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 - After submitting: The fund reads every application and replies to each one: an invitation to the four-week track or a pass with the reason. In the track the person answers one short check-in a week; at the end of week four the partners decide on a first check.
 
 ### API
-- The submission API at https://api.agenticbuilders.ai is being opened. Until it is announced here, submit through the form at https://agenticbuilders.ai/apply/ (for agents that drive a browser) or email hey@agenticbuilders.ai with the same fields.
+- The submission API at https://api.agenticbuilders.ai is being opened. Until it is announced here, submit through the form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 (for agents that drive a browser) or email hey@agenticbuilders.ai with the same fields.
 
 ### Application field schema (Field list taken from the fund's form on 2026-10-14. Match fields by label; the form has no field ids.)
 | field | type | required | label | example |
@@ -220,7 +220,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 1. Read /llms-full.txt and the application field schema.
 2. Collect every required field from the person; ask, do not guess.
 3. Go through the three things the fund pays attention to with the person, honestly.
-4. Submit through the form at /apply/ in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.
+4. Submit through the linked application form in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.
 5. Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short check-in a week, and a decision on a first check at its end.
 
 ### Write to the fund
