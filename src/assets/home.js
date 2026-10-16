@@ -71,17 +71,6 @@
         counters.forEach(function (c) { cio.observe(c); });
     }
 
-    /* Agents page: copy the raw text. */
-    var btn = document.querySelector('[data-copy-agents]');
-    if (btn) {
-        var status = document.querySelector('[data-copy-status]');
-        btn.addEventListener('click', function () {
-            var pre = document.getElementById('agents-md');
-            var text = pre.textContent.split('\n').slice(2).join('\n');
-            if (!navigator.clipboard) { if (status) status.textContent = '— open /agents.md to copy'; return; }
-            navigator.clipboard.writeText(text).then(function () { if (status) status.textContent = '— copied'; }, function () { if (status) status.textContent = '— could not copy, open /agents.md'; });
-        });
-    }
 })();
 
 /* Newsletter form: post JSON to the API; without JS the form still posts (the API answers with JSON). */

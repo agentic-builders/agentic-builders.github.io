@@ -3,7 +3,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 
 export default function (eleventyConfig) {
-  // Non-HTML outputs (agents.md, llms*.txt, vcf) must not be HTML-escaped; HTML templates escape explicitly where needed.
+  // Non-HTML outputs (llms*.txt, vcf) must not be HTML-escaped; HTML templates escape explicitly where needed.
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: false });
 
   // Content: one JSON file is the source of truth for all modes and machine-readable files.

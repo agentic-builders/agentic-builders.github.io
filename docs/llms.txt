@@ -1,14 +1,14 @@
-# Agentic Builders
+﻿# Agentic Builders
 
 > Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. First checks of $30–100k on a standard post-money SAFE. One form; for teams that fit, a four-week track and a decision on a first check at its end. Apply: https://agenticbuilders.ai/apply/ · Contact: hey@agenticbuilders.ai · Updated 2026-10-15.
 
 ## Pages
 
 - [For founders](https://agenticbuilders.ai/): program, thesis, selection, team, portfolio, FAQ
-- [For agents](https://agenticbuilders.ai/agents/): instructions and application schema for AI agents
+- [Full reference for AI agents](https://agenticbuilders.ai/llms-full.txt): fund details, program terms, application instructions and field schema
 - [For investors](https://agenticbuilders.ai/investors/): approach, team, selected portfolio, newsletter
-- [agents.md](https://agenticbuilders.ai/agents.md): everything in one Markdown file
-- [Privacy policy](https://agenticbuilders.ai/privacy/) and [legal notice](https://agenticbuilders.ai/legal/)
+- [Privacy policy](https://agenticbuilders.ai/privacy/): how application and contact data is handled
+- [Legal notice](https://agenticbuilders.ai/legal/): operator, program terms and disclaimers
 
 ## Portfolio
 
@@ -28,5 +28,4 @@
 
 ## Optional
 
-- [Full text](https://agenticbuilders.ai/llms-full.txt)
 - [Brand assets](https://agenticbuilders.ai/brand/)

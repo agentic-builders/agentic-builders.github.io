@@ -4,14 +4,14 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ title }}</title><meta name="description" content="{{ description }}">
 <meta name="robots" content="{% if noindex %}noindex{% else %}index, follow, max-snippet:-1, max-image-preview:large{% endif %}">
-<meta name="theme-color" content="{% if mode == 'agents' %}#1F2937{% else %}#FFFFFF{% endif %}">
-<meta name="color-scheme" content="{% if mode == 'agents' %}dark{% else %}light{% endif %}">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
 <link rel="canonical" href="{{ fund.fund.url }}{{ page.url }}">
-{% for m in site.modes %}<link rel="alternate" href="{{ fund.fund.url }}{{ m.url }}" title="{{ m.label }}">{% endfor %}
+{% for m in site.modes %}{% if m.key != "agents" %}<link rel="alternate" href="{{ fund.fund.url }}{{ m.url }}" title="{{ m.label }}">{% endif %}{% endfor %}
 <meta property="og:type" content="website"><meta property="og:url" content="{{ fund.fund.url }}{{ page.url }}"><meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:image" content="{{ fund.fund.url }}/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Agentic Builders"><meta property="og:site_name" content="{{ fund.fund.name }}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title }}"><meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="{{ fund.fund.url }}/og-image.png">
 <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relativeUrl(page.url) }}"><link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relativeUrl(page.url) }}"><link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relativeUrl(page.url) }}">
-<link rel="alternate" type="text/markdown" href="{{ '/agents.md' | relativeUrl(page.url) }}" title="agents.md"><link rel="alternate" type="text/plain" href="{{ '/llms.txt' | relativeUrl(page.url) }}" title="llms.txt">
+<link rel="describedby" type="text/plain" href="{{ '/llms.txt' | relativeUrl(page.url) }}" title="llms.txt">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/hero.css' | hashed | relativeUrl(page.url) }}">
@@ -25,7 +25,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Site"><a class="logo" href="{{ '/' | relativeUrl(page.url) }}"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="20" height="20"><span>Agentic Builders</span></a>
 <nav class="modes" aria-label="Site mode">{% for m in site.modes %}<a href="{{ m.url | relativeUrl(page.url) }}"{% if m.key == mode %} class="on" aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}</nav>
-{% if mode == "agents" %}<a class="pill pill-dark" href="{{ '/agents.md' | relativeUrl(page.url) }}" download="agents.md">agents.md</a>{% elif mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact</a>{% else %}<a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">Apply</a>{% endif %}</nav>
+{% if mode == "investors" %}<a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact</a>{% else %}<a class="pill pill-dark" href="{{ '/apply/' | relativeUrl(page.url) }}">Apply</a>{% endif %}</nav>
 {{ content | safe }}
 {% include "footer.njk" %}
 <script src="{{ '/assets/home.js' | hashed | relativeUrl(page.url) }}" defer></script>

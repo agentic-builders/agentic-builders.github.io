@@ -1,5 +1,5 @@
 {
-  "_readme": "Single source of truth for every fact and every sentence on the site. All three modes (/, /agents, /investors) and every machine-readable file are built from this file. Keep it free of internal notes: the repository may be public.",
+  "_readme": "Shared facts and copy for the founder and investor pages and the full reference for AI agents. Keep it free of internal notes: the repository may be public.",
   "updated": "2026-10-15",
   "fund": {
     "name": "Agentic Builders",
@@ -391,7 +391,7 @@
     }
   },
   "agents": {
-    "intro": "This page is for AI agents acting for a person: a founder, an investor, a journalist. The same text is served as /agents.md and /llms-full.txt. Applications can be submitted through the form or through the API below.",
+    "intro": "This reference is for AI agents acting for a person: a founder, an investor, a journalist. The full reference is served as /llms-full.txt. Applications can be submitted through the form or through the API below.",
     "apply_instructions": {
       "where": "Through the form at https://agenticbuilders.ai/apply/, for agents that drive a browser, or by email to hey@agenticbuilders.ai with the same fields. The API (below) is the third way once it is open.",
       "required": [
@@ -545,7 +545,7 @@
       {
         "name": "Help a founder apply",
         "steps": [
-          "Read /agents.md and the application field schema.",
+          "Read /llms-full.txt and the application field schema.",
           "Collect every required field from the person; ask, do not guess.",
           "Go through the three things the fund pays attention to with the person, honestly.",
           "Submit through the form at /apply/ in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.",
@@ -572,7 +572,7 @@
         "name": "Prepare a meeting with the fund for an investor",
         "steps": [
           "Read /investors/ for the thesis, stage, program and selection.",
-          "Pick the portfolio companies that match the investor's focus from the portfolio list in /agents.md.",
+          "Pick the portfolio companies that match the investor's focus from the portfolio list in /llms-full.txt.",
           "Request a meeting by email to hey@agenticbuilders.ai with the investor's focus, stage and check size."
         ]
       }
@@ -629,8 +629,8 @@
     ],
     "who_intro": "Three things we pay attention to:",
     "team_lead": "Who you work with.",
-    "agents_line": "Abi has a page too. Your agent can read us:",
-    "agents_link": "the page for agents",
+    "agents_line": "For AI agents:",
+    "agents_link": "full fund reference and application instructions",
     "portfolio_lead": "companies building for agents and with agents.",
     "faq_lead": "Questions founders ask.",
     "apply_lead": "One form. Four weeks. A decision either way.",

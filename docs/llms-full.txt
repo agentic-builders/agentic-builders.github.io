@@ -1,6 +1,6 @@
-# Agentic Builders — agents.md
+﻿# Agentic Builders — full reference for AI agents
 
-> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-15. Source: https://agenticbuilders.ai/agents/
+> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-15. Source: https://agenticbuilders.ai/
 
 ## About
 - Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. The fund reads every application and replies to each one; teams that fit get a four-week track with weekly check-ins and tool credits, and at the end of it a decision on a first check. If there is progress, the fund invests and takes the team to its next round.
@@ -217,7 +217,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 
 ## Common tasks
 ### Help a founder apply
-1. Read /agents.md and the application field schema.
+1. Read /llms-full.txt and the application field schema.
 2. Collect every required field from the person; ask, do not guess.
 3. Go through the three things the fund pays attention to with the person, honestly.
 4. Submit through the form at /apply/ in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.
@@ -235,7 +235,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 
 ### Prepare a meeting with the fund for an investor
 1. Read /investors/ for the thesis, stage, program and selection.
-2. Pick the portfolio companies that match the investor's focus from the portfolio list in /agents.md.
+2. Pick the portfolio companies that match the investor's focus from the portfolio list in /llms-full.txt.
 3. Request a meeting by email to hey@agenticbuilders.ai with the investor's focus, stage and check size.
 
 

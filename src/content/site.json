@@ -1,5 +1,5 @@
 {
-  "_readme": "Site-level settings. api_enabled: set to true once api.agenticbuilders.ai resolves and the site-api service has its Notion token; until then the newsletter form falls back to email and agents.md says the API is not open yet.",
+  "_readme": "Site-level settings. api_enabled: set to true once api.agenticbuilders.ai resolves and the site-api service has its Notion token; until then the newsletter form falls back to email and llms-full.txt says the API is not open yet.",
   "modes": [
     {
       "key": "founders",
@@ -11,9 +11,9 @@
     {
       "key": "agents",
       "label": "For agents",
-      "url": "/agents/",
-      "cta_label": "Download agents.md",
-      "cta_key": "agents_md"
+      "url": "/llms-full.txt",
+      "cta_label": "Read full reference",
+      "cta_key": "llms_full"
     },
     {
       "key": "investors",
