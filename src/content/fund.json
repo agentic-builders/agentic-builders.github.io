@@ -515,7 +515,7 @@
         "field": "fundraising",
         "type": "enum",
         "required": false,
-        "example": "No -- but planning to raise (use this if the person wants investor introductions)",
+        "example": "No -- but planning to raise",
         "label": "Raised investment?",
         "options": [
           "Yes -- VC",

@@ -1,4 +1,4 @@
-/* Progressive enhancements. The page is complete without this file: the html.js class gates every animation. */
+/* Progressive enhancements. Content stays visible until this file finishes initializing. */
 (function () {
     'use strict';
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -59,6 +59,10 @@
         counters.forEach(function (c) { cio.observe(c); });
     }
 
+    // Enable animation styles only after their observers and fallbacks are installed.
+    // A missing script or an initialization error leaves the original content visible.
+    revealVisible();
+    document.documentElement.classList.add('js');
 })();
 
 /* Newsletter form: post JSON to the API; without JS the form still posts (the API answers with JSON). */

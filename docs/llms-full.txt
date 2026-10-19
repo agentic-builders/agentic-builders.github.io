@@ -61,7 +61,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 | deck_url | url | no | Pitch deck or website link | https://docs.google.com/presentation/… |
 | founder_experience | enum[] (Founder / Co-founder / Pet project / Other / No) | yes | Have you ever been a founder, co-founder, or launched your own project before? | ["Founder"] |
 | ai_experience | text | yes | Examples of how you have used AI or automation in your work or projects | We run support on agents; built an internal … |
-| fundraising | enum (Yes -- VC / Yes -- non-VC / angel / friends & family / No -- but planning to raise / No -- not planning to raise / Prefer not to say) | no | Raised investment? | No -- but planning to raise (use this if the person wants investor introductions) |
+| fundraising | enum (Yes -- VC / Yes -- non-VC / angel / friends & family / No -- but planning to raise / No -- not planning to raise / Prefer not to say) | no | Raised investment? | No -- but planning to raise |
 | support_wanted | text | no | What kind of support would be most useful to you right now? | Investor intros, technical feedback |
 | heard_about | string | no | How did you hear about us? | LinkedIn post by … |
 
@@ -169,7 +169,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
     "field": "fundraising",
     "type": "enum",
     "required": false,
-    "example": "No -- but planning to raise (use this if the person wants investor introductions)",
+    "example": "No -- but planning to raise",
     "label": "Raised investment?",
     "options": [
       "Yes -- VC",

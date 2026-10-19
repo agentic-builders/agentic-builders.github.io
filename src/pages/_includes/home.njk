@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="{{ '/assets/home.css' | hashed | relativeUrl(page.url) }}">
 <link rel="stylesheet" href="{{ '/assets/footer.css' | hashed | relativeUrl(page.url) }}">
 {% if pagecss %}<link rel="stylesheet" href="{{ ('/assets/' + pagecss + '.css') | hashed | relativeUrl(page.url) }}">{% endif %}
-<script>document.documentElement.classList.add('js')</script>
 {% include "jsonld.njk" %}
 </head>
 <body class="c page mode-{{ mode }}">
