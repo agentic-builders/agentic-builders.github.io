@@ -1,6 +1,6 @@
 {
   "_readme": "Shared facts and copy for the founder and investor pages and the full reference for AI agents. Keep it free of internal notes: the repository may be public.",
-  "updated": "2026-10-15",
+  "updated": "2026-10-20",
   "fund": {
     "name": "Agentic Builders",
     "legal_name": "Agentic Builders Capital LLC",
@@ -91,7 +91,7 @@
       {
         "name": "Four weeks of your work",
         "duration": "If invited",
-        "description": "Teams that fit are invited to a four-week track. You build, sell and ship; once a week a short check-in. Along the way: tool credits, Abi's read of your deck, one key number we follow together."
+        "description": "Teams that fit are invited to a four-week track. You build, sell and ship; once a week a short check-in. Along the way, you get tool credits and one key number we follow together. Abi reads your deck and gives back the questions investors will ask."
       },
       {
         "name": "Decision",
@@ -123,7 +123,7 @@
         "Issue tracking (Linear)"
       ]
     },
-    "timeline": "Every application gets a reply. In the track, the only thing we ask for is a weekly check-in.",
+    "timeline": "Every application gets a reply, with no deadline for application review. The four-week track starts only after an invitation. In the track, the only thing we ask for is a weekly check-in.",
     "stages": [
       {
         "name": "Four weeks of your work",
@@ -131,7 +131,7 @@
         "text": "We read every application and reply to each one. If your team fits, we invite you to a four-week track. You build, sell and ship; we watch how you work. Once a week, a short check-in: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday.",
         "gets": [
           "Tool credits: cloud, AI coding and app building, LLM tracing, web data, prospecting, docs",
-          "Abi, our AI agent, reads your deck and gives you back the questions investors will ask",
+          "Abi reads your deck and gives back the questions investors will ask",
           "One key number we follow together"
         ]
       },
@@ -275,7 +275,7 @@
   "faq": [
     {
       "q": "How long does it take from application to a decision?",
-      "a": "The track is four weeks, and the decision on a first check comes at its end. Before that, we read your application and tell you whether we invite you to the track."
+      "a": "There is no deadline for reviewing an application. If we invite you to the track, it runs four weeks, and the decision on a first check comes at its end."
     },
     {
       "q": "How much do you invest?",
@@ -303,7 +303,7 @@
     },
     {
       "q": "Does the track commit me to anything?",
-      "a": "No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents; we do not share them outside the fund. Details are in our privacy policy."
+      "a": "No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy."
     }
   ],
   "team": [
@@ -330,7 +330,7 @@
       "role": "Team member",
       "line": "Reads every application and deck, runs the weekly check-ins, writes the memos, tracks the portfolio. Partners decide; Abi prepares.",
       "agent": true,
-      "cta": "Send your deck, get back the questions investors will ask"
+      "cta": "Apply"
     }
   ],
   "investors": {
@@ -629,7 +629,7 @@
     "agents_link": "full fund reference and application instructions",
     "portfolio_lead": "companies building for agents and with agents.",
     "faq_lead": "Questions founders ask.",
-    "apply_lead": "One form. Four weeks. A decision either way.",
+    "apply_lead": "Apply for funding. If invited, a four-week track and a decision at its end.",
     "how_lead": "How it works.",
     "newsletter_intro": "Newsletter: what moved in the track and which teams are getting ready to raise. A few letters a year."
   },

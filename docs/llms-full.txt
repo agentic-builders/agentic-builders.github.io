@@ -1,6 +1,6 @@
 ﻿# Agentic Builders — full reference for AI agents
 
-> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-15. Source: https://agenticbuilders.ai/
+> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-20. Source: https://agenticbuilders.ai/
 
 ## About
 - Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. The fund reads every application and replies to each one; teams that fit get a four-week track with weekly check-ins and tool credits, and at the end of it a decision on a first check. If there is progress, the fund invests and takes the team to its next round.
@@ -16,7 +16,7 @@ We back AI-native teams: founders who use AI across product development and comp
 ## Program and terms
 We read every application. Teams that fit get a four-week track: their own work with our support along the way. If there is progress, we invest and take you to the next round.
 1. **Apply** (Day 0): One form, about 15 minutes, no call needed to start. Abi, our AI agent, reads the application and the deck; the partners review it and reply to every applicant.
-2. **Four weeks of your work** (If invited): Teams that fit are invited to a four-week track. You build, sell and ship; once a week a short check-in. Along the way: tool credits, Abi's read of your deck, one key number we follow together.
+2. **Four weeks of your work** (If invited): Teams that fit are invited to a four-week track. You build, sell and ship; once a week a short check-in. Along the way, you get tool credits and one key number we follow together. Abi reads your deck and gives back the questions investors will ask.
 3. **Decision** (End of week four): If there is progress, we invest: a first check of $30–100k on a standard post-money SAFE. If not now, we tell you why and when to come back.
 4. **To the next round** (After the check): Investor database and warm introductions, founder platform: community, weekly fund meeting, 1:1s with the general partner, founder groups, credits and perks.
 
@@ -240,7 +240,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 
 
 ## FAQ
-**How long does it take from application to a decision?** The track is four weeks, and the decision on a first check comes at its end. Before that, we read your application and tell you whether we invite you to the track.
+**How long does it take from application to a decision?** There is no deadline for reviewing an application. If we invite you to the track, it runs four weeks, and the decision on a first check comes at its end.
 
 **How much do you invest?** First checks are $30–100k on a standard post-money SAFE.
 
@@ -254,6 +254,6 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 
 **What happens after the four weeks?** If there is progress, we invest a first check and start working on your next round: investor introductions and the founder platform. If not now, we tell you why and when it makes sense to come back.
 
-**Does the track commit me to anything?** No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents; we do not share them outside the fund. Details are in our privacy policy.
+**Does the track commit me to anything?** No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy.
 
 
