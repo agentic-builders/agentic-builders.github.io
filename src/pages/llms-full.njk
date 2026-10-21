@@ -13,7 +13,7 @@ permalink: /llms-full.txt
 ## Thesis
 {{ fund.thesis.lead }} {{ fund.thesis.body }}
 {% for c in fund.thesis.categories %}- **{{ c.name }}:** {{ c.description }} Examples: {{ c.examples | join(", ") }}.
-{% endfor %}{{ fund.thesis.teams }}
+{% endfor %}
 
 ## Investment track and terms
 {{ fund.program.summary }}
@@ -24,7 +24,7 @@ permalink: /llms-full.txt
 - Investment track cost: {{ fund.program.terms.track_cost }}
 - Software and cloud-service benefits: {{ fund.program.toolkit.items | join("; ") }}.
 
-## What the fund pays attention to
+## {{ fund.who_we_look_for.headline }}
 {{ fund.who_we_look_for.lead }} {{ fund.who_we_look_for.criteria_note }}
 {% for c in fund.who_we_look_for.criteria %}{{ loop.index }}. **{{ c.name }}.** {{ c.detail }}
 {% endfor %}Additional strengths: {{ fund.who_we_look_for.strengtheners | join(", ") }}.

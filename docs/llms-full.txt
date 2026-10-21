@@ -11,7 +11,7 @@
 As agents do more of the work, they need software built for them. These products help agents find tools, use services and complete tasks for people and businesses. We back the founders building these products.
 - **Products AI agents use:** Products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks. Examples: research, data, communication, buying, selling, content, business tasks.
 - **Tools for building agent products:** Tools to build, test, secure, launch, track and sell agent products. Examples: build, test, secure, launch, track, sell.
-We back AI-native teams: founders who use AI across product development and company operations and build lean teams around AI from day one.
+
 
 ## Investment track and terms
 We review every application. If invited, join our investment track: a fully online, four-week program where you keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.
@@ -25,8 +25,8 @@ We review every application. If invited, join our investment track: a fully onli
 - Investment track cost: Participation is free and requires no equity or exclusivity. Any investment is agreed separately.
 - Software and cloud-service benefits: Credits toward Microsoft Azure cloud-service costs (Microsoft for Startups); AI coding assistance (GitHub Copilot); AI app building (Lovable); Monitoring and testing AI models (Langfuse); Web data and automation (Apify); Finding potential business customers (Apollo); Team workspace and documents (Notion); Task and project tracking (Linear).
 
-## What the fund pays attention to
-We look for founders who can turn early experiments into a business, using AI across product development and operations. None of these is a formal requirement; together, they help us assess a team's potential.
+## Who we back
+We back AI-native teams that build lean companies with AI at the core of product development and day-to-day operations. None of these is a formal requirement; together, they help us assess a team's potential.
 1. **Experience.** You have built a startup, product or team before, and know what it takes.
 2. **Founder-led sales.** Founders talk directly to customers and can secure a pilot or close a sale.
 3. **Iteration speed.** You ship, test, learn and improve quickly.

@@ -50,12 +50,11 @@
           "sell"
         ]
       }
-    ],
-    "teams": "We back AI-native teams: founders who use AI across product development and company operations and build lean teams around AI from day one."
+    ]
   },
   "who_we_look_for": {
-    "headline": "Who we look for",
-    "lead": "We look for founders who can turn early experiments into a business, using AI across product development and operations.",
+    "headline": "Who we back",
+    "lead": "We back AI-native teams that build lean companies with AI at the core of product development and day-to-day operations.",
     "criteria_note": "None of these is a formal requirement; together, they help us assess a team's potential.",
     "criteria": [
       {

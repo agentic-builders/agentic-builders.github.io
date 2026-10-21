@@ -19,7 +19,12 @@ description: "Funding for agent-native products from idea to pre-seed. Investmen
       <h2 class="t rv">{{ fund.thesis.headline }}</h2>
       <p class="body-copy rv">{{ fund.thesis.lead }} {{ fund.thesis.body }}</p>
       <p class="body-copy rv">{{ h.thesis_products }} <b>{{ fund.thesis.categories[0].name | replace("Products", "products") }}</b> and <b>{{ fund.thesis.categories[1].name | lower }}</b>.</p>
-      <p class="body-copy rv" id="who">{{ fund.who_we_look_for.lead }} {{ h.who_intro }}</p>
+    </section>
+
+    <section id="who">
+      <h2 class="t rv">{{ fund.who_we_look_for.headline }}</h2>
+      <p class="body-copy rv">{{ fund.who_we_look_for.lead }}</p>
+      <p class="body-copy rv">{{ h.who_intro }}</p>
       <ol class="five rv">{% for c in fund.who_we_look_for.criteria %}<li><span class="n">{{ loop.index }}</span><span><b>{{ c.name }}.</b> {{ c.detail }}</span></li>{% endfor %}</ol>
       <p class="fine section-note rv">{{ fund.who_we_look_for.criteria_note }}</p>
     </section>
@@ -61,6 +66,6 @@ description: "Funding for agent-native products from idea to pre-seed. Investmen
     <p class="panel-title">{{ h.panel_title }}</p>
     <p>{{ h.panel_text }}</p>
     <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><span class="fact-value"><b>{{ f.value }}</b>{% if f.detail %}<small>{{ f.detail }}</small>{% endif %}</span></li>{% endfor %}</ul>
-    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Investment track</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
+    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#who">Who we back</a><a href="#track">Investment track</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
   </aside>
 </main>
