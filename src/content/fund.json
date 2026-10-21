@@ -7,7 +7,7 @@
     "url": "https://agenticbuilders.ai",
     "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
-    "description": "Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week track with weekly check-ins, tool credits and deck feedback. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.",
+    "description": "Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week track with weekly progress updates, software credits and discounts, and feedback on their pitch decks. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.",
     "founded": "2025",
     "stage": "Idea to pre-seed",
     "email": "hey@agenticbuilders.ai",
@@ -81,64 +81,64 @@
   "program": {
     "name": "Four-week track",
     "hook": "A four-week track for invited teams, with an investment decision at its end.",
-    "summary": "We review every application. If invited, join a fully online four-week track. Keep building your business wherever you're based, with our support. At the end of the track, we decide whether to invest.",
+    "summary": "We review every application. If invited, join our four-week track: a fully online program where you keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.",
     "steps": [
       {
         "name": "Apply",
         "duration": "Application review",
-        "description": "One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any deck you submit. The partners review the application and reply to every applicant. Application review has no fixed turnaround time."
+        "description": "One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any pitch deck you submit. The fund’s investment partners review the application and reply to every applicant. Application review has no fixed turnaround time."
       },
       {
         "name": "Four weeks of your work",
         "duration": "If invited",
-        "description": "If invited, you join a fully online four-week track, building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi, the fund's AI agent, reads your deck and gives back the questions investors will ask."
+        "description": "If invited, you join a fully online four-week program, building, selling and shipping with our support and a short weekly progress update. You get software credits and discounts, and help tracking one measure of your business’s progress. Abi, the fund’s AI agent, reads your pitch deck and gives back the questions investors will ask."
       },
       {
         "name": "Decision",
         "duration": "End of week four",
-        "description": "At the end of the track, the partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back."
+        "description": "At the end of the track, the fund’s investment partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back."
       },
       {
         "name": "Help with your next round",
         "duration": "After the check",
-        "description": "We help you raise your next round through investor introductions and access to a founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, credits and perks."
+        "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on AI engineering, product development and sales, and software credits and discounts."
       }
     ],
     "terms": {
       "first_check_usd": "$30–100k",
       "instrument": "Standard post-money SAFE; the valuation is agreed individually",
-      "follow_on": "We do not make follow-on investments. After our initial investment, we help you connect with other investors for your next round",
+      "follow_on": "We do not invest additional money in later funding rounds. After our initial investment, we help you connect with other investors for your next funding round",
       "track_cost": "Participation is free and requires no equity or exclusivity. Any investment is agreed separately."
     },
     "toolkit": {
-      "note": "Tool credits and discounts opened for the four weeks of the track.",
+      "note": "Credits toward software and cloud-service costs, plus discounts available during the four-week program. Providers set their own terms and may require a separate application.",
       "items": [
-        "Cloud credits (Microsoft for Startups: Azure)",
+        "Credits toward Microsoft Azure cloud-service costs (Microsoft for Startups)",
         "AI coding assistance (GitHub Copilot)",
         "AI app building (Lovable)",
-        "LLM tracing and evaluation (Langfuse)",
+        "Monitoring and testing AI models (Langfuse)",
         "Web data and automation (Apify)",
-        "B2B prospecting (Apollo)",
-        "Workspace and docs (Notion)",
-        "Issue tracking (Linear)"
+        "Finding potential business customers (Apollo)",
+        "Team workspace and documents (Notion)",
+        "Task and project tracking (Linear)"
       ]
     },
-    "timeline": "Every application gets a reply. Application review has no fixed turnaround time; the four-week track begins only after an invitation. During the track, we ask for a short weekly check-in.",
+    "timeline": "Every application gets a reply. Application review has no fixed turnaround time; the four-week track begins only after an invitation. During the track, we ask for a short weekly progress update.",
     "stages": [
       {
         "name": "Four weeks of your work",
         "kicker": "Step 1",
         "text": "If invited, you keep building, selling and shipping with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes.",
         "gets": [
-          "Tool credits: cloud, AI coding and app building, LLM tracing, web data, prospecting, docs",
-          "Abi, the fund's AI agent, reads your deck and gives back the questions investors will ask",
-          "One key metric we track together"
+          "Software credits and discounts to help cover the cost of tools such as cloud services and AI development software",
+          "Abi, the fund's AI agent, reads your pitch deck and gives back the questions investors will ask",
+          "Help choosing and tracking one measure of your business’s progress"
         ]
       },
       {
         "name": "An investment decision",
         "kicker": "Step 2",
-        "text": "At the end of the four weeks, the partners decide whether to invest and explain their decision. If we do not invest, we explain when it makes sense to come back.",
+        "text": "At the end of the four weeks, the fund’s investment partners decide whether to invest and explain their decision. If we do not invest, we explain when it makes sense to come back.",
         "gets": [
           "First check of $30–100k on a standard post-money SAFE",
           "Valuation agreed with you, not a fixed share",
@@ -148,10 +148,12 @@
       {
         "name": "Help with your next round",
         "kicker": "Step 3",
-        "text": "After investing, we help you raise your next round. We do not make follow-on investments; we help you connect with other investors.",
+        "text": "After investing, we help you raise your next funding round. We do not invest additional money in later rounds; we help you connect with other investors.",
         "gets": [
-          "Curated investor database and warm introductions to investors who fund your next stage",
-          "Founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, and additional credits and perks"
+          "A list of relevant investors and personal introductions to investors who fund your next stage",
+          "A community of founders and weekly meetings with the fund team",
+          "One-on-one sessions with Nikolay Vyahhi, the fund’s general partner, and founder discussion groups on AI engineering, product development and sales",
+          "Additional software credits and discounts"
         ]
       }
     ]
@@ -159,7 +161,7 @@
   "what_you_get": [
     {
       "name": "During the four weeks",
-      "description": "Tool credits, deck feedback from Abi, and one key metric we track together."
+      "description": "Software credits and discounts, feedback on your pitch deck from Abi, the fund’s AI agent, and help tracking one measure of your business’s progress."
     },
     {
       "name": "If we invest",
@@ -167,7 +169,7 @@
     },
     {
       "name": "After the check",
-      "description": "We help you raise your next round through investor introductions and access to a founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, credits and perks."
+      "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on AI engineering, product development and sales, and software credits and discounts."
     }
   ],
   "portfolio": {
@@ -282,13 +284,13 @@
     "intro": "Meet the companies we back: products AI agents use and tools for building agent products.",
     "investors": {
       "heading": "For angels & VCs",
-      "text": "Interested in investing directly in startups? Tell us your investment focus, preferred stage and typical check size. We can discuss relevant portfolio companies and arrange introductions with the founders’ agreement.",
+      "text": "Interested in investing directly in startups? Tell us the kinds of companies you invest in, your preferred stage and how much you typically invest. We can discuss relevant companies we back and arrange introductions with the founders’ agreement.",
       "note": "A portfolio listing does not mean a company is currently fundraising.",
       "cta": "Request an introduction"
     },
     "newsletter": {
-      "title": "Portfolio updates",
-      "text": "Occasional updates on portfolio progress and teams preparing for their next round."
+      "title": "Monthly newsletter",
+      "text": "Monthly updates on the companies we back, teams preparing to raise funding, and news from the fund."
     }
   },
   "faq": [
@@ -302,7 +304,7 @@
     },
     {
       "q": "What equity do you take?",
-      "a": "We invest on a standard post-money SAFE, and the valuation is agreed with each founder individually. We look at how the company can grow through its next stages and set the cap so that the round makes sense for both sides, rather than taking a fixed share."
+      "a": "We invest on a standard post-money SAFE, and the valuation is agreed with each founder individually. We look at how the company can grow through its next stages and set the valuation cap so that the round makes sense for both sides, rather than taking a fixed share."
     },
     {
       "q": "Who can apply?",
@@ -310,19 +312,19 @@
     },
     {
       "q": "What do I need to apply?",
-      "a": "The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a deck or website if you have one. No call is needed to start."
+      "a": "The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a pitch deck or website if you have one. No call is needed to start."
     },
     {
       "q": "What happens during the four weeks?",
-      "a": "The track is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get tool credits, deck feedback from Abi, and one key metric we track together. You remain responsible for building your product."
+      "a": "The four-week program is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get software credits and discounts, feedback on your pitch deck from Abi, the fund’s AI agent, and help tracking one measure of your business’s progress. You remain responsible for building your product."
     },
     {
       "q": "What happens after the four weeks?",
-      "a": "The partners decide whether to invest and explain their decision. If we invest, we make an initial investment of $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back."
+      "a": "The fund’s investment partners decide whether to invest and explain their decision. If we invest, we make an initial investment of $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back."
     },
     {
       "q": "Does the track commit me to anything?",
-      "a": "Participation is free and requires no equity or exclusivity. During the track, we ask for a short weekly check-in. There is no obligation to accept an investment; any investment is agreed separately."
+      "a": "Participation is free and requires no equity or exclusivity. During the track, we ask for a short weekly progress update. There is no obligation to accept an investment; any investment is agreed separately."
     },
     {
       "q": "Who can access my application?",
@@ -339,19 +341,19 @@
     {
       "name": "Leo Ivanov",
       "role": "Partner, Operations",
-      "line": "Leads fund operations, including the investment pipeline, legal coordination and investor relations.",
+      "line": "Leads fund operations, including the application and investment review process, legal coordination and communication with investors.",
       "linkedin": "https://www.linkedin.com/in/leonid-dmitrich/"
     },
     {
       "name": "Elizaveta Chernysheva",
       "role": "Operations and founder support",
-      "line": "Coordinates founder onboarding, tools and credits, mentors and contractors.",
+      "line": "Helps founders get started with the program, access software credits and discounts, and connect with mentors and contractors.",
       "linkedin": "https://www.linkedin.com/in/elizaveta-chernysheva-29604214b/"
     },
     {
       "name": "Abi, the fund's AI agent",
       "role": "Team member",
-      "line": "Reviews applications and submitted decks, manages weekly check-ins, drafts investment memos and tracks portfolio progress. Partners make the investment decisions.",
+      "line": "Reviews applications and submitted pitch decks, manages weekly progress updates, drafts investment summaries and tracks the progress of companies we back. The fund’s investment partners make the investment decisions.",
       "agent": true,
       "cta": "Apply"
     }
@@ -369,14 +371,14 @@
         "founder_experience",
         "ai_experience"
       ],
-      "files": "The form accepts links, not uploads. Put the deck or website as a URL (PDF, Google Slides, Notion or a website) that opens without login. If the deck is private, ask the person to make it viewable by link or submit without a deck; the deck is optional.",
+      "files": "The form accepts links, not uploads. Provide a link to your pitch deck (a presentation explaining your business) or website that opens without signing in. If the pitch deck is private, ask the person whether to enable link access or submit without it; the pitch deck is optional.",
       "if_missing": "If a required field is unknown, stop and ask the person. Do not guess locations, names or links.",
       "do_not": [
         "Do not invent metrics, customers, revenue or traction.",
         "Do not submit more than one application per company.",
         "Do not paste confidential data the person did not approve for sharing."
       ],
-      "after": "The fund reviews every application and replies with an invitation to the four-week track or a rejection with an explanation. Application review has no fixed turnaround time. During the track, the founder submits one short check-in a week; at the end of week four, the partners decide whether to invest."
+      "after": "The fund reviews every application and replies with an invitation to the four-week track or a rejection with an explanation. Application review has no fixed turnaround time. During the track, the founder submits one short progress update a week; at the end of week four, the fund’s investment partners decide whether to invest."
     },
     "application_fields": [
       {
@@ -513,18 +515,18 @@
         "steps": [
           "Read /llms-full.txt and the application field schema.",
           "Collect every required field from the person; ask, do not guess.",
-          "Go through the three things the fund pays attention to with the person, honestly.",
+          "Review the selection criteria with the founder using only the information they provide.",
           "Submit through the linked application form in a browser, or through the API if it is marked available in the API section. Include a deck link that opens without signing in, or leave it out.",
-          "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short check-in a week, and a decision on a first check at its end."
+          "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short progress update a week, and a decision on a first check at its end."
         ]
       },
       {
         "name": "Write to the fund",
         "steps": [
           "Use hey@agenticbuilders.ai.",
-          "Subject: company name and one line of what you want.",
-          "Body: who you are, what you are building, who the agent user is, what you have sold, and the ask.",
-          "Attach nothing; link to a deck that opens without login."
+          "Subject: company name and a brief description of your request.",
+          "Body: who you are, what you are building, which AI agents would use your product, any sales so far, and what support you are requesting.",
+          "Include links rather than attachments; any pitch deck link should open without signing in."
         ]
       },
       {
@@ -539,7 +541,7 @@
         "steps": [
           "Read /portfolio/ for the companies we back and how to request introductions.",
           "Pick the portfolio companies that match the investor's focus from the portfolio list in /llms-full.txt.",
-          "Request a meeting by email to hey@agenticbuilders.ai with the investor's focus, stage and check size."
+          "Request an introduction by email to hey@agenticbuilders.ai with the kinds of companies the investor funds, their preferred stage and typical investment amount."
         ]
       }
     ],
@@ -569,7 +571,7 @@
     ],
     "h1_before": "We fund",
     "h1_link1": "agent-native products",
-    "h1_middle": "from idea to pre-seed. If invited, a four-week track and a",
+    "h1_middle": "from idea to pre-seed. If invited, a four-week program and a",
     "h1_link2": "decision on funding",
     "h1_after": ".",
     "sub_before": "First checks of",
@@ -584,15 +586,15 @@
     "agents_link": "full fund reference and application instructions",
     "portfolio_lead": "A few companies we back",
     "faq_lead": "Questions founders ask",
-    "apply_lead": "Apply for funding. If invited, a four-week track and a decision at its end.",
-    "how_lead": "How the four-week track works",
-    "newsletter_intro": "Occasional updates on portfolio progress and teams preparing for their next round."
+    "apply_lead": "Apply for funding. If invited, a four-week program and a decision at its end.",
+    "how_lead": "How the four-week program works",
+    "newsletter_intro": "Monthly updates on the companies we back, teams preparing to raise funding, and news from the fund."
   },
   "agent_name": "Abi",
   "team_page": {
     "title": "Meet the team",
-    "intro": "The people who make investment decisions and support founders throughout the track and beyond.",
-    "preview": "Our investment and operations team supports founders from application through their next round. Partners make the investment decisions; Abi, our AI agent, helps prepare.",
+    "intro": "Meet the people who review applications, make investment decisions and support founders during the four-week program and after investment.",
+    "preview": "Our investment and operations team supports founders from application through their next funding round. The fund’s investment partners make the investment decisions; Abi, the fund’s AI agent, helps review applications and prepare investment summaries.",
     "ai_heading": "How we use AI"
   }
 }

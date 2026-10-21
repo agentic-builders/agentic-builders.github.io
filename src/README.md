@@ -7,7 +7,7 @@ https://agenticbuilders.ai. Static fund website with a founder-focused homepage,
 | URL | Purpose |
 |---|---|
 | `/` | Founder overview, four-week process, six portfolio examples, team introduction, FAQ and direct Notion application links |
-| `/portfolio/` | All portfolio companies, introduction requests for angels and VCs, portfolio updates |
+| `/portfolio/` | All portfolio companies, introduction requests for angels and VCs, monthly newsletter |
 | `/team/` | Human team, responsibilities, Abi's role and contact |
 | `/investors/` | Legacy entry linking to Portfolio, excluded from indexing; no automatic redirect |
 | `/llms-full.txt` | Full reference for AI agents |

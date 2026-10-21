@@ -4,7 +4,7 @@ permalink: /
 mode: founders
 include_faq: true
 title: "Agentic Builders — Early-stage fund for agent-native products"
-description: "Funding for agent-native products from idea to pre-seed. First checks of $30–100k, with a four-week track for invited teams."
+description: "Funding for agent-native products from idea to pre-seed. First checks of $30–100k, with a four-week program for invited teams."
 ---
 {% set h = fund.home %}
 <main class="layout" id="main">
@@ -61,6 +61,6 @@ description: "Funding for agent-native products from idea to pre-seed. First che
     <p class="panel-title">{{ h.panel_title }}</p>
     <p>{{ h.panel_text }}</p>
     <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><span class="fact-value"><b>{{ f.value }}</b>{% if f.detail %}<small>{{ f.detail }}</small>{% endif %}</span></li>{% endfor %}</ul>
-    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week track</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
+    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week program</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
   </aside>
 </main>
