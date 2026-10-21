@@ -63,6 +63,7 @@ body.c{background:#fff;color:#1F2937}
 .note h3{font:700 18px/1.2 'Urbanist';margin-bottom:6px;color:#111827}
 .note p{font:400 14px/1.55 'Inter';color:#4B5563}
 .fine{font:400 13.5px/1.55 'Inter';color:#6B7280;max-width:60ch}
+.criteria-note{max-width:none;text-wrap:pretty}
 .term{margin:28px 0;padding:18px 20px;border-radius:12px;background:#1F2937;max-width:640px}
 .term pre{font:400 13px/1.7 'JetBrains Mono';color:rgba(255,255,255,.85);white-space:pre-wrap;margin:0}
 .plist{list-style:none;margin:36px 0 0}
