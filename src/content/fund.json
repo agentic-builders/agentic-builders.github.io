@@ -180,8 +180,8 @@
         "url": "https://eqvesta.com/",
         "logo": "/portfolio-logos/eqvesta-logo.png",
         "logo_wide": true,
-        "for_humans": "Digital family office with AI agents.",
-        "for_agents": "Digital family office with AI agents.",
+        "for_humans": "A digital family office.",
+        "for_agents": "A digital family office.",
         "description": "Developing AI agents that bring accounts across countries and currencies into one view, track filing deadlines and prepare documents for a CPA. It does not hold or move money."
       },
       {
@@ -196,8 +196,8 @@
         "name": "Heron",
         "url": "https://heron.ing/",
         "logo": "/portfolio-logos/heron-logo.svg",
-        "for_humans": "Governance for AI agents.",
-        "for_agents": "Governance for AI agents.",
+        "for_humans": "Agent governance.",
+        "for_agents": "Agent governance.",
         "description": "Maps a company’s agents, processes and ownership. When people, agents or workflows change, it identifies what is affected and prepares updates for a person to approve."
       },
       {
@@ -205,24 +205,24 @@
         "url": "https://kone.vc",
         "logo": "/portfolio-logos/kone-logo.svg",
         "logo_wide": true,
-        "for_humans": "AI adoption for businesses.",
-        "for_agents": "AI adoption for businesses.",
-        "description": "Helps companies adopt ChatGPT Business, automate internal processes and build tailored AI applications. Provides training and implementation resources to help teams use AI in their daily work."
+        "for_humans": "AI adoption, apps and training.",
+        "for_agents": "AI adoption, apps and training.",
+        "description": "Helps companies adopt AI tools, automate internal processes and build tailored applications. Provides training and implementation support for their teams."
       },
       {
         "name": "Agentiqa",
         "url": "https://agentiqa.com",
         "logo": "/portfolio-logos/agentiqa-icon.png",
-        "for_humans": "Release checks for AI agents.",
-        "for_agents": "Release checks for AI agents.",
+        "for_humans": "Release checks for production agents.",
+        "for_agents": "Release checks for production agents.",
         "description": "Checks what AI agents write to business systems such as ERP, CRM and billing. Tests data accuracy, retries and misuse before release, blocking releases when checks fail."
       },
       {
         "name": "Theona",
         "url": "https://theona.ai",
         "logo": "/portfolio-logos/theona-logo.svg",
-        "for_humans": "AI agents for team workflows.",
-        "for_agents": "AI agents for team workflows.",
+        "for_humans": "Agents for team workflows.",
+        "for_agents": "Agents for team workflows.",
         "description": "Maps how teams work across conversations, meetings and task trackers, then builds agents into existing tools such as Slack, Teams and CRM systems. Agents start in draft mode for human review."
       },
       {
@@ -230,33 +230,33 @@
         "url": "https://hookradar.net",
         "logo": "/portfolio-logos/hookradar-logo.png",
         "logo_wide": true,
-        "for_humans": "AI agents for marketing teams.",
-        "for_agents": "AI agents for marketing teams.",
-        "description": "Uses AI agents to find creative patterns in live ads, organic content and competitor activity. Turns those signals into prioritized ideas and briefs that marketing teams can use to plan their next tests."
+        "for_humans": "Agentic creative director.",
+        "for_agents": "Agentic creative director.",
+        "description": "Finds creative patterns in live ads, organic content and competitor activity. Turns those signals into prioritized ideas and briefs that marketing teams can use to plan their next tests."
       },
       {
         "name": "VisibilityPro",
         "url": "https://visibilitypro.ai",
         "logo": "/portfolio-logos/visibilitypro-logo.svg",
         "logo_wide": true,
-        "for_humans": "AI search visibility agency.",
-        "for_agents": "AI search visibility agency.",
+        "for_humans": "Visibility in AI search.",
+        "for_agents": "Visibility in AI search.",
         "description": "Combines technical website improvements, content production and external mentions to help brands appear in AI answers. Uses AI agents with human review and measures mentions, citations and referral traffic."
       },
       {
         "name": "Aprena Academy",
         "url": "https://aprena.academy/",
         "logo": "/portfolio-logos/aprena-academy-icon.png",
-        "for_humans": "AI-assisted career planning.",
-        "for_agents": "AI-assisted career planning.",
+        "for_humans": "Career planning for experienced professionals.",
+        "for_agents": "Career planning for experienced professionals.",
         "description": "Helps experienced professionals explore realistic career paths using their existing skills, job market data and human support. Identifies skill gaps and offers practical learning and regular progress updates."
       },
       {
         "name": "Fina",
         "url": "https://fina.team/",
         "logo": "/portfolio-logos/fina-logo.png",
-        "for_humans": "AI agents for finance teams.",
-        "for_agents": "AI agents for finance teams.",
+        "for_humans": "Automation for finance teams.",
+        "for_agents": "Automation for finance teams.",
         "description": "Processes invoices and bank statements, matches transactions with documents and prepares financial reports. Delivers files for finance teams to review and upload to their accounting systems."
       }
     ],
