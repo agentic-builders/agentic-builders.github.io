@@ -173,7 +173,7 @@
     }
   ],
   "portfolio": {
-    "updated": "2026-09-04",
+    "updated": "2026-10-20",
     "count_note": "",
     "companies": [
       {
@@ -188,8 +188,8 @@
         "name": "Silow",
         "url": "https://silow.ai",
         "logo": "/portfolio-logos/silow-logo.png",
-        "for_humans": "AI roadmap platform: a ranked plan for where AI will pay back in your company.",
-        "for_agents": "AI roadmap platform: a ranked plan for where AI will pay back in your company."
+        "for_humans": "Prioritized plans for AI adoption.",
+        "for_agents": "Prioritized plans for AI adoption."
       },
       {
         "name": "Heron",
@@ -244,33 +244,11 @@
         "for_agents": "AI-powered career guidance."
       },
       {
-        "name": "FINA",
+        "name": "Fina",
         "url": "https://fina.team/",
         "logo": "/portfolio-logos/fina-logo.png",
         "for_humans": "Financial automations.",
         "for_agents": "Financial automations."
-      },
-      {
-        "name": "Rolloo",
-        "url": "https://www.rolloo.app/",
-        "logo": "/portfolio-logos/rolloo-favicon.ico",
-        "for_humans": "AI role-play training for workplace conversations.",
-        "for_agents": "AI role-play training for workplace conversations."
-      },
-      {
-        "name": "StoryFlow",
-        "url": "https://storyflow.uk/",
-        "logo": "/portfolio-logos/storyflow-logo.jpg",
-        "logo_wide": true,
-        "for_humans": "AI-powered LinkedIn storytelling companion.",
-        "for_agents": "AI-powered LinkedIn storytelling companion."
-      },
-      {
-        "name": "Edvancium",
-        "url": "https://edvancium.com/",
-        "logo": "/portfolio-logos/edvancium-logo.svg",
-        "for_humans": "Exam preparation with interactive lessons and AI tutoring.",
-        "for_agents": "Exam preparation with interactive lessons and AI tutoring."
       }
     ],
     "featured": [

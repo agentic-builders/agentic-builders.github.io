@@ -14,7 +14,7 @@
 ## Portfolio
 
 - [Eqvesta](https://eqvesta.com/): Autonomous family office for the first $200,000.
-- [Silow](https://silow.ai): AI roadmap platform: a ranked plan for where AI will pay back in your company.
+- [Silow](https://silow.ai): Prioritized plans for AI adoption.
 - [Heron](https://heron.ing/): AI agent review and audit platform.
 - [kone](https://kone.vc): The monetization layer for AI agents.
 - [Agentiqa](https://agentiqa.com): Visual, agentic, self-healing test automation.
@@ -22,10 +22,7 @@
 - [HookRadar](https://hookradar.net): Competitive ad intelligence.
 - [VisibilityPro](https://visibilitypro.ai): Generative Engine Optimization platform.
 - [Aprena Academy](https://aprena.academy/): AI-powered career guidance.
-- [FINA](https://fina.team/): Financial automations.
-- [Rolloo](https://www.rolloo.app/): AI role-play training for workplace conversations.
-- [StoryFlow](https://storyflow.uk/): AI-powered LinkedIn storytelling companion.
-- [Edvancium](https://edvancium.com/): Exam preparation with interactive lessons and AI tutoring.
+- [Fina](https://fina.team/): Financial automations.
 
 ## Optional
 
