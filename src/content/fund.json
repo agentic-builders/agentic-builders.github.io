@@ -576,19 +576,7 @@
     "sub_after": "on a SAFE. Keep building your business, with our support.",
     "cta": "Apply for funding",
     "cta_quiet": "How it works",
-    "thesis_products": "We back two kinds of products.",
-    "thesis_cat1_tags": [
-      "research",
-      "analyze data",
-      "buy",
-      "sell"
-    ],
-    "thesis_cat2_tags": [
-      "build",
-      "test",
-      "secure",
-      "launch"
-    ],
+    "thesis_products": "We back",
     "who_intro": "Three things we look for:",
     "team_lead": "Who you work with",
     "agents_line": "For AI agents:",

@@ -45,7 +45,6 @@ body.c{background:#fff;color:#1F2937}
 .t a{color:inherit;text-decoration:none;background:linear-gradient(#FC4C03,#FC4C03) left 100%/100% 2px no-repeat}
 .t a:hover{color:#FC4C03}
 .js .scrub .sw{opacity:.18;transition:opacity .12s linear}.js .scrub .sw.on{opacity:1}
-.tag{display:inline-block;font:500 .42em/1 'JetBrains Mono';color:#6B7280;border:1px solid rgba(31,41,55,.15);border-radius:6px;padding:.35em .5em;vertical-align:.25em;margin-left:.3em}
 .w.mono{font:500 .9em/1 'JetBrains Mono';letter-spacing:0;color:#1F2937}
 .w.ul{text-decoration:underline;text-decoration-color:#FC4C03;text-underline-offset:.14em;text-decoration-thickness:.06em}
 .w.orange{color:#FC4C03}
