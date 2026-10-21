@@ -213,7 +213,7 @@ Verified against the live form on 2026-10-20. Labels and hints are copied verbat
 - Abi, the fund's AI agent: Reviews applications and submitted pitch decks, manages weekly progress updates, drafts investment summaries and tracks the progress of companies we back. Helps the fund’s investment partners make investment decisions.
 
 ## For angels and VCs
-Interested in investing directly in startups? Tell us the kinds of companies you invest in, your preferred stage and how much you typically invest. We can discuss relevant companies we back and arrange introductions with the founders’ agreement. A portfolio listing does not mean a company is currently fundraising.
+Interested in investing directly in startups? Tell us the kinds of companies you invest in, your preferred stage and how much you typically invest. We can discuss relevant companies we back and arrange introductions with the founders’ consent. A portfolio listing does not mean a company is currently fundraising.
 Portfolio: https://agenticbuilders.ai/portfolio/
 
 ## Contacts
@@ -273,6 +273,6 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 
 **Does the investment track commit me to anything?** Participation is free and requires no equity or exclusivity. During the investment track, we ask for a short weekly progress update. There is no obligation to accept an investment; any investment is agreed separately.
 
-**Who can access my application?** Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy.
+**Who can access my application?** Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf. We share information with investors only with your consent. Details are in our privacy policy.
 
 
