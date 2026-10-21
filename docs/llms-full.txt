@@ -200,7 +200,7 @@ Additional strengths: experience in your industry, a first pilot or revenue, two
 - Nikolay Vyahhi: Leads investment decisions.
 - Leo Ivanov: Leads fund operations, including the application and investment review process, legal coordination and communication with co-investors.
 - Elizaveta Chernysheva: Helps founders get started with the investment track, access software credits and discounts, and connect with mentors and contractors.
-- Abi, the fund's AI agent: Reviews applications and submitted pitch decks, manages weekly progress updates, drafts investment summaries and tracks the progress of companies we back. The fund’s investment partners make the investment decisions.
+- Abi, the fund's AI agent: Reviews applications and submitted pitch decks, manages weekly progress updates, drafts investment summaries and tracks the progress of companies we back. Helps the fund’s investment partners make investment decisions.
 
 ## For angels and VCs
 Interested in investing directly in startups? Tell us the kinds of companies you invest in, your preferred stage and how much you typically invest. We can discuss relevant companies we back and arrange introductions with the founders’ agreement. A portfolio listing does not mean a company is currently fundraising.
