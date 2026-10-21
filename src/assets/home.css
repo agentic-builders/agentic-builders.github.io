@@ -139,3 +139,5 @@ body.c{background:#fff;color:#1F2937}
 .inv.doc-page{max-width:900px;margin:0 auto;padding:118px 32px 40px}
 .doc-page h1{font:600 clamp(30px,4.2vw,48px)/1.12 'Urbanist',system-ui,sans-serif;letter-spacing:-.03em;color:#111827;margin-bottom:8px}
 .doc-page section{padding:0 0 8vh}
+
+.portfolio-date{margin-top:12px}

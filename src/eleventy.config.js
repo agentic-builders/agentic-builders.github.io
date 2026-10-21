@@ -15,6 +15,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
 
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v, null, 2));
+  eleventyConfig.addFilter("dateLabel", (value) => new Intl.DateTimeFormat("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(`${value}T00:00:00Z`)));
   eleventyConfig.addFilter("jsonInline", (v) => JSON.stringify(v));
   eleventyConfig.addFilter("urlencode", (v) => encodeURIComponent(v));
   eleventyConfig.addFilter("isTodo", (v) => typeof v === "string" && /\bTODO\b/.test(v));
