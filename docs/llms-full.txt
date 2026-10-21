@@ -198,7 +198,7 @@ Additional strengths: experience in your industry, a first pilot or revenue, two
 
 ## Team
 - Nikolay Vyahhi: Leads investment decisions.
-- Leo Ivanov: Leads fund operations, including the application and investment review process, legal coordination and communication with investors.
+- Leo Ivanov: Leads fund operations, including the application and investment review process, legal coordination and communication with co-investors.
 - Elizaveta Chernysheva: Helps founders get started with the program, access software credits and discounts, and connect with mentors and contractors.
 - Abi, the fund's AI agent: Reviews applications and submitted pitch decks, manages weekly progress updates, drafts investment summaries and tracks the progress of companies we back. The fund’s investment partners make the investment decisions.
 
