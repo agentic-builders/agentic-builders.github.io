@@ -10,3 +10,6 @@
 .ai-role p{font:400 16px/1.6 'Inter',system-ui,sans-serif;color:#4B5563}
 .subscribe input[type=email]:focus{outline:2px solid #FC4C03;outline-offset:2px;border-color:transparent}
 @media(max-width:600px){.inv{padding:100px 20px 32px}}
+
+.team .portrait{display:block;width:88px;height:88px;margin-bottom:16px;border-radius:50%;overflow:hidden}
+.team .portrait img{display:block;width:100%;height:100%;object-fit:cover}

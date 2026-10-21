@@ -336,19 +336,22 @@
       "name": "Nikolay Vyahhi",
       "role": "General Partner",
       "line": "Leads investment decisions.",
-      "linkedin": "https://www.linkedin.com/in/vyahhi/"
+      "linkedin": "https://www.linkedin.com/in/vyahhi/",
+      "photo": "/team/nikolay-vyahhi.jpg"
     },
     {
       "name": "Leo Ivanov",
       "role": "Partner, Operations",
       "line": "Leads fund operations, including the application and investment review process, legal coordination and communication with investors.",
-      "linkedin": "https://www.linkedin.com/in/leonid-dmitrich/"
+      "linkedin": "https://www.linkedin.com/in/leonid-dmitrich/",
+      "photo": "/team/leo-ivanov.jpg"
     },
     {
       "name": "Elizaveta Chernysheva",
       "role": "Operations and founder support",
       "line": "Helps founders get started with the program, access software credits and discounts, and connect with mentors and contractors.",
-      "linkedin": "https://www.linkedin.com/in/elizaveta-chernysheva-29604214b/"
+      "linkedin": "https://www.linkedin.com/in/elizaveta-chernysheva-29604214b/",
+      "photo": "/team/elizaveta-chernysheva.jpg"
     },
     {
       "name": "Abi, the fund's AI agent",

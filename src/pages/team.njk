@@ -10,7 +10,7 @@ description: "Meet the people behind Agentic Builders and learn how our AI agent
   <section class="inv-hero">
     <h1>{{ fund.team_page.title }}</h1>
     <p class="lead2">{{ fund.team_page.intro }}</p>
-    <ul class="team" role="list">{% for person in fund.team %}{% if not person.agent %}<li class="rv"><span class="ph" aria-hidden="true">{{ person.name | first }}</span><h2>{{ person.name }}</h2><span class="role">{{ person.role }}</span><p>{{ person.line }}</p><a class="quiet" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn <span class="sr-only">— {{ person.name }}</span>→</a></li>{% endif %}{% endfor %}</ul>
+    <ul class="team" role="list">{% for person in fund.team %}{% if not person.agent %}<li class="rv"><a class="portrait" href="{{ person.linkedin }}" target="_blank" rel="noopener" aria-label="{{ person.name }} on LinkedIn"><img src="{{ person.photo | relativeUrl(page.url) }}" alt="" width="88" height="88" decoding="async"></a><h2>{{ person.name }}</h2><span class="role">{{ person.role }}</span><p>{{ person.line }}</p><a class="quiet" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn <span class="sr-only">— {{ person.name }}</span>→</a></li>{% endif %}{% endfor %}</ul>
   </section>
   <section id="ai">
     <h2 class="t rv">{{ fund.team_page.ai_heading }}</h2>
