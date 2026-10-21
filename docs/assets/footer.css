@@ -4,5 +4,5 @@
 .foot-in{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 32px;font:400 13px/1.6 'Inter',system-ui,sans-serif;color:#6B7280;border-top:1px solid rgba(31,41,55,.1);padding-top:28px}
 .foot a{color:#4B5563;text-decoration:none}.foot a:hover{color:#FC4C03}
 .footer-links{width:100%}
-.footer-linkedin{display:inline-flex;align-items:center;gap:5px;vertical-align:middle}
-.footer-linkedin svg{flex-shrink:0}
+.footer-linkedin{white-space:nowrap}
+.footer-linkedin svg{width:1em;height:1em;margin-right:5px;vertical-align:-.125em}
