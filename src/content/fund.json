@@ -91,7 +91,7 @@
       {
         "name": "Four weeks of your work",
         "duration": "If invited",
-        "description": "If invited, you join a fully online four-week track, building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi reads your deck and gives back the questions investors will ask."
+        "description": "If invited, you join a fully online four-week track, building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi, the fund's AI agent, reads your deck and gives back the questions investors will ask."
       },
       {
         "name": "Decision",
@@ -131,7 +131,7 @@
         "text": "If invited, you keep building, selling and shipping with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes.",
         "gets": [
           "Tool credits: cloud, AI coding and app building, LLM tracing, web data, prospecting, docs",
-          "Abi reads your deck and gives back the questions investors will ask",
+          "Abi, the fund's AI agent, reads your deck and gives back the questions investors will ask",
           "One key metric we track together"
         ]
       },
