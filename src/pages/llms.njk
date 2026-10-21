@@ -16,6 +16,8 @@ permalink: /llms.txt
 
 ## Application
 
+{% for f in fund.faq %}{% if f.q == "Who can apply?" %}- Eligibility: {{ f.a }}
+{% endif %}{% endfor %}
 - [Live application form]({{ fund.fund.apply_url }}): {{ fund.agents.application_fields | length }} questions, {{ fund.agents.apply_instructions.required | length }} required. Labels, helper text, required fields and choices verified {{ fund.agents.application_form_verified }}.
 - [Exact field schema and submission instructions]({{ fund.fund.url }}/llms-full.txt): match the live form's question labels, keep helper text separate, and ask the applicant for missing required answers. The pitch deck or website question is optional.
 

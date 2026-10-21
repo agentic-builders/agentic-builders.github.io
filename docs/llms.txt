@@ -13,6 +13,8 @@
 
 ## Application
 
+- Eligibility: Founders can apply from anywhere in the world, including before incorporating. We invest only in US-incorporated companies, so a US company must be in place before an investment is completed. We back teams building products AI agents use or tools for building agent products, from idea to pre-seed. We consider experience, founder-led sales and speed of execution.
+
 - [Live application form](https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9): 16 questions, 7 required. Labels, helper text, required fields and choices verified 2026-10-20.
 - [Exact field schema and submission instructions](https://agenticbuilders.ai/llms-full.txt): match the live form's question labels, keep helper text separate, and ask the applicant for missing required answers. The pitch deck or website question is optional.
 

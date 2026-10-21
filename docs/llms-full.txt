@@ -263,7 +263,7 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 
 **What equity do you take?** We invest on a standard post-money SAFE, and the valuation is agreed with each founder individually. We look at how the company can grow through its next stages and set the valuation cap so that the round makes sense for both sides, rather than taking a fixed share.
 
-**Who can apply?** Teams anywhere in the world building products AI agents use or tools for building agent products, from idea to pre-seed. We consider experience, sales ability and speed of execution.
+**Who can apply?** Founders can apply from anywhere in the world, including before incorporating. We invest only in US-incorporated companies, so a US company must be in place before an investment is completed. We back teams building products AI agents use or tools for building agent products, from idea to pre-seed. We consider experience, founder-led sales and speed of execution.
 
 **What do I need to apply?** The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a pitch deck or website if you have one. No call is needed to start.
 
