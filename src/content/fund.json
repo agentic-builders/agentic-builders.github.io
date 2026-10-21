@@ -106,7 +106,7 @@
     ],
     "terms": {
       "first_check_usd": "$30–100k",
-      "instrument": "Standard post-money SAFE (a simple agreement for future equity, the standard early-stage document); the valuation is agreed individually",
+      "instrument": "Standard post-money SAFE; the valuation is agreed individually",
       "follow_on": "We do not make follow-on investments. After our initial investment, we help you connect with other investors for your next round",
       "track_cost": "Participation is free and requires no equity or exclusivity. Any investment is agreed separately."
     },
@@ -573,7 +573,7 @@
     "h1_after": ".",
     "sub_before": "First checks of",
     "sub_strong": "$30–100k",
-    "sub_after": "on a SAFE (a simple agreement for future equity). Keep building your business, with our support.",
+    "sub_after": "on a SAFE. Keep building your business, with our support.",
     "cta": "Apply for funding",
     "cta_quiet": "How it works",
     "thesis_products": "We back two kinds of products.",

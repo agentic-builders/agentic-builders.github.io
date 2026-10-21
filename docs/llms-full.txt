@@ -20,7 +20,7 @@ We review every application. If invited, you spend four weeks building your busi
 3. **Decision** (End of week four): At the end of the track, the partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
 4. **Help with your next round** (After the check): We help you raise your next round through investor introductions and access to a founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, credits and perks.
 
-- First check: $30–100k. Instrument: Standard post-money SAFE (a simple agreement for future equity, the standard early-stage document); the valuation is agreed individually.
+- First check: $30–100k. Instrument: Standard post-money SAFE; the valuation is agreed individually.
 - Follow-on: We do not make follow-on investments. After our initial investment, we help you connect with other investors for your next round.
 - Track cost: Participation is free and requires no equity or exclusivity. Any investment is agreed separately.
 - Toolkit during the track: Cloud credits (Microsoft for Startups: Azure); AI coding assistance (GitHub Copilot); AI app building (Lovable); LLM tracing and evaluation (Langfuse); Web data and automation (Apify); B2B prospecting (Apollo); Workspace and docs (Notion); Issue tracking (Linear).
