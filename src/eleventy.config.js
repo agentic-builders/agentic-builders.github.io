@@ -19,7 +19,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("jsonInline", (v) => JSON.stringify(v));
   eleventyConfig.addFilter("urlencode", (v) => encodeURIComponent(v));
   eleventyConfig.addFilter("isTodo", (v) => typeof v === "string" && /\bTODO\b/.test(v));
-  eleventyConfig.addFilter("byName", (companies, names) => names.map((n) => companies.find((c) => c.name === n)).filter(Boolean));
   eleventyConfig.addFilter("escape", (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"));
   eleventyConfig.addFilter("crlf", (v) => String(v).replace(/\r?\n/g, "\r\n"));
   // Explicit index.html links also work when opening the generated site from disk.

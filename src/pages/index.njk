@@ -41,13 +41,6 @@ description: "Funding for agent-native products from idea to pre-seed. Investmen
       <p class="fine section-note rv">{{ fund.program.timeline }} {{ fund.program.terms.track_cost }}</p>
     </section>
 
-    <section id="portfolio">
-      <h2 class="t rv">{{ h.portfolio_lead }}</h2>
-      {%- set companies = fund.portfolio.companies | byName(fund.portfolio.featured) -%}
-      {% include "portfolio-list.njk" %}
-      <div class="cta rv"><a class="pill pill-ghost" href="{{ '/portfolio/' | relativeUrl(page.url) }}">View all {{ fund.portfolio.companies | length }} companies</a></div>
-    </section>
-
     <section id="team">
       <h2 class="t rv">{{ h.team_lead }}</h2>
       <p class="body-copy rv">{{ fund.team_page.preview }}</p>

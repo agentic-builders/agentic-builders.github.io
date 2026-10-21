@@ -4,7 +4,7 @@
 
 ## Pages
 
-- [For founders](https://agenticbuilders.ai/): investment track, thesis, selection, team, portfolio, FAQ
+- [For founders](https://agenticbuilders.ai/): investment track, thesis, selection, team introduction and FAQ
 - [Full reference for AI agents](https://agenticbuilders.ai/llms-full.txt): fund details, investment track terms, application instructions and field schema
 - [Portfolio](https://agenticbuilders.ai/portfolio/): companies, introductions for angels and VCs, monthly newsletter
 - [Team](https://agenticbuilders.ai/team/): people, responsibilities and Abi, the fund’s AI agent

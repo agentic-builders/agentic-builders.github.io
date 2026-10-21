@@ -260,14 +260,6 @@
         "description": "Processes invoices and bank statements, matches transactions with documents and prepares financial reports. Delivers files for finance teams to review and upload to their accounting systems."
       }
     ],
-    "featured": [
-      "Silow",
-      "Eqvesta",
-      "Agentiqa",
-      "Heron",
-      "kone",
-      "VisibilityPro"
-    ],
     "intro": "Meet the companies we back: products AI agents use and tools for building agent products.",
     "investors": {
       "heading": "For angels & VCs",
@@ -573,7 +565,6 @@
     "team_lead": "Who you work with",
     "agents_line": "For AI agents:",
     "agents_link": "full fund reference and application instructions",
-    "portfolio_lead": "A few companies we back",
     "faq_lead": "Questions founders ask",
     "apply_lead": "Apply for funding. If invited, a four-week investment track and a decision at its end.",
     "how_lead": "How the investment track works",
