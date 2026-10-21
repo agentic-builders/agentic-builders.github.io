@@ -374,14 +374,14 @@
         "type": "string",
         "required": true,
         "example": "Jane Doe",
-        "label": "Full name"
+        "label": "Full name?"
       },
       {
         "field": "link",
         "type": "url",
         "required": true,
         "example": "https://linkedin.com/in/janedoe",
-        "label": "LinkedIn, GitHub or portfolio link"
+        "label": "LinkedIn, GitHub, or portfolio link"
       },
       {
         "field": "location",
@@ -395,14 +395,15 @@
         "type": "string",
         "required": false,
         "example": "Telegram @janedoe",
-        "label": "Preferred contact method and details (WhatsApp, Telegram or email)"
+        "label": "Preferred contact method and details (WhatsApp, Telegram, or email)"
       },
       {
         "field": "background",
         "type": "text",
         "required": true,
         "example": "ML engineer, 8 years; built the pricing engine at …",
-        "label": "Describe your background: technical background or domain expertise and one project you are proud of (2–4 sentences)"
+        "label": "Describe your background",
+        "hint": "What's your technical background or domain expertise? And what's one project or problem you've worked on that you're proud of (could be a side project, a tool you built, a problem you solved at work). 2-4 sentences is enough."
       },
       {
         "field": "idea",
@@ -416,28 +417,31 @@
         "type": "text",
         "required": false,
         "example": "12 interviews with …; they struggle with …",
-        "label": "Who are your target users, and what have you learned from talking to them?"
+        "label": "Who are your target users, and what have you learned from talking to them?",
+        "hint": "Tell us about any user interviews, research, or experiments. What do they struggle with? What surprised you?"
       },
       {
         "field": "next_8_weeks",
         "type": "text",
         "required": false,
         "example": "Ship v1 to 5 pilots; key metric: weekly active agents",
-        "label": "What does your next 6 to 8 weeks look like? What is your #1 priority right now?"
+        "label": "What does your next 6 to 8 weeks look like? What is your #1 priority right now?",
+        "hint": "Share your current plan, how you are splitting work across the team (if any), and the key metric you are tracking."
       },
       {
         "field": "last_shipped",
         "type": "text",
         "required": false,
         "example": "Landing page + waitlist: 140 signups in 2 weeks",
-        "label": "What is the most recent thing you shipped or tested, and what happened?"
+        "label": "What is the most recent thing you shipped or tested, and what happened?",
+        "hint": "Could be a landing page, a prototype, a tool, a conversation. What did you learn? Did it change what you're working on?"
       },
       {
         "field": "deck_url",
         "type": "url",
         "required": false,
         "example": "https://docs.google.com/presentation/…",
-        "label": "Pitch deck or website link"
+        "label": "If you have a pitch deck or a website for your product or idea, please share the link here"
       },
       {
         "field": "founder_experience",
@@ -451,14 +455,15 @@
           "Pet project",
           "Other",
           "No"
-        ]
+        ],
+        "hint": "(Select as many as you like)"
       },
       {
         "field": "ai_experience",
         "type": "text",
         "required": true,
         "example": "We run support on agents; built an internal …",
-        "label": "Examples of how you have used AI or automation in your work or projects"
+        "label": "Give examples of how you’ve used AI or automation in your work or projects"
       },
       {
         "field": "fundraising",
@@ -479,7 +484,8 @@
         "type": "text",
         "required": false,
         "example": "Investor intros, technical feedback",
-        "label": "What kind of support would be most useful to you right now?"
+        "label": "What kind of support would be most useful to you right now?",
+        "hint": "e.g. technical feedback, co-founder matching, async accountability, investor intros, community, structured mentorship, or anything else specific to how you work best."
       },
       {
         "field": "heard_about",
@@ -489,7 +495,7 @@
         "label": "How did you hear about us?"
       }
     ],
-    "application_fields_note": "Field list taken from the fund's form on 2026-10-14. Match fields by label; the form has no field ids.",
+    "application_fields_note": "Labels and hints are copied verbatim, in form order. The required flag represents the form’s asterisk; the asterisk is not part of the label. The field keys are names used by this reference, not Notion field IDs. Match browser controls by their exact labels, and read hints separately. Examples are illustrative, not form text. If the live form differs, follow it and ask the person for any missing required information.",
     "tasks": [
       {
         "name": "Help a founder apply",
@@ -534,7 +540,8 @@
       "subscribe": "POST https://api.agenticbuilders.ai/subscribe with {email, name?, role? (founder | investor | other), source?}. Adds the address to the fund's newsletter list.",
       "errors": "422 = validation error with the field named in the response; 429 = too many requests; 503 = service not configured, fall back to the form.",
       "closed_note": "The submission API is not yet available. Submit through the application form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 or email hey@agenticbuilders.ai with the same fields."
-    }
+    },
+    "application_form_verified": "2026-10-20"
   },
   "home": {
     "panel_title": "Early-stage fund for agent-native products",

@@ -43,10 +43,14 @@ permalink: /llms-full.txt
 - {{ fund.agents.api.subscribe }}
 - {{ fund.agents.api.errors }}{% else %}- {{ fund.agents.api.closed_note }}{% endif %}
 
-### Application field schema ({{ fund.agents.application_fields_note }})
-| field | type | required | label | example |
-|---|---|---|---|---|
-{% for f in fund.agents.application_fields %}| {{ f.field }} | {{ f.type }}{% if f.options %} ({{ f.options | join(" / ") }}){% endif %} | {{ "yes" if f.required else "no" }} | {{ f.label }} | {{ f.example }} |
+### Application field schema
+Source: {{ fund.fund.apply_url }}
+
+Verified against the live form on {{ fund.agents.application_form_verified }}. {{ fund.agents.application_fields_note }}
+
+| field | type | required | exact form label | exact helper text | example |
+|---|---|---|---|---|---|
+{% for f in fund.agents.application_fields %}| {{ f.field }} | {{ f.type }}{% if f.options %} ({{ f.options | join(" / ") }}){% endif %} | {{ "yes" if f.required else "no" }} | {{ f.label }} | {{ f.hint or "" }} | {{ f.example }} |
 {% endfor %}
 ```json
 {{ fund.agents.application_fields | json }}

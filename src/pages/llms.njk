@@ -14,6 +14,11 @@ permalink: /llms.txt
 - [Privacy policy]({{ fund.fund.url }}/privacy/): how application and contact data are handled
 - [Legal notice]({{ fund.fund.url }}/legal/): operator, investment track terms and disclaimers
 
+## Application
+
+- [Live application form]({{ fund.fund.apply_url }}): {{ fund.agents.application_fields | length }} questions, {{ fund.agents.apply_instructions.required | length }} required. Labels, helper text, required fields and choices verified {{ fund.agents.application_form_verified }}.
+- [Exact field schema and submission instructions]({{ fund.fund.url }}/llms-full.txt): match the live form's question labels, keep helper text separate, and ask the applicant for missing required answers. The pitch deck or website question is optional.
+
 ## Portfolio
 
 {% for c in fund.portfolio.companies %}- [{{ c.name }}]({{ c.url }}): {{ c.for_humans }}

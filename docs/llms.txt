@@ -11,6 +11,11 @@
 - [Privacy policy](https://agenticbuilders.ai/privacy/): how application and contact data are handled
 - [Legal notice](https://agenticbuilders.ai/legal/): operator, investment track terms and disclaimers
 
+## Application
+
+- [Live application form](https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9): 16 questions, 7 required. Labels, helper text, required fields and choices verified 2026-10-20.
+- [Exact field schema and submission instructions](https://agenticbuilders.ai/llms-full.txt): match the live form's question labels, keep helper text separate, and ask the applicant for missing required answers. The pitch deck or website question is optional.
+
 ## Portfolio
 
 - [Eqvesta](https://eqvesta.com/): A digital family office.
