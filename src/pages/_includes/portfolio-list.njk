@@ -1,0 +1,2 @@
+<ul class="plist plist-detailed">{% for c in companies %}<li class="rv"><a href="{{ c.url }}" target="_blank" rel="noopener"><img src="{{ c.logo | relativeUrl(page.url) }}" alt="" width="28" height="28" loading="lazy"><b>{{ c.name }}</b><span class="portfolio-summary">{{ c.for_humans }}</span><p class="portfolio-description">{{ c.description }}</p></a></li>{% endfor %}</ul>
+<p class="fine portfolio-date">Last update: <time datetime="{{ fund.portfolio.updated }}">{{ fund.portfolio.updated | dateLabel }}</time></p>

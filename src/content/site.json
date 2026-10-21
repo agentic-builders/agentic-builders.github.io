@@ -1,0 +1,41 @@
+{
+  "_readme": "Site-level settings. api_enabled: set to true once api.agenticbuilders.ai resolves and the site-api service has its Notion token; until then the newsletter form falls back to email and llms-full.txt says the API is not open yet.",
+  "api_base_url": "https://api.agenticbuilders.ai",
+  "api_enabled": false,
+  "navigation": [
+    {
+      "label": "For founders",
+      "url": "/"
+    },
+    {
+      "label": "For agents",
+      "url": "/llms-full.txt"
+    },
+    {
+      "label": "Portfolio",
+      "url": "/portfolio/"
+    },
+    {
+      "label": "Team",
+      "url": "/team/"
+    }
+  ],
+  "footer_links": [
+    {
+      "label": "Newsletter",
+      "url": "/portfolio/#updates"
+    },
+    {
+      "label": "Brand assets",
+      "url": "/brand/"
+    },
+    {
+      "label": "Privacy policy",
+      "url": "/privacy/"
+    },
+    {
+      "label": "Legal notice",
+      "url": "/legal/"
+    }
+  ]
+}

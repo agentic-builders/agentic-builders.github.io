@@ -1,0 +1,81 @@
+---
+permalink: /llms-full.txt
+---
+﻿# {{ fund.fund.name }} — full reference for AI agents
+
+> {{ fund.fund.one_liner }} Updated {{ fund.updated }}. Source: {{ fund.fund.url }}/
+
+## About
+- {{ fund.fund.description }}
+- Stage: {{ fund.fund.stage }}. Founded {{ fund.fund.founded }}.
+- Email: {{ fund.fund.email }}. Website: {{ fund.fund.url }}. LinkedIn: {{ fund.fund.linkedin }}
+
+## Thesis
+{{ fund.thesis.lead }} {{ fund.thesis.body }}
+{% for c in fund.thesis.categories %}- **{{ c.name }}:** {{ c.description }} Examples: {{ c.examples | join(", ") }}.
+{% endfor %}
+
+## Investment track and terms
+{{ fund.program.summary }}
+{% for s in fund.program.steps %}{{ loop.index }}. **{{ s.name }}** ({{ s.duration }}): {{ s.description }}
+{% endfor %}
+- Investment: {{ fund.program.terms.first_check_usd }}. Instrument: {{ fund.program.terms.instrument }}.
+- Follow-on: {{ fund.program.terms.follow_on }}.
+- Investment track cost: {{ fund.program.terms.track_cost }}
+- Software and cloud-service benefits: {{ fund.program.toolkit.items | join("; ") }}.
+
+## {{ fund.who_we_look_for.headline }}
+{{ fund.who_we_look_for.lead }} {{ fund.who_we_look_for.criteria_note }}
+{% for c in fund.who_we_look_for.criteria %}{{ loop.index }}. **{{ c.name }}.** {{ c.detail }}
+{% endfor %}Additional strengths: {{ fund.who_we_look_for.strengtheners | join(", ") }}.
+
+## How to submit an application
+- Where: {{ fund.agents.apply_instructions.where }}
+- Required fields: {{ fund.agents.apply_instructions.required | join(", ") }}
+- Files: {{ fund.agents.apply_instructions.files }}
+- If data is missing: {{ fund.agents.apply_instructions.if_missing }}
+{% for d in fund.agents.apply_instructions.do_not %}- {{ d }}
+{% endfor %}- After submitting: {{ fund.agents.apply_instructions.after }}
+
+### API
+{% if site.api_enabled %}- Base URL: {{ fund.agents.api.base_url }} · schema: {{ fund.agents.api.schema_url }} · OpenAPI: {{ fund.agents.api.docs_url }}
+- {{ fund.agents.api.apply }}
+- {{ fund.agents.api.subscribe }}
+- {{ fund.agents.api.errors }}{% else %}- {{ fund.agents.api.closed_note }}{% endif %}
+
+### Application field schema
+Source: {{ fund.fund.apply_url }}
+
+Verified against the live form on {{ fund.agents.application_form_verified }}. {{ fund.agents.application_fields_note }}
+
+| field | type | required | exact form label | exact helper text | example |
+|---|---|---|---|---|---|
+{% for f in fund.agents.application_fields %}| {{ f.field }} | {{ f.type }}{% if f.options %} ({{ f.options | join(" / ") }}){% endif %} | {{ "yes" if f.required else "no" }} | {{ f.label }} | {{ f.hint or "" }} | {{ f.example }} |
+{% endfor %}
+```json
+{{ fund.agents.application_fields | json }}
+```
+
+## Team
+{% for person in fund.team %}- {{ person.name }}: {{ person.line }}
+{% endfor %}
+## For angels and VCs
+{{ fund.portfolio.investors.text }} {{ fund.portfolio.investors.note }}
+Portfolio: {{ fund.fund.url }}/portfolio/
+
+## Contacts
+- Email: {{ fund.fund.email }}
+- vCard: {{ fund.fund.url }}/agenticbuilders.vcf
+
+## Portfolio ({{ fund.portfolio.companies | length }})
+{% for c in fund.portfolio.companies %}- {{ c.name }} — {{ c.url }} — {{ c.for_agents }} {{ c.description }}
+{% endfor %}
+## Common tasks
+{% for t in fund.agents.tasks %}### {{ t.name }}
+{% for s in t.steps %}{{ loop.index }}. {{ s }}
+{% endfor %}
+{% endfor %}
+## FAQ
+{% for f in fund.faq %}**{{ f.q }}** {{ f.a }}
+
+{% endfor %}

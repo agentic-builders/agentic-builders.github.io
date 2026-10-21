@@ -1,0 +1,30 @@
+---
+layout: home.njk
+permalink: /team/
+pageKey: team
+pagecss: pages
+title: "Team — Agentic Builders"
+description: "Meet the people behind Agentic Builders and learn how our AI agent, Abi, supports the team. The fund’s investment partners make investment decisions."
+---
+<main class="inv" id="main">
+  <section class="inv-hero">
+    <h1>{{ fund.team_page.title }}</h1>
+    <p class="lead2">{{ fund.team_page.intro }}</p>
+    <ul class="team" role="list">
+      {%- for person in fund.team -%}
+      <li class="rv{% if person.agent %} agent{% endif %}" id="{% if person.agent %}ai{% else %}{{ person.name | slugify }}{% endif %}">
+        {% if person.agent %}<span class="portrait agent-avatar" aria-hidden="true"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="36" height="36"></span>{% else %}<a class="portrait" href="{{ person.linkedin }}" target="_blank" rel="noopener" aria-label="{{ person.name }} on LinkedIn"><img src="{{ person.photo | relativeUrl(page.url) }}" alt="" width="88" height="88" decoding="async"></a>{% endif %}
+        <h2>{{ person.name }}</h2>
+        <span class="role">{{ person.role }}</span>
+        <p>{{ person.line }}</p>
+        {%- if not person.agent %}<a class="quiet" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn <span class="sr-only">— {{ person.name }}</span>→</a>{% endif %}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  <section class="last">
+    <h2 class="t rv">Contact us</h2>
+    <p class="lead2 rv">Questions about the fund or our work with founders? Email us.</p>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact us</a></div>
+  </section>
+</main>

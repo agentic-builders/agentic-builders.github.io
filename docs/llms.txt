@@ -1,0 +1,36 @@
+﻿# Agentic Builders
+
+> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Investments of $30–100k on a standard post-money SAFE. One form; for teams that fit, a four-week investment track and a decision on an investment at its end. Apply: https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 · Contact: hey@agenticbuilders.ai · Updated 2026-10-20.
+
+## Pages
+
+- [For founders](https://agenticbuilders.ai/): investment track, thesis, selection, team introduction and FAQ
+- [Full reference for AI agents](https://agenticbuilders.ai/llms-full.txt): fund details, investment track terms, application instructions and field schema
+- [Portfolio](https://agenticbuilders.ai/portfolio/): companies, introductions for angels and VCs, monthly newsletter
+- [Team](https://agenticbuilders.ai/team/): people, responsibilities and Abi, the fund’s AI agent
+- [Privacy policy](https://agenticbuilders.ai/privacy/): how application and contact data are handled
+- [Legal notice](https://agenticbuilders.ai/legal/): operator, investment track terms and disclaimers
+
+## Application
+
+- Eligibility: Founders can apply from anywhere in the world, including before incorporating. We invest only in US-incorporated companies, so a US company must be in place before an investment is completed. We back teams building products AI agents use or tools for building agent products, from idea to pre-seed. We consider experience, founder-led sales and speed of execution.
+
+- [Live application form](https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9): 16 questions, 7 required. Labels, helper text, required fields and choices verified 2026-10-20.
+- [Exact field schema and submission instructions](https://agenticbuilders.ai/llms-full.txt): match the live form's question labels, keep helper text separate, and ask the applicant for missing required answers. The pitch deck or website question is optional.
+
+## Portfolio
+
+- [Eqvesta](https://eqvesta.com/): A digital family office.
+- [Silow](https://silow.ai): Prioritized plans for AI adoption.
+- [Heron](https://heron.ing/): Agent governance.
+- [kone](https://kone.vc): AI adoption, apps and training.
+- [Agentiqa](https://agentiqa.com): Release checks for production agents.
+- [Theona](https://theona.ai): Agents for team workflows.
+- [HookRadar](https://hookradar.net): Agentic creative director.
+- [VisibilityPro](https://visibilitypro.ai): Visibility in AI search.
+- [Aprena Academy](https://aprena.academy/): Career planning for experienced professionals.
+- [Fina](https://fina.team/): Automation for finance teams.
+
+## Optional
+
+- [Brand assets](https://agenticbuilders.ai/brand/)

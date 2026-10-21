@@ -1,0 +1,82 @@
+{%- set org = {
+  "@type": "Organization",
+  "@id": fund.fund.url + "/#organization",
+  "name": fund.fund.name,
+  "url": fund.fund.url + "/",
+  "logo": fund.fund.url + "/brand/logo-color.png",
+  "legalName": fund.fund.legal_name,
+  "description": fund.fund.one_liner,
+  "contactPoint": { "@type": "ContactPoint", "contactType": "Founder applications", "email": fund.fund.email },
+  "email": fund.fund.email,
+  "foundingDate": fund.fund.founded,
+  "sameAs": [fund.fund.linkedin],
+  "knowsAbout": ["Agent-native products", "AI agents", "Pre-seed investment", "Venture capital"]
+} -%}
+{%- set webpage = {
+  "@type": "CollectionPage" if pageKey == "portfolio" else ("AboutPage" if pageKey == "team" else "WebPage"),
+  "@id": fund.fund.url + page.url + "#webpage",
+  "url": fund.fund.url + page.url,
+  "name": title,
+  "description": description,
+  "dateModified": updated or fund.updated,
+  "inLanguage": "en",
+  "isPartOf": { "@id": fund.fund.url + "/#website" },
+  "about": { "@id": fund.fund.url + "/#organization" }
+} -%}
+{%- set website = {
+  "@type": "WebSite",
+  "@id": fund.fund.url + "/#website",
+  "url": fund.fund.url + "/",
+  "name": fund.fund.name,
+  "publisher": { "@id": fund.fund.url + "/#organization" }
+} -%}
+{%- set graph = [org, website, webpage] -%}
+{%- if pageKey == "portfolio" -%}
+{%- set items = [] -%}
+{%- for company in fund.portfolio.companies -%}
+  {%- set items = (items.push({
+    "@type": "ListItem",
+    "position": loop.index,
+    "item": {
+      "@type": "Organization",
+      "@id": company.url,
+      "name": company.name,
+      "url": company.url,
+      "description": company.for_humans + " " + company.description
+    }
+  }), items) -%}
+{%- endfor -%}
+{%- set graph = (graph.push({
+  "@type": "ItemList",
+  "@id": fund.fund.url + "/portfolio/#companies",
+  "name": "Our portfolio",
+  "numberOfItems": items.length,
+  "itemListElement": items,
+  "mainEntityOfPage": { "@id": webpage["@id"] }
+}), graph) -%}
+{%- endif -%}
+{%- if pageKey == "team" -%}
+{%- for person in fund.team -%}
+{%- if not person.agent -%}
+{%- set graph = (graph.push({
+  "@type": "Person",
+  "@id": fund.fund.url + "/team/#" + (person.name | slugify),
+  "name": person.name,
+  "jobTitle": person.role,
+  "description": person.line,
+  "image": fund.fund.url + person.photo,
+  "sameAs": [person.linkedin],
+  "affiliation": { "@id": org["@id"] },
+  "mainEntityOfPage": { "@id": webpage["@id"] }
+}), graph) -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- if include_faq -%}
+{%- set faqEntities = [] -%}
+{%- for f in fund.faq -%}
+  {%- set faqEntities = (faqEntities.push({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }), faqEntities) -%}
+{%- endfor -%}
+{%- set graph = (graph.push({ "@type": "FAQPage", "@id": fund.fund.url + "/#faq", "url": fund.fund.url + "/#faq", "isPartOf": { "@id": webpage["@id"] }, "mainEntity": faqEntities }), graph) -%}
+{%- endif -%}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@graph": graph } | json | safe }}</script>

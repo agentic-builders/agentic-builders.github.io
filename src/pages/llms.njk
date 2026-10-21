@@ -1,0 +1,30 @@
+---
+permalink: /llms.txt
+---
+﻿# {{ fund.fund.name }}
+
+> {{ fund.fund.one_liner }} Investments of {{ fund.program.terms.first_check_usd }} on a standard post-money SAFE. One form; for teams that fit, a four-week investment track and a decision on an investment at its end. Apply: {{ fund.fund.apply_url }} · Contact: {{ fund.fund.email }} · Updated {{ fund.updated }}.
+
+## Pages
+
+- [For founders]({{ fund.fund.url }}/): investment track, thesis, selection, team introduction and FAQ
+- [Full reference for AI agents]({{ fund.fund.url }}/llms-full.txt): fund details, investment track terms, application instructions and field schema
+- [Portfolio]({{ fund.fund.url }}/portfolio/): companies, introductions for angels and VCs, monthly newsletter
+- [Team]({{ fund.fund.url }}/team/): people, responsibilities and Abi, the fund’s AI agent
+- [Privacy policy]({{ fund.fund.url }}/privacy/): how application and contact data are handled
+- [Legal notice]({{ fund.fund.url }}/legal/): operator, investment track terms and disclaimers
+
+## Application
+
+{% for f in fund.faq %}{% if f.q == "Who can apply?" %}- Eligibility: {{ f.a }}
+{% endif %}{% endfor %}
+- [Live application form]({{ fund.fund.apply_url }}): {{ fund.agents.application_fields | length }} questions, {{ fund.agents.apply_instructions.required | length }} required. Labels, helper text, required fields and choices verified {{ fund.agents.application_form_verified }}.
+- [Exact field schema and submission instructions]({{ fund.fund.url }}/llms-full.txt): match the live form's question labels, keep helper text separate, and ask the applicant for missing required answers. The pitch deck or website question is optional.
+
+## Portfolio
+
+{% for c in fund.portfolio.companies %}- [{{ c.name }}]({{ c.url }}): {{ c.for_humans }}
+{% endfor %}
+## Optional
+
+- [Brand assets]({{ fund.fund.url }}/brand/)

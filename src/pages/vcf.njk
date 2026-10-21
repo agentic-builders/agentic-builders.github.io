@@ -1,0 +1,14 @@
+---
+permalink: /agenticbuilders.vcf
+---
+{% set card %}BEGIN:VCARD
+VERSION:3.0
+N:{{ fund.fund.name | vcardText }};;;;
+FN:{{ fund.fund.name | vcardText }}
+ORG:{{ fund.fund.legal_name | vcardText }}
+EMAIL;TYPE=INTERNET:{{ fund.fund.email }}
+URL:{{ fund.fund.url }}/
+X-SOCIALPROFILE;TYPE=linkedin:{{ fund.fund.linkedin }}
+NOTE:{{ fund.fund.one_liner | vcardText }}
+REV:{{ fund.updated | replace("-", "") }}T000000Z
+END:VCARD{% endset %}{{ card | vcard -}}

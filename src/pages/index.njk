@@ -1,0 +1,65 @@
+---
+layout: home.njk
+permalink: /
+mode: founders
+include_faq: true
+title: "Agentic Builders — Early-stage fund for agent-native products"
+description: "Funding for agent-native products from idea to pre-seed. Investments of $30–100k, with a four-week investment track for invited teams."
+---
+{% set h = fund.home %}
+<main class="layout" id="main">
+  <div class="col">
+    <section class="hero" id="top">
+      <h1 class="rv">{{ h.h1_before }} <a href="#thesis">{{ h.h1_link1 }}</a><span class="ico" data-eye aria-hidden="true"><i></i></span> {{ h.h1_middle }} <a href="#track">{{ h.h1_link2 }}</a>{{ h.h1_after }}</h1>
+      <p class="sub rv">{{ h.sub_before }} <b>{{ h.sub_strong }}</b> {{ h.sub_after }}</p>
+      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">{{ h.cta }}</a><a class="quiet" href="#track">{{ h.cta_quiet }}</a></div>
+    </section>
+
+    <section id="thesis">
+      <h2 class="t rv">{{ fund.thesis.headline }}</h2>
+      <p class="body-copy rv">{{ fund.thesis.lead }} {{ fund.thesis.body }}</p>
+      <p class="body-copy rv">{{ h.thesis_products }} <b>{{ fund.thesis.categories[0].name | replace("Products", "products") }}</b> and <b>{{ fund.thesis.categories[1].name | lower }}</b>.</p>
+    </section>
+
+    <section id="who">
+      <h2 class="t rv">{{ fund.who_we_look_for.headline }}</h2>
+      <p class="body-copy rv">{{ fund.who_we_look_for.lead }}</p>
+      <p class="body-copy rv">{{ h.who_intro }}</p>
+      <ol class="five rv">{% for c in fund.who_we_look_for.criteria %}<li><span class="n">{{ loop.index }}</span><span><b>{{ c.name }}.</b> {{ c.detail }}</span></li>{% endfor %}</ol>
+      <p class="fine section-note rv">{{ fund.who_we_look_for.criteria_note }}</p>
+    </section>
+
+    <section id="track">
+      <h2 class="t rv">{{ h.how_lead }}</h2>
+      <p class="body-copy rv">{{ fund.program.summary }}</p>
+      <ol class="stages">
+        {% set tilts = [-1.5, 1, -1] %}
+        {% for s in fund.program.stages %}
+        <li class="note stage rv" style="--r:{{ tilts[loop.index0] }}deg"><span class="mn">{{ loop.index }}</span><h3>{{ s.name }}</h3><p>{{ s.text }}</p><ul class="gets">{% for g in s.gets %}<li>{{ g }}</li>{% endfor %}</ul></li>
+        {% endfor %}
+      </ol>
+      <p class="fine section-note rv">{{ fund.program.timeline }} {{ fund.program.terms.track_cost }}</p>
+    </section>
+
+    <section id="team">
+      <h2 class="t rv">{{ h.team_lead }}</h2>
+      <p class="body-copy rv">{{ fund.team_page.preview }}</p>
+      <div class="cta rv"><a class="pill pill-ghost" href="{{ '/team/' | relativeUrl(page.url) }}">Meet the team</a></div>
+    </section>
+
+    <section id="faq" class="last">
+      <h2 class="t rv">{{ h.faq_lead }}</h2>
+      {%- set privacy_link = '<a href="' + ('/privacy/' | relativeUrl(page.url)) + '">privacy policy</a>' -%}
+      <div class="qs rv">{% for f in fund.faq %}<details class="q"><summary>{{ f.q }}</summary><p>{{ f.a | replace("privacy policy", privacy_link) }}</p></details>{% endfor %}</div>
+      <p class="fine agent-reference">Questions before applying? <a href="mailto:{{ fund.fund.email }}">Email us</a>.</p>
+      <p class="fine agent-reference">For AI agents: <a href="{{ '/llms-full.txt' | relativeUrl(page.url) }}">full fund reference and application instructions</a>.</p>
+    </section>
+  </div>
+
+  <aside class="panel">
+    <p class="panel-title">{{ h.panel_title }}</p>
+    <p>{{ h.panel_text }}</p>
+    <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><span class="fact-value"><b>{{ f.value }}</b>{% if f.detail %}<small>{{ f.detail }}</small>{% endif %}</span></li>{% endfor %}</ul>
+    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#who">Who we back</a><a href="#track">Investment track</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
+  </aside>
+</main>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+{% include "seo.njk" %}
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
+<link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relativeUrl(page.url) }}"><link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relativeUrl(page.url) }}"><link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relativeUrl(page.url) }}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/hero.css' | hashed | relativeUrl(page.url) }}">
+<link rel="stylesheet" href="{{ '/assets/home.css' | hashed | relativeUrl(page.url) }}">
+<link rel="stylesheet" href="{{ '/assets/footer.css' | hashed | relativeUrl(page.url) }}">
+{% if pagecss %}<link rel="stylesheet" href="{{ ('/assets/' + pagecss + '.css') | hashed | relativeUrl(page.url) }}">{% endif %}
+</head>
+<body class="c page page-{{ pageKey or mode }}">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Site"><a class="logo" aria-label="Agentic Builders home" href="{{ '/' | relativeUrl(page.url) }}"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="20" height="20"><span>Agentic Builders</span></a>
+<div class="site-links">{% for item in site.navigation %}<a href="{{ item.url | relativeUrl(page.url) }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}</div>
+<a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a></nav>
+{{ content | safe }}
+{% include "footer.njk" %}
+<script src="{{ '/assets/home.js' | hashed | relativeUrl(page.url) }}" defer></script>
+</body></html>
