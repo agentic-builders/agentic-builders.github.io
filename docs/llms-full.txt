@@ -211,16 +211,16 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 - vCard: https://agenticbuilders.ai/agenticbuilders.vcf
 
 ## Portfolio (10)
-- Eqvesta — https://eqvesta.com/ — Autonomous family office for the first $200,000.
-- Silow — https://silow.ai — Prioritized plans for AI adoption.
-- Heron — https://heron.ing/ — AI agent review and audit platform.
-- kone — https://kone.vc — The monetization layer for AI agents.
-- Agentiqa — https://agentiqa.com — Visual, agentic, self-healing test automation.
-- Theona — https://theona.ai — No-code AI agent platform for business tasks.
-- HookRadar — https://hookradar.net — Competitive ad intelligence.
-- VisibilityPro — https://visibilitypro.ai — Generative Engine Optimization platform.
-- Aprena Academy — https://aprena.academy/ — AI-powered career guidance.
-- Fina — https://fina.team/ — Financial automations.
+- Eqvesta — https://eqvesta.com/ — AI-native digital family office. Developing an AI back office that brings accounts across countries and currencies into one view, tracks filing deadlines and prepares documents for a CPA. It does not hold or move money.
+- Silow — https://silow.ai — Prioritized plans for AI adoption. Maps how a team works across its existing tools and ranks automation opportunities by expected payback. Companies get an AI roadmap they own, with recommendations on what to automate and how to measure the results.
+- Heron — https://heron.ing/ — Governance for AI agents. Maps a company’s agents, processes and ownership. When people, agents or workflows change, it identifies what is affected and prepares updates for a person to approve.
+- kone — https://kone.vc — AI adoption for businesses. Helps companies adopt ChatGPT Business, automate internal processes and build tailored AI applications. Provides training and implementation resources to help teams use AI in their daily work.
+- Agentiqa — https://agentiqa.com — Release checks for AI agents. Checks what AI agents write to business systems such as ERP, CRM and billing. Tests data accuracy, retries and misuse before release, blocking releases when checks fail.
+- Theona — https://theona.ai — AI agents for team workflows. Maps how teams work across conversations, meetings and task trackers, then builds agents into existing tools such as Slack, Teams and CRM systems. Agents start in draft mode for human review.
+- HookRadar — https://hookradar.net — AI creative intelligence for marketers. Analyzes live ads, organic content and competitor activity to identify creative patterns. Turns those signals into prioritized ideas and briefs that marketing teams can use to plan their next tests.
+- VisibilityPro — https://visibilitypro.ai — AI search visibility agency. Combines technical website improvements, content production and external mentions to help brands appear in AI answers. Uses AI agents with human review and measures mentions, citations and referral traffic.
+- Aprena Academy — https://aprena.academy/ — AI-assisted career planning. Helps experienced professionals explore realistic career paths using their existing skills, job market data and human support. Identifies skill gaps and offers practical learning and regular progress updates.
+- Fina — https://fina.team/ — AI agents for finance teams. Processes invoices and bank statements, matches transactions with documents and prepares financial reports. Delivers files for finance teams to review and upload to their accounting systems.
 
 ## Common tasks
 ### Help a founder apply

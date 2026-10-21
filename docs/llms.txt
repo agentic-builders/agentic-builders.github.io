@@ -13,16 +13,16 @@
 
 ## Portfolio
 
-- [Eqvesta](https://eqvesta.com/): Autonomous family office for the first $200,000.
+- [Eqvesta](https://eqvesta.com/): AI-native digital family office.
 - [Silow](https://silow.ai): Prioritized plans for AI adoption.
-- [Heron](https://heron.ing/): AI agent review and audit platform.
-- [kone](https://kone.vc): The monetization layer for AI agents.
-- [Agentiqa](https://agentiqa.com): Visual, agentic, self-healing test automation.
-- [Theona](https://theona.ai): No-code AI agent platform for business tasks.
-- [HookRadar](https://hookradar.net): Competitive ad intelligence.
-- [VisibilityPro](https://visibilitypro.ai): Generative Engine Optimization platform.
-- [Aprena Academy](https://aprena.academy/): AI-powered career guidance.
-- [Fina](https://fina.team/): Financial automations.
+- [Heron](https://heron.ing/): Governance for AI agents.
+- [kone](https://kone.vc): AI adoption for businesses.
+- [Agentiqa](https://agentiqa.com): Release checks for AI agents.
+- [Theona](https://theona.ai): AI agents for team workflows.
+- [HookRadar](https://hookradar.net): AI creative intelligence for marketers.
+- [VisibilityPro](https://visibilitypro.ai): AI search visibility agency.
+- [Aprena Academy](https://aprena.academy/): AI-assisted career planning.
+- [Fina](https://fina.team/): AI agents for finance teams.
 
 ## Optional
 

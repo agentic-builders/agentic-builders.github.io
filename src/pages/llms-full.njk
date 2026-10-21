@@ -64,7 +64,7 @@ Portfolio: {{ fund.fund.url }}/portfolio/
 - vCard: {{ fund.fund.url }}/agenticbuilders.vcf
 
 ## Portfolio ({{ fund.portfolio.companies | length }})
-{% for c in fund.portfolio.companies %}- {{ c.name }} — {{ c.url }} — {{ c.for_agents }}
+{% for c in fund.portfolio.companies %}- {{ c.name }} — {{ c.url }} — {{ c.for_agents }} {{ c.description }}
 {% endfor %}
 ## Common tasks
 {% for t in fund.agents.tasks %}### {{ t.name }}

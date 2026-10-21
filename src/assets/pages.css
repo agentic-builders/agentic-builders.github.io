@@ -4,6 +4,9 @@
 .inv-hero h1{max-width:24ch}
 .lead2{font:400 17px/1.55 'Inter',system-ui,sans-serif;color:#4B5563;max-width:60ch;margin-top:16px}
 .inv .cta{margin-top:28px}.inv .fine{margin-top:16px}
+.plist-detailed a{row-gap:8px;align-items:start;padding:22px 0}
+.plist-detailed .portfolio-summary{font-weight:500;color:#4B5563}
+.plist-detailed .portfolio-description{grid-column:2/-1;font:400 14px/1.6 'Inter',system-ui,sans-serif;color:#6B7280}
 .team h2{font:700 20px/1.2 'Urbanist',system-ui,sans-serif;color:#111827}
 .subscribe input[type=email]:focus{outline:2px solid #FC4C03;outline-offset:2px;border-color:transparent}
 @media(max-width:600px){.inv{padding:100px 20px 32px}}

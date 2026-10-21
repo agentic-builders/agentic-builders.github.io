@@ -41,7 +41,7 @@ You can also open `docs/index.html` directly in a browser. Page links and assets
 - **Scripts**: `src/assets/home.js`. Every animation is gated on the `js` class on `<html>`; the page is complete without scripts.
 - **Static assets**: `src/static/` contains brand assets, portfolio logos, icons, `CNAME`, and `.nojekyll`, copied to the website root.
 - **Team photos**: local copies of LinkedIn portraits live in `src/static/team/`. Update the `photo` path beside each person’s LinkedIn URL in `src/content/fund.json`; portraits link to those profiles and do not load images from LinkedIn at runtime.
-- **Portfolio**: add a logo to `src/static/portfolio-logos/` (max 64px) and an entry in `src/content/fund.json → portfolio.companies`. Public logo URLs remain `/portfolio-logos/...`.
+- **Portfolio**: add a logo to `src/static/portfolio-logos/` (max 64px) and an entry in `src/content/fund.json → portfolio.companies`. Keep `for_humans` and `for_agents` short; `description` supplies the longer copy on Portfolio and in `llms-full.txt`. Check the company's current website when updating its positioning. Public logo URLs remain `/portfolio-logos/...`.
 - **Build tooling**: `src/package.json`, `src/package-lock.json`, `src/eleventy.config.js`, and `src/scripts/`.
 
 ## Deploy
