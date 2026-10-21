@@ -21,7 +21,7 @@ description: "Funding for agent-native products from idea to pre-seed. First che
       <p class="body-copy rv">{{ h.thesis_products }} <b>{{ fund.thesis.categories[0].name | replace("Products", "products") }}</b> and <b>{{ fund.thesis.categories[1].name | lower }}</b>.</p>
       <p class="body-copy rv" id="who">{{ fund.who_we_look_for.lead }} {{ h.who_intro }}</p>
       <ol class="five rv">{% for c in fund.who_we_look_for.criteria %}<li><span class="n">{{ loop.index }}</span><span><b>{{ c.name }}.</b> {{ c.detail }}</span></li>{% endfor %}</ol>
-      <p class="fine criteria-note rv">{{ fund.who_we_look_for.criteria_note }}</p>
+      <p class="fine section-note rv">{{ fund.who_we_look_for.criteria_note }}</p>
     </section>
 
     <section id="track">
@@ -33,7 +33,7 @@ description: "Funding for agent-native products from idea to pre-seed. First che
         <li class="note stage rv" style="--r:{{ tilts[loop.index0] }}deg"><span class="mn">{{ loop.index }}</span><h3>{{ s.name }}</h3><p>{{ s.text }}</p><ul class="gets">{% for g in s.gets %}<li>{{ g }}</li>{% endfor %}</ul></li>
         {% endfor %}
       </ol>
-      <p class="fine rv">{{ fund.program.timeline }} {{ fund.program.terms.track_cost }}</p>
+      <p class="fine section-note rv">{{ fund.program.timeline }} {{ fund.program.terms.track_cost }}</p>
     </section>
 
     <section id="portfolio">
