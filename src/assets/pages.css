@@ -1,8 +1,7 @@
 /* Shared layout for portfolio, team and text pages. */
 .inv{max-width:900px;margin:0 auto;padding:118px 32px 40px}
 .inv section{padding:0 0 10vh;scroll-margin-top:100px}
-.inv-hero h1{max-width:24ch}
-.lead2{font:400 17px/1.55 'Inter',system-ui,sans-serif;color:#4B5563;max-width:60ch;margin-top:16px}
+.lead2{font:400 17px/1.55 'Inter',system-ui,sans-serif;color:#4B5563;margin-top:16px}
 .inv .cta{margin-top:28px}.inv .fine{margin-top:16px}
 .plist-detailed a{row-gap:8px;align-items:start;padding:22px 0}
 .plist-detailed .portfolio-summary{font-weight:500;color:#4B5563}
