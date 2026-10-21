@@ -1,6 +1,6 @@
 ﻿# Agentic Builders — full reference for AI agents
 
-> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-20. Source: https://agenticbuilders.ai/
+> Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-21. Source: https://agenticbuilders.ai/
 
 ## About
 - Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week investment track with weekly progress updates, software credits and discounts, and feedback on their pitch decks. At the end of the investment track, we decide whether to invest. After investing, we help founders raise their next round.

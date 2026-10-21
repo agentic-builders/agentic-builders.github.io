@@ -17,7 +17,7 @@ description: "Meet the people behind Agentic Builders and learn how our AI agent
         <h2>{{ person.name }}</h2>
         <span class="role">{{ person.role }}</span>
         <p>{{ person.line }}</p>
-        {%- if not person.agent %}<a class="quiet" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn <span class="sr-only">— {{ person.name }}</span>→</a>{% endif %}
+        <a class="team-linkedin" href="{{ fund.fund.linkedin if person.agent else person.linkedin }}" target="_blank" rel="noopener" aria-label="{{ fund.fund.name if person.agent else person.name }} on LinkedIn" title="{{ fund.fund.name if person.agent else person.name }} on LinkedIn">{% include "linkedin-icon.njk" %}</a>
       </li>
       {%- endfor -%}
     </ul>
