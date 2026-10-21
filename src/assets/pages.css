@@ -11,6 +11,5 @@
 .team .portrait{display:block;width:88px;height:88px;margin-bottom:16px;border-radius:50%;overflow:hidden}
 .team .portrait img{display:block;width:100%;height:100%;object-fit:cover}
 
-.team li.agent h2{color:#fff}
-.team .agent-avatar{display:grid;place-items:center;background:#FC4C03}
+.team .agent-avatar{display:grid;place-items:center;background:#FFF1EA}
 .team .agent-avatar img{width:36px;height:36px;object-fit:contain}

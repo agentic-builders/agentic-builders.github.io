@@ -335,8 +335,7 @@
       "name": "Abi, the fund's AI agent",
       "role": "Team member",
       "line": "Reviews applications and submitted pitch decks, manages weekly progress updates, drafts investment summaries and tracks the progress of companies we back. The fund’s investment partners make the investment decisions.",
-      "agent": true,
-      "cta": "Apply"
+      "agent": true
     }
   ],
   "agents": {
