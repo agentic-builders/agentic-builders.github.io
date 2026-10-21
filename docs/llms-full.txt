@@ -3,7 +3,7 @@
 > Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-20. Source: https://agenticbuilders.ai/
 
 ## About
-- Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a four-week track with weekly check-ins, tool credits and deck feedback. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.
+- Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week track with weekly check-ins, tool credits and deck feedback. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.
 - Stage: Idea to pre-seed. Founded 2025.
 - Email: hey@agenticbuilders.ai. Website: https://agenticbuilders.ai. LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/
 
@@ -14,9 +14,9 @@ As agents do more of the work, they need software built for them. These products
 We back AI-native teams: founders who use AI across product development and company operations and build lean teams around AI from day one.
 
 ## Program and terms
-We review every application. If invited, you spend four weeks building your business with our support. At the end of the track, we decide whether to invest.
+We review every application. If invited, join a fully online four-week track. Keep building your business wherever you're based, with our support. At the end of the track, we decide whether to invest.
 1. **Apply** (Application review): One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any deck you submit. The partners review the application and reply to every applicant. Application review has no fixed turnaround time.
-2. **Four weeks of your work** (If invited): If invited, you spend four weeks building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi reads your deck and gives back the questions investors will ask.
+2. **Four weeks of your work** (If invited): If invited, you join a fully online four-week track, building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi reads your deck and gives back the questions investors will ask.
 3. **Decision** (End of week four): At the end of the track, the partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
 4. **Help with your next round** (After the check): We help you raise your next round through investor introductions and access to a founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, credits and perks.
 
@@ -260,7 +260,7 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 
 **What do I need to apply?** The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a deck or website if you have one. No call is needed to start.
 
-**What happens during the four weeks?** You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get tool credits, deck feedback from Abi, and one key metric we track together. You remain responsible for building your product.
+**What happens during the four weeks?** The track is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get tool credits, deck feedback from Abi, and one key metric we track together. You remain responsible for building your product.
 
 **What happens after the four weeks?** The partners decide whether to invest and explain their decision. If we invest, we make an initial investment of $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back.
 

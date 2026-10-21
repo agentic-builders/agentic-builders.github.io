@@ -7,7 +7,7 @@
     "url": "https://agenticbuilders.ai",
     "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
-    "description": "Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a four-week track with weekly check-ins, tool credits and deck feedback. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.",
+    "description": "Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week track with weekly check-ins, tool credits and deck feedback. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.",
     "founded": "2025",
     "stage": "Idea to pre-seed",
     "email": "hey@agenticbuilders.ai",
@@ -81,7 +81,7 @@
   "program": {
     "name": "Four-week track",
     "hook": "A four-week track for invited teams, with an investment decision at its end.",
-    "summary": "We review every application. If invited, you spend four weeks building your business with our support. At the end of the track, we decide whether to invest.",
+    "summary": "We review every application. If invited, join a fully online four-week track. Keep building your business wherever you're based, with our support. At the end of the track, we decide whether to invest.",
     "steps": [
       {
         "name": "Apply",
@@ -91,7 +91,7 @@
       {
         "name": "Four weeks of your work",
         "duration": "If invited",
-        "description": "If invited, you spend four weeks building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi reads your deck and gives back the questions investors will ask."
+        "description": "If invited, you join a fully online four-week track, building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi reads your deck and gives back the questions investors will ask."
       },
       {
         "name": "Decision",
@@ -314,7 +314,7 @@
     },
     {
       "q": "What happens during the four weeks?",
-      "a": "You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get tool credits, deck feedback from Abi, and one key metric we track together. You remain responsible for building your product."
+      "a": "The track is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get tool credits, deck feedback from Abi, and one key metric we track together. You remain responsible for building your product."
     },
     {
       "q": "What happens after the four weeks?",
@@ -559,7 +559,8 @@
     "panel_facts": [
       {
         "label": "Track",
-        "value": "4 weeks"
+        "value": "4 weeks",
+        "detail": "Fully online"
       },
       {
         "label": "First check",

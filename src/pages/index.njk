@@ -60,7 +60,7 @@ description: "Funding for agent-native products from idea to pre-seed. First che
   <aside class="panel">
     <p class="panel-title">{{ h.panel_title }}</p>
     <p>{{ h.panel_text }}</p>
-    <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><b>{{ f.value }}</b></li>{% endfor %}</ul>
+    <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><span class="fact-value"><b>{{ f.value }}</b>{% if f.detail %}<small>{{ f.detail }}</small>{% endif %}</span></li>{% endfor %}</ul>
     <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week track</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
   </aside>
 </main>
