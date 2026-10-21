@@ -4,8 +4,12 @@
   "api_enabled": false,
   "navigation": [
     {
-      "label": "How it works",
-      "url": "/#track"
+      "label": "For founders",
+      "url": "/"
+    },
+    {
+      "label": "For agents",
+      "url": "/llms-full.txt"
     },
     {
       "label": "Portfolio",

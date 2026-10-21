@@ -12,7 +12,7 @@ https://agenticbuilders.ai. Static fund website with a founder-focused homepage,
 | `/investors/` | Legacy entry linking to Portfolio, excluded from indexing; no automatic redirect |
 | `/llms-full.txt` | Full reference for AI agents |
 
-Main navigation: How it works (homepage anchor), Portfolio, Team, Apply. AI reference, updates and utility links live in the footer. Other pages: `/brand/`, `/privacy/`, `/legal/`, `404.html`.
+Main navigation: For founders, For agents (direct full-text reference), Portfolio, Team, Apply. The homepage keeps its How it works links; AI reference, updates and utility links are also in the footer. Other pages: `/brand/`, `/privacy/`, `/legal/`, `404.html`.
 Generated files: `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders.vcf`, `/sitemap.xml`, JSON-LD in pages using the shared layout.
 
 AI discovery uses a concise `llms.txt` index linked to the full plain-text reference in `llms-full.txt`. There is no separate agents HTML page or duplicate Markdown download. HTML pages advertise the index with `rel="describedby"`, following the [llms.txt proposal](https://llmstxt.org/). These files help agents consume the content; [Google's AI Search guidance](https://developers.google.com/search/docs/appearance/ai-features) does not require special AI text files. Both text files include a UTF-8 byte-order mark so browsers render punctuation correctly even without a charset response header.
