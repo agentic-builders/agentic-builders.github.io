@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { vcardText, serializeVcard } from "./scripts/vcard.mjs";
 
 export default function (eleventyConfig) {
   // Non-HTML outputs (llms*.txt, vcf) must not be HTML-escaped; HTML templates escape explicitly where needed.
@@ -25,7 +26,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("urlencode", (v) => encodeURIComponent(v));
   eleventyConfig.addFilter("isTodo", (v) => typeof v === "string" && /\bTODO\b/.test(v));
   eleventyConfig.addFilter("escape", (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;"));
-  eleventyConfig.addFilter("crlf", (v) => String(v).replace(/\r?\n/g, "\r\n"));
+  eleventyConfig.addFilter("vcardText", vcardText);
+  eleventyConfig.addFilter("vcard", serializeVcard);
   // Explicit index.html links also work when opening the generated site from disk.
   eleventyConfig.addFilter("relativeUrl", (url, pageUrl) => {
     // A hosted 404 may be served at any URL depth, so it needs root-relative URLs.
