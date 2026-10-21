@@ -558,12 +558,12 @@
     "panel_text": "Products agents use and tools for building agent products. From idea to pre-seed, for founders who build with people and agents.",
     "panel_facts": [
       {
-        "label": "First check",
-        "value": "$30–100k"
-      },
-      {
         "label": "Track",
         "value": "4 weeks"
+      },
+      {
+        "label": "First check",
+        "value": "$30–100k"
       }
     ],
     "h1_before": "We fund",
