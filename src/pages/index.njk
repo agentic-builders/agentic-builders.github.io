@@ -49,14 +49,10 @@ description: "Funding for agent-native products from idea to pre-seed. First che
       <div class="cta rv"><a class="pill pill-ghost" href="{{ '/team/' | relativeUrl(page.url) }}">Meet the team</a></div>
     </section>
 
-    <section id="faq">
+    <section id="faq" class="last">
       <h2 class="t rv">{{ h.faq_lead }}</h2>
       <div class="qs rv">{% for f in fund.faq %}<details class="q"><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div>
-    </section>
-
-    <section id="apply" class="last">
-      <h2 class="t rv">{{ h.apply_lead }}</h2>
-      <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">{{ h.cta }}</a><a class="quiet" href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></div>
+      <p class="fine agent-reference">Questions before applying? <a href="mailto:{{ fund.fund.email }}">Email us</a>.</p>
       <p class="fine agent-reference">For AI agents: <a href="{{ '/llms-full.txt' | relativeUrl(page.url) }}">full fund reference and application instructions</a>.</p>
     </section>
   </div>
@@ -66,6 +62,5 @@ description: "Funding for agent-native products from idea to pre-seed. First che
     <p>{{ h.panel_text }}</p>
     <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><b>{{ f.value }}</b></li>{% endfor %}</ul>
     <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#track">Four-week track</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
-    <div class="btns"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a><a class="pill pill-ghost" href="#track">How it works</a></div>
   </aside>
 </main>

@@ -18,7 +18,6 @@ body.c{background:#fff;color:#1F2937}
 .panel .facts b{font:800 20px/1 'Urbanist';letter-spacing:-.02em;color:#1F2937}
 .toc{display:grid;margin-top:18px;padding-top:14px;border-top:1px solid rgba(31,41,55,.08)}
 .toc a{font:500 13.5px/2 'Inter';color:#6B7280;text-decoration:none}.toc a:hover{color:#FC4C03}
-.panel .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 .col section{padding:0 0 12vh;scroll-margin-top:90px}
 .col .hero{padding-top:14px}
 .c h1{font:600 clamp(32px,4.4vw,56px)/1.1 'Urbanist';letter-spacing:-.03em;color:#111827;text-wrap:pretty}
