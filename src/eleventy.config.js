@@ -6,7 +6,7 @@ export default function (eleventyConfig) {
   // Non-HTML outputs (llms*.txt, vcf) must not be HTML-escaped; HTML templates escape explicitly where needed.
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: false });
 
-  // Content: one JSON file is the source of truth for all modes and machine-readable files.
+  // Content: one JSON file is the source of truth for all pages and machine-readable files.
   eleventyConfig.addGlobalData("fund", () => JSON.parse(fs.readFileSync("content/fund.json", "utf8")));
   eleventyConfig.addGlobalData("site", () => JSON.parse(fs.readFileSync("content/site.json", "utf8")));
   eleventyConfig.addWatchTarget("content/");

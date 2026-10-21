@@ -6,8 +6,9 @@
 
 - [For founders](https://agenticbuilders.ai/): program, thesis, selection, team, portfolio, FAQ
 - [Full reference for AI agents](https://agenticbuilders.ai/llms-full.txt): fund details, program terms, application instructions and field schema
-- [For investors](https://agenticbuilders.ai/investors/): approach, team, selected portfolio, newsletter
-- [Privacy policy](https://agenticbuilders.ai/privacy/): how application and contact data is handled
+- [Portfolio](https://agenticbuilders.ai/portfolio/): companies, introductions for angels and VCs, portfolio updates
+- [Team](https://agenticbuilders.ai/team/): people, responsibilities and how we use AI
+- [Privacy policy](https://agenticbuilders.ai/privacy/): how application and contact data are handled
 - [Legal notice](https://agenticbuilders.ai/legal/): operator, program terms and disclaimers
 
 ## Portfolio

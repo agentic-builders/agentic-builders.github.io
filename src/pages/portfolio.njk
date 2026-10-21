@@ -1,0 +1,28 @@
+---
+layout: home.njk
+permalink: /portfolio/
+pageKey: portfolio
+pagecss: pages
+title: "Portfolio — Agentic Builders"
+description: "Meet the startups backed by Agentic Builders. Angels and VCs can contact us about portfolio companies and request introductions."
+---
+<main class="inv" id="main">
+  <section class="inv-hero" id="companies">
+    <h1>Our portfolio</h1>
+    <p class="lead2">{{ fund.portfolio.intro }}</p>
+    <div class="cta"><a class="pill pill-ghost" href="#introductions">For angels &amp; VCs</a></div>
+    {%- set companies = fund.portfolio.companies -%}
+    {% include "portfolio-list.njk" %}
+  </section>
+  <section id="introductions">
+    <h2 class="t rv">{{ fund.portfolio.investors.heading }}</h2>
+    <p class="lead2 rv">{{ fund.portfolio.investors.text }}</p>
+    <p class="fine rv">{{ fund.portfolio.investors.note }}</p>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Portfolio%20introduction">{{ fund.portfolio.investors.cta }}</a></div>
+  </section>
+  <section id="updates" class="last">
+    <h2 class="t rv">{{ fund.portfolio.newsletter.title }}</h2>
+    <p class="lead2 rv">{{ fund.portfolio.newsletter.text }}</p>
+    {% include "newsletter.njk" %}
+  </section>
+</main>

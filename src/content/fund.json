@@ -1,5 +1,5 @@
 {
-  "_readme": "Shared facts and copy for the founder and investor pages and the full reference for AI agents. Keep it free of internal notes: the repository may be public.",
+  "_readme": "Shared facts and copy for the website pages and the full reference for AI agents. Keep it free of internal notes: the repository may be public.",
   "updated": "2026-10-20",
   "fund": {
     "name": "Agentic Builders",
@@ -7,7 +7,7 @@
     "url": "https://agenticbuilders.ai",
     "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
-    "description": "Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. The fund reads every application and replies to each one; teams that fit get a four-week track with weekly check-ins and tool credits, and at the end of it a decision on a first check. If there is progress, the fund invests and takes the team to its next round.",
+    "description": "Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a four-week track with weekly check-ins, tool credits and deck feedback. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.",
     "founded": "2025",
     "stage": "Idea to pre-seed",
     "email": "hey@agenticbuilders.ai",
@@ -21,12 +21,12 @@
     "legal_form": "a Delaware limited liability company"
   },
   "thesis": {
-    "headline": "The Opportunity",
+    "headline": "Software built for AI agents",
     "lead": "As agents do more of the work, they need software built for them.",
-    "body": "These products help agents find tools, use services and finish work for people and businesses. We back the founders building that layer.",
+    "body": "These products help agents find tools, use services and complete tasks for people and businesses. We back the founders building these products.",
     "categories": [
       {
-        "name": "Products agents use",
+        "name": "Products AI agents use",
         "description": "Products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks.",
         "examples": [
           "research",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "name": "Tools for agent products",
+        "name": "Tools for building agent products",
         "description": "Tools to build, test, secure, launch, track and sell agent products.",
         "examples": [
           "build",
@@ -55,20 +55,20 @@
   },
   "who_we_look_for": {
     "headline": "Who we look for",
-    "lead": "We look for founders who are moving from vibe coding to building a company of people and agents and can run both.",
-    "criteria_note": "None of these is a formal requirement; together they tell us how far a team can go.",
+    "lead": "We look for founders who can turn early experiments into a business, using AI across product development and operations.",
+    "criteria_note": "None of these is a formal requirement; together, they help us assess a team's potential.",
     "criteria": [
       {
         "name": "Experience",
-        "detail": "You have built something before: a startup, a product, a team. You know what the path looks like."
+        "detail": "You have built a startup, product or team before, and know what it takes."
       },
       {
         "name": "Sales",
-        "detail": "Someone on the team talks to customers and can close a pilot or a deal."
+        "detail": "Someone on the team talks to customers and can secure a pilot or close a sale."
       },
       {
         "name": "Iteration speed",
-        "detail": "You can run many iterations in a short time: ship, test, learn, ship again."
+        "detail": "You ship, test, learn and improve quickly."
       }
     ],
     "strengtheners": [
@@ -80,35 +80,35 @@
   },
   "program": {
     "name": "Four-week track",
-    "hook": "Four weeks of your work. If there is progress, we invest and take you to the next round.",
-    "summary": "We read every application. Teams that fit get a four-week track: their own work with our support along the way. If there is progress, we invest and take you to the next round.",
+    "hook": "A four-week track for invited teams, with an investment decision at its end.",
+    "summary": "We review every application. If invited, you spend four weeks building your business with our support. At the end of the track, we decide whether to invest.",
     "steps": [
       {
         "name": "Apply",
-        "duration": "Day 0",
-        "description": "One form, about 15 minutes, no call needed to start. Abi, our AI agent, reads the application and the deck; the partners review it and reply to every applicant."
+        "duration": "Application review",
+        "description": "One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any deck you submit. The partners review the application and reply to every applicant. Application review has no fixed turnaround time."
       },
       {
         "name": "Four weeks of your work",
         "duration": "If invited",
-        "description": "Teams that fit are invited to a four-week track. You build, sell and ship; once a week a short check-in. Along the way, you get tool credits and one key number we follow together. Abi reads your deck and gives back the questions investors will ask."
+        "description": "If invited, you spend four weeks building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi reads your deck and gives back the questions investors will ask."
       },
       {
         "name": "Decision",
         "duration": "End of week four",
-        "description": "If there is progress, we invest: a first check of $30–100k on a standard post-money SAFE. If not now, we tell you why and when to come back."
+        "description": "At the end of the track, the partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back."
       },
       {
-        "name": "To the next round",
+        "name": "Help with your next round",
         "duration": "After the check",
-        "description": "Investor database and warm introductions, founder platform: community, weekly fund meeting, 1:1s with the general partner, founder groups, credits and perks."
+        "description": "We help you raise your next round through investor introductions and access to a founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, credits and perks."
       }
     ],
     "terms": {
       "first_check_usd": "$30–100k",
       "instrument": "Standard post-money SAFE (a simple agreement for future equity, the standard early-stage document); the valuation is agreed individually",
-      "follow_on": "No follow-on checks from the fund; our job is to get you to the next round from other investors",
-      "track_cost": "Free. No equity, no exclusivity, no obligation."
+      "follow_on": "We do not make follow-on investments. After our initial investment, we help you connect with other investors for your next round",
+      "track_cost": "Participation is free and requires no equity or exclusivity. Any investment is agreed separately."
     },
     "toolkit": {
       "note": "Tool credits and discounts opened for the four weeks of the track.",
@@ -123,35 +123,35 @@
         "Issue tracking (Linear)"
       ]
     },
-    "timeline": "Every application gets a reply, with no deadline for application review. The four-week track starts only after an invitation. In the track, the only thing we ask for is a weekly check-in.",
+    "timeline": "Every application gets a reply. Application review has no fixed turnaround time; the four-week track begins only after an invitation. During the track, we ask for a short weekly check-in.",
     "stages": [
       {
         "name": "Four weeks of your work",
         "kicker": "Step 1",
-        "text": "We read every application and reply to each one. If your team fits, we invite you to a four-week track. You build, sell and ship; we watch how you work. Once a week, a short check-in: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday.",
+        "text": "If invited, you keep building, selling and shipping with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes.",
         "gets": [
           "Tool credits: cloud, AI coding and app building, LLM tracing, web data, prospecting, docs",
           "Abi reads your deck and gives back the questions investors will ask",
-          "One key number we follow together"
+          "One key metric we track together"
         ]
       },
       {
-        "name": "If there is progress, we invest",
+        "name": "An investment decision",
         "kicker": "Step 2",
-        "text": "At the end of the four weeks the partners decide on a first check and tell you why, either way. If not now, we say when it makes sense to come back.",
+        "text": "At the end of the four weeks, the partners decide whether to invest and explain their decision. If we do not invest, we explain when it makes sense to come back.",
         "gets": [
           "First check of $30–100k on a standard post-money SAFE",
           "Valuation agreed with you, not a fixed share",
-          "No fees, no exclusivity for the four weeks"
+          "Participation in the track is free, with no equity requirement or exclusivity"
         ]
       },
       {
-        "name": "Then we get you to the round",
+        "name": "Help with your next round",
         "kicker": "Step 3",
-        "text": "We do not do follow-on checks. Our job is to make sure the next money comes from other investors, and we work on that with you.",
+        "text": "After investing, we help you raise your next round. We do not make follow-on investments; we help you connect with other investors.",
         "gets": [
-          "Curated investor database and warm introductions to the investors who do the next round",
-          "Founder platform: community, weekly fund meeting, 1:1s with the general partner, founder groups on AI engineering, product and sales, a wider set of credits and perks"
+          "Curated investor database and warm introductions to investors who fund your next stage",
+          "Founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, and additional credits and perks"
         ]
       }
     ]
@@ -159,15 +159,15 @@
   "what_you_get": [
     {
       "name": "During the four weeks",
-      "description": "Tool credits, Abi's read of your deck, one key number we follow together."
+      "description": "Tool credits, deck feedback from Abi, and one key metric we track together."
     },
     {
-      "name": "If there is progress",
+      "name": "If we invest",
       "description": "A first check of $30–100k on a standard post-money SAFE, valuation agreed with you."
     },
     {
       "name": "After the check",
-      "description": "Investor introductions and the founder platform: community, 1:1s with the general partner, founder groups, credits and perks."
+      "description": "We help you raise your next round through investor introductions and access to a founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, credits and perks."
     }
   ],
   "portfolio": {
@@ -270,12 +270,31 @@
         "for_humans": "Exam preparation with interactive lessons and AI tutoring.",
         "for_agents": "Exam preparation with interactive lessons and AI tutoring."
       }
-    ]
+    ],
+    "featured": [
+      "Silow",
+      "Eqvesta",
+      "Agentiqa",
+      "Heron",
+      "kone",
+      "VisibilityPro"
+    ],
+    "intro": "Meet the companies we back: products AI agents use and tools for building agent products.",
+    "investors": {
+      "heading": "For angels & VCs",
+      "text": "Interested in investing directly in startups? Tell us your investment focus, preferred stage and typical check size. We can discuss relevant portfolio companies and arrange introductions with the founders’ agreement.",
+      "note": "A portfolio listing does not mean a company is currently fundraising.",
+      "cta": "Request an introduction"
+    },
+    "newsletter": {
+      "title": "Portfolio updates",
+      "text": "Occasional updates on portfolio progress and teams preparing for their next round."
+    }
   },
   "faq": [
     {
       "q": "How long does it take from application to a decision?",
-      "a": "There is no deadline for reviewing an application. If we invite you to the track, it runs four weeks, and the decision on a first check comes at its end."
+      "a": "Application review has no fixed turnaround time. If invited, you enter a four-week track, with an investment decision at its end."
     },
     {
       "q": "How much do you invest?",
@@ -287,7 +306,7 @@
     },
     {
       "q": "Who can apply?",
-      "a": "Teams building products agents use or tools for building agent products, at idea to pre-seed stage, from anywhere. We pay attention to experience, someone on the team who sells, and how fast the team iterates."
+      "a": "Teams anywhere in the world building products AI agents use or tools for building agent products, from idea to pre-seed. We consider experience, sales ability and speed of execution."
     },
     {
       "q": "What do I need to apply?",
@@ -295,15 +314,19 @@
     },
     {
       "q": "What happens during the four weeks?",
-      "a": "If we invite you to the track, you work and we watch how you work. Every week you get a short set of questions: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday. Along the way you get tool credits, Abi's read of your deck and one key number we follow together. We do not teach and we do not build your product."
+      "a": "You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get tool credits, deck feedback from Abi, and one key metric we track together. You remain responsible for building your product."
     },
     {
       "q": "What happens after the four weeks?",
-      "a": "If there is progress, we invest a first check and start working on your next round: investor introductions and the founder platform. If not now, we tell you why and when it makes sense to come back."
+      "a": "The partners decide whether to invest and explain their decision. If we invest, we make an initial investment of $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back."
     },
     {
       "q": "Does the track commit me to anything?",
-      "a": "No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy."
+      "a": "Participation is free and requires no equity or exclusivity. During the track, we ask for a short weekly check-in. There is no obligation to accept an investment; any investment is agreed separately."
+    },
+    {
+      "q": "Who can access my application?",
+      "a": "Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy."
     }
   ],
   "team": [
@@ -316,80 +339,23 @@
     {
       "name": "Leo Ivanov",
       "role": "Partner, Operations",
-      "line": "Runs the fund's operating system: pipeline, legal, investor relations.",
+      "line": "Leads fund operations, including the investment pipeline, legal coordination and investor relations.",
       "linkedin": "https://www.linkedin.com/in/leonid-dmitrich/"
     },
     {
       "name": "Elizaveta Chernysheva",
       "role": "Operations and founder support",
-      "line": "Onboarding, tools and credits, mentors, contractors.",
+      "line": "Coordinates founder onboarding, tools and credits, mentors and contractors.",
       "linkedin": "https://www.linkedin.com/in/elizaveta-chernysheva-29604214b/"
     },
     {
       "name": "Abi, the fund's AI agent",
       "role": "Team member",
-      "line": "Reads every application and deck, runs the weekly check-ins, writes the memos, tracks the portfolio. Partners decide; Abi prepares.",
+      "line": "Reviews applications and submitted decks, manages weekly check-ins, drafts investment memos and tracks portfolio progress. Partners make the investment decisions.",
       "agent": true,
       "cta": "Apply"
     }
   ],
-  "investors": {
-    "hero": "We find agent-native founders at the idea stage, run them through a four-week track, and invest in the ones who are ready for their next round.",
-    "numbers": [
-      {
-        "value": "13",
-        "label": "companies in the portfolio"
-      },
-      {
-        "value": "2025",
-        "label": "fund founded"
-      },
-      {
-        "value": "$30–100k",
-        "label": "first check on a SAFE"
-      }
-    ],
-    "approach": [
-      {
-        "name": "Thesis",
-        "text": "Agent-native products: products agents use and tools for building agent products."
-      },
-      {
-        "name": "Stage",
-        "text": "Idea to pre-seed."
-      },
-      {
-        "name": "Program",
-        "text": "We read every application. Teams that fit get a four-week track with weekly check-ins and tool credits, and a decision on a first check at its end. If there is progress we invest and work on the next round with the team: investor introductions and the founder platform."
-      },
-      {
-        "name": "Selection",
-        "text": "Three things we pay attention to: experience, someone on the team who sells, and iteration speed."
-      },
-      {
-        "name": "How we run",
-        "text": "Abi, the fund's AI agent, handles intake and deck analysis, weekly check-ins, investment memos and portfolio tracking. Partners decide; Abi prepares."
-      }
-    ],
-    "featured": [
-      "Silow",
-      "Eqvesta",
-      "Agentiqa",
-      "Heron",
-      "kone",
-      "VisibilityPro"
-    ],
-    "newsletter": {
-      "title": "Newsletter",
-      "text": "What moved in the track and which teams are getting ready to raise. A short letter from the fund, a few times a year.",
-      "cta": "Subscribe",
-      "intro": "Newsletter: what moved in the track and which teams are getting ready to raise. A few letters a year."
-    },
-    "contact": {
-      "title": "Contact us",
-      "text": "Write to us about the thesis, the program or a company in the track. We answer every letter."
-    }
-  },
   "agents": {
     "intro": "This reference is for AI agents acting for a person: a founder, an investor, a journalist. The full reference is served as /llms-full.txt. Applications can be submitted through the form or through the API below.",
     "apply_instructions": {
@@ -410,7 +376,7 @@
         "Do not submit more than one application per company.",
         "Do not paste confidential data the person did not approve for sharing."
       ],
-      "after": "The fund reads every application and replies to each one: an invitation to the four-week track or a pass with the reason. In the track the person answers one short check-in a week; at the end of week four the partners decide on a first check."
+      "after": "The fund reviews every application and replies with an invitation to the four-week track or a rejection with an explanation. Application review has no fixed turnaround time. During the track, the founder submits one short check-in a week; at the end of week four, the partners decide whether to invest."
     },
     "application_fields": [
       {
@@ -548,7 +514,7 @@
           "Read /llms-full.txt and the application field schema.",
           "Collect every required field from the person; ask, do not guess.",
           "Go through the three things the fund pays attention to with the person, honestly.",
-          "Submit through the linked application form in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.",
+          "Submit through the linked application form in a browser, or through the API if it is marked available in the API section. Include a deck link that opens without signing in, or leave it out.",
           "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short check-in a week, and a decision on a first check at its end."
         ]
       },
@@ -569,9 +535,9 @@
         ]
       },
       {
-        "name": "Prepare a meeting with the fund for an investor",
+        "name": "Help a startup investor contact the fund",
         "steps": [
-          "Read /investors/ for the thesis, stage, program and selection.",
+          "Read /portfolio/ for the companies we back and how to request introductions.",
           "Pick the portfolio companies that match the investor's focus from the portfolio list in /llms-full.txt.",
           "Request a meeting by email to hey@agenticbuilders.ai with the investor's focus, stage and check size."
         ]
@@ -584,7 +550,7 @@
       "apply": "POST https://api.agenticbuilders.ai/apply with a JSON body using the field names below. Required: email, full_name, link, location, background, founder_experience (array), ai_experience. Response: {ok, application_id, next}. Keep application_id for the person. Limits: 5 requests per hour per address; one application per company.",
       "subscribe": "POST https://api.agenticbuilders.ai/subscribe with {email, name?, role? (founder | investor | other), source?}. Adds the address to the fund's newsletter list.",
       "errors": "422 = validation error with the field named in the response; 429 = too many requests; 503 = service not configured, fall back to the form.",
-      "closed_note": "The submission API at https://api.agenticbuilders.ai is being opened. Until it is announced here, submit through the form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 (for agents that drive a browser) or email hey@agenticbuilders.ai with the same fields."
+      "closed_note": "The submission API is not yet available. Submit through the application form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 or email hey@agenticbuilders.ai with the same fields."
     }
   },
   "home": {
@@ -602,18 +568,18 @@
     ],
     "h1_before": "We fund",
     "h1_link1": "agent-native products",
-    "h1_middle": "at the idea stage. Four weeks of your work, then a",
-    "h1_link2": "decision on a first check",
+    "h1_middle": "from idea to pre-seed. If invited, a four-week track and a",
+    "h1_link2": "decision on funding",
     "h1_after": ".",
     "sub_before": "First checks of",
     "sub_strong": "$30–100k",
-    "sub_after": "on a SAFE. One form. For teams that fit, four weeks with our support and a decision on a first check at the end.",
+    "sub_after": "on a SAFE (a simple agreement for future equity). Keep building your business, with our support.",
     "cta": "Apply for funding",
     "cta_quiet": "How it works",
     "thesis_products": "We back two kinds of products.",
     "thesis_cat1_tags": [
       "research",
-      "data",
+      "analyze data",
       "buy",
       "sell"
     ],
@@ -623,15 +589,21 @@
       "secure",
       "launch"
     ],
-    "who_intro": "Three things we pay attention to:",
-    "team_lead": "Who you work with.",
+    "who_intro": "Three things we look for:",
+    "team_lead": "Who you work with",
     "agents_line": "For AI agents:",
     "agents_link": "full fund reference and application instructions",
-    "portfolio_lead": "companies building for agents and with agents.",
-    "faq_lead": "Questions founders ask.",
+    "portfolio_lead": "A few companies we back",
+    "faq_lead": "Questions founders ask",
     "apply_lead": "Apply for funding. If invited, a four-week track and a decision at its end.",
-    "how_lead": "How it works.",
-    "newsletter_intro": "Newsletter: what moved in the track and which teams are getting ready to raise. A few letters a year."
+    "how_lead": "How the four-week track works",
+    "newsletter_intro": "Occasional updates on portfolio progress and teams preparing for their next round."
   },
-  "agent_name": "Abi"
+  "agent_name": "Abi",
+  "team_page": {
+    "title": "Meet the team",
+    "intro": "The people who make investment decisions and support founders throughout the track and beyond.",
+    "preview": "Our investment and operations team supports founders from application through their next round. Partners make the investment decisions; Abi, our AI agent, helps prepare.",
+    "ai_heading": "How we use AI"
+  }
 }

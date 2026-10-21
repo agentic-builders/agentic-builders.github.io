@@ -73,10 +73,10 @@
     f.addEventListener('submit', function (e) {
         e.preventDefault();
         var email = f.elements.email.value.trim(); if (!email) return;
-        btn.disabled = true; st.textContent = 'Sending…';
-        fetch(f.action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, role: document.body.classList.contains('mode-investors') ? 'investor' : 'founder', source: 'site:' + (document.body.className.match(/mode-(\w+)/) || [,'home'])[1], website: f.elements.website.value }) })
+        btn.disabled = true; st.textContent = 'Subscribing…';
+        fetch(f.action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, role: document.body.classList.contains('page-portfolio') ? 'investor' : 'founder', source: 'site:' + (document.body.className.match(/page-(\w+)/) || [,'home'])[1], website: f.elements.website.value }) })
             .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
-            .then(function (x) { st.textContent = x.ok ? 'Subscribed. Thank you.' : (x.j.detail && x.j.detail[0] && x.j.detail[0].msg) || x.j.detail || 'Could not subscribe. Write to hey@agenticbuilders.ai.'; if (x.ok) f.reset(); })
+            .then(function (x) { st.textContent = x.ok ? 'You’re subscribed. Thank you.' : (x.j.detail && x.j.detail[0] && x.j.detail[0].msg) || x.j.detail || 'Could not subscribe. Write to hey@agenticbuilders.ai.'; if (x.ok) f.reset(); })
             .catch(function () { st.textContent = 'Could not reach the server. Write to hey@agenticbuilders.ai.'; })
             .then(function () { btn.disabled = false; });
     });

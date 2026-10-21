@@ -1,0 +1,7 @@
+{% if site.api_enabled %}<form class="subscribe rv" data-subscribe action="{{ site.api_base_url }}/subscribe" method="post">
+  <label class="sr-only" for="sub-email">Email</label>
+  <input id="sub-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+  <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+  <button type="submit" class="pill pill-dark">Subscribe</button>
+  <p class="sub-status" aria-live="polite"></p>
+</form>{% else %}<div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}?subject=Subscribe%20to%20portfolio%20updates">Email us to subscribe</a></div>{% endif %}

@@ -1,28 +1,53 @@
 {
   "_readme": "Site-level settings. api_enabled: set to true once api.agenticbuilders.ai resolves and the site-api service has its Notion token; until then the newsletter form falls back to email and llms-full.txt says the API is not open yet.",
-  "modes": [
+  "api_base_url": "https://api.agenticbuilders.ai",
+  "api_enabled": false,
+  "navigation": [
     {
-      "key": "founders",
-      "label": "For founders",
-      "url": "/",
-      "cta_label": "Apply",
-      "cta_key": "apply"
+      "label": "How it works",
+      "url": "/#track"
     },
     {
-      "key": "agents",
-      "label": "For agents",
-      "url": "/llms-full.txt",
-      "cta_label": "Read full reference",
-      "cta_key": "llms_full"
+      "label": "Portfolio",
+      "url": "/portfolio/"
     },
     {
-      "key": "investors",
-      "label": "For investors",
-      "url": "/investors/",
-      "cta_label": "Meet us",
-      "cta_key": "meet"
+      "label": "Team",
+      "url": "/team/"
     }
   ],
-  "api_base_url": "https://api.agenticbuilders.ai",
-  "api_enabled": false
+  "footer_links": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Portfolio",
+      "url": "/portfolio/"
+    },
+    {
+      "label": "Team",
+      "url": "/team/"
+    },
+    {
+      "label": "Portfolio updates",
+      "url": "/portfolio/#updates"
+    },
+    {
+      "label": "For AI agents",
+      "url": "/llms-full.txt"
+    },
+    {
+      "label": "Brand assets",
+      "url": "/brand/"
+    },
+    {
+      "label": "Privacy policy",
+      "url": "/privacy/"
+    },
+    {
+      "label": "Legal notice",
+      "url": "/legal/"
+    }
+  ]
 }

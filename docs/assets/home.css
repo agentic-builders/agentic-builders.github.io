@@ -89,16 +89,17 @@ body.c{background:#fff;color:#1F2937}
 @media (max-width:600px){.notes{grid-template-columns:1fr}.plist a{grid-template-columns:36px 1fr;grid-template-rows:auto auto}.plist span{grid-column:2}}
 @media (prefers-reduced-motion:reduce){.js .rv:not(.note),.js .note,.js .scrub .sw{opacity:1;transition:none}.js .rv:not(.note){transform:none}.js .note{transform:rotate(var(--r,0deg))}}
 
-.modes{display:flex;gap:2px;padding:3px;border:1px solid rgba(31,41,55,.12);border-radius:999px;background:rgba(255,255,255,.7)}
-.modes a{padding:7px 13px;border-radius:999px;font:500 13px/1 'Inter';color:#6B7280;text-decoration:none}
-.modes a:hover{color:#1F2937}.modes a.on{background:#1F2937;color:#fff}
-.toc a[href="#partner"]{display:none}
-.slim{padding-bottom:6vh!important}
-@media (max-width:600px){.modes a{padding:7px 9px;font-size:12px}}
-@media (max-width:820px){.nav .logo span{display:none}.modes a{padding:7px 10px;font-size:12px}}
-@media (max-width:600px){.nav>.pill{display:none}.notes{grid-template-columns:1fr}}
+/* Subject-based site navigation. */
+.site-links{display:flex;align-items:center;gap:24px}
+.site-links a{font:500 14px/1.2 'Inter',system-ui,sans-serif;color:#6B7280;text-decoration:none;padding:8px 0}
+.site-links a:hover,.site-links a[aria-current=page]{color:#B03502;text-decoration:underline;text-underline-offset:6px}
+.body-copy{font:400 17px/1.65 'Inter',system-ui,sans-serif;color:#4B5563;max-width:62ch;margin-top:20px}
+.agent-reference{margin-top:24px}.agent-reference a{color:#B03502}
+@media(max-width:820px){.nav .logo span{display:none}}
+@media(max-width:600px){.nav{padding:18px 16px;gap:12px}.site-links{gap:14px}.site-links a{font-size:12px}.nav>.pill{padding:10px 13px;font-size:13px}.notes{grid-template-columns:1fr}.layout{padding-left:20px;padding-right:20px}}
+@media(max-width:360px){.nav{gap:8px;padding-left:12px;padding-right:12px}.site-links{gap:10px}.nav>.pill{padding:10px 11px}}
 
-/* Team on the home page */
+/* Team cards */
 .team{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px;max-width:640px}
 .team li{padding:20px;border:1px solid rgba(31,41,55,.1);border-radius:16px}
 .team .ph{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#FFF1EA;color:#B03502;font:800 18px/1 'Urbanist',system-ui,sans-serif;margin-bottom:14px}
@@ -138,7 +139,7 @@ body.c{background:#fff;color:#1F2937}
 
 .nl-intro{margin-top:28px}.nl-intro+.subscribe,.nl-intro+.cta{margin-top:12px}
 
-/* Standalone text pages (privacy, legal, apply, 404) */
-.inv.doc-page,.mode-founders .inv{max-width:900px;margin:0 auto;padding:118px 32px 40px}
+/* Standalone text pages */
+.inv.doc-page{max-width:900px;margin:0 auto;padding:118px 32px 40px}
 .doc-page h1{font:600 clamp(30px,4.2vw,48px)/1.12 'Urbanist',system-ui,sans-serif;letter-spacing:-.03em;color:#111827;margin-bottom:8px}
 .doc-page section{padding:0 0 8vh}

@@ -1,17 +1,19 @@
 # Agentic Builders — website
 
-https://agenticbuilders.ai. Static site, founder and investor pages plus a plain-text reference for AI agents, built with [Eleventy](https://www.11ty.dev/) from one content file. All editable source and build tooling live in `src/`; only the generated website lives in `docs/`.
+https://agenticbuilders.ai. Static fund website with a founder-focused homepage, shared Portfolio and Team pages, and a plain-text reference for AI agents. Built with [Eleventy](https://www.11ty.dev/) from shared content. All editable source and build tooling live in `src/`; only the generated website lives in `docs/`.
 
-## Modes
+## Pages
 
-| URL | Audience | Header action |
-|---|---|---|
-| `/` | Founders | Apply (direct Notion form link) |
-| `/llms-full.txt` | AI agents acting for a person | Plain-text reference |
-| `/investors/` | Investors | Contact |
+| URL | Purpose |
+|---|---|
+| `/` | Founder overview, four-week process, six portfolio examples, team introduction, FAQ and direct Notion application links |
+| `/portfolio/` | All portfolio companies, introduction requests for angels and VCs, portfolio updates |
+| `/team/` | Human team, responsibilities, Abi's role and contact |
+| `/investors/` | Legacy entry linking to Portfolio, excluded from indexing; no automatic redirect |
+| `/llms-full.txt` | Full reference for AI agents |
 
-Other pages: `/privacy/`, `/legal/`, `404.html`.
-Generated files: `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders.vcf`, `/sitemap.xml`, JSON-LD in every page head.
+Main navigation: How it works (homepage anchor), Portfolio, Team, Apply. AI reference, updates and utility links live in the footer. Other pages: `/brand/`, `/privacy/`, `/legal/`, `404.html`.
+Generated files: `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders.vcf`, `/sitemap.xml`, JSON-LD in pages using the shared layout.
 
 AI discovery uses a concise `llms.txt` index linked to the full plain-text reference in `llms-full.txt`. There is no separate agents HTML page or duplicate Markdown download. HTML pages advertise the index with `rel="describedby"`, following the [llms.txt proposal](https://llmstxt.org/). These files help agents consume the content; [Google's AI Search guidance](https://developers.google.com/search/docs/appearance/ai-features) does not require special AI text files. Both text files include a UTF-8 byte-order mark so browsers render punctuation correctly even without a charset response header.
 
@@ -32,10 +34,10 @@ You can also open `docs/index.html` directly in a browser. Page links and assets
 
 ## Where to edit
 
-- **Shared content**: `src/content/fund.json`. The home page copy is under `home`, the investors page under `investors`, the agent instructions and application schema under `agents`, shared facts (check, program, criteria, portfolio, FAQ, team) at the top level. Pages and machine files render from this file; some page-specific text lives in the templates.
-- **Mode labels and URLs**: `src/content/site.json`. `api_base_url` is reserved for the future application API.
-- **Templates**: `src/pages/*.njk` (pages), `src/pages/_includes/home.njk` (layout, header with the mode switcher, footer with legal lines), `src/pages/llms-full.njk` (the full reference for AI agents), `src/pages/_includes/jsonld.njk`.
-- **Styles**: `src/assets/hero.css` (shared tokens), `home.css` (founders page and shared components), `investors.css`, and shared `footer.css`. Fonts: Urbanist, Inter, JetBrains Mono from Google Fonts.
+- **Shared content**: `src/content/fund.json`. The homepage copy is under `home`, page introductions under `portfolio` and `team_page`, the agent instructions and application schema under `agents`, shared facts (check, program, criteria, portfolio, FAQ, team) at the top level. Pages and machine files render from this file; some page-specific text lives in the templates.
+- **Navigation labels and URLs**: `src/content/site.json`. `api_base_url` is reserved for the future application API.
+- **Templates**: `src/pages/*.njk` (pages), `src/pages/_includes/home.njk` (layout, shared header; footer markup is in `footer.njk`), `src/pages/llms-full.njk` (the full reference for AI agents), `src/pages/_includes/jsonld.njk`.
+- **Styles**: `src/assets/hero.css` (shared tokens), `home.css` (founders page and shared components), `pages.css`, and shared `footer.css`. Fonts: Urbanist, Inter, JetBrains Mono from Google Fonts.
 - **Scripts**: `src/assets/home.js`. Every animation is gated on the `js` class on `<html>`; the page is complete without scripts.
 - **Static assets**: `src/static/` contains brand assets, portfolio logos, icons, `CNAME`, and `.nojekyll`, copied to the website root.
 - **Portfolio**: add a logo to `src/static/portfolio-logos/` (max 64px) and an entry in `src/content/fund.json → portfolio.companies`. Public logo URLs remain `/portfolio-logos/...`.

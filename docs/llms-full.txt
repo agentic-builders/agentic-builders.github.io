@@ -3,34 +3,34 @@
 > Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-20. Source: https://agenticbuilders.ai/
 
 ## About
-- Agentic Builders invests from idea to pre-seed in products agents use and tools for building agent products. The fund reads every application and replies to each one; teams that fit get a four-week track with weekly check-ins and tool credits, and at the end of it a decision on a first check. If there is progress, the fund invests and takes the team to its next round.
+- Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a four-week track with weekly check-ins, tool credits and deck feedback. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.
 - Stage: Idea to pre-seed. Founded 2025.
 - Email: hey@agenticbuilders.ai. Website: https://agenticbuilders.ai. LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/
 
 ## Thesis
-As agents do more of the work, they need software built for them. These products help agents find tools, use services and finish work for people and businesses. We back the founders building that layer.
-- **Products agents use:** Products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks. Examples: research, data, communication, buying, selling, content, business tasks.
-- **Tools for agent products:** Tools to build, test, secure, launch, track and sell agent products. Examples: build, test, secure, launch, track, sell.
+As agents do more of the work, they need software built for them. These products help agents find tools, use services and complete tasks for people and businesses. We back the founders building these products.
+- **Products AI agents use:** Products agents can find and use to research, work with data, communicate, buy, sell, create content and run business tasks. Examples: research, data, communication, buying, selling, content, business tasks.
+- **Tools for building agent products:** Tools to build, test, secure, launch, track and sell agent products. Examples: build, test, secure, launch, track, sell.
 We back AI-native teams: founders who use AI across product development and company operations and build lean teams around AI from day one.
 
 ## Program and terms
-We read every application. Teams that fit get a four-week track: their own work with our support along the way. If there is progress, we invest and take you to the next round.
-1. **Apply** (Day 0): One form, about 15 minutes, no call needed to start. Abi, our AI agent, reads the application and the deck; the partners review it and reply to every applicant.
-2. **Four weeks of your work** (If invited): Teams that fit are invited to a four-week track. You build, sell and ship; once a week a short check-in. Along the way, you get tool credits and one key number we follow together. Abi reads your deck and gives back the questions investors will ask.
-3. **Decision** (End of week four): If there is progress, we invest: a first check of $30–100k on a standard post-money SAFE. If not now, we tell you why and when to come back.
-4. **To the next round** (After the check): Investor database and warm introductions, founder platform: community, weekly fund meeting, 1:1s with the general partner, founder groups, credits and perks.
+We review every application. If invited, you spend four weeks building your business with our support. At the end of the track, we decide whether to invest.
+1. **Apply** (Application review): One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any deck you submit. The partners review the application and reply to every applicant. Application review has no fixed turnaround time.
+2. **Four weeks of your work** (If invited): If invited, you spend four weeks building, selling and shipping with our support and a short weekly check-in. You get tool credits and one key metric we track together. Abi reads your deck and gives back the questions investors will ask.
+3. **Decision** (End of week four): At the end of the track, the partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
+4. **Help with your next round** (After the check): We help you raise your next round through investor introductions and access to a founder community, weekly fund meetings, one-on-one sessions with the general partner, specialist groups, credits and perks.
 
 - First check: $30–100k. Instrument: Standard post-money SAFE (a simple agreement for future equity, the standard early-stage document); the valuation is agreed individually.
-- Follow-on: No follow-on checks from the fund; our job is to get you to the next round from other investors.
-- Track cost: Free. No equity, no exclusivity, no obligation.
+- Follow-on: We do not make follow-on investments. After our initial investment, we help you connect with other investors for your next round.
+- Track cost: Participation is free and requires no equity or exclusivity. Any investment is agreed separately.
 - Toolkit during the track: Cloud credits (Microsoft for Startups: Azure); AI coding assistance (GitHub Copilot); AI app building (Lovable); LLM tracing and evaluation (Langfuse); Web data and automation (Apify); B2B prospecting (Apollo); Workspace and docs (Notion); Issue tracking (Linear).
 
 ## What the fund pays attention to
-We look for founders who are moving from vibe coding to building a company of people and agents and can run both. None of these is a formal requirement; together they tell us how far a team can go.
-1. **Experience.** You have built something before: a startup, a product, a team. You know what the path looks like.
-2. **Sales.** Someone on the team talks to customers and can close a pilot or a deal.
-3. **Iteration speed.** You can run many iterations in a short time: ship, test, learn, ship again.
-Strengtheners: experience in your industry, a first pilot or revenue, two founders instead of one, a team that has worked together before.
+We look for founders who can turn early experiments into a business, using AI across product development and operations. None of these is a formal requirement; together, they help us assess a team's potential.
+1. **Experience.** You have built a startup, product or team before, and know what it takes.
+2. **Sales.** Someone on the team talks to customers and can secure a pilot or close a sale.
+3. **Iteration speed.** You ship, test, learn and improve quickly.
+Additional strengths: experience in your industry, a first pilot or revenue, two founders instead of one, a team that has worked together before.
 
 ## How to submit an application
 - Where: Through the form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9, for agents that drive a browser, or by email to hey@agenticbuilders.ai with the same fields. The API (below) is the third way once it is open.
@@ -40,10 +40,10 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 - Do not invent metrics, customers, revenue or traction.
 - Do not submit more than one application per company.
 - Do not paste confidential data the person did not approve for sharing.
-- After submitting: The fund reads every application and replies to each one: an invitation to the four-week track or a pass with the reason. In the track the person answers one short check-in a week; at the end of week four the partners decide on a first check.
+- After submitting: The fund reviews every application and replies with an invitation to the four-week track or a rejection with an explanation. Application review has no fixed turnaround time. During the track, the founder submits one short check-in a week; at the end of week four, the partners decide whether to invest.
 
 ### API
-- The submission API at https://api.agenticbuilders.ai is being opened. Until it is announced here, submit through the form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 (for agents that drive a browser) or email hey@agenticbuilders.ai with the same fields.
+- The submission API is not yet available. Submit through the application form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 or email hey@agenticbuilders.ai with the same fields.
 
 ### Application field schema (Field list taken from the fund's form on 2026-10-14. Match fields by label; the form has no field ids.)
 | field | type | required | label | example |
@@ -196,6 +196,16 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 ]
 ```
 
+## Team
+- Nikolay Vyahhi: Leads investment decisions.
+- Leo Ivanov: Leads fund operations, including the investment pipeline, legal coordination and investor relations.
+- Elizaveta Chernysheva: Coordinates founder onboarding, tools and credits, mentors and contractors.
+- Abi, the fund's AI agent: Reviews applications and submitted decks, manages weekly check-ins, drafts investment memos and tracks portfolio progress. Partners make the investment decisions.
+
+## For angels and VCs
+Interested in investing directly in startups? Tell us your investment focus, preferred stage and typical check size. We can discuss relevant portfolio companies and arrange introductions with the founders’ agreement. A portfolio listing does not mean a company is currently fundraising.
+Portfolio: https://agenticbuilders.ai/portfolio/
+
 ## Contacts
 - Email: hey@agenticbuilders.ai
 - vCard: https://agenticbuilders.ai/agenticbuilders.vcf
@@ -220,7 +230,7 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 1. Read /llms-full.txt and the application field schema.
 2. Collect every required field from the person; ask, do not guess.
 3. Go through the three things the fund pays attention to with the person, honestly.
-4. Submit through the linked application form in a browser, or through the API if it is marked open below; put the deck as a link that opens without login, or leave it out.
+4. Submit through the linked application form in a browser, or through the API if it is marked available in the API section. Include a deck link that opens without signing in, or leave it out.
 5. Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short check-in a week, and a decision on a first check at its end.
 
 ### Write to the fund
@@ -233,27 +243,29 @@ Strengtheners: experience in your industry, a first pilot or revenue, two founde
 1. Download /agenticbuilders.vcf.
 2. Or record: Agentic Builders, hey@agenticbuilders.ai, https://agenticbuilders.ai, LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/.
 
-### Prepare a meeting with the fund for an investor
-1. Read /investors/ for the thesis, stage, program and selection.
+### Help a startup investor contact the fund
+1. Read /portfolio/ for the companies we back and how to request introductions.
 2. Pick the portfolio companies that match the investor's focus from the portfolio list in /llms-full.txt.
 3. Request a meeting by email to hey@agenticbuilders.ai with the investor's focus, stage and check size.
 
 
 ## FAQ
-**How long does it take from application to a decision?** There is no deadline for reviewing an application. If we invite you to the track, it runs four weeks, and the decision on a first check comes at its end.
+**How long does it take from application to a decision?** Application review has no fixed turnaround time. If invited, you enter a four-week track, with an investment decision at its end.
 
 **How much do you invest?** First checks are $30–100k on a standard post-money SAFE.
 
 **What equity do you take?** We invest on a standard post-money SAFE, and the valuation is agreed with each founder individually. We look at how the company can grow through its next stages and set the cap so that the round makes sense for both sides, rather than taking a fixed share.
 
-**Who can apply?** Teams building products agents use or tools for building agent products, at idea to pre-seed stage, from anywhere. We pay attention to experience, someone on the team who sells, and how fast the team iterates.
+**Who can apply?** Teams anywhere in the world building products AI agents use or tools for building agent products, from idea to pre-seed. We consider experience, sales ability and speed of execution.
 
 **What do I need to apply?** The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a deck or website if you have one. No call is needed to start.
 
-**What happens during the four weeks?** If we invite you to the track, you work and we watch how you work. Every week you get a short set of questions: a few numbers and a few lines on what happened, about 15 minutes, reply by Friday. Along the way you get tool credits, Abi's read of your deck and one key number we follow together. We do not teach and we do not build your product.
+**What happens during the four weeks?** You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get tool credits, deck feedback from Abi, and one key metric we track together. You remain responsible for building your product.
 
-**What happens after the four weeks?** If there is progress, we invest a first check and start working on your next round: investor introductions and the founder platform. If not now, we tell you why and when it makes sense to come back.
+**What happens after the four weeks?** The partners decide whether to invest and explain their decision. If we invest, we make an initial investment of $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back.
 
-**Does the track commit me to anything?** No. No equity, no exclusivity, no fees. Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy.
+**Does the track commit me to anything?** Participation is free and requires no equity or exclusivity. During the track, we ask for a short weekly check-in. There is no obligation to accept an investment; any investment is agreed separately.
+
+**Who can access my application?** Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy.
 
 

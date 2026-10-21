@@ -27,7 +27,7 @@ permalink: /llms-full.txt
 ## What the fund pays attention to
 {{ fund.who_we_look_for.lead }} {{ fund.who_we_look_for.criteria_note }}
 {% for c in fund.who_we_look_for.criteria %}{{ loop.index }}. **{{ c.name }}.** {{ c.detail }}
-{% endfor %}Strengtheners: {{ fund.who_we_look_for.strengtheners | join(", ") }}.
+{% endfor %}Additional strengths: {{ fund.who_we_look_for.strengtheners | join(", ") }}.
 
 ## How to submit an application
 - Where: {{ fund.agents.apply_instructions.where }}
@@ -51,6 +51,13 @@ permalink: /llms-full.txt
 ```json
 {{ fund.agents.application_fields | json }}
 ```
+
+## Team
+{% for person in fund.team %}- {{ person.name }}: {{ person.line }}
+{% endfor %}
+## For angels and VCs
+{{ fund.portfolio.investors.text }} {{ fund.portfolio.investors.note }}
+Portfolio: {{ fund.fund.url }}/portfolio/
 
 ## Contacts
 - Email: {{ fund.fund.email }}

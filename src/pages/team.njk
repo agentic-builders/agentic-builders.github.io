@@ -1,0 +1,24 @@
+---
+layout: home.njk
+permalink: /team/
+pageKey: team
+pagecss: pages
+title: "Team — Agentic Builders"
+description: "Meet the people behind Agentic Builders and learn how our AI agent, Abi, supports the team. Partners make investment decisions."
+---
+<main class="inv" id="main">
+  <section class="inv-hero">
+    <h1>{{ fund.team_page.title }}</h1>
+    <p class="lead2">{{ fund.team_page.intro }}</p>
+    <ul class="team" role="list">{% for person in fund.team %}{% if not person.agent %}<li class="rv"><span class="ph" aria-hidden="true">{{ person.name | first }}</span><h2>{{ person.name }}</h2><span class="role">{{ person.role }}</span><p>{{ person.line }}</p><a class="quiet" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn <span class="sr-only">— {{ person.name }}</span>→</a></li>{% endif %}{% endfor %}</ul>
+  </section>
+  <section id="ai">
+    <h2 class="t rv">{{ fund.team_page.ai_heading }}</h2>
+    {% for person in fund.team %}{% if person.agent %}<div class="ai-role rv"><h3>{{ person.name }}</h3><p>{{ person.line }}</p></div>{% endif %}{% endfor %}
+  </section>
+  <section class="last">
+    <h2 class="t rv">Contact us</h2>
+    <p class="lead2 rv">Questions about the fund or our work with founders? Email us.</p>
+    <div class="cta rv"><a class="pill pill-dark" href="mailto:{{ fund.fund.email }}">Contact us</a></div>
+  </section>
+</main>
