@@ -21,7 +21,7 @@ description: "Funding for agent-native products from idea to pre-seed. First che
       <p class="body-copy rv">{{ h.thesis_products }} <b>{{ fund.thesis.categories[0].name | replace("Products", "products") }}</b> and <b>{{ fund.thesis.categories[1].name | lower }}</b>.</p>
       <p class="body-copy rv" id="who">{{ fund.who_we_look_for.lead }} {{ h.who_intro }}</p>
       <ol class="five rv">{% for c in fund.who_we_look_for.criteria %}<li><span class="n">{{ loop.index }}</span><span><b>{{ c.name }}.</b> {{ c.detail }}</span></li>{% endfor %}</ol>
-      <p class="fine rv">{{ fund.who_we_look_for.criteria_note }}</p>
+      <p class="fine rv">{{ fund.who_we_look_for.criteria_note | replace("team's potential", "team's&nbsp;potential") }}</p>
     </section>
 
     <section id="track">
