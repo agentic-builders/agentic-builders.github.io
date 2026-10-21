@@ -81,7 +81,7 @@
   "program": {
     "name": "Investment track",
     "hook": "A four-week investment track for invited teams, with an investment decision at its end.",
-    "summary": "We review every application. If invited, join our fully online four-week investment track. Keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.",
+    "summary": "We review every application. If invited, join our investment track: a fully online, four-week program where you keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.",
     "steps": [
       {
         "name": "Apply",

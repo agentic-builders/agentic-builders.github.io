@@ -14,7 +14,7 @@ As agents do more of the work, they need software built for them. These products
 We back AI-native teams: founders who use AI across product development and company operations and build lean teams around AI from day one.
 
 ## Investment track and terms
-We review every application. If invited, join our fully online four-week investment track. Keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.
+We review every application. If invited, join our investment track: a fully online, four-week program where you keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.
 1. **Apply** (Application review): One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any pitch deck you submit. The fund’s investment partners review the application and reply to every applicant. Application review has no fixed turnaround time.
 2. **Four weeks of your work** (If invited): If invited, you join a fully online four-week investment track, building, selling and shipping with our support and a short weekly progress update. You get software credits and discounts, and help tracking one measure of your business’s progress. Abi, the fund’s AI agent, reads your pitch deck and gives back the questions investors will ask.
 3. **Decision** (End of week four): At the end of the investment track, the fund’s investment partners decide whether to make an investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
