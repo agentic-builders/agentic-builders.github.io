@@ -1,5 +1,5 @@
 /* Shared footer for every page, including the brand guide. */
-.disclaimer{display:block;width:100%;font-size:12px;color:#6B7280;max-width:80ch}
+.disclaimer{display:block;width:100%;font-size:12px;color:#6B7280}
 .foot{padding:40px 32px 90px}
 .foot-in{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 32px;font:400 13px/1.6 'Inter',system-ui,sans-serif;color:#6B7280;border-top:1px solid rgba(31,41,55,.1);padding-top:28px}
 .foot a{color:#4B5563;text-decoration:none}.foot a:hover{color:#FC4C03}
