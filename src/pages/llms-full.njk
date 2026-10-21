@@ -19,7 +19,7 @@ permalink: /llms-full.txt
 {{ fund.program.summary }}
 {% for s in fund.program.steps %}{{ loop.index }}. **{{ s.name }}** ({{ s.duration }}): {{ s.description }}
 {% endfor %}
-- First check: {{ fund.program.terms.first_check_usd }}. Instrument: {{ fund.program.terms.instrument }}.
+- Investment: {{ fund.program.terms.first_check_usd }}. Instrument: {{ fund.program.terms.instrument }}.
 - Follow-on: {{ fund.program.terms.follow_on }}.
 - Track cost: {{ fund.program.terms.track_cost }}
 - Software and cloud-service benefits: {{ fund.program.toolkit.items | join("; ") }}.

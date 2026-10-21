@@ -17,11 +17,11 @@ We back AI-native teams: founders who use AI across product development and comp
 We review every application. If invited, join our four-week track: a fully online program where you keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.
 1. **Apply** (Application review): One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any pitch deck you submit. The fund’s investment partners review the application and reply to every applicant. Application review has no fixed turnaround time.
 2. **Four weeks of your work** (If invited): If invited, you join a fully online four-week program, building, selling and shipping with our support and a short weekly progress update. You get software credits and discounts, and help tracking one measure of your business’s progress. Abi, the fund’s AI agent, reads your pitch deck and gives back the questions investors will ask.
-3. **Decision** (End of week four): At the end of the track, the fund’s investment partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
+3. **Decision** (End of week four): At the end of the track, the fund’s investment partners decide whether to make an investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
 4. **Help with your next round** (After the check): We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on AI engineering, product development and sales, and software credits and discounts.
 
-- First check: $30–100k. Instrument: Standard post-money SAFE; the valuation is agreed individually.
-- Follow-on: We do not invest additional money in later funding rounds. After our initial investment, we help you connect with other investors for your next funding round.
+- Investment: $30–100k. Instrument: Standard post-money SAFE; the valuation is agreed individually.
+- Follow-on: We do not invest additional money in later funding rounds. After investing, we help you connect with other investors for your next funding round.
 - Track cost: Participation is free and requires no equity or exclusivity. Any investment is agreed separately.
 - Software and cloud-service benefits: Credits toward Microsoft Azure cloud-service costs (Microsoft for Startups); AI coding assistance (GitHub Copilot); AI app building (Lovable); Monitoring and testing AI models (Langfuse); Web data and automation (Apify); Finding potential business customers (Apollo); Team workspace and documents (Notion); Task and project tracking (Linear).
 
@@ -228,7 +228,7 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 2. Collect every required field from the person; ask, do not guess.
 3. Review the selection criteria with the founder using only the information they provide.
 4. Submit through the linked application form in a browser, or through the API if it is marked available in the API section. Include a deck link that opens without signing in, or leave it out.
-5. Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short progress update a week, and a decision on a first check at its end.
+5. Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short progress update a week, and a decision on an investment at its end.
 
 ### Write to the fund
 1. Use hey@agenticbuilders.ai.
@@ -249,7 +249,7 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 ## FAQ
 **How long does it take from application to a decision?** Application review has no fixed turnaround time. If invited, you enter a four-week track, with an investment decision at its end.
 
-**How much do you invest?** First checks are $30–100k on a standard post-money SAFE.
+**How much do you invest?** We invest $30–100k on a standard post-money SAFE.
 
 **What equity do you take?** We invest on a standard post-money SAFE, and the valuation is agreed with each founder individually. We look at how the company can grow through its next stages and set the valuation cap so that the round makes sense for both sides, rather than taking a fixed share.
 
@@ -259,7 +259,7 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 
 **What happens during the four weeks?** The four-week program is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get software credits and discounts, feedback on your pitch deck from Abi, the fund’s AI agent, and help tracking one measure of your business’s progress. You remain responsible for building your product.
 
-**What happens after the four weeks?** The fund’s investment partners decide whether to invest and explain their decision. If we invest, we make an initial investment of $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back.
+**What happens after the four weeks?** The fund’s investment partners decide whether to invest and explain their decision. If we invest, we provide $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back.
 
 **Does the track commit me to anything?** Participation is free and requires no equity or exclusivity. During the track, we ask for a short weekly progress update. There is no obligation to accept an investment; any investment is agreed separately.
 

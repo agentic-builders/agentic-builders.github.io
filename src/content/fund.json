@@ -96,7 +96,7 @@
       {
         "name": "Decision",
         "duration": "End of week four",
-        "description": "At the end of the track, the fund’s investment partners decide whether to make an initial investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back."
+        "description": "At the end of the track, the fund’s investment partners decide whether to make an investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back."
       },
       {
         "name": "Help with your next round",
@@ -107,7 +107,7 @@
     "terms": {
       "first_check_usd": "$30–100k",
       "instrument": "Standard post-money SAFE; the valuation is agreed individually",
-      "follow_on": "We do not invest additional money in later funding rounds. After our initial investment, we help you connect with other investors for your next funding round",
+      "follow_on": "We do not invest additional money in later funding rounds. After investing, we help you connect with other investors for your next funding round",
       "track_cost": "Participation is free and requires no equity or exclusivity. Any investment is agreed separately."
     },
     "toolkit": {
@@ -140,7 +140,7 @@
         "kicker": "Step 2",
         "text": "At the end of the four weeks, the fund’s investment partners decide whether to invest and explain their decision. If we do not invest, we explain when it makes sense to come back.",
         "gets": [
-          "First check of $30–100k on a standard post-money SAFE",
+          "Investment of $30–100k on a standard post-money SAFE",
           "Valuation agreed with you, not a fixed share",
           "Participation in the track is free, with no equity requirement or exclusivity"
         ]
@@ -165,7 +165,7 @@
     },
     {
       "name": "If we invest",
-      "description": "A first check of $30–100k on a standard post-money SAFE, valuation agreed with you."
+      "description": "An investment of $30–100k on a standard post-money SAFE, valuation agreed with you."
     },
     {
       "name": "After the check",
@@ -278,7 +278,7 @@
     },
     {
       "q": "How much do you invest?",
-      "a": "First checks are $30–100k on a standard post-money SAFE."
+      "a": "We invest $30–100k on a standard post-money SAFE."
     },
     {
       "q": "What equity do you take?",
@@ -298,7 +298,7 @@
     },
     {
       "q": "What happens after the four weeks?",
-      "a": "The fund’s investment partners decide whether to invest and explain their decision. If we invest, we make an initial investment of $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back."
+      "a": "The fund’s investment partners decide whether to invest and explain their decision. If we invest, we provide $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back."
     },
     {
       "q": "Does the track commit me to anything?",
@@ -497,7 +497,7 @@
           "Collect every required field from the person; ask, do not guess.",
           "Review the selection criteria with the founder using only the information they provide.",
           "Submit through the linked application form in a browser, or through the API if it is marked available in the API section. Include a deck link that opens without signing in, or leave it out.",
-          "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short progress update a week, and a decision on a first check at its end."
+          "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short progress update a week, and a decision on an investment at its end."
         ]
       },
       {
@@ -545,7 +545,7 @@
         "detail": "Fully online"
       },
       {
-        "label": "First check",
+        "label": "Investment",
         "value": "$30–100k"
       }
     ],
@@ -554,7 +554,7 @@
     "h1_middle": "from idea to pre-seed. If invited, a four-week program and a",
     "h1_link2": "decision on funding",
     "h1_after": ".",
-    "sub_before": "First checks of",
+    "sub_before": "Investments of",
     "sub_strong": "$30–100k",
     "sub_after": "on a SAFE. Keep building your business, with our support.",
     "cta": "Apply for funding",
