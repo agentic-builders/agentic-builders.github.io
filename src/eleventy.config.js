@@ -11,6 +11,11 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData("site", () => JSON.parse(fs.readFileSync("content/site.json", "utf8")));
   eleventyConfig.addWatchTarget("content/");
 
+  // Keep the sitemap aligned with generated, indexable HTML pages.
+  eleventyConfig.addCollection("indexablePages", (collectionApi) => collectionApi.getAll()
+    .filter((item) => item.url && (item.url.endsWith("/") || item.url.endsWith(".html")) && !item.data.noindex)
+    .sort((a, b) => a.url.localeCompare(b.url)));
+
   eleventyConfig.addPassthroughCopy({ "static": "/" });
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
 
@@ -19,7 +24,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("jsonInline", (v) => JSON.stringify(v));
   eleventyConfig.addFilter("urlencode", (v) => encodeURIComponent(v));
   eleventyConfig.addFilter("isTodo", (v) => typeof v === "string" && /\bTODO\b/.test(v));
-  eleventyConfig.addFilter("escape", (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"));
+  eleventyConfig.addFilter("escape", (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;"));
   eleventyConfig.addFilter("crlf", (v) => String(v).replace(/\r?\n/g, "\r\n"));
   // Explicit index.html links also work when opening the generated site from disk.
   eleventyConfig.addFilter("relativeUrl", (url, pageUrl) => {

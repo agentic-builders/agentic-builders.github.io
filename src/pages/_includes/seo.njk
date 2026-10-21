@@ -1,0 +1,7 @@
+<title>{{ title | escape }}</title><meta name="description" content="{{ description | escape }}">
+<meta name="robots" content="{% if noindex %}noindex{% else %}index, follow, max-snippet:-1, max-image-preview:large{% endif %}">
+<link rel="canonical" href="{{ fund.fund.url }}{{ canonicalUrl or page.url }}">
+<meta property="og:type" content="website"><meta property="og:url" content="{{ fund.fund.url }}{{ canonicalUrl or page.url }}"><meta property="og:title" content="{{ title | escape }}"><meta property="og:description" content="{{ description | escape }}"><meta property="og:image" content="{{ fund.fund.url }}/og-image.png?v=3"><meta property="og:image:width" content="2400"><meta property="og:image:height" content="1260"><meta property="og:image:alt" content="Agentic Builders"><meta property="og:site_name" content="{{ fund.fund.name | escape }}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title | escape }}"><meta name="twitter:description" content="{{ description | escape }}"><meta name="twitter:image" content="{{ fund.fund.url }}/og-image.png?v=3"><meta name="twitter:image:alt" content="Agentic Builders">
+<link rel="describedby" type="text/plain" href="{{ '/llms.txt' | relativeUrl(page.url) }}" title="llms.txt">
+{% if not noindex %}{% include "jsonld.njk" %}{% endif %}

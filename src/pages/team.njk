@@ -12,7 +12,7 @@ description: "Meet the people behind Agentic Builders and learn how our AI agent
     <p class="lead2">{{ fund.team_page.intro }}</p>
     <ul class="team" role="list">
       {%- for person in fund.team -%}
-      <li class="rv{% if person.agent %} agent{% endif %}"{% if person.agent %} id="ai"{% endif %}>
+      <li class="rv{% if person.agent %} agent{% endif %}" id="{% if person.agent %}ai{% else %}{{ person.name | slugify }}{% endif %}">
         {% if person.agent %}<span class="portrait agent-avatar" aria-hidden="true"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="36" height="36"></span>{% else %}<a class="portrait" href="{{ person.linkedin }}" target="_blank" rel="noopener" aria-label="{{ person.name }} on LinkedIn"><img src="{{ person.photo | relativeUrl(page.url) }}" alt="" width="88" height="88" decoding="async"></a>{% endif %}
         <h2>{{ person.name }}</h2>
         <span class="role">{{ person.role }}</span>

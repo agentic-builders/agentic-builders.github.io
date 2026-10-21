@@ -16,6 +16,14 @@ Generated files: `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders
 
 AI discovery uses a concise `llms.txt` index linked to the full plain-text reference in `llms-full.txt`. There is no separate agents HTML page or duplicate Markdown download. HTML pages advertise the index with `rel="describedby"`, following the [llms.txt proposal](https://llmstxt.org/). These files help agents consume the content; [Google's AI Search guidance](https://developers.google.com/search/docs/appearance/ai-features) does not require special AI text files. Both text files include a UTF-8 byte-order mark so browsers render punctuation correctly even without a charset response header.
 
+## Search indexing
+
+- `sitemap.xml` is generated from Eleventy's indexable HTML pages, including Brand. Setting `noindex: true` excludes a page; the 404 is excluded. The sitemap uses absolute canonical URLs and the content update date.
+- `robots.txt` permits crawling and advertises the sitemap. Page content and navigation are present in the generated HTML without JavaScript.
+- All HTML pages use `pages/_includes/seo.njk` for titles, descriptions, canonical URLs, robots directives, Open Graph and Twitter metadata, and the AI-reference link. Keep directory canonical URLs consistent with the sitemap (`/brand/`, not `/brand`).
+- Indexable pages include Organization, WebSite and page JSON-LD. Portfolio adds CollectionPage and an ItemList of the companies shown; Team adds AboutPage and Person entries for the three people, linked to their profiles and local portraits. Abi is not marked as a person. The homepage FAQ schema uses the same content as its visible answers. Do not add unverified publication dates or claims to structured data.
+- After publishing, submit `https://agenticbuilders.ai/sitemap.xml` through Google Search Console and Bing Webmaster Tools, then check the homepage, Portfolio and Team with URL inspection. Sitemap discovery and structured data help search engines understand the site; they do not guarantee indexing or special search-result displays. See [Google's sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) and [structured-data guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies).
+
 ## Run locally
 
 Run these commands from the repository root:
