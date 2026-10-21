@@ -37,7 +37,7 @@ Opens http://localhost:8765 and previews `src/_site/`. The development server do
 
 `npm --prefix src run build` rebuilds `src/_site/` and replaces `docs/` with the finished site. The build fails if any generated page or machine-readable file contains the word `TODO`, before replacing the committed output. This README is outside the page input directory and is excluded from the published site. You can also run ordinary `npm` commands after `cd src`.
 
-You can also open `docs/index.html` directly in a browser. Page links and assets use paths relative to each page, with explicit `index.html` filenames for navigation. Canonical URLs and machine-readable URLs stay absolute. The hosted `404.html` retains root-relative paths because Pages can serve it at an unknown URL depth; preview that error page over HTTP.
+Use the local HTTP server to preview navigation: header and footer links use clean directory URLs such as `/portfolio/`, matching the hosted site. Assets and other page links remain relative to each page, so individual HTML files still display when opened directly from disk. Canonical URLs and machine-readable URLs stay absolute. The hosted `404.html` retains root-relative paths because Pages can serve it at an unknown URL depth; preview that error page over HTTP.
 
 ## Where to edit
 

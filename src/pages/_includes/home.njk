@@ -15,8 +15,8 @@
 </head>
 <body class="c page page-{{ pageKey or mode }}">
 <a class="skip-link" href="#main">Skip to content</a>
-<nav class="nav" aria-label="Site"><a class="logo" aria-label="Agentic Builders home" href="{{ '/' | relativeUrl(page.url) }}"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="20" height="20"><span>Agentic Builders</span></a>
-<div class="site-links">{% for item in site.navigation %}<a href="{{ item.url | relativeUrl(page.url) }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}</div>
+<nav class="nav" aria-label="Site"><a class="logo" aria-label="Agentic Builders home" href="/"><img src="{{ '/brand/icon-color.svg' | relativeUrl(page.url) }}" alt="" width="20" height="20"><span>Agentic Builders</span></a>
+<div class="site-links">{% for item in site.navigation %}<a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}</div>
 <a class="pill pill-dark" href="{{ fund.fund.apply_url }}">Apply</a></nav>
 {{ content | safe }}
 {% include "footer.njk" %}
