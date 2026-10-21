@@ -5,11 +5,12 @@
 .lead2{font:400 17px/1.55 'Inter',system-ui,sans-serif;color:#4B5563;max-width:60ch;margin-top:16px}
 .inv .cta{margin-top:28px}.inv .fine{margin-top:16px}
 .team h2{font:700 20px/1.2 'Urbanist',system-ui,sans-serif;color:#111827}
-.ai-role{padding:24px;border-radius:16px;background:#FFF7F2;margin-top:24px;max-width:640px}
-.ai-role h3{font:700 22px/1.2 'Urbanist',system-ui,sans-serif;margin-bottom:12px}
-.ai-role p{font:400 16px/1.6 'Inter',system-ui,sans-serif;color:#4B5563}
 .subscribe input[type=email]:focus{outline:2px solid #FC4C03;outline-offset:2px;border-color:transparent}
 @media(max-width:600px){.inv{padding:100px 20px 32px}}
 
 .team .portrait{display:block;width:88px;height:88px;margin-bottom:16px;border-radius:50%;overflow:hidden}
 .team .portrait img{display:block;width:100%;height:100%;object-fit:cover}
+
+.team li.agent h2{color:#fff}
+.team .agent-avatar{display:grid;place-items:center;background:#FC4C03}
+.team .agent-avatar img{width:36px;height:36px;object-fit:contain}
