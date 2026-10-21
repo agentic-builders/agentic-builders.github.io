@@ -1,6 +1,6 @@
 <footer class="foot">
   <div class="foot-in">
-    <span>&copy; 2026 {{ fund.fund.legal_name }}, {{ fund.fund.legal_form }} &middot; Last updated <time datetime="{{ fund.updated }}">{{ fund.updated }}</time></span>
+    <span>&copy; 2026 {{ fund.fund.legal_name }}, {{ fund.fund.legal_form }} &middot; Last updated <time datetime="{{ fund.updated }}">{{ fund.updated | dateLabel }}</time></span>
     <span>{% for item in site.footer_links %}<a href="{{ item.url | relativeUrl(page.url) }}">{{ item.label }}</a> · {% endfor %}<a href="{{ fund.fund.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a></span>
     <span class="disclaimer">Nothing on this site is an offer to sell, or a solicitation of an offer to buy, any security. This site provides general information about the fund, its investment track and portfolio, and does not constitute investment advice.</span>
   </div>
