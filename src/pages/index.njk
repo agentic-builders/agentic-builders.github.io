@@ -49,7 +49,8 @@ description: "Funding for agent-native products from idea to pre-seed. Investmen
 
     <section id="faq" class="last">
       <h2 class="t rv">{{ h.faq_lead }}</h2>
-      <div class="qs rv">{% for f in fund.faq %}<details class="q"><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+      {%- set privacy_link = '<a href="' + ('/privacy/' | relativeUrl(page.url)) + '">privacy policy</a>' -%}
+      <div class="qs rv">{% for f in fund.faq %}<details class="q"><summary>{{ f.q }}</summary><p>{{ f.a | replace("privacy policy", privacy_link) }}</p></details>{% endfor %}</div>
       <p class="fine agent-reference">Questions before applying? <a href="mailto:{{ fund.fund.email }}">Email us</a>.</p>
       <p class="fine agent-reference">For AI agents: <a href="{{ '/llms-full.txt' | relativeUrl(page.url) }}">full fund reference and application instructions</a>.</p>
     </section>
