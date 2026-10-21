@@ -9,7 +9,7 @@ description: "How Agentic Builders handles personal data from applications, prog
 <main class="inv doc-page" id="main">
   <section>
     <h1 class="rv">Privacy policy.</h1>
-    <p class="lead2 rv">Last updated {{ fund.updated }}.</p>
+    <p class="lead2 rv">Last updated <time datetime="{{ fund.updated }}">{{ fund.updated | dateLabel }}</time>.</p>
 
     <h2>Who we are</h2>
     <p>{{ fund.fund.legal_name }}, {{ fund.fund.legal_form }}, operates agenticbuilders.ai and the investment track described on it and makes the investments. Contact: <a href="mailto:{{ fund.fund.email }}">{{ fund.fund.email }}</a>.</p>
