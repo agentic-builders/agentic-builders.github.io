@@ -3,7 +3,7 @@
 > Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products. Updated 2026-10-20. Source: https://agenticbuilders.ai/
 
 ## About
-- Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week track with weekly progress updates, software credits and discounts, and feedback on their pitch decks. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.
+- Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week investment track with weekly progress updates, software credits and discounts, and feedback on their pitch decks. At the end of the investment track, we decide whether to invest. After investing, we help founders raise their next round.
 - Stage: Idea to pre-seed. Founded 2025.
 - Email: hey@agenticbuilders.ai. Website: https://agenticbuilders.ai. LinkedIn: https://www.linkedin.com/company/agentic-builders-ai/
 
@@ -13,16 +13,16 @@ As agents do more of the work, they need software built for them. These products
 - **Tools for building agent products:** Tools to build, test, secure, launch, track and sell agent products. Examples: build, test, secure, launch, track, sell.
 We back AI-native teams: founders who use AI across product development and company operations and build lean teams around AI from day one.
 
-## Program and terms
-We review every application. If invited, join our four-week track: a fully online program where you keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.
+## Investment track and terms
+We review every application. If invited, join our fully online four-week investment track. Keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.
 1. **Apply** (Application review): One form, about 15 minutes, no call needed to start. Abi, our AI agent, reviews your application and any pitch deck you submit. The fund’s investment partners review the application and reply to every applicant. Application review has no fixed turnaround time.
-2. **Four weeks of your work** (If invited): If invited, you join a fully online four-week program, building, selling and shipping with our support and a short weekly progress update. You get software credits and discounts, and help tracking one measure of your business’s progress. Abi, the fund’s AI agent, reads your pitch deck and gives back the questions investors will ask.
-3. **Decision** (End of week four): At the end of the track, the fund’s investment partners decide whether to make an investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
+2. **Four weeks of your work** (If invited): If invited, you join a fully online four-week investment track, building, selling and shipping with our support and a short weekly progress update. You get software credits and discounts, and help tracking one measure of your business’s progress. Abi, the fund’s AI agent, reads your pitch deck and gives back the questions investors will ask.
+3. **Decision** (End of week four): At the end of the investment track, the fund’s investment partners decide whether to make an investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back.
 4. **Help with your next round** (After the check): We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on AI engineering, product development and sales, and software credits and discounts.
 
 - Investment: $30–100k. Instrument: Standard post-money SAFE; the valuation is agreed individually.
 - Follow-on: We do not invest additional money in later funding rounds. After investing, we help you connect with other investors for your next funding round.
-- Track cost: Participation is free and requires no equity or exclusivity. Any investment is agreed separately.
+- Investment track cost: Participation is free and requires no equity or exclusivity. Any investment is agreed separately.
 - Software and cloud-service benefits: Credits toward Microsoft Azure cloud-service costs (Microsoft for Startups); AI coding assistance (GitHub Copilot); AI app building (Lovable); Monitoring and testing AI models (Langfuse); Web data and automation (Apify); Finding potential business customers (Apollo); Team workspace and documents (Notion); Task and project tracking (Linear).
 
 ## What the fund pays attention to
@@ -40,7 +40,7 @@ Additional strengths: experience in your industry, a first pilot or revenue, two
 - Do not invent metrics, customers, revenue or traction.
 - Do not submit more than one application per company.
 - Do not paste confidential data the person did not approve for sharing.
-- After submitting: The fund reviews every application and replies with an invitation to the four-week track or a rejection with an explanation. Application review has no fixed turnaround time. During the track, the founder submits one short progress update a week; at the end of week four, the fund’s investment partners decide whether to invest.
+- After submitting: The fund reviews every application and replies with an invitation to the four-week investment track or a rejection with an explanation. Application review has no fixed turnaround time. During the investment track, the founder submits one short progress update a week; at the end of week four, the fund’s investment partners decide whether to invest.
 
 ### API
 - The submission API is not yet available. Submit through the application form at https://accidental-podium-c67.notion.site/a5032a0b4b1982f89291014f2df73ba9 or email hey@agenticbuilders.ai with the same fields.
@@ -199,7 +199,7 @@ Additional strengths: experience in your industry, a first pilot or revenue, two
 ## Team
 - Nikolay Vyahhi: Leads investment decisions.
 - Leo Ivanov: Leads fund operations, including the application and investment review process, legal coordination and communication with co-investors.
-- Elizaveta Chernysheva: Helps founders get started with the program, access software credits and discounts, and connect with mentors and contractors.
+- Elizaveta Chernysheva: Helps founders get started with the investment track, access software credits and discounts, and connect with mentors and contractors.
 - Abi, the fund's AI agent: Reviews applications and submitted pitch decks, manages weekly progress updates, drafts investment summaries and tracks the progress of companies we back. The fund’s investment partners make the investment decisions.
 
 ## For angels and VCs
@@ -228,7 +228,7 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 2. Collect every required field from the person; ask, do not guess.
 3. Review the selection criteria with the founder using only the information they provide.
 4. Submit through the linked application form in a browser, or through the API if it is marked available in the API section. Include a deck link that opens without signing in, or leave it out.
-5. Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short progress update a week, and a decision on an investment at its end.
+5. Tell the person what happens next: the fund replies to every application; if invited, a four-week investment track with one short progress update a week, and a decision on an investment at its end.
 
 ### Write to the fund
 1. Use hey@agenticbuilders.ai.
@@ -247,7 +247,7 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 
 
 ## FAQ
-**How long does it take from application to a decision?** Application review has no fixed turnaround time. If invited, you enter a four-week track, with an investment decision at its end.
+**How long does it take from application to a decision?** Application review has no fixed turnaround time. If invited, you enter a four-week investment track, with an investment decision at its end.
 
 **How much do you invest?** We invest $30–100k on a standard post-money SAFE.
 
@@ -257,11 +257,11 @@ Portfolio: https://agenticbuilders.ai/portfolio/
 
 **What do I need to apply?** The form takes about 15 minutes: who you are, what problem you solve and for whom, what you learned from users, what you shipped last, your plan for the next 6 to 8 weeks, and a link to a pitch deck or website if you have one. No call is needed to start.
 
-**What happens during the four weeks?** The four-week program is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get software credits and discounts, feedback on your pitch deck from Abi, the fund’s AI agent, and help tracking one measure of your business’s progress. You remain responsible for building your product.
+**What happens during the four weeks?** The four-week investment track is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get software credits and discounts, feedback on your pitch deck from Abi, the fund’s AI agent, and help tracking one measure of your business’s progress. You remain responsible for building your product.
 
 **What happens after the four weeks?** The fund’s investment partners decide whether to invest and explain their decision. If we invest, we provide $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back.
 
-**Does the track commit me to anything?** Participation is free and requires no equity or exclusivity. During the track, we ask for a short weekly progress update. There is no obligation to accept an investment; any investment is agreed separately.
+**Does the investment track commit me to anything?** Participation is free and requires no equity or exclusivity. During the investment track, we ask for a short weekly progress update. There is no obligation to accept an investment; any investment is agreed separately.
 
 **Who can access my application?** Your answers are stored in our internal systems and read by the fund team and its AI agents. Service providers process data on our behalf, and we share information with investors only with the founder's agreement. Details are in our privacy policy.
 

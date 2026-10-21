@@ -7,7 +7,7 @@
     "url": "https://agenticbuilders.ai",
     "tagline": "Early-stage fund for agent-native products",
     "one_liner": "Agentic Builders is an early-stage venture fund (idea to pre-seed) for agent-native products: products AI agents use and tools for building agent products.",
-    "description": "Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week track with weekly progress updates, software credits and discounts, and feedback on their pitch decks. At the end of the track, we decide whether to invest. After investing, we help founders raise their next round.",
+    "description": "Agentic Builders invests in companies from idea to pre-seed that build products AI agents use or tools for building agent products. We review every application and reply to each one. Invited teams enter a fully online four-week investment track with weekly progress updates, software credits and discounts, and feedback on their pitch decks. At the end of the investment track, we decide whether to invest. After investing, we help founders raise their next round.",
     "founded": "2025",
     "stage": "Idea to pre-seed",
     "email": "hey@agenticbuilders.ai",
@@ -79,9 +79,9 @@
     ]
   },
   "program": {
-    "name": "Four-week track",
-    "hook": "A four-week track for invited teams, with an investment decision at its end.",
-    "summary": "We review every application. If invited, join our four-week track: a fully online program where you keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.",
+    "name": "Investment track",
+    "hook": "A four-week investment track for invited teams, with an investment decision at its end.",
+    "summary": "We review every application. If invited, join our fully online four-week investment track. Keep building your business with our support, wherever you're based. At the end, the fund’s investment partners decide whether to invest.",
     "steps": [
       {
         "name": "Apply",
@@ -91,12 +91,12 @@
       {
         "name": "Four weeks of your work",
         "duration": "If invited",
-        "description": "If invited, you join a fully online four-week program, building, selling and shipping with our support and a short weekly progress update. You get software credits and discounts, and help tracking one measure of your business’s progress. Abi, the fund’s AI agent, reads your pitch deck and gives back the questions investors will ask."
+        "description": "If invited, you join a fully online four-week investment track, building, selling and shipping with our support and a short weekly progress update. You get software credits and discounts, and help tracking one measure of your business’s progress. Abi, the fund’s AI agent, reads your pitch deck and gives back the questions investors will ask."
       },
       {
         "name": "Decision",
         "duration": "End of week four",
-        "description": "At the end of the track, the fund’s investment partners decide whether to make an investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back."
+        "description": "At the end of the investment track, the fund’s investment partners decide whether to make an investment of $30–100k through a standard post-money SAFE and explain their decision. If we do not invest, we explain when it makes sense to come back."
       },
       {
         "name": "Help with your next round",
@@ -111,7 +111,7 @@
       "track_cost": "Participation is free and requires no equity or exclusivity. Any investment is agreed separately."
     },
     "toolkit": {
-      "note": "Credits toward software and cloud-service costs, plus discounts available during the four-week program. Providers set their own terms and may require a separate application.",
+      "note": "Credits toward software and cloud-service costs, plus discounts available during the four-week investment track. Providers set their own terms and may require a separate application.",
       "items": [
         "Credits toward Microsoft Azure cloud-service costs (Microsoft for Startups)",
         "AI coding assistance (GitHub Copilot)",
@@ -123,7 +123,7 @@
         "Task and project tracking (Linear)"
       ]
     },
-    "timeline": "Every application gets a reply. Application review has no fixed turnaround time; the four-week track begins only after an invitation. During the track, we ask for a short weekly progress update.",
+    "timeline": "Every application gets a reply. Application review has no fixed turnaround time; the four-week investment track begins only after an invitation. During the investment track, we ask for a short weekly progress update.",
     "stages": [
       {
         "name": "Four weeks of your work",
@@ -142,7 +142,7 @@
         "gets": [
           "Investment of $30–100k on a standard post-money SAFE",
           "Valuation agreed with you, not a fixed share",
-          "Participation in the track is free, with no equity requirement or exclusivity"
+          "Participation in the investment track is free, with no equity requirement or exclusivity"
         ]
       },
       {
@@ -274,7 +274,7 @@
   "faq": [
     {
       "q": "How long does it take from application to a decision?",
-      "a": "Application review has no fixed turnaround time. If invited, you enter a four-week track, with an investment decision at its end."
+      "a": "Application review has no fixed turnaround time. If invited, you enter a four-week investment track, with an investment decision at its end."
     },
     {
       "q": "How much do you invest?",
@@ -294,15 +294,15 @@
     },
     {
       "q": "What happens during the four weeks?",
-      "a": "The four-week program is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get software credits and discounts, feedback on your pitch deck from Abi, the fund’s AI agent, and help tracking one measure of your business’s progress. You remain responsible for building your product."
+      "a": "The four-week investment track is fully online. You keep building your business with our support. Each week, send a short update by Friday: a few key numbers and a brief account of your progress. It takes about 15 minutes. You get software credits and discounts, feedback on your pitch deck from Abi, the fund’s AI agent, and help tracking one measure of your business’s progress. You remain responsible for building your product."
     },
     {
       "q": "What happens after the four weeks?",
       "a": "The fund’s investment partners decide whether to invest and explain their decision. If we invest, we provide $30–100k and help you prepare for your next round through investor introductions and founder support. If we do not invest, we explain when it makes sense to come back."
     },
     {
-      "q": "Does the track commit me to anything?",
-      "a": "Participation is free and requires no equity or exclusivity. During the track, we ask for a short weekly progress update. There is no obligation to accept an investment; any investment is agreed separately."
+      "q": "Does the investment track commit me to anything?",
+      "a": "Participation is free and requires no equity or exclusivity. During the investment track, we ask for a short weekly progress update. There is no obligation to accept an investment; any investment is agreed separately."
     },
     {
       "q": "Who can access my application?",
@@ -327,7 +327,7 @@
     {
       "name": "Elizaveta Chernysheva",
       "role": "Operations and founder support",
-      "line": "Helps founders get started with the program, access software credits and discounts, and connect with mentors and contractors.",
+      "line": "Helps founders get started with the investment track, access software credits and discounts, and connect with mentors and contractors.",
       "linkedin": "https://www.linkedin.com/in/elizaveta-chernysheva-29604214b/",
       "photo": "/team/elizaveta-chernysheva.jpg"
     },
@@ -358,7 +358,7 @@
         "Do not submit more than one application per company.",
         "Do not paste confidential data the person did not approve for sharing."
       ],
-      "after": "The fund reviews every application and replies with an invitation to the four-week track or a rejection with an explanation. Application review has no fixed turnaround time. During the track, the founder submits one short progress update a week; at the end of week four, the fund’s investment partners decide whether to invest."
+      "after": "The fund reviews every application and replies with an invitation to the four-week investment track or a rejection with an explanation. Application review has no fixed turnaround time. During the investment track, the founder submits one short progress update a week; at the end of week four, the fund’s investment partners decide whether to invest."
     },
     "application_fields": [
       {
@@ -497,7 +497,7 @@
           "Collect every required field from the person; ask, do not guess.",
           "Review the selection criteria with the founder using only the information they provide.",
           "Submit through the linked application form in a browser, or through the API if it is marked available in the API section. Include a deck link that opens without signing in, or leave it out.",
-          "Tell the person what happens next: the fund replies to every application; if invited, a four-week track with one short progress update a week, and a decision on an investment at its end."
+          "Tell the person what happens next: the fund replies to every application; if invited, a four-week investment track with one short progress update a week, and a decision on an investment at its end."
         ]
       },
       {
@@ -540,7 +540,7 @@
     "panel_text": "Products agents use and tools for building agent products. From idea to pre-seed, for founders who build with people and agents.",
     "panel_facts": [
       {
-        "label": "Track",
+        "label": "Investment track",
         "value": "4 weeks",
         "detail": "Fully online"
       },
@@ -551,7 +551,7 @@
     ],
     "h1_before": "We fund",
     "h1_link1": "agent-native products",
-    "h1_middle": "from idea to pre-seed. If invited, a four-week program and a",
+    "h1_middle": "from idea to pre-seed. If invited, a four-week investment track and a",
     "h1_link2": "decision on funding",
     "h1_after": ".",
     "sub_before": "Investments of",
@@ -566,14 +566,14 @@
     "agents_link": "full fund reference and application instructions",
     "portfolio_lead": "A few companies we back",
     "faq_lead": "Questions founders ask",
-    "apply_lead": "Apply for funding. If invited, a four-week program and a decision at its end.",
-    "how_lead": "How the four-week program works",
+    "apply_lead": "Apply for funding. If invited, a four-week investment track and a decision at its end.",
+    "how_lead": "How the investment track works",
     "newsletter_intro": "Monthly updates on the companies we back, teams preparing to raise funding, and news from the fund."
   },
   "agent_name": "Abi",
   "team_page": {
     "title": "Meet the team",
-    "intro": "Meet the team that reviews applications and supports founders during the four-week program and after investment. The fund’s investment partners make investment decisions.",
+    "intro": "Meet the team that reviews applications and supports founders during the four-week investment track and after investment. The fund’s investment partners make investment decisions.",
     "preview": "Our investment and operations team supports founders from application through their next funding round. The fund’s investment partners make the investment decisions; Abi, the fund’s AI agent, helps review applications and prepare investment summaries."
   }
 }

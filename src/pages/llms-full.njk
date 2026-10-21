@@ -15,13 +15,13 @@ permalink: /llms-full.txt
 {% for c in fund.thesis.categories %}- **{{ c.name }}:** {{ c.description }} Examples: {{ c.examples | join(", ") }}.
 {% endfor %}{{ fund.thesis.teams }}
 
-## Program and terms
+## Investment track and terms
 {{ fund.program.summary }}
 {% for s in fund.program.steps %}{{ loop.index }}. **{{ s.name }}** ({{ s.duration }}): {{ s.description }}
 {% endfor %}
 - Investment: {{ fund.program.terms.first_check_usd }}. Instrument: {{ fund.program.terms.instrument }}.
 - Follow-on: {{ fund.program.terms.follow_on }}.
-- Track cost: {{ fund.program.terms.track_cost }}
+- Investment track cost: {{ fund.program.terms.track_cost }}
 - Software and cloud-service benefits: {{ fund.program.toolkit.items | join("; ") }}.
 
 ## What the fund pays attention to
