@@ -35,6 +35,7 @@ You can also open `docs/index.html` directly in a browser. Page links and assets
 ## Where to edit
 
 - **Shared content**: `src/content/fund.json`. The homepage copy is under `home`, page introductions under `portfolio` and `team_page`, the agent instructions and application schema under `agents`, shared facts (check, program, criteria, portfolio, FAQ, team) at the top level. Pages and machine files render from this file; some page-specific text lives in the templates.
+- **Terminology**: use “AI agents” when describing agents that do work, including teams of people and agents. Keep “AI” for broader concepts such as AI search, AI adoption, models and tokens; do not describe a product as agent-based unless its current offering supports that claim. Application field labels must continue to match the external form.
 - **Navigation labels and URLs**: `src/content/site.json`. `api_base_url` is reserved for the future application API.
 - **Templates**: `src/pages/*.njk` (pages), `src/pages/_includes/home.njk` (layout, shared header; footer markup is in `footer.njk`), `src/pages/llms-full.njk` (the full reference for AI agents), `src/pages/_includes/jsonld.njk`.
 - **Styles**: `src/assets/hero.css` (shared tokens), `home.css` (founders page and shared components), `pages.css`, and shared `footer.css`. Fonts: Urbanist, Inter, JetBrains Mono from Google Fonts.

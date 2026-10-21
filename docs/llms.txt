@@ -7,19 +7,19 @@
 - [For founders](https://agenticbuilders.ai/): investment track, thesis, selection, team, portfolio, FAQ
 - [Full reference for AI agents](https://agenticbuilders.ai/llms-full.txt): fund details, investment track terms, application instructions and field schema
 - [Portfolio](https://agenticbuilders.ai/portfolio/): companies, introductions for angels and VCs, monthly newsletter
-- [Team](https://agenticbuilders.ai/team/): people, responsibilities and how we use AI
+- [Team](https://agenticbuilders.ai/team/): people, responsibilities and Abi, the fund’s AI agent
 - [Privacy policy](https://agenticbuilders.ai/privacy/): how application and contact data are handled
 - [Legal notice](https://agenticbuilders.ai/legal/): operator, investment track terms and disclaimers
 
 ## Portfolio
 
-- [Eqvesta](https://eqvesta.com/): AI-native digital family office.
+- [Eqvesta](https://eqvesta.com/): Digital family office with AI agents.
 - [Silow](https://silow.ai): Prioritized plans for AI adoption.
 - [Heron](https://heron.ing/): Governance for AI agents.
 - [kone](https://kone.vc): AI adoption for businesses.
 - [Agentiqa](https://agentiqa.com): Release checks for AI agents.
 - [Theona](https://theona.ai): AI agents for team workflows.
-- [HookRadar](https://hookradar.net): AI creative intelligence for marketers.
+- [HookRadar](https://hookradar.net): AI agents for marketing teams.
 - [VisibilityPro](https://visibilitypro.ai): AI search visibility agency.
 - [Aprena Academy](https://aprena.academy/): AI-assisted career planning.
 - [Fina](https://fina.team/): AI agents for finance teams.

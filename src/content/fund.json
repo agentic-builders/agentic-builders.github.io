@@ -54,7 +54,7 @@
   },
   "who_we_look_for": {
     "headline": "Who we back",
-    "lead": "We back AI-native teams that build lean companies with AI at the core of product development and day-to-day operations.",
+    "lead": "We back founders who build lean teams of people and AI agents, using agents across product development and day-to-day operations.",
     "criteria_note": "None of these is a formal requirement; together, they help us assess a team's potential.",
     "criteria": [
       {
@@ -100,7 +100,7 @@
       {
         "name": "Help with your next round",
         "duration": "After the check",
-        "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on AI engineering, product development and sales, and software credits and discounts."
+        "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on building AI agents, product development and sales, and software credits and discounts."
       }
     ],
     "terms": {
@@ -151,7 +151,7 @@
         "gets": [
           "A list of relevant investors and personal introductions to investors who fund your next stage",
           "A community of founders and weekly meetings with the fund team",
-          "One-on-one sessions with Nikolay Vyahhi, the fund’s general partner, and founder discussion groups on AI engineering, product development and sales",
+          "One-on-one sessions with Nikolay Vyahhi, the fund’s general partner, and founder discussion groups on building AI agents, product development and sales",
           "Additional software credits and discounts"
         ]
       }
@@ -168,7 +168,7 @@
     },
     {
       "name": "After the check",
-      "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on AI engineering, product development and sales, and software credits and discounts."
+      "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on building AI agents, product development and sales, and software credits and discounts."
     }
   ],
   "portfolio": {
@@ -180,9 +180,9 @@
         "url": "https://eqvesta.com/",
         "logo": "/portfolio-logos/eqvesta-logo.png",
         "logo_wide": true,
-        "for_humans": "AI-native digital family office.",
-        "for_agents": "AI-native digital family office.",
-        "description": "Developing an AI back office that brings accounts across countries and currencies into one view, tracks filing deadlines and prepares documents for a CPA. It does not hold or move money."
+        "for_humans": "Digital family office with AI agents.",
+        "for_agents": "Digital family office with AI agents.",
+        "description": "Developing AI agents that bring accounts across countries and currencies into one view, track filing deadlines and prepare documents for a CPA. It does not hold or move money."
       },
       {
         "name": "Silow",
@@ -230,9 +230,9 @@
         "url": "https://hookradar.net",
         "logo": "/portfolio-logos/hookradar-logo.png",
         "logo_wide": true,
-        "for_humans": "AI creative intelligence for marketers.",
-        "for_agents": "AI creative intelligence for marketers.",
-        "description": "Analyzes live ads, organic content and competitor activity to identify creative patterns. Turns those signals into prioritized ideas and briefs that marketing teams can use to plan their next tests."
+        "for_humans": "AI agents for marketing teams.",
+        "for_agents": "AI agents for marketing teams.",
+        "description": "Uses AI agents to find creative patterns in live ads, organic content and competitor activity. Turns those signals into prioritized ideas and briefs that marketing teams can use to plan their next tests."
       },
       {
         "name": "VisibilityPro",
@@ -546,7 +546,7 @@
   },
   "home": {
     "panel_title": "Early-stage fund for agent-native products",
-    "panel_text": "Products agents use and tools for building agent products. From idea to pre-seed, for founders who build with people and agents.",
+    "panel_text": "Products agents use and tools for building agent products. From idea to pre-seed, for founders who build with people and AI agents.",
     "panel_facts": [
       {
         "label": "Investment track",
