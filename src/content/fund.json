@@ -575,7 +575,9 @@
     "faq_lead": "Questions founders ask",
     "apply_lead": "Apply for funding. If invited, a four-week investment track and a decision at its end.",
     "how_lead": "How the investment track works",
-    "newsletter_intro": "Monthly updates on the companies we back, teams preparing to raise funding, and news from the fund."
+    "newsletter_intro": "Monthly updates on the companies we back, teams preparing to raise funding, and news from the fund.",
+    "portfolio_lead": "Companies we back",
+    "portfolio_more": "See the full portfolio"
   },
   "agent_name": "Abi",
   "team_page": {

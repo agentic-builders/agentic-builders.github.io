@@ -15,6 +15,12 @@ description: "Funding for agent-native products from idea to pre-seed. Investmen
       <div class="cta rv"><a class="pill pill-dark" href="{{ fund.fund.apply_url }}">{{ h.cta }}</a><a class="quiet" href="#track">{{ h.cta_quiet }}</a></div>
     </section>
 
+    <section id="portfolio" class="portfolio-preview">
+      <h2 class="eyebrow rv">{{ h.portfolio_lead }}</h2>
+      <ul class="logos rv" role="list">{% for c in fund.portfolio.companies %}<li><a href="{{ c.url }}" target="_blank" rel="noopener" title="{{ c.for_humans }}"><img src="{{ c.logo | relativeUrl(page.url) }}" alt="" width="20" height="20" loading="lazy"><span>{{ c.name }}</span></a></li>{% endfor %}</ul>
+      <div class="cta rv"><a class="quiet" href="{{ '/portfolio/' | relativeUrl(page.url) }}">{{ h.portfolio_more }}</a></div>
+    </section>
+
     <section id="thesis">
       <h2 class="t rv">{{ fund.thesis.headline }}</h2>
       <p class="body-copy rv">{{ fund.thesis.lead }} {{ fund.thesis.body }}</p>
@@ -60,6 +66,6 @@ description: "Funding for agent-native products from idea to pre-seed. Investmen
     <p class="panel-title">{{ h.panel_title }}</p>
     <p>{{ h.panel_text }}</p>
     <ul class="facts">{% for f in h.panel_facts %}<li><span>{{ f.label }}</span><span class="fact-value"><b>{{ f.value }}</b>{% if f.detail %}<small>{{ f.detail }}</small>{% endif %}</span></li>{% endfor %}</ul>
-    <nav class="toc" aria-label="Sections"><a href="#thesis">Thesis</a><a href="#who">Who we back</a><a href="#track">Investment track</a><a href="{{ '/portfolio/' | relativeUrl(page.url) }}">Portfolio</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
+    <nav class="toc" aria-label="Sections"><a href="#portfolio">Portfolio</a><a href="#thesis">Thesis</a><a href="#who">Who we back</a><a href="#track">Investment track</a><a href="{{ '/team/' | relativeUrl(page.url) }}">Team</a><a href="#faq">Questions</a></nav>
   </aside>
 </main>
