@@ -6,12 +6,12 @@ https://agenticbuilders.ai. Static fund website with a founder-focused homepage,
 
 | URL | Purpose |
 |---|---|
-| `/` | Founder overview with a compact preview of portfolio companies below the hero, investment track, team introduction, FAQ and direct Notion application links; the preview links to the full Portfolio page |
+| `/` | Founder overview, investment track, team introduction, FAQ and direct Notion application links; navigation links to the full Portfolio page |
 | `/portfolio/` | All portfolio companies, introduction requests for angels and VCs, monthly newsletter |
 | `/team/` | Team members including Abi, responsibilities and contact |
 | `/llms-full.txt` | Full reference for AI agents |
 
-Main navigation: For founders, Portfolio, Team, For agents (direct full-text reference, last), Apply. The homepage keeps its How it works links; AI reference, updates and utility links are also in the footer. Other pages: `/brand/`, `/privacy/`, `/legal/`, `404.html`.
+Main navigation: For founders, Portfolio, Team, For agents (direct full-text reference), Apply. The homepage keeps its How it works links; AI reference, updates and utility links are also in the footer. Other pages: `/brand/`, `/privacy/`, `/legal/`, `404.html`. Keep the company directory on Portfolio rather than repeating its company list on the homepage.
 Generated files: `/llms.txt`, `/llms-full.txt`, `/robots.txt`, `/agenticbuilders.vcf`, `/sitemap.xml`, JSON-LD in pages using the shared layout.
 
 AI discovery uses a concise `llms.txt` index linked to the full plain-text reference in `llms-full.txt`. There is no separate agents HTML page or duplicate Markdown download. HTML pages advertise the index with `rel="describedby"`, following the [llms.txt proposal](https://llmstxt.org/). These files help agents consume the content; [Google's AI Search guidance](https://developers.google.com/search/docs/appearance/ai-features) does not require special AI text files. Both text files include a UTF-8 byte-order mark so browsers render punctuation correctly even without a charset response header.

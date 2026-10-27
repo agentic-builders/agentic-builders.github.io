@@ -141,13 +141,3 @@ body.c{background:#fff;color:#1F2937}
 .doc-page section{padding:0 0 8vh}
 
 .portfolio-date{margin-top:12px}
-
-/* Homepage portfolio preview: compact logo chips that link to each company; the full list lives on /portfolio/. */
-.col .portfolio-preview{padding-bottom:10vh}
-.eyebrow{font:600 13px/1.4 'Inter',system-ui,sans-serif;letter-spacing:.02em;color:#6B7280;margin:0}
-.logos{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0;padding:0}
-.logos a{display:inline-flex;align-items:center;gap:8px;padding:9px 15px 9px 11px;border:1px solid rgba(31,41,55,.12);border-radius:999px;background:rgba(255,255,255,.75);text-decoration:none;color:#1F2937;font:700 15px/1 'Urbanist',system-ui,sans-serif;letter-spacing:-.01em;transition:border-color .15s,color .15s}
-.logos img{width:20px;height:20px;object-fit:contain}
-.logos a:hover,.logos a:focus-visible{border-color:#FC4C03;color:#B03502}
-.portfolio-preview .cta{margin-top:18px}
-@media(max-width:600px){.logos{gap:8px}.logos a{padding:8px 13px 8px 9px;font-size:14px}}
