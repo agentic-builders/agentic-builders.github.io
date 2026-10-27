@@ -8,16 +8,16 @@
       "url": "/"
     },
     {
-      "label": "For agents",
-      "url": "/llms-full.txt"
-    },
-    {
       "label": "Portfolio",
       "url": "/portfolio/"
     },
     {
       "label": "Team",
       "url": "/team/"
+    },
+    {
+      "label": "For agents",
+      "url": "/llms-full.txt"
     }
   ],
   "footer_links": [
