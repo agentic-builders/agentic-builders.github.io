@@ -100,7 +100,7 @@
       {
         "name": "Help with your next round",
         "duration": "After the check",
-        "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on building AI agents, product development and sales, and software credits and discounts."
+        "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s managing partner, founder discussion groups on building AI agents, product development and sales, and software credits and discounts."
       }
     ],
     "terms": {
@@ -151,7 +151,7 @@
         "gets": [
           "A list of relevant investors and personal introductions to investors who fund your next stage",
           "A community of founders and weekly meetings with the fund team",
-          "One-on-one sessions with Nikolay Vyahhi, the fund’s general partner, and founder discussion groups on building AI agents, product development and sales",
+          "One-on-one sessions with Nikolay Vyahhi, the fund’s managing partner, and founder discussion groups on building AI agents, product development and sales",
           "Additional software credits and discounts"
         ]
       }
@@ -168,7 +168,7 @@
     },
     {
       "name": "After the check",
-      "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s general partner, founder discussion groups on building AI agents, product development and sales, and software credits and discounts."
+      "description": "We help you raise your next funding round through introductions to relevant investors and access to a community of founders, weekly meetings with the fund team, one-on-one sessions with Nikolay Vyahhi, the fund’s managing partner, founder discussion groups on building AI agents, product development and sales, and software credits and discounts."
     }
   ],
   "portfolio": {
@@ -313,7 +313,7 @@
   "team": [
     {
       "name": "Nikolay Vyahhi",
-      "role": "General Partner",
+      "role": "Managing Partner",
       "line": "Leads investment decisions.",
       "linkedin": "https://www.linkedin.com/in/vyahhi/",
       "photo": "/team/nikolay-vyahhi.jpg"
